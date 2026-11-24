@@ -1,0 +1,581 @@
+{
+  "updates": 32,
+  "training_shifts": 1024,
+  "continuation_after_update": 16,
+  "learner_config_sha256": "81e5c27846fed79a576f1f3544fa3fe21164745aef9a3dd5783d0c7ad20bd953",
+  "checkpoint_binding": "uN training batch sampled by u(N-1)",
+  "metric_fields": {
+    "reward": "-update.metrics.combined_cost_mean",
+    "actor_loss": "update.mean.actor_loss",
+    "critic_training_loss": "update.mean.critic_mc_mse",
+    "critic_mse_after": "update.metrics.critic_mc_mse"
+  },
+  "mean_reward_by_eight_updates": [
+    {
+      "first_update": 1,
+      "last_update": 8,
+      "mean_reward": -2.9357299707862365
+    },
+    {
+      "first_update": 9,
+      "last_update": 16,
+      "mean_reward": -0.4952397435870129
+    },
+    {
+      "first_update": 17,
+      "last_update": 24,
+      "mean_reward": -0.29208868512055536
+    },
+    {
+      "first_update": 25,
+      "last_update": 32,
+      "mean_reward": -0.20348658193615918
+    }
+  ],
+  "rows": [
+    {
+      "update": 1,
+      "behavior_checkpoint": 0,
+      "shifts": 32,
+      "reward": -4.521797614720276,
+      "actor_loss": -0.01609267336852613,
+      "critic_training_loss": 2.24372041912519,
+      "critic_mse_before": 10.719197403552197,
+      "critic_mse_after": 1.8757986200182355,
+      "critic_ev_after": 0.5138900311192512,
+      "approx_kl_after": 0.0001926951081259176,
+      "clip_fraction_after": 0.0,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0001/training_summary.json",
+        "sha256": "bc0c45fa3d42546c3fcf20896f5e4da3e0eb6cced8704773564e0ab37675b6c0"
+      }
+    },
+    {
+      "update": 2,
+      "behavior_checkpoint": 1,
+      "shifts": 32,
+      "reward": -5.340747602937185,
+      "actor_loss": -0.020761645869598673,
+      "critic_training_loss": 0.9828151044586292,
+      "critic_mse_before": 1.3287654447921857,
+      "critic_mse_after": 0.9188118932684182,
+      "critic_ev_after": 0.7341537435498395,
+      "approx_kl_after": 0.00941589754074812,
+      "clip_fraction_after": 0.12738420069217682,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0002/training_summary.json",
+        "sha256": "d08786cf55f7779c9985e97525313692e8a4f13039a4ff4b939e9803c3662a07"
+      }
+    },
+    {
+      "update": 3,
+      "behavior_checkpoint": 2,
+      "shifts": 32,
+      "reward": -4.259246928113043,
+      "actor_loss": -0.024313842879832993,
+      "critic_training_loss": 1.6983312330129028,
+      "critic_mse_before": 2.10998119725561,
+      "critic_mse_after": 1.6067624830404286,
+      "critic_ev_after": 0.5524114929422952,
+      "approx_kl_after": 0.006344092544168234,
+      "clip_fraction_after": 0.07092684507369995,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0003/training_summary.json",
+        "sha256": "77c68ca6cc6e191e59f96c9d137fbb79eb300366446c7b42306941acda9b4058"
+      }
+    },
+    {
+      "update": 4,
+      "behavior_checkpoint": 3,
+      "shifts": 32,
+      "reward": -3.498313200876178,
+      "actor_loss": -0.03007134934584784,
+      "critic_training_loss": 1.4948572222272034,
+      "critic_mse_before": 1.8938059178545577,
+      "critic_mse_after": 1.3962178180429843,
+      "critic_ev_after": 0.5007754460628492,
+      "approx_kl_after": 0.013162828981876373,
+      "clip_fraction_after": 0.2326926290988922,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0004/training_summary.json",
+        "sha256": "d41de05fed6d76eeadd26aa119cdea9513e5776b72d1c62223319076d9b56983"
+      }
+    },
+    {
+      "update": 5,
+      "behavior_checkpoint": 4,
+      "shifts": 32,
+      "reward": -1.875706699946201,
+      "actor_loss": -0.026845464933656964,
+      "critic_training_loss": 0.720662884469228,
+      "critic_mse_before": 1.6362240076207082,
+      "critic_mse_after": 0.635101094251619,
+      "critic_ev_after": 0.44069737654951957,
+      "approx_kl_after": 0.011522866785526276,
+      "clip_fraction_after": 0.1602923721075058,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0005/training_summary.json",
+        "sha256": "ba4f0eb9011957609d4174d1f66daca3694d52c69f063c0765e1154541796e13"
+      }
+    },
+    {
+      "update": 6,
+      "behavior_checkpoint": 5,
+      "shifts": 32,
+      "reward": -1.5975941365831254,
+      "actor_loss": -0.02252702599484426,
+      "critic_training_loss": 0.4929356864191205,
+      "critic_mse_before": 0.5828594108610337,
+      "critic_mse_after": 0.4676039976949564,
+      "critic_ev_after": 0.4339008231191801,
+      "approx_kl_after": 0.01553779561072588,
+      "clip_fraction_after": 0.26896902918815613,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0006/training_summary.json",
+        "sha256": "e06a0dcdcda4d725c25bd0074ff057c297674bc96e22186b3b33a7bf8742e992"
+      }
+    },
+    {
+      "update": 7,
+      "behavior_checkpoint": 6,
+      "shifts": 32,
+      "reward": -0.778726286237216,
+      "actor_loss": -0.02231717517881609,
+      "critic_training_loss": 0.3050676361097802,
+      "critic_mse_before": 0.6963770809872699,
+      "critic_mse_after": 0.2505755740922928,
+      "critic_ev_after": 0.33714363138266,
+      "approx_kl_after": 0.010776129551231861,
+      "clip_fraction_after": 0.1866295337677002,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0007/training_summary.json",
+        "sha256": "6ad3b4be76d1e392d9038428c6e25f0ca5c36a2cca1e498032237e193080c684"
+      }
+    },
+    {
+      "update": 8,
+      "behavior_checkpoint": 7,
+      "shifts": 32,
+      "reward": -1.6137072968766684,
+      "actor_loss": -0.022919436173055897,
+      "critic_training_loss": 0.7543150566263,
+      "critic_mse_before": 1.4347540702449746,
+      "critic_mse_after": 0.6657176909981536,
+      "critic_ev_after": 0.5383532650866814,
+      "approx_kl_after": 0.009542924351990223,
+      "clip_fraction_after": 0.1395934522151947,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0008/training_summary.json",
+        "sha256": "9d37dab94735aaafa9c32ce43c0612e5837dde5e79f311f1314d9fd841023567"
+      }
+    },
+    {
+      "update": 9,
+      "behavior_checkpoint": 8,
+      "shifts": 32,
+      "reward": -0.9492207797058823,
+      "actor_loss": -0.024043445821148958,
+      "critic_training_loss": 0.2251581853553212,
+      "critic_mse_before": 0.385059076833306,
+      "critic_mse_after": 0.21739537511950505,
+      "critic_ev_after": 0.3834667583353012,
+      "approx_kl_after": 0.013073960319161415,
+      "clip_fraction_after": 0.23630672693252563,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0009/training_summary.json",
+        "sha256": "8e4e4c234deecb8044fb43006cc9bd3c0d4a57eeff05e6a1ee0812f9c1b37cde"
+      }
+    },
+    {
+      "update": 10,
+      "behavior_checkpoint": 9,
+      "shifts": 32,
+      "reward": -0.6277029556370648,
+      "actor_loss": -0.01805653511880853,
+      "critic_training_loss": 0.09029983875394859,
+      "critic_mse_before": 0.17552389921281333,
+      "critic_mse_after": 0.08477718523378738,
+      "critic_ev_after": 0.39098584663801206,
+      "approx_kl_after": 0.008892056532204151,
+      "clip_fraction_after": 0.11034015566110611,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0010/training_summary.json",
+        "sha256": "806afe2be926604f47db21860a6a54f5e9d1ba82741d54c6311ec1677656fae0"
+      }
+    },
+    {
+      "update": 11,
+      "behavior_checkpoint": 10,
+      "shifts": 32,
+      "reward": -0.36122405415802233,
+      "actor_loss": -0.015001863487319694,
+      "critic_training_loss": 0.06069694096310122,
+      "critic_mse_before": 0.07761331863889424,
+      "critic_mse_after": 0.057711802483229685,
+      "critic_ev_after": 0.2417458777192366,
+      "approx_kl_after": 0.010940994136035442,
+      "clip_fraction_after": 0.15474379062652588,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0011/training_summary.json",
+        "sha256": "a79ef9d5adee0db2ffeb36efa9ca169236497155eb639a13642bbfb38f2ab159"
+      }
+    },
+    {
+      "update": 12,
+      "behavior_checkpoint": 11,
+      "shifts": 32,
+      "reward": -0.3952374238024381,
+      "actor_loss": -0.015500798271293957,
+      "critic_training_loss": 0.06016701381038089,
+      "critic_mse_before": 0.0619113904104831,
+      "critic_mse_after": 0.05870658634890421,
+      "critic_ev_after": 0.2475941970137745,
+      "approx_kl_after": 0.004276361782103777,
+      "clip_fraction_after": 0.03925584629178047,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0012/training_summary.json",
+        "sha256": "307bcd95490864763962a42d2139a2c580d920d32c01eb7dbd7ce226f9d14f92"
+      }
+    },
+    {
+      "update": 13,
+      "behavior_checkpoint": 12,
+      "shifts": 32,
+      "reward": -0.36206156536196366,
+      "actor_loss": -0.015270878860446242,
+      "critic_training_loss": 0.07142752355025468,
+      "critic_mse_before": 0.07531414446114112,
+      "critic_mse_after": 0.06941763319788251,
+      "critic_ev_after": 0.2046099973381087,
+      "approx_kl_after": 0.008059091866016388,
+      "clip_fraction_after": 0.10768453031778336,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0013/training_summary.json",
+        "sha256": "497e4cab8702ffd9c9782c8359af8bdc3abbda7c9809afbe7f8c81cc00e43fef"
+      }
+    },
+    {
+      "update": 14,
+      "behavior_checkpoint": 13,
+      "shifts": 32,
+      "reward": -0.3223485481009549,
+      "actor_loss": -0.016875053898910596,
+      "critic_training_loss": 0.024981176895577183,
+      "critic_mse_before": 0.02953611374487715,
+      "critic_mse_after": 0.022675501705466353,
+      "critic_ev_after": 0.44839927775111144,
+      "approx_kl_after": 0.01962745189666748,
+      "clip_fraction_after": 0.2876642942428589,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0014/training_summary.json",
+        "sha256": "98a4b9c70d087d71e37f26cdb9d7530afbdb18f2476ca577e2e421acf45772bc"
+      }
+    },
+    {
+      "update": 15,
+      "behavior_checkpoint": 14,
+      "shifts": 32,
+      "reward": -0.45233868036567726,
+      "actor_loss": -0.01919120492052202,
+      "critic_training_loss": 0.06195106977841222,
+      "critic_mse_before": 0.07851985732170838,
+      "critic_mse_after": 0.05822099710129929,
+      "critic_ev_after": 0.3598264133810032,
+      "approx_kl_after": 0.026020459830760956,
+      "clip_fraction_after": 0.38168585300445557,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0015/training_summary.json",
+        "sha256": "3ccfa24f9858793cbbc4fd39a82ebdda9f91b5881ddf77d0fa1844f40b3fb357"
+      }
+    },
+    {
+      "update": 16,
+      "behavior_checkpoint": 15,
+      "shifts": 32,
+      "reward": -0.4917839415641,
+      "actor_loss": -0.01563140784765982,
+      "critic_training_loss": 0.10252864115692004,
+      "critic_mse_before": 0.13104726083136903,
+      "critic_mse_after": 0.0887454062114058,
+      "critic_ev_after": 0.42297967541120884,
+      "approx_kl_after": 0.010631196200847626,
+      "clip_fraction_after": 0.14032673835754395,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001/arms/s01_BG128/updates/0016/training_summary.json",
+        "sha256": "b4e04386789c0101b1fd5a8e607971c4c6b71f964ed2404ababd29fa0eeadf52"
+      }
+    },
+    {
+      "update": 17,
+      "behavior_checkpoint": 16,
+      "shifts": 32,
+      "reward": -0.36487887463243596,
+      "actor_loss": -0.014796975443292663,
+      "critic_training_loss": 0.047243934099485685,
+      "critic_mse_before": 0.06532484174116765,
+      "critic_mse_after": 0.046216561743641645,
+      "critic_ev_after": 0.39792182232699724,
+      "approx_kl_after": 0.0061444127932190895,
+      "clip_fraction_after": 0.06758362799882889,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0017/training_summary.json",
+        "sha256": "1819e67428ee8862ff530361dd447afab998fdf8db50dc3a3a2582f1e2f7223a"
+      }
+    },
+    {
+      "update": 18,
+      "behavior_checkpoint": 17,
+      "shifts": 32,
+      "reward": -0.2771978248666048,
+      "actor_loss": -0.016569830997616157,
+      "critic_training_loss": 0.02720905380640474,
+      "critic_mse_before": 0.034189567205109336,
+      "critic_mse_after": 0.025308860230863536,
+      "critic_ev_after": 0.31786762314651895,
+      "approx_kl_after": 0.01435339730232954,
+      "clip_fraction_after": 0.233682781457901,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0018/training_summary.json",
+        "sha256": "f69c6ce4f5adec90f33af1da204d20cf1a20f2894728a15c881cab336227090f"
+      }
+    },
+    {
+      "update": 19,
+      "behavior_checkpoint": 18,
+      "shifts": 32,
+      "reward": -0.3668813980123786,
+      "actor_loss": -0.01650840092788414,
+      "critic_training_loss": 0.06548034239950923,
+      "critic_mse_before": 0.07536182269210695,
+      "critic_mse_after": 0.06158565471224121,
+      "critic_ev_after": 0.33224373715694244,
+      "approx_kl_after": 0.00856692623347044,
+      "clip_fraction_after": 0.09821734577417374,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0019/training_summary.json",
+        "sha256": "2dd6d47871ede8bd3edd24eebeb4f253fd555a01e0e30f32c765d0cd0830d971"
+      }
+    },
+    {
+      "update": 20,
+      "behavior_checkpoint": 19,
+      "shifts": 32,
+      "reward": -0.3383508784584888,
+      "actor_loss": -0.015431908221080691,
+      "critic_training_loss": 0.0431935875460175,
+      "critic_mse_before": 0.051966817707424125,
+      "critic_mse_after": 0.040427193000463595,
+      "critic_ev_after": 0.3413086749303752,
+      "approx_kl_after": 0.017554698511958122,
+      "clip_fraction_after": 0.2328353226184845,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0020/training_summary.json",
+        "sha256": "d5713eedbad3eafa17a52917ca77924c822b57cde748201ac4267901d67edc52"
+      }
+    },
+    {
+      "update": 21,
+      "behavior_checkpoint": 20,
+      "shifts": 32,
+      "reward": -0.18960025851674175,
+      "actor_loss": -0.021981647374345544,
+      "critic_training_loss": 0.005710688216105046,
+      "critic_mse_before": 0.017290493941474926,
+      "critic_mse_after": 0.005371518861244261,
+      "critic_ev_after": 0.41712828164558624,
+      "approx_kl_after": 0.013928888365626335,
+      "clip_fraction_after": 0.20720267295837402,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0021/training_summary.json",
+        "sha256": "b87a56194ead6b57044aada63ef74afa4a241b4a4bc51f2d477663fed8d2b5c9"
+      }
+    },
+    {
+      "update": 22,
+      "behavior_checkpoint": 21,
+      "shifts": 32,
+      "reward": -0.28792624152682944,
+      "actor_loss": -0.01343339221942163,
+      "critic_training_loss": 0.0373686554310078,
+      "critic_mse_before": 0.047898626866482025,
+      "critic_mse_after": 0.035092892226912906,
+      "critic_ev_after": 0.26788871373557754,
+      "approx_kl_after": 0.007356587797403336,
+      "clip_fraction_after": 0.08351723104715347,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0022/training_summary.json",
+        "sha256": "2475e8b6f86ec123ef201bcb0340b229a09db5ac7bb8a8c58c128109ef04c7e9"
+      }
+    },
+    {
+      "update": 23,
+      "behavior_checkpoint": 22,
+      "shifts": 32,
+      "reward": -0.2671209588910095,
+      "actor_loss": -0.017682962541221058,
+      "critic_training_loss": 0.025837050489998584,
+      "critic_mse_before": 0.03049384275135125,
+      "critic_mse_after": 0.024470304721374746,
+      "critic_ev_after": 0.32500908668342154,
+      "approx_kl_after": 0.010609273798763752,
+      "clip_fraction_after": 0.17146241664886475,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0023/training_summary.json",
+        "sha256": "e345f9b942e4463a16643025d06ac158a16f5dd4263a2198fd226ba857f3adb9"
+      }
+    },
+    {
+      "update": 24,
+      "behavior_checkpoint": 23,
+      "shifts": 32,
+      "reward": -0.24475304605995393,
+      "actor_loss": -0.012728471255544193,
+      "critic_training_loss": 0.014294005608630976,
+      "critic_mse_before": 0.017244532905535247,
+      "critic_mse_after": 0.013892691265533998,
+      "critic_ev_after": 0.2802661520949151,
+      "approx_kl_after": 0.012926849536597729,
+      "clip_fraction_after": 0.18299011886119843,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0024/training_summary.json",
+        "sha256": "fbd22ddadcdf98dfc3d18343223acdb8b74644e5528919bef41e096c18ebc59d"
+      }
+    },
+    {
+      "update": 25,
+      "behavior_checkpoint": 24,
+      "shifts": 32,
+      "reward": -0.18802977870552193,
+      "actor_loss": -0.013126206109197536,
+      "critic_training_loss": 0.010843399033102689,
+      "critic_mse_before": 0.013814086844989047,
+      "critic_mse_after": 0.010453096405439604,
+      "critic_ev_after": 0.2809538078835244,
+      "approx_kl_after": 0.009125959128141403,
+      "clip_fraction_after": 0.12298927456140518,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0025/training_summary.json",
+        "sha256": "e9e4eb4beef774a1ef2c6cfc1adce15918f1b8554d878da16777a7d0fa964c97"
+      }
+    },
+    {
+      "update": 26,
+      "behavior_checkpoint": 25,
+      "shifts": 32,
+      "reward": -0.21894196447162406,
+      "actor_loss": -0.014747770541332934,
+      "critic_training_loss": 0.014997573814386165,
+      "critic_mse_before": 0.01571294491157561,
+      "critic_mse_after": 0.015008307898848865,
+      "critic_ev_after": 0.2693564165564718,
+      "approx_kl_after": 0.01583319529891014,
+      "clip_fraction_after": 0.22554756700992584,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0026/training_summary.json",
+        "sha256": "6efa11c97460c0afd86fcd81b22500344ed2a784863d74a55fd72087c63c7f09"
+      }
+    },
+    {
+      "update": 27,
+      "behavior_checkpoint": 26,
+      "shifts": 32,
+      "reward": -0.20691045962988897,
+      "actor_loss": -0.012322570379445797,
+      "critic_training_loss": 0.017233453250258407,
+      "critic_mse_before": 0.019070259388991026,
+      "critic_mse_after": 0.016139435754821668,
+      "critic_ev_after": 0.2281884177220176,
+      "approx_kl_after": 0.006975253578275442,
+      "clip_fraction_after": 0.09010215848684311,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0027/training_summary.json",
+        "sha256": "91125121b22a807ab3903e1e836316934e9560a308567672c1884a7449355cc0"
+      }
+    },
+    {
+      "update": 28,
+      "behavior_checkpoint": 27,
+      "shifts": 32,
+      "reward": -0.20343663367235304,
+      "actor_loss": -0.013744102448265736,
+      "critic_training_loss": 0.016058326601949443,
+      "critic_mse_before": 0.01795076255665653,
+      "critic_mse_after": 0.015368138252457898,
+      "critic_ev_after": 0.29431254513980454,
+      "approx_kl_after": 0.016567924991250038,
+      "clip_fraction_after": 0.2041292041540146,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0028/training_summary.json",
+        "sha256": "498a9ced58a88606cc55fcc61c52b2e6f81207969778e7380eaa1f0baec758fa"
+      }
+    },
+    {
+      "update": 29,
+      "behavior_checkpoint": 28,
+      "shifts": 32,
+      "reward": -0.23591186859041707,
+      "actor_loss": -0.01606334017208397,
+      "critic_training_loss": 0.02517149865123488,
+      "critic_mse_before": 0.026985360846479598,
+      "critic_mse_after": 0.02442150559478418,
+      "critic_ev_after": 0.2577093569735971,
+      "approx_kl_after": 0.015302749350667,
+      "clip_fraction_after": 0.20705725252628326,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0029/training_summary.json",
+        "sha256": "e410b849cc7df8256a19bb4171260cbc2b20c585d9c3a4463e50ecfead867657"
+      }
+    },
+    {
+      "update": 30,
+      "behavior_checkpoint": 29,
+      "shifts": 32,
+      "reward": -0.18455650180546582,
+      "actor_loss": -0.015643693588757022,
+      "critic_training_loss": 0.008922747621371978,
+      "critic_mse_before": 0.010116644914537759,
+      "critic_mse_after": 0.008537769308922945,
+      "critic_ev_after": 0.27029234464482577,
+      "approx_kl_after": 0.019652504473924637,
+      "clip_fraction_after": 0.2652377784252167,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0030/training_summary.json",
+        "sha256": "24dd58db8f102ad688a891723262e2c9cc1c801a9eec427743ad06ae794830c8"
+      }
+    },
+    {
+      "update": 31,
+      "behavior_checkpoint": 30,
+      "shifts": 32,
+      "reward": -0.19316557728182576,
+      "actor_loss": -0.013676168227027332,
+      "critic_training_loss": 0.018345643854627287,
+      "critic_mse_before": 0.019384336321444925,
+      "critic_mse_after": 0.017699266584230926,
+      "critic_ev_after": 0.2170546057701852,
+      "approx_kl_after": 0.009872401133179665,
+      "clip_fraction_after": 0.12556202709674835,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0031/training_summary.json",
+        "sha256": "98dbd43402fc69b6c62fbc33da6d6d93d17b3011bc9ff039fede7414c3da2b82"
+      }
+    },
+    {
+      "update": 32,
+      "behavior_checkpoint": 31,
+      "shifts": 32,
+      "reward": -0.19693987133217683,
+      "actor_loss": -0.01083788137478397,
+      "critic_training_loss": 0.022138922469439312,
+      "critic_mse_before": 0.024108573565673707,
+      "critic_mse_after": 0.021599469878942328,
+      "critic_ev_after": 0.1587951311111616,
+      "approx_kl_after": 0.015160945244133472,
+      "clip_fraction_after": 0.21615757048130035,
+      "summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-u16-to-u32-20261119-001/arms/s01_BG128/updates/0032/training_summary.json",
+        "sha256": "413da2a78f7393fd46a7c4ab2404f50bfbcff23e9cc08442ef8594091b3a253e"
+      }
+    }
+  ]
+}

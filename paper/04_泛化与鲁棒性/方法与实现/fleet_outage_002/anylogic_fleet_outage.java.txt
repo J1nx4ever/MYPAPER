@@ -1,0 +1,103 @@
+// 1. Main > Functions > isFleetTruckDisabled, boolean result, int truckId.
+// Paste the function body.
+if (truckId < 0 || truckId >= 9) {
+    throw new IllegalArgumentException("Truck ID outside the nine observation slots: " + truckId);
+}
+return (fleetDisabledTruckMask & (1 << truckId)) != 0;
+
+
+// 2. Main > Functions > init1, replace the truck creation loop only.
+if (numTrucks != 9 || (fleetDisabledTruckMask != 0
+    && fleetDisabledTruckMask != 448 && fleetDisabledTruckMask != 292
+    && fleetDisabledTruckMask != 7 && fleetDisabledTruckMask != 56)) {
+    throw new IllegalStateException("Fleet outage requires nine truck slots and mask 0, 448, 292, 7 or 56");
+}
+for (int i = 0; i < numTrucks; i++) {
+    Truck t = add_trucks();
+    boolean disabled = isFleetTruckDisabled(i);
+    if (disabled) {
+        t.setLocation(parking);
+        t.currentNode = "";
+    } else if (i < 3) {
+        t.setLocation(collectionTrucks.get(i + 25));
+        t.currentNode = "dumpNode";
+    } else {
+        t.setLocation(collectionTrucks.get(i + 15));
+        t.currentNode = "Crusher";
+    }
+    t.startPoint = t.currentNode;
+
+    if (!disabled && !dynamic) {
+        t.targetShovel = getLoadSiteById(0);
+    }
+    int k = i / 3;
+    double cap = k == 0 ? 91.7 : k == 1 ? 147.0 : 193.0;
+    t.initTruck(i, cap);
+    t.truckType = k;
+    t.initialPredecessor = null;
+    t.initialDispatchDone = false;
+    if (disabled) {
+        t.currentSegment = null;
+        t.setSpeed(0.0, MPS);
+        continue;
+    }
+    t.setSpeed(k == 0 ? 26.0 : k == 1 ? 24.0 : 22.0, KPH);
+    for (Truck previous : trucks) {
+        if (previous != t && previous.truckId < t.truckId
+            && !isFleetTruckDisabled(previous.truckId)
+            && previous.currentNode.equals(t.currentNode)
+            && (t.initialPredecessor == null
+                || previous.truckId > t.initialPredecessor.truckId)) {
+            t.initialPredecessor = previous;
+        }
+    }
+}
+
+
+// 3. Main > Agent actions > On startup, replace only the ACTIVATE loop.
+for (Truck t : trucks) {
+    if (!isFleetTruckDisabled(t.truckId)) {
+        t.deliver("ACTIVATE", t);
+    }
+}
+
+
+// 4. Main > Functions > selectNextLoadSite, insert before obsCheckDecision(t).
+if (isFleetTruckDisabled(t.truckId)) {
+    throw new IllegalStateException("Dispatch requested by a stopped truck: " + t.truckId);
+}
+
+
+// 5. Main > Events > evDynamicSpeed > Action, replace the final loop only.
+for (Truck t : trucks) {
+    if (!isFleetTruckDisabled(t.truckId) && !t.initialDispatchDone) {
+        t.onChange();
+    }
+}
+
+
+// 6. Truck > Functions > appendDispatchObservation.
+// Replace "int phase=11;" and "if(decision) phase=0;" only.
+// Keep the existing "else if(!initialDispatchDone) phase=1;" and other branches after this.
+int phase = 11;
+if (main.isFleetTruckDisabled(truckId)) {
+    if (decision) {
+        throw new IllegalStateException("Stopped truck cannot be the observation ego: " + truckId);
+    }
+} else if (decision) {
+    phase = 0;
+}
+
+
+// 7. Main > Functions > buildRewardConfigComponents, after config.num_trucks.
+if (fleetDisabledTruckMask != 0) {
+    int activeCount = 0;
+    for (Truck t : trucks) {
+        if (!isFleetTruckDisabled(t.truckId)) {
+            activeCount++;
+        }
+    }
+    c.put("config.fleet.outage_version", 1.0);
+    c.put("config.fleet.disabled_mask", (double) fleetDisabledTruckMask);
+    c.put("config.fleet.active_count", (double) activeCount);
+}

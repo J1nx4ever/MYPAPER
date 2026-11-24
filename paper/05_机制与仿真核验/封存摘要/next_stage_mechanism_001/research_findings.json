@@ -1,0 +1,80 @@
+{
+  "status": "PASS_BOUNDED_OFFLINE_RESEARCH",
+  "failed_windows": 10,
+  "paired_trajectories": 20,
+  "wide_envelope_excluded_failures": 9,
+  "near_boundary_float32_certificate_run": 9970001,
+  "causal_policy_misses_proven": 0,
+  "cancellations": [
+    {
+      "scene": "A",
+      "eligible_states": 53,
+      "strong_cancellation_states": 22,
+      "mean_vector_L1_retained_fraction": 0.8389133181554491,
+      "p25_vector_L1_retained_fraction": 0.7726777623445723
+    },
+    {
+      "scene": "B",
+      "eligible_states": 104,
+      "strong_cancellation_states": 35,
+      "mean_vector_L1_retained_fraction": 0.9034935923234447,
+      "p25_vector_L1_retained_fraction": 0.8751137131707947
+    },
+    {
+      "scene": "C",
+      "eligible_states": 118,
+      "strong_cancellation_states": 0,
+      "mean_vector_L1_retained_fraction": 0.9918242954175418,
+      "p25_vector_L1_retained_fraction": 0.9964382826327778
+    }
+  ],
+  "minibatch_summary": [
+    {
+      "update": 14,
+      "minibatches": 744,
+      "sample_weighted_KL": 0.011973279433837835,
+      "minibatch_KL_p95": 0.0277825340628624,
+      "minibatch_KL_max": 0.046774230897426605,
+      "sample_weighted_clip_fraction": 0.16961577350859455,
+      "minibatch_clip_fraction_p95": 0.40625
+    },
+    {
+      "update": 15,
+      "minibatches": 740,
+      "sample_weighted_KL": 0.012408874358933926,
+      "minibatch_KL_p95": 0.024302532896399484,
+      "minibatch_KL_max": 0.07266955822706223,
+      "sample_weighted_clip_fraction": 0.18182972241029113,
+      "minibatch_clip_fraction_p95": 0.375
+    },
+    {
+      "update": 16,
+      "minibatches": 728,
+      "sample_weighted_KL": 0.011615502750396934,
+      "minibatch_KL_p95": 0.027715562190860504,
+      "minibatch_KL_max": 0.06010332424193621,
+      "sample_weighted_clip_fraction": 0.1490541702493551,
+      "minibatch_clip_fraction_p95": 0.40625
+    }
+  ],
+  "unseen_discrete_branch_patterns": {
+    "A": 53,
+    "B": 57,
+    "C": 118
+  },
+  "independent_performance_of_late_checkpoints_established": false,
+  "primary_actor_lr": 0.0003,
+  "new_physical_shifts": 0,
+  "official_training_updates": 0,
+  "offline_actor_optimizer_steps": 2212,
+  "offline_critic_optimizer_steps": 2212,
+  "total_including_rejected_offline_actor_optimizer_steps": 2956,
+  "report_implementation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/next_stage_mechanism_001/render_report.py",
+    "sha256": "1fa3781a8e66e4fd888e6b3061d479ff7314af842a86cfb924c035dbe8dde27a"
+  },
+  "validation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/next_stage_mechanism_001/validation.json",
+    "sha256": "fb048a653d02c99300421ed9c651c9022f443a80b30b4134d67c0f8c061d0085"
+  }
+}

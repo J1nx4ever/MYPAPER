@@ -1,0 +1,2 @@
+# Install using /home/jinx/miniconda3/envs/anylogic-env/bin/python -m pip.
+h5py>=3.10,<4

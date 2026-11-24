@@ -1,0 +1,40 @@
+{
+  "status": "PASS_READ_ONLY_SEED_SCOPE",
+  "source_campaign": "bg128-continuous-mixed-20261119-001",
+  "source_suite_completion_sha256": "e32326901f5c070c5bd64160c8978ea0b491947da7eb159f380c8ddef945bc9d",
+  "source_identities_csv_sha256": "b3a9ea3138444638fa3561b098d528f7d299f6d5e43a4c7a287b0e6b5243c92c",
+  "source_paired_results_sha256": "ce5e694737947aac6d8ab166067ef6ea1592737f0169eb241a583732d5aa5ac7",
+  "source_evaluation": {
+    "scenarios": 7,
+    "slots_per_scenario": 100,
+    "paired_slots_verified": 700,
+    "unique_environment_actor_sampling_pairs": 100,
+    "frozen_old_and_new_evaluation_identities_verified": 1400,
+    "frozen_evaluation_phases_verified": 14,
+    "evaluation_optimizer_updates": 0
+  },
+  "budget": {
+    "current_registered_upper_bound": 25636,
+    "source_campaign_complete": 2424,
+    "source_campaign_unknown_retained": 1,
+    "active_h2_reserved_shifts": 0,
+    "historical_identities_checked_for_collisions": 36932,
+    "proposed_new_training_shifts": 4096,
+    "proposed_new_evaluation_shifts": 2800,
+    "proposed_new_physical_shifts": 6896,
+    "projected_upper_bound_if_registered": 32532
+  },
+  "proposed_scope": {
+    "new_run_indices_checked": 6896,
+    "new_initialization_and_training_seeds_checked": 8196,
+    "new_java_engine_and_geology_rng_states_checked": 20480,
+    "collisions_found": false,
+    "evaluation_seed_reuse": "exact source scenario and pair ordinal only"
+  },
+  "protected_ppo_sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96",
+  "scope_exclusions": {
+    "launch_packages_generated": false,
+    "budget_registered": false,
+    "simulation_started": false
+  }
+}

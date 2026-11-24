@@ -1,0 +1,1217 @@
+{
+  "training": {
+    "s01": [
+      {
+        "batch": 1,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -4.901665646865533,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 2,
+        "shifts": 32,
+        "complete_tasks": 1,
+        "mean_return": -4.12286947124788,
+        "task_rate": 0.03125
+      },
+      {
+        "batch": 3,
+        "shifts": 32,
+        "complete_tasks": 1,
+        "mean_return": -4.630505340189419,
+        "task_rate": 0.03125
+      },
+      {
+        "batch": 4,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -4.64047845200681,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 5,
+        "shifts": 32,
+        "complete_tasks": 4,
+        "mean_return": -3.972330230179618,
+        "task_rate": 0.125
+      },
+      {
+        "batch": 6,
+        "shifts": 32,
+        "complete_tasks": 8,
+        "mean_return": -2.77991626366,
+        "task_rate": 0.25
+      },
+      {
+        "batch": 7,
+        "shifts": 32,
+        "complete_tasks": 16,
+        "mean_return": -1.6286679805881739,
+        "task_rate": 0.5
+      },
+      {
+        "batch": 8,
+        "shifts": 32,
+        "complete_tasks": 27,
+        "mean_return": -1.0095248801083303,
+        "task_rate": 0.84375
+      },
+      {
+        "batch": 9,
+        "shifts": 32,
+        "complete_tasks": 27,
+        "mean_return": -0.8959288600121318,
+        "task_rate": 0.84375
+      },
+      {
+        "batch": 10,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.6279032478298308,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 11,
+        "shifts": 32,
+        "complete_tasks": 27,
+        "mean_return": -0.67708345661939,
+        "task_rate": 0.84375
+      },
+      {
+        "batch": 12,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.4698269696626681,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 13,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.39250171214007895,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 14,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.5180349897465992,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 15,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.33950412297571286,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 16,
+        "shifts": 32,
+        "complete_tasks": 29,
+        "mean_return": -0.4560099189526867,
+        "task_rate": 0.90625
+      },
+      {
+        "batch": 17,
+        "shifts": 32,
+        "complete_tasks": 29,
+        "mean_return": -0.3084348425170705,
+        "task_rate": 0.90625
+      },
+      {
+        "batch": 18,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.3287436997221793,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 19,
+        "shifts": 32,
+        "complete_tasks": 28,
+        "mean_return": -0.5089408461384894,
+        "task_rate": 0.875
+      },
+      {
+        "batch": 20,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.28710122450589814,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 21,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.32756332823809553,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 22,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3358214168846789,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 23,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3162263784805447,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 24,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.28410935939719173,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 25,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.48832348817461513,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 26,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3649486778108105,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 27,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.44547559489310345,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 28,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.3684562679245855,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 29,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.41664912237474777,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 30,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3236238574171815,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 31,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.34949391837260624,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 32,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.2592312292624638,
+        "task_rate": 1.0
+      }
+    ],
+    "s02": [
+      {
+        "batch": 1,
+        "shifts": 32,
+        "complete_tasks": 1,
+        "mean_return": -4.330917330809385,
+        "task_rate": 0.03125
+      },
+      {
+        "batch": 2,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -4.176346375862397,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 3,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -4.157499368828947,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 4,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -4.732353672018185,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 5,
+        "shifts": 32,
+        "complete_tasks": 1,
+        "mean_return": -4.938870805151775,
+        "task_rate": 0.03125
+      },
+      {
+        "batch": 6,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -4.024700513457609,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 7,
+        "shifts": 32,
+        "complete_tasks": 3,
+        "mean_return": -3.160546650713573,
+        "task_rate": 0.09375
+      },
+      {
+        "batch": 8,
+        "shifts": 32,
+        "complete_tasks": 19,
+        "mean_return": -1.9142355497181565,
+        "task_rate": 0.59375
+      },
+      {
+        "batch": 9,
+        "shifts": 32,
+        "complete_tasks": 22,
+        "mean_return": -1.454292934063397,
+        "task_rate": 0.6875
+      },
+      {
+        "batch": 10,
+        "shifts": 32,
+        "complete_tasks": 23,
+        "mean_return": -1.2044992334192837,
+        "task_rate": 0.71875
+      },
+      {
+        "batch": 11,
+        "shifts": 32,
+        "complete_tasks": 26,
+        "mean_return": -1.0254862927674115,
+        "task_rate": 0.8125
+      },
+      {
+        "batch": 12,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.7087072186972772,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 13,
+        "shifts": 32,
+        "complete_tasks": 25,
+        "mean_return": -0.9183684224107002,
+        "task_rate": 0.78125
+      },
+      {
+        "batch": 14,
+        "shifts": 32,
+        "complete_tasks": 29,
+        "mean_return": -0.5486551327294721,
+        "task_rate": 0.90625
+      },
+      {
+        "batch": 15,
+        "shifts": 32,
+        "complete_tasks": 26,
+        "mean_return": -0.9258175163350915,
+        "task_rate": 0.8125
+      },
+      {
+        "batch": 16,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.5617788550867755,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 17,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.558000239576472,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 18,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.38843296344655376,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 19,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.4616340173689498,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 20,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.5394605756396278,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 21,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3423770008241064,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 22,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.4014645761608884,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 23,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.2624595940658103,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 24,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.4246268289516237,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 25,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3917354083905375,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 26,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3347009467563543,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 27,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.4059772321984054,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 28,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3328561155640297,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 29,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3507080120086829,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 30,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.36729587347308784,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 31,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.24801874815696895,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 32,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.3671251987683918,
+        "task_rate": 0.9375
+      }
+    ],
+    "s03": [
+      {
+        "batch": 1,
+        "shifts": 32,
+        "complete_tasks": 0,
+        "mean_return": -4.9843809315259096,
+        "task_rate": 0.0
+      },
+      {
+        "batch": 2,
+        "shifts": 32,
+        "complete_tasks": 0,
+        "mean_return": -4.552285809329016,
+        "task_rate": 0.0
+      },
+      {
+        "batch": 3,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -4.7556489431223365,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 4,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -3.603242710214675,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 5,
+        "shifts": 32,
+        "complete_tasks": 3,
+        "mean_return": -3.455255888124473,
+        "task_rate": 0.09375
+      },
+      {
+        "batch": 6,
+        "shifts": 32,
+        "complete_tasks": 2,
+        "mean_return": -3.873890747829811,
+        "task_rate": 0.0625
+      },
+      {
+        "batch": 7,
+        "shifts": 32,
+        "complete_tasks": 12,
+        "mean_return": -2.5119817614116426,
+        "task_rate": 0.375
+      },
+      {
+        "batch": 8,
+        "shifts": 32,
+        "complete_tasks": 12,
+        "mean_return": -2.1854682196852764,
+        "task_rate": 0.375
+      },
+      {
+        "batch": 9,
+        "shifts": 32,
+        "complete_tasks": 17,
+        "mean_return": -1.9107265675242164,
+        "task_rate": 0.53125
+      },
+      {
+        "batch": 10,
+        "shifts": 32,
+        "complete_tasks": 25,
+        "mean_return": -0.9628278155182135,
+        "task_rate": 0.78125
+      },
+      {
+        "batch": 11,
+        "shifts": 32,
+        "complete_tasks": 26,
+        "mean_return": -1.0494608306703308,
+        "task_rate": 0.8125
+      },
+      {
+        "batch": 12,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.6631558286822046,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 13,
+        "shifts": 32,
+        "complete_tasks": 28,
+        "mean_return": -0.788101317614908,
+        "task_rate": 0.875
+      },
+      {
+        "batch": 14,
+        "shifts": 32,
+        "complete_tasks": 29,
+        "mean_return": -0.5955901357537241,
+        "task_rate": 0.90625
+      },
+      {
+        "batch": 15,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.5088515590597877,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 16,
+        "shifts": 32,
+        "complete_tasks": 28,
+        "mean_return": -0.5327471169031726,
+        "task_rate": 0.875
+      },
+      {
+        "batch": 17,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.5096665279787338,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 18,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.5270830402401336,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 19,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.4382806630282503,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 20,
+        "shifts": 32,
+        "complete_tasks": 29,
+        "mean_return": -0.39910399236543265,
+        "task_rate": 0.90625
+      },
+      {
+        "batch": 21,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.42854217243553316,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 22,
+        "shifts": 32,
+        "complete_tasks": 29,
+        "mean_return": -0.5027296768245082,
+        "task_rate": 0.90625
+      },
+      {
+        "batch": 23,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.48364089945907673,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 24,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.4054629235741227,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 25,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.45618637304540577,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 26,
+        "shifts": 32,
+        "complete_tasks": 30,
+        "mean_return": -0.4710126727640601,
+        "task_rate": 0.9375
+      },
+      {
+        "batch": 27,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.4142943051804519,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 28,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3580339101023327,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 29,
+        "shifts": 32,
+        "complete_tasks": 31,
+        "mean_return": -0.39677438299680706,
+        "task_rate": 0.96875
+      },
+      {
+        "batch": 30,
+        "shifts": 32,
+        "complete_tasks": 29,
+        "mean_return": -0.44932338099165114,
+        "task_rate": 0.90625
+      },
+      {
+        "batch": 31,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.2690732785680971,
+        "task_rate": 1.0
+      },
+      {
+        "batch": 32,
+        "shifts": 32,
+        "complete_tasks": 32,
+        "mean_return": -0.3020284263829087,
+        "task_rate": 1.0
+      }
+    ]
+  },
+  "fixed_evaluation": {
+    "旧标称": {
+      "n_shifts": 500,
+      "complete_tasks": 324,
+      "mean_wait_vehicle_seconds": 24730.055450932457
+    },
+    "s01": {
+      "n_shifts": 500,
+      "complete_tasks": 498,
+      "mean_wait_vehicle_seconds": 16880.320530383513
+    },
+    "s02": {
+      "n_shifts": 500,
+      "complete_tasks": 496,
+      "mean_wait_vehicle_seconds": 16032.413089507685
+    },
+    "s03": {
+      "n_shifts": 500,
+      "complete_tasks": 488,
+      "mean_wait_vehicle_seconds": 20086.190837785725
+    }
+  },
+  "training_blocks_of_eight": {
+    "s01": [
+      {
+        "mean_return": -3.4607447831057208,
+        "complete_tasks": 61,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.5470991597423873,
+        "complete_tasks": 235,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.33711763698551855,
+        "complete_tasks": 247,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.37702526952876425,
+        "complete_tasks": 252,
+        "shifts": 256
+      }
+    ],
+    "s02": [
+      {
+        "mean_return": -3.9294337833200035,
+        "complete_tasks": 32,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.9184507006886761,
+        "complete_tasks": 211,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.42230697450425403,
+        "complete_tasks": 253,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.3498021919145573,
+        "complete_tasks": 250,
+        "shifts": 256
+      }
+    ],
+    "s03": [
+      {
+        "mean_return": -3.7402693764053923,
+        "complete_tasks": 33,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.8764326464658198,
+        "complete_tasks": 215,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.4618137369882239,
+        "complete_tasks": 242,
+        "shifts": 256
+      },
+      {
+        "mean_return": -0.3895908412539643,
+        "complete_tasks": 250,
+        "shifts": 256
+      }
+    ]
+  },
+  "heldout_scenarios": [
+    "held_order_1",
+    "held_order_2",
+    "new_numeric",
+    "joint_shift",
+    "waste_swap"
+  ],
+  "sources": {
+    "s01": {
+      "completion": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/suite_complete.json",
+        "sha256": "e32326901f5c070c5bd64160c8978ea0b491947da7eb159f380c8ddef945bc9d"
+      },
+      "suite": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/grade_assignment_generalization_001/continuous_training_001/prepared_001/suite.json",
+        "sha256": "228b8d4725b57efd05d9856a663c7541add4949575e045969fbb733df1759bbe"
+      },
+      "training_summaries": [
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0001/training_summary.json",
+          "sha256": "b154ffb0722ae4ac6f2eecf26ae3cc11184ff54945e1b475c4edef07ba1ee0f2"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0002/training_summary.json",
+          "sha256": "eb56b8fe276a00beb4ed93cb16efbf6dea73e09bb333fdb60932c1501e36d7eb"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0003/training_summary.json",
+          "sha256": "90d55a83b79c533d2a6f803a95acbfb1e22252043094146e1fa5703c535e0da4"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0004/training_summary.json",
+          "sha256": "9ea0e800cf84d5d60fc1e6305880dde460f8e7e70dfb29a9892f141b14ff8ac2"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0005/training_summary.json",
+          "sha256": "7b37a0fc6d408ea5c2d667278dca7d5b9892092fc7dfc3624272346104f4fca7"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0006/training_summary.json",
+          "sha256": "048abe048cc8d4365ade2a046a7aaaa2b1defdac5621fcc89c54a65fb539e81f"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0007/training_summary.json",
+          "sha256": "8a5c9bd9023fcd950a8e1e79b5f573db5ee246822f31e4c9790af3d6655d6225"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0008/training_summary.json",
+          "sha256": "4a1881a3abb48ede4266f01ee0c65d3dfabd04206e756ed68e9c75fb910c2b2f"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0009/training_summary.json",
+          "sha256": "e5715cd0830bc7d9ee62c673483581d86470bcbcb9451d20de4c96b8252031c2"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0010/training_summary.json",
+          "sha256": "4ae390f70f396a0906f4799f86dce20f1ea2159d0fe6d028ddde80ce35008f90"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0011/training_summary.json",
+          "sha256": "f545a7873c9043d1f9fbd7b2d74222a372459dba6ffb94b8583baf0d0845c0c6"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0012/training_summary.json",
+          "sha256": "2df671a1db19b3bde9ed360cfa81a421e0cf117e50b29cd1a6a45411d9c932e0"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0013/training_summary.json",
+          "sha256": "b9ab0c27473f7687e3628b7e0f74022fed5e6129818ecc37e35fecb70daee414"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0014/training_summary.json",
+          "sha256": "d5e8443be0cb81618e2e3934f8452603ef094ab8ea8587db2e0493249727d215"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0015/training_summary.json",
+          "sha256": "68dcaedafdc1982f436cd2cdae2da7ba777d984dc0004748fccbc7ed11654b0f"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0016/training_summary.json",
+          "sha256": "a8181ffc12cc71cbe2cfdf73d3b3dd3d40c6947d276e030a83b4919566e4d875"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0017/training_summary.json",
+          "sha256": "aac6f4d5f8270c7c6872be96f70f419b9b71d30c07c20c5a4594206efeb9549b"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0018/training_summary.json",
+          "sha256": "3f73ec19f6b3c512570ce7b6f148f3d1bdcf3ebc4e8ed9112261bef7e7f4b295"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0019/training_summary.json",
+          "sha256": "64e1fe9e4108b398b3f52f049adb0d10faefb4fed2f7de7e590a8f4acc9bb3c3"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0020/training_summary.json",
+          "sha256": "aec2b1f90b81ab6559b2134692b80efedf60b45c79fa2aae164b9f3bc29f365c"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0021/training_summary.json",
+          "sha256": "4158c2ea8b034caaec6dda9b0fbb9cb3e6fb4a21516fcbfa8c57dc1ea87b16c3"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0022/training_summary.json",
+          "sha256": "5c7e10395991eb889708516b2074a55db132ef55b2c0d8068843f2c73ff88c95"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0023/training_summary.json",
+          "sha256": "bd8f5e29b00e7aebb54b6e2b798dbd24e7b813e5e79b3a80d5add4bfa8163fdc"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0024/training_summary.json",
+          "sha256": "c2c0c0694ee628305890a64f6cf22aaf53b5eea6c099ebeb8bd37262e53456fd"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0025/training_summary.json",
+          "sha256": "384171167f791853c179ea136bb7184880b80d7238763c8817572dd96962cc1c"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0026/training_summary.json",
+          "sha256": "6e2bd1c2ce37554c9cd801048a0fb0bbf61e6a5dd3dec01624f54c66d66ed89a"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0027/training_summary.json",
+          "sha256": "745529e8f3c2c756987a1321aba1d6ac8ea2dc2972c2de8a1ed41188dd187289"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0028/training_summary.json",
+          "sha256": "85153c444c001b762be160b25f6be8afbf51f0d5483379f5893489a3a1873196"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0029/training_summary.json",
+          "sha256": "b022688c0bc41088dd5f8a0abdbc1abd5ce55771a83e4074959b400341c4fdd7"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0030/training_summary.json",
+          "sha256": "31d0e360f9d9a137b4839566db3236aae4f9024cfaf77b473e5ad250e0d56b99"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0031/training_summary.json",
+          "sha256": "56a93309168d967c6af3a788cac2cf4ead946a51331999d75c357cd0d65b7750"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0032/training_summary.json",
+          "sha256": "68096996e2ebcfe1eeecdca4f01f46ee75328cf83103c2958fce56738897d816"
+        }
+      ],
+      "fixed_evaluation": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/continuous_training_001/paired_evaluation.json",
+        "sha256": "ce5e694737947aac6d8ab166067ef6ea1592737f0169eb241a583732d5aa5ac7"
+      }
+    },
+    "s02": {
+      "completion": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/suite_complete.json",
+        "sha256": "45d7735b6612b55404bdf240f2c7885667f5e80ba07ffaea07aa38eefdb808fc"
+      },
+      "suite": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/grade_assignment_generalization_001/mixed_seed_replication_001/prepared_oneclick_003/s02/suite.json",
+        "sha256": "14a86de3cd0fca2b8793b0079111573a51bb30a12395b4d813e1f0989f5a2eed"
+      },
+      "training_summaries": [
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0001/training_summary.json",
+          "sha256": "62601cc5541ff79197b507994cc981c881d24ffa18ade6ec2e02e5994f0a2e35"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0002/training_summary.json",
+          "sha256": "abca234e323f5eb3cb5aaa06078b1a664925fd9c85f01a961bf9ac5c23d1c2cd"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0003/training_summary.json",
+          "sha256": "855d0e51bfbbd6453a81d4e33bfb465dfd096d854c84d0d545d99ef48f1f4758"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0004/training_summary.json",
+          "sha256": "ae2e59cfca432f6826effaf525bedd0ab1274954dd9c42280cfa77eca364ce28"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0005/training_summary.json",
+          "sha256": "27b98457fa547dd8859cbc5e3d03116671067c2ddedc1f2c8c86ec8bb70ac901"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0006/training_summary.json",
+          "sha256": "df35a8ac549dc672533a38fcb3e4ed2321dd6363ac7dd29e5dd03e37c661f676"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0007/training_summary.json",
+          "sha256": "79960f7bb4f563fe392222c417d00be32b90ab51c5c3f4cf11ca28dac18a9511"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0008/training_summary.json",
+          "sha256": "237a0dd353c2a38d2943fe659f5bcca6c6d5c124064e689bfe26f6fc035110c9"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0009/training_summary.json",
+          "sha256": "980c3b61174744babe28adb07a227e29e17712df4e75ac04a8b9f0b4a6646269"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0010/training_summary.json",
+          "sha256": "7ed2b9ae702ff0f0b078a498416426fc79d1540b9e4453494d2bea3293db53ed"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0011/training_summary.json",
+          "sha256": "476d7d0d8c49c41c2a111445a91deb13ee0d00de3590d54308566116fe417be8"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0012/training_summary.json",
+          "sha256": "5703d8f51a681b128eaf99388a491c37466694771a96789c9aa5e135cebbe853"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0013/training_summary.json",
+          "sha256": "04a2b355222c1498ddf89f6c8132f9cabfa90ecaae66ed60b54990fc76c6e6cd"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0014/training_summary.json",
+          "sha256": "01167901deb4f9291fcdcbfec14c6f630962d79d876873075a63c02a61441c97"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0015/training_summary.json",
+          "sha256": "39e40e7c819745bf7865e4cbf287bce34fa9ca784b837da7e421d6aca94ebd5d"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0016/training_summary.json",
+          "sha256": "c5b147707f2b89630c000fca6aa8c9d80026041a23fa99a540d749c1fadc575e"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0017/training_summary.json",
+          "sha256": "30c1c2e4d3ae4f271f60ae1db5d6f38fdf1eb619a5e36d5a9a2fda09acba748d"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0018/training_summary.json",
+          "sha256": "dc397617d41987e3d88b0a319f984aaa0da301aea3e42dd9356fc0033ce7a226"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0019/training_summary.json",
+          "sha256": "a908aa6a7cb42353a5f44b6611f940fe93c736b9352875dfb7e8a2dcde9afa88"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0020/training_summary.json",
+          "sha256": "f983da824861da9480502395dfac188d558839f958ee59925ba03b85b2679cb4"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0021/training_summary.json",
+          "sha256": "32727175120334a05c9b6e0c59cf88f9a4ebe7f9a5ccb81b845a4f5e3795e84a"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0022/training_summary.json",
+          "sha256": "8fc849af20baa4b3d90feb119c8b3005842f1b34bd6be749e45811254fa29a2f"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0023/training_summary.json",
+          "sha256": "a9435e9057e1d3290ae3851629956025d3aa74c0010d1e55b19491c0785b4037"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0024/training_summary.json",
+          "sha256": "5d45b6f778c523a568e3ff020d2c0083b9bbd1db91ebebf2ec62a772515d0c4d"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0025/training_summary.json",
+          "sha256": "ea7744f5f1ebaf3d3cd0d568b517f6c0f3348be197897481691c35a5d38fb14d"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0026/training_summary.json",
+          "sha256": "d0af23decd41da05cc174e2d3acc560ce57f9659a6cdd5c119a0b3c363008ea6"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0027/training_summary.json",
+          "sha256": "c65cca55223429e794b99ddefc3f8207cbc6534c576d57baf90af3ba3614b1c4"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0028/training_summary.json",
+          "sha256": "30ba94ef832e322dca8756aefecc6a991ace68ff8c62d2b8a16e12245537a8a5"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0029/training_summary.json",
+          "sha256": "c858a4280ea557dab3630f4ac60c98c969d848adfd3552d3fdcc8e51707e53e8"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0030/training_summary.json",
+          "sha256": "4e4ecef6d3fe157cd2b3be1556fb50028f4928881b55abba9fc01587127c1330"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0031/training_summary.json",
+          "sha256": "0a2761b08ac5409d8762a8c03f3f1c507ced34d675df3adc1e8363c9775ac11b"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0032/training_summary.json",
+          "sha256": "984076e393b06a408db42d8bf27e0c62f252bdbcacae97ec73210bc39b74d5ac"
+        }
+      ],
+      "fixed_evaluation": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/mixed_seed_replication_001/s02/paired_evaluation.json",
+        "sha256": "e9c4dbe9da71806d9d1b09274fd298f50cc85e09b0337395e8b8f2b14afb74f6"
+      }
+    },
+    "s03": {
+      "completion": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/suite_complete.json",
+        "sha256": "799afbff30c8ec2ba52d8b54747b9bed0fae78dac21ea4ad8bd8063b962d81ee"
+      },
+      "suite": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/grade_assignment_generalization_001/mixed_seed_replication_001/prepared_oneclick_003/s03/suite.json",
+        "sha256": "08acc5d07b83cf226bd5198e60cb33a3cac360484bc9332986b6e021ac3563c5"
+      },
+      "training_summaries": [
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0001/training_summary.json",
+          "sha256": "608fea0180f3925e3b2a9a7ecfeeda62d63894de822fa61d7023f2227472aeb4"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0002/training_summary.json",
+          "sha256": "bfe604a7eead845e3f75a664ee876c126bb76468bb02241936750bcb39b106dc"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0003/training_summary.json",
+          "sha256": "3642c8d4e327f8a52abdcca56067b5d979582490de174dfbfbc571c735b1bac7"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0004/training_summary.json",
+          "sha256": "06dd77839c08a4b131ab46166c543ce9540a137fccf6e387f778aa034ddbfded"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0005/training_summary.json",
+          "sha256": "a61af43be9016926a8bf15e7e300619a7436fc601020c4857fdfbc34d187f3ac"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0006/training_summary.json",
+          "sha256": "b7bdc791c994467473cf4dc1b3725d516cb3fcf0dc0b35531afa64088e6e20dc"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0007/training_summary.json",
+          "sha256": "ece16382d01124625e788a72d73debb787e39b10b62ad6909eed2ca7716ed4c0"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0008/training_summary.json",
+          "sha256": "7fb74408374e2413dd321685738d787c08ddb1717eec8e79fa2434960a7bb9f2"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0009/training_summary.json",
+          "sha256": "5f17f84f59c6d2a9e815afb4df3d7d7e7399e1ca8c26b800305a07d2775edd4a"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0010/training_summary.json",
+          "sha256": "865150e7301de5183712867da2e73870cc175ab6367b850c9570a692d9cde8f6"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0011/training_summary.json",
+          "sha256": "ef354098b0d1ab1ee36be2f807697b13b7873ab5dc38f9da6e09ed69d2d04a75"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0012/training_summary.json",
+          "sha256": "7fa7451986d5fecf262eea6994f3f6610e90097eaaeb765cd1e0b72acabad197"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0013/training_summary.json",
+          "sha256": "46889a2a3aea815b476ab3886695923f71a5845ca2a3d26e6b5e86e0bdbce47b"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0014/training_summary.json",
+          "sha256": "b50be02684af0722f75ef4f13c17b01409f8bc1d520613ec5e03af367cd23bc0"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0015/training_summary.json",
+          "sha256": "95cd850334fc24917f1f0c6e8b55583abfe2c7a9baeab4c6fa5bce97a1a21801"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0016/training_summary.json",
+          "sha256": "51f2e8d9837f5ed3f029d22f1bcb13e9bfe12160d32c51722fe5671af8c505bb"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0017/training_summary.json",
+          "sha256": "63628763b4c29a4ded5589767ed4988e35dd0fd3bc66f96c39fb5eb8a5afd9e0"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0018/training_summary.json",
+          "sha256": "56c72f72a69870d3c8ff3b06f1914412a98de9a3906f88b6f7c6bf0cc55be34a"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0019/training_summary.json",
+          "sha256": "48d69f19e9439dd3c251d7ce372ff90557b48ee0ca4570a92de6c3c9fe06bb54"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0020/training_summary.json",
+          "sha256": "5fa51a7a9066b3f703a234d682948682f653a17f96de7c77c4ee9b8280aaedc6"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0021/training_summary.json",
+          "sha256": "4640bcdae7ff5878c9a17a27b14efa58d33fa03e48d0ff1fdcae441f09f5a06d"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0022/training_summary.json",
+          "sha256": "e02923beb3c47f6184e4b4e2d62f2359e0536e35320928295ae3eec384dce2ec"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0023/training_summary.json",
+          "sha256": "1e960375e4526bb23d820280ac066bcbb91912f3f7e634806b017c74c5ea9ab0"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0024/training_summary.json",
+          "sha256": "885219f509d2bfd56697c2b4e379fb7cefdabb2afbad3246fef4a4275fbfad70"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0025/training_summary.json",
+          "sha256": "1cfbb4cac819baff85acb38667885e14aa081a3fdf8985626f69e3998205eda2"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0026/training_summary.json",
+          "sha256": "857aac19c4d7752c72c02b03ee8fffcd1b492946f28fb4e7089397b25735a093"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0027/training_summary.json",
+          "sha256": "ad8ff9ab1ebbb6a182ed1274df26915226fa165c9550227bc55adf2fe3ecc9f6"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0028/training_summary.json",
+          "sha256": "3a581d96b3f8709ffea46260fa2eea7f52fe1abf612ac27a703108c82cce5bc7"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0029/training_summary.json",
+          "sha256": "311a9b00cc6566562c11f0edfe0051b4e09edca1e6aeb29d380f2b8dbb7144f2"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0030/training_summary.json",
+          "sha256": "9d024165019478d39626f01a8ed4a85d4f5452ef3f2871338835183ba1e586d3"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0031/training_summary.json",
+          "sha256": "1e3868ffa3da7e3e5148449a07c7c26047157b764032ca74739c00130e83b3c2"
+        },
+        {
+          "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0032/training_summary.json",
+          "sha256": "091fc6e54cbd23ea98aa2e92220c66a797c7c854513ebf01d404a4cdf5bc07ae"
+        }
+      ],
+      "fixed_evaluation": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/mixed_seed_replication_001/s03/paired_evaluation.json",
+        "sha256": "c4cd3131e927912cf863df388609dddb78724f56eb33577847ca42f5058c0e21"
+      }
+    }
+  },
+  "learning_return": "negative mean unnormalized whole-shift composite cost; frozen pre-update rollout",
+  "training_task": "all four windows compliant and both production targets met",
+  "smoothing": "trailing 5 batches; available prefix for first four batches",
+  "evaluation": "fixed u32; paired scene/environment/Actor seeds per slot; 500 shifts per model"
+}

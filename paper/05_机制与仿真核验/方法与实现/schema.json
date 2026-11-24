@@ -1,0 +1,850 @@
+{
+  "version": "business-graph-summary-schema-v1",
+  "graph_contract": {
+    "version": "business-graph-summary-009-v1",
+    "candidate": "s01_BG128",
+    "raw_dimension": 1519,
+    "physical_nodes": 18,
+    "scene_tokens": 19,
+    "width": 64,
+    "heads": 4,
+    "graph_layers": 2,
+    "node_names": [
+      "Truck0",
+      "Truck1",
+      "Truck2",
+      "Truck3",
+      "Truck4",
+      "Truck5",
+      "Truck6",
+      "Truck7",
+      "Truck8",
+      "Load0",
+      "Load1",
+      "Load2",
+      "Load3",
+      "Dump0",
+      "Dump1",
+      "Junction2",
+      "Junction3",
+      "Junction4",
+      "Global"
+    ],
+    "groups": [
+      "transport",
+      "commitment",
+      "service",
+      "material"
+    ],
+    "relations": [
+      "road",
+      "truck_at_node",
+      "truck_at_node_reverse",
+      "truck_segment_from",
+      "truck_segment_from_reverse",
+      "truck_segment_to",
+      "truck_segment_to_reverse",
+      "truck_predecessor",
+      "truck_predecessor_reverse",
+      "reserved_load",
+      "reserved_load_reverse",
+      "loaded_dump",
+      "loaded_dump_reverse",
+      "queue",
+      "queue_reverse",
+      "seize",
+      "seize_reverse",
+      "capacity_wait",
+      "capacity_wait_reverse",
+      "service",
+      "service_reverse",
+      "admission",
+      "admission_reverse",
+      "compatible_material",
+      "compatible_material_reverse"
+    ],
+    "edge_feature_names": [
+      "road_length_10000m",
+      "road_limit_10mps",
+      "road_closed",
+      "road_occupancy_9",
+      "road_valid",
+      "segment_remaining_10000m",
+      "segment_remaining_valid",
+      "tons_193",
+      "tons_valid",
+      "ore",
+      "payload_grade",
+      "payload_grade_known",
+      "position_9",
+      "position_valid"
+    ],
+    "quantity_names": [
+      "reserved_truck_count",
+      "reserved_tons",
+      "inbound_loaded_truck_count",
+      "inbound_loaded_tons",
+      "inbound_known_grade_truck_count",
+      "inbound_known_grade_tons",
+      "inbound_known_metal_tons",
+      "queue_unique_count",
+      "queue_instance_count",
+      "seize_unique_count",
+      "seize_instance_count",
+      "capacity_wait_unique_count",
+      "capacity_wait_instance_count",
+      "service_unique_count",
+      "service_instance_count",
+      "admission_count",
+      "at_node_truck_count",
+      "incoming_road_count",
+      "outgoing_road_count",
+      "incoming_segment_truck_count",
+      "outgoing_segment_truck_count"
+    ],
+    "quantity_scales": [
+      9.0,
+      1737.0,
+      9.0,
+      1737.0,
+      9.0,
+      1737.0,
+      1737.0,
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      16.0,
+      16.0,
+      9.0,
+      9.0
+    ],
+    "relation_group_ids": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3
+    ],
+    "road_endpoints": [
+      [
+        0,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "physical_node_to_token": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      9,
+      10,
+      11,
+      12
+    ],
+    "geographic_mapping": {
+      "load": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "dump": [
+        0,
+        1
+      ],
+      "junction": [
+        2,
+        3,
+        4
+      ]
+    },
+    "road_representation": "16_directed_attribute_edges_no_road_tokens",
+    "graph_weighting": "within_group_attention_then_masked_group_concatenation",
+    "physical_residual": true,
+    "continuous_edge_score_and_value": true,
+    "facts": "current_observed_targets_and_service_memberships",
+    "candidates": "readout_only_never_counted_as_commitments",
+    "quantities": "separate_typed_deterministic_channels_no_cross_relation_double_count",
+    "final_readout": "direct_candidate_load_dump_and_typed_scene_pool",
+    "actor_queries": 0,
+    "critic_queries": 0,
+    "actor_scorer_shared": true,
+    "actor_critic_sharing": false,
+    "history": false,
+    "action_id_embedding": false,
+    "summary_enabled": true,
+    "summary_dimension": 128,
+    "actor_summary_partition": {
+      "task": 88,
+      "candidates": 4,
+      "fields_per_candidate": 10
+    },
+    "critic_summary_partition": "complete_C128",
+    "fusion": "candidate_context_elementwise_interaction_v1",
+    "missing_data": "validity_preserved_never_fill_missing_ID_with_zero",
+    "numerical_cache": "current_raw_and_C_only_never_neural_activations",
+    "design_sha256": "c4b88c937e478c14cee0502c3675931c9bda13f5212f9ba377f2bc5b1f4a1bf2"
+  },
+  "node_order": [
+    "Truck0",
+    "Truck1",
+    "Truck2",
+    "Truck3",
+    "Truck4",
+    "Truck5",
+    "Truck6",
+    "Truck7",
+    "Truck8",
+    "Load0",
+    "Load1",
+    "Load2",
+    "Load3",
+    "Dump0",
+    "Dump1",
+    "Junction2",
+    "Junction3",
+    "Junction4",
+    "Global"
+  ],
+  "physical_nodes": 18,
+  "global_index": 18,
+  "hidden_width": 64,
+  "relation_types": [
+    {
+      "id": 0,
+      "name": "road",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 1,
+      "name": "truck_at_node",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 2,
+      "name": "truck_at_node_reverse",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 3,
+      "name": "truck_segment_from",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 4,
+      "name": "truck_segment_from_reverse",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 5,
+      "name": "truck_segment_to",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 6,
+      "name": "truck_segment_to_reverse",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 7,
+      "name": "truck_predecessor",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 8,
+      "name": "truck_predecessor_reverse",
+      "group": "transport",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 9,
+      "name": "reserved_load",
+      "group": "commitment",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 10,
+      "name": "reserved_load_reverse",
+      "group": "commitment",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 11,
+      "name": "loaded_dump",
+      "group": "commitment",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 12,
+      "name": "loaded_dump_reverse",
+      "group": "commitment",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 13,
+      "name": "queue",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 14,
+      "name": "queue_reverse",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 15,
+      "name": "seize",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 16,
+      "name": "seize_reverse",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 17,
+      "name": "capacity_wait",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 18,
+      "name": "capacity_wait_reverse",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 19,
+      "name": "service",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 20,
+      "name": "service_reverse",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 21,
+      "name": "admission",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 22,
+      "name": "admission_reverse",
+      "group": "service",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 23,
+      "name": "compatible_material",
+      "group": "material",
+      "information_direction": "source_to_destination"
+    },
+    {
+      "id": 24,
+      "name": "compatible_material_reverse",
+      "group": "material",
+      "information_direction": "source_to_destination"
+    }
+  ],
+  "edge_attributes": [
+    {
+      "index": 0,
+      "name": "road_length_10000m",
+      "meaning": "当前观测有向道路长度，米/10000"
+    },
+    {
+      "index": 1,
+      "name": "road_limit_10mps",
+      "meaning": "当前道路限速，米每秒/10"
+    },
+    {
+      "index": 2,
+      "name": "road_closed",
+      "meaning": "当前道路关闭标志，不等同删除信息边"
+    },
+    {
+      "index": 3,
+      "name": "road_occupancy_9",
+      "meaning": "当前segment引用该道路的车辆数/9，非完整传感器占用真值"
+    },
+    {
+      "index": 4,
+      "name": "road_valid",
+      "meaning": "本关系携带道路属性"
+    },
+    {
+      "index": 5,
+      "name": "segment_remaining_10000m",
+      "meaning": "当前路段剩余距离，米/10000"
+    },
+    {
+      "index": 6,
+      "name": "segment_remaining_valid",
+      "meaning": "剩余距离有效标志"
+    },
+    {
+      "index": 7,
+      "name": "tons_193",
+      "meaning": "该关系对应已预留或已装载吨数/193"
+    },
+    {
+      "index": 8,
+      "name": "tons_valid",
+      "meaning": "吨位有效标志"
+    },
+    {
+      "index": 9,
+      "name": "ore",
+      "meaning": "物料是否矿石，仅按关系语义使用"
+    },
+    {
+      "index": 10,
+      "name": "payload_grade",
+      "meaning": "已装载且gradeKnown时的品位"
+    },
+    {
+      "index": 11,
+      "name": "payload_grade_known",
+      "meaning": "载荷品位已知标志"
+    },
+    {
+      "index": 12,
+      "name": "position_9",
+      "meaning": "queue/seize/capacityWait槽位序号/9"
+    },
+    {
+      "index": 13,
+      "name": "position_valid",
+      "meaning": "有序槽位有效标志，service为0"
+    }
+  ],
+  "quantities": [
+    {
+      "index": 0,
+      "name": "reserved_truck_count",
+      "divide_raw_by": 9.0,
+      "source": "非ego、未载、正reservedLoadTons且有loadTarget的Truck唯一数量，归到其Load"
+    },
+    {
+      "index": 1,
+      "name": "reserved_tons",
+      "divide_raw_by": 1737.0,
+      "source": "上述车辆reservedLoadTons之和，不与queue/seize/service重复相加"
+    },
+    {
+      "index": 2,
+      "name": "inbound_loaded_truck_count",
+      "divide_raw_by": 9.0,
+      "source": "已载且有dumpTarget的Truck唯一数量，归到其Dump；包括已到站仍有载者"
+    },
+    {
+      "index": 3,
+      "name": "inbound_loaded_tons",
+      "divide_raw_by": 1737.0,
+      "source": "上述车辆payloadTons之和"
+    },
+    {
+      "index": 4,
+      "name": "inbound_known_grade_truck_count",
+      "divide_raw_by": 9.0,
+      "source": "上述车辆中gradeKnown的唯一数量"
+    },
+    {
+      "index": 5,
+      "name": "inbound_known_grade_tons",
+      "divide_raw_by": 1737.0,
+      "source": "上述已知品位车辆payloadTons之和"
+    },
+    {
+      "index": 6,
+      "name": "inbound_known_metal_tons",
+      "divide_raw_by": 1737.0,
+      "source": "上述已知品位车辆payloadTons×payloadGrade之和，未用预计品位"
+    },
+    {
+      "index": 7,
+      "name": "queue_unique_count",
+      "divide_raw_by": 9.0,
+      "source": "站点queue列表非空Truck ID的去重数量"
+    },
+    {
+      "index": 8,
+      "name": "queue_instance_count",
+      "divide_raw_by": 9.0,
+      "source": "站点queue列表非空实例数量，保留重复服务实例含义"
+    },
+    {
+      "index": 9,
+      "name": "seize_unique_count",
+      "divide_raw_by": 9.0,
+      "source": "站点seize列表非空Truck ID的去重数量"
+    },
+    {
+      "index": 10,
+      "name": "seize_instance_count",
+      "divide_raw_by": 9.0,
+      "source": "站点seize列表非空实例数量，保留重复服务实例含义"
+    },
+    {
+      "index": 11,
+      "name": "capacity_wait_unique_count",
+      "divide_raw_by": 9.0,
+      "source": "站点capacity_wait列表非空Truck ID的去重数量"
+    },
+    {
+      "index": 12,
+      "name": "capacity_wait_instance_count",
+      "divide_raw_by": 9.0,
+      "source": "站点capacity_wait列表非空实例数量，保留重复服务实例含义"
+    },
+    {
+      "index": 13,
+      "name": "service_unique_count",
+      "divide_raw_by": 9.0,
+      "source": "站点service列表非空Truck ID的去重数量"
+    },
+    {
+      "index": 14,
+      "name": "service_instance_count",
+      "divide_raw_by": 9.0,
+      "source": "站点service列表非空实例数量，保留重复服务实例含义"
+    },
+    {
+      "index": 15,
+      "name": "admission_count",
+      "divide_raw_by": 9.0,
+      "source": "Dump admissionTruck存在为1，否则0，不表示已获得容量"
+    },
+    {
+      "index": 16,
+      "name": "at_node_truck_count",
+      "divide_raw_by": 9.0,
+      "source": "无segment且node引用此地理地点的车辆数量"
+    },
+    {
+      "index": 17,
+      "name": "incoming_road_count",
+      "divide_raw_by": 16.0,
+      "source": "固定道路终点为此地点的有向道路数"
+    },
+    {
+      "index": 18,
+      "name": "outgoing_road_count",
+      "divide_raw_by": 16.0,
+      "source": "固定道路起点为此地点的有向道路数"
+    },
+    {
+      "index": 19,
+      "name": "incoming_segment_truck_count",
+      "divide_raw_by": 9.0,
+      "source": "segment引用终点为此地点的道路的车辆数"
+    },
+    {
+      "index": 20,
+      "name": "outgoing_segment_truck_count",
+      "divide_raw_by": 9.0,
+      "source": "segment引用起点为此地点的道路的车辆数"
+    }
+  ],
+  "quantity_node_ownership": "site and geographic tokens; unused channels and Truck/Global quantity rows are zero",
+  "typed_pool_order": [
+    "Truck",
+    "Load",
+    "Dump",
+    "Junction"
+  ],
+  "actor": {
+    "spec": {
+      "scene_tokens": 19,
+      "graph_width": 64,
+      "graph_layers": 2,
+      "final_query": false,
+      "typed_pool": "mean_by_type",
+      "quantity_pool": "sum_by_type",
+      "task_summary_input": 88,
+      "task_summary_embedding": 32,
+      "action_summary_input": 10,
+      "action_summary_embedding": 16,
+      "candidate_width": 64,
+      "context_width": 64,
+      "scorer_hidden": 128,
+      "scorer_interaction": "concat_product_plus_dot_over_sqrt64",
+      "initialization": "named-paired-v1"
+    },
+    "parameters": 260481,
+    "state_encoder_parameters": 116912,
+    "raw_context_dimension": 468,
+    "context_input_dimension": 500,
+    "candidate_input_dimension": 273,
+    "candidate_width": 64,
+    "context_width": 64,
+    "score_input_dimension": 192,
+    "task_summary_names": [
+      "shift.elapsed",
+      "shift.remaining",
+      "window.index",
+      "window.remaining",
+      "window.active",
+      "next.active",
+      "terminal",
+      "window.processed_q",
+      "window.processed_m",
+      "window.grade",
+      "window.grade_valid",
+      "window.center_error",
+      "window.lower_balance",
+      "window.upper_balance",
+      "shift.ore",
+      "shift.metal",
+      "shift.waste",
+      "shift.ore_gap",
+      "shift.waste_gap",
+      "crusher.rate",
+      "crusher.buffer_free",
+      "fifo.q",
+      "fifo.m",
+      "fifo.center_balance",
+      "loaded_ore.q",
+      "loaded_ore.m",
+      "loaded_ore.center_balance",
+      "loaded_transit.q",
+      "loaded_transit.m",
+      "loaded_waiting.q",
+      "loaded_waiting.m",
+      "loaded_unloading.q",
+      "loaded_unloading.m",
+      "reserved_ore.q",
+      "reserved_ore.m_expected",
+      "reserved_ore.metal_std_independent",
+      "reserved_ore.metal_std_correlated",
+      "reserved_ore.grade_known_fraction",
+      "loaded_waste.q",
+      "reserved_waste.q",
+      "pending.grade_unknown_q",
+      "pending.eta_unavailable_q",
+      "pending.arrival_time_uncertain",
+      "pending.count",
+      "current.duration",
+      "current.capacity",
+      "current.fifo_q",
+      "current.fifo_m",
+      "current.nominal_q",
+      "current.nominal_m",
+      "current.metal_std_correlated",
+      "current.nominal_grade",
+      "current.grade_valid",
+      "current.lower_balance",
+      "current.upper_balance",
+      "current.center_error",
+      "current.free_capacity",
+      "current.required_grade_lower",
+      "current.required_grade_upper",
+      "current.required_grade_valid",
+      "current.required_interval_intersects_ore_support",
+      "current.q_lower",
+      "current.q_upper",
+      "current.unknown_grade_fraction",
+      "current.arrival_uncertain_fraction",
+      "current.unmodeled_q",
+      "next.duration",
+      "next.capacity",
+      "next.fifo_q",
+      "next.fifo_m",
+      "next.nominal_q",
+      "next.nominal_m",
+      "next.metal_std_correlated",
+      "next.nominal_grade",
+      "next.grade_valid",
+      "next.lower_balance",
+      "next.upper_balance",
+      "next.center_error",
+      "next.free_capacity",
+      "next.required_grade_lower",
+      "next.required_grade_upper",
+      "next.required_grade_valid",
+      "next.required_interval_intersects_ore_support",
+      "next.q_lower",
+      "next.q_upper",
+      "next.unknown_grade_fraction",
+      "next.arrival_uncertain_fraction",
+      "next.unmodeled_q"
+    ],
+    "action_summary_names": [
+      [
+        "action.0.legal",
+        "action.0.dispatch_q",
+        "action.0.ore",
+        "action.0.grade_mean",
+        "action.0.grade_std",
+        "action.0.available_q",
+        "action.0.queue_count",
+        "action.0.busy_fraction",
+        "action.0.nominal_eta",
+        "action.0.eta_valid"
+      ],
+      [
+        "action.1.legal",
+        "action.1.dispatch_q",
+        "action.1.ore",
+        "action.1.grade_mean",
+        "action.1.grade_std",
+        "action.1.available_q",
+        "action.1.queue_count",
+        "action.1.busy_fraction",
+        "action.1.nominal_eta",
+        "action.1.eta_valid"
+      ],
+      [
+        "action.2.legal",
+        "action.2.dispatch_q",
+        "action.2.ore",
+        "action.2.grade_mean",
+        "action.2.grade_std",
+        "action.2.available_q",
+        "action.2.queue_count",
+        "action.2.busy_fraction",
+        "action.2.nominal_eta",
+        "action.2.eta_valid"
+      ],
+      [
+        "action.3.legal",
+        "action.3.dispatch_q",
+        "action.3.ore",
+        "action.3.grade_mean",
+        "action.3.grade_std",
+        "action.3.available_q",
+        "action.3.queue_count",
+        "action.3.busy_fraction",
+        "action.3.nominal_eta",
+        "action.3.eta_valid"
+      ]
+    ]
+  },
+  "critic": {
+    "spec": {
+      "scene_tokens": 19,
+      "graph_width": 64,
+      "graph_layers": 2,
+      "final_query": false,
+      "typed_pool": "mean_by_type",
+      "quantity_pool": "sum_by_type",
+      "summary_input": 128,
+      "summary_embedding": 32,
+      "fusion_hidden": 128,
+      "output": "single_joint_cost_value",
+      "initialization": "named-paired-v1"
+    },
+    "parameters": 185297,
+    "state_encoder_parameters": 116912,
+    "raw_context_dimension": 468,
+    "fusion_input_dimension": 500
+  },
+  "actual_gnn_tensor_shape": "B,19,64; Global unchanged bypass in both layers",
+  "final_query": false,
+  "actor_critic_parameters_shared": false,
+  "group_fusion": "shared source/value transforms plus relation onehot and continuous attrs; independent destination/group softmax; concatenate group messages and presence bits",
+  "training": "unchanged TQ008 joint cost and frozen-old-V GAE/MC; no auxiliary objective"
+}

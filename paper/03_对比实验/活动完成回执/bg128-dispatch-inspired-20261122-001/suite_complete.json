@@ -1,0 +1,19 @@
+{
+  "campaign_id": "bg128-dispatch-inspired-20261122-001",
+  "evaluation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/dispatch_inspired_001/single_shift_validation.json",
+    "sha256": "ddbd7cc5470ff6ac644953724987bedba78142b99788886c8e51374de2b4e477"
+  },
+  "optimizer_updates": 0,
+  "physical_shifts": 1,
+  "protected_core": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "status": "COMPLETE",
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/baseline_comparison_001/dispatch_inspired_001/prepared_001/suite.json",
+    "sha256": "c656fab152dbd162254e64d3724d04b1b2c3cea7a9b755eec4fd52f3bf40f6ef"
+  },
+  "training_shifts": 0
+}

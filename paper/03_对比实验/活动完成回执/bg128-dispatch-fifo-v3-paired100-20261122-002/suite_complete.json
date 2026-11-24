@@ -1,0 +1,20 @@
+{
+  "campaign_id": "bg128-dispatch-fifo-v3-paired100-20261122-002",
+  "evaluation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/dispatch_fifo_v3_002/dispatch_fifo_v3_evaluation.json",
+    "sha256": "bb6dc1f1e4d6c1a7654b3528fd2f98d318871508fd21e124e21bfbcba8c612f2"
+  },
+  "evaluation_slots": 100,
+  "optimizer_updates": 0,
+  "physical_shifts": 100,
+  "protected_core": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "status": "COMPLETE",
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/baseline_comparison_001/dispatch_fifo_v3_001/prepared_002/suite.json",
+    "sha256": "ed5c403827cefa9da4666fe52a7d11c12e5e21a0e8163d73659c0acb509c6ba1"
+  },
+  "training_shifts": 0
+}

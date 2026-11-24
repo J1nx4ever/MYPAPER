@@ -1,0 +1,67 @@
+// Truck -> Advanced Java -> Additional class code.
+void fleetDispatchNow() {
+    initialDispatchDone = true;
+    if (time(SECOND) >= main.rlShiftSeconds) return;
+    legStartSec = time(SECOND);
+    minGapThisLeg = 9999;
+    dynamicAccel = 0;
+    legTravelStartTime = time();
+    dispatchTime = time();
+    targetLoadSiteId = main.selectNextLoadSite(this);
+    if (targetLoadSiteId < 0) {
+        targetShovel = null;
+        executionPhase = "NO_AVAILABLE_MATERIAL";
+        setTruckIdle(true);
+        setSpeed(0.0, MPS);
+        return;
+    }
+    targetShovel = main.getLoadSiteById(targetLoadSiteId);
+    if (targetShovel == null) throw new IllegalStateException("Missing load site");
+    plannedPayloadTons = targetShovel.reserveLoad(this);
+    payloadGrade = 0.0;
+    loadFinishedFlag = false;
+
+    // 只有到达状态机实际采用点，pending 才升级为 active。
+    activeDecisionId = pendingDecisionId;
+    pendingDecisionId = "";
+
+    destinationNode = main.collectionLoadSites
+        .get(targetLoadSiteId).getName();
+    intDestination = main.roadNodeNameToInt(destinationNode);
+
+    // 业务目标不得使用 destinationNode/targetNodeName 代替。
+    targetSiteBusinessId = targetShovel == null ? null : targetShovel.siteName;
+
+    // 展示遥测：当前运输区段只记录业务站点。
+    executionPhase = "TO_LOAD";
+    currentLegFromSiteId = currentBusinessSiteId;
+    currentLegToSiteId = targetSiteBusinessId;
+    nextSiteId = null;
+
+    if (main.experimentVerboseTrace) traceln(destinationNode);
+    if (main.experimentVerboseTrace) traceln(
+        "[DECISION APPLY]"
+        + " truck=" + vehicleId
+        + " decision=" + activeDecisionId
+        + " target=" + targetSiteBusinessId
+    );
+
+    if (targetShovel == null) {
+        throw new IllegalStateException(
+            "Unknown target load site: " + targetLoadSiteId
+        );
+    }
+
+    if (incomingLoadSiteId != -1) {
+        throw new IllegalStateException(
+            "Truck already counted as incoming: truck=" + truckId
+            + ", site=" + incomingLoadSiteId
+        );
+    }
+
+    incomingLoadSiteId = targetLoadSiteId;
+    debugLastAction = "DispatchToLoad_" + targetLoadSiteId;
+    main.auditMaterialBalances("RESERVE_LOAD truck=" + truckId);
+    setTruckIdle(false);
+    this.deliver("TOLOADSITE", this);
+}

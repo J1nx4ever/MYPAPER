@@ -1,0 +1,87 @@
+{
+  "scope": "offline_discrete_event_witness",
+  "physical_shifts": 0,
+  "assumptions": {
+    "speed_factor": 1.08,
+    "service_factor": 0.92,
+    "projected_start_from_nine_truck_snapshot": true,
+    "nominal_source_grades": true,
+    "acceleration_and_initial_spacing_delay": false,
+    "following_and_junction_delay": false,
+    "all_routes_selected_at_simulated_release": true,
+    "warehouse_capacity_tons": 500.0,
+    "crusher_rate_tons_per_hour": 2500.0
+  },
+  "archive_path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/material/run_10004025.h5",
+  "archive_sha256": "71ce5819889ea38592b64ffaead06900f55250d3a8609b3023b198d3b337a950",
+  "projected_first_observation_sha256": "d676426f5bddca47369f59d9484544546c9077e67061be3fbe3ed224673802f0",
+  "actual_reference_first_observation_sha256": "ca4434b3e8aa1dd1c7962590e3080a3cef2e7dbc5fb2ac5d06828f5de153141a",
+  "actual_rpc_receipt": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-full-s02-u32-fleet6-zero-shot10-20261124-001/shifts/run_10042001/evaluation_receipt.json",
+    "sha256": "eec527a457c067e0749d722b3b13b9abdb2d0ba486167fa47d552b05c14cb8c0"
+  },
+  "shift_seconds": 28800.0,
+  "active_truck_ids": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7
+  ],
+  "parked_truck_ids": [
+    2,
+    5,
+    8
+  ],
+  "dispatch_counts": {
+    "0": 34,
+    "1": 34,
+    "3": 23,
+    "4": 24,
+    "6": 21,
+    "7": 22
+  },
+  "timeline_sha256": "734c267fe186d5ad2e590bb56989fa03d796259634763985be71fc299ca46eb4",
+  "total_ore_tons": 16235.22131367597,
+  "total_waste_tons": 4126.500096023083,
+  "total_wait_seconds": 3348.2114638312723,
+  "maximum_warehouse_stock_and_reserved_tons": 500.00000000000114,
+  "fifo_integral_independently_checked": true,
+  "window_ore_tons": [
+    3206.9999648332596,
+    3733.9845677642334,
+    4294.236781078474,
+    5000.000000000001
+  ],
+  "window_metal_tons": [
+    873.7999986630681,
+    1006.915381419722,
+    1166.9590489517946,
+    1350.1000141209372
+  ],
+  "window_grade": [
+    0.272466482146812,
+    0.269662437845217,
+    0.27175004743420766,
+    0.27002000282418737
+  ],
+  "window_grade_bands_at_fixed_timing": [
+    [
+      0.267466482146812,
+      0.277466482146812
+    ],
+    [
+      0.264662437845217,
+      0.274662437845217
+    ],
+    [
+      0.26675004743420766,
+      0.27675004743420767
+    ],
+    [
+      0.26502000282418736,
+      0.27502000282418737
+    ]
+  ]
+}

@@ -1,0 +1,2842 @@
+{
+  "schema": "bg128-traditional-paired100-interim-v2",
+  "status": "INTERIM",
+  "campaign_id": "bg128-baseline-v2-paired100-20261122-001",
+  "evaluation_slots": 60,
+  "completed_shifts": 300,
+  "physical_shifts": 300,
+  "optimizer_updates": 0,
+  "method": {
+    "depth": 3,
+    "match_trucks": 3,
+    "planning_ms": 800,
+    "replan_seconds": 900,
+    "response_target_ms": 1000,
+    "rollout_limit": 20
+  },
+  "pairing": {
+    "order": "slot_then_policy",
+    "policies": [
+      "unload_greedy",
+      "fifo_greedy",
+      "rolling",
+      "dispatch_inspired",
+      "bg128"
+    ],
+    "scope": "this_campaign_only",
+    "share": "experiment_seed",
+    "slots": 60
+  },
+  "receipts": [
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032001/evaluation_receipt.json",
+      "sha256": "ff5f0b1e10cdf892becb40d3f5688fd1de9182260d1b604286d90ecd72b0cb46"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032002/evaluation_receipt.json",
+      "sha256": "8e5922d39494d72e1f413a70b5f20aa815b151a630487269024360a7042ca97e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032003/evaluation_receipt.json",
+      "sha256": "640eaee939db704a5cd86676f1947692b61219d14b43702c2a030ea7448cb37a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032004/evaluation_receipt.json",
+      "sha256": "a11c741bd4d798587c02306e91158233475832ca021120f0f44f4a420fc3398a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032005/evaluation_receipt.json",
+      "sha256": "95618592e808b2a2955c7bfdc76b73b914865867ad9a15aef668f789a4570d43"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032006/evaluation_receipt.json",
+      "sha256": "617d687f52380868cf03a666140a993817a0964d56c5c0f8c673c07f02f54916"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032007/evaluation_receipt.json",
+      "sha256": "3dcaacc1af70ca3b7509b923a1db66fc0c5f4dd8605f689658484eedf7b6d4eb"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032008/evaluation_receipt.json",
+      "sha256": "20198f9728c74f76d7f6d55dd176944408ae6e4b0ba390be8e531c70883434f3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032009/evaluation_receipt.json",
+      "sha256": "03bc391c6258c52240cd8af73935c2f43c61b1ff103f7d92b16ed341f580ee05"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032010/evaluation_receipt.json",
+      "sha256": "1bf12ae48279097398d95b830ee1d1dee374227576cebec01c80f2f34f6718b7"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032011/evaluation_receipt.json",
+      "sha256": "8791d889bbdea2b788adf272a93f246668e596c1fbc415ca3063510c35c81892"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032012/evaluation_receipt.json",
+      "sha256": "2338fe2cf3c94744581f3de450e50c2340992e61eb6636cd123168a0647aae1d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032013/evaluation_receipt.json",
+      "sha256": "7553bc5eaff2929da9466009cbe1858b374ecddbe3c016c8b9f9254b2c283282"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032014/evaluation_receipt.json",
+      "sha256": "5444d75104e9ab091e43d627905c4ceb2da20ada23d23b9aec0e37b941e2b305"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032015/evaluation_receipt.json",
+      "sha256": "9f23de000e1a92c7c6b18a36b9cc7c66197201e93f345d076c247178e17fd7f5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032016/evaluation_receipt.json",
+      "sha256": "5587bb3f7743710e8e5070919922c94bcdc93d316df0547147a4039a31b9037d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032017/evaluation_receipt.json",
+      "sha256": "19238e28d446afe436f3c5a6bad8fea064f5b2e075f5365bf2a5072356856bdd"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032018/evaluation_receipt.json",
+      "sha256": "2c2a84ffa0542329aeb50492aa10c9da52a21b36ed99130868cfb895be637004"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032019/evaluation_receipt.json",
+      "sha256": "171fb8e31fde8054e4a41b75371e492122c54b7385f5373dd5d18b76bf16ed9e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032020/evaluation_receipt.json",
+      "sha256": "a4acc077fbc765786fe32606f9babb6d752bd992d0962b39416979f54666f689"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032021/evaluation_receipt.json",
+      "sha256": "472646243bbd957d5c748e6f064790a67cfc16f055150a1c87e3dda0429dcfda"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032022/evaluation_receipt.json",
+      "sha256": "e6182e4664aea24c4a5c2390054ac5dffb57416baa861b2924810e8df87b7c8d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032023/evaluation_receipt.json",
+      "sha256": "769bdd3eebd45da1c868a0dbedb52b35b74cebb7dc4f0259ff657bf78075346a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032024/evaluation_receipt.json",
+      "sha256": "a6bf2a9c79d48076ccb21b5a1ad9ed986fcb697aec3d81cdbd904c1e4704ed49"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032025/evaluation_receipt.json",
+      "sha256": "59551d379491707e345122c65eed312c3e98b46f3b1b8b2a7145c25a96d7c6a9"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032026/evaluation_receipt.json",
+      "sha256": "900c6ee854af27e9e3ce02082621d020a874316d039aac872507c28e8963cea9"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032027/evaluation_receipt.json",
+      "sha256": "113eb31d0bc032221f7a77a60f2e1629f42a237ad47385220270ced4193387e1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032028/evaluation_receipt.json",
+      "sha256": "a89e777362dcb69dc007ce6d6a86e1ef08eb3f00c03cca7a9671b7a3c20dd1e6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032029/evaluation_receipt.json",
+      "sha256": "d324f930933d1c817564540f20b0f4a1618539317bd53ceda94da9c5a6e383c0"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032030/evaluation_receipt.json",
+      "sha256": "95aa3f7e93ad1fc5e6a3c89ee07b71cf1caa9c303b865913c52a6df39966e902"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032031/evaluation_receipt.json",
+      "sha256": "ae620ff85a8dcfea52ef0a26968cb40300a1dda34b51a839c1c430710e7dc60b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032032/evaluation_receipt.json",
+      "sha256": "2acdeb82418b3cd2fa2753aac33413854af60c78773ce242f338cd9f0dcf82e2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032033/evaluation_receipt.json",
+      "sha256": "f9f7c1870cad474c7bc0daba7709254826d4e892d8c5be2e173c79451efd680a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032034/evaluation_receipt.json",
+      "sha256": "189e3a3bad1c03ee0b9397273104535e4cb6af15e87d2629f367928243da45f5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032035/evaluation_receipt.json",
+      "sha256": "24c5f36909d5ee086112c4a9d56130057b3a8b77a32028124d7fb7dd1dfec0e3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032036/evaluation_receipt.json",
+      "sha256": "c997b27abf506b5cfbec1a5eca27c03d1de1939c93066a745262492fd07a39f9"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032037/evaluation_receipt.json",
+      "sha256": "e59261f89ddce9bb36cf5b2c058b775250da0b920ffa2bea44a70e9c9f0ffbf5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032038/evaluation_receipt.json",
+      "sha256": "5e2cd424ffe1a0547b6c80a58b774ec648f7abbd1457c128ece07ceed47b43b9"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032039/evaluation_receipt.json",
+      "sha256": "b49a08492123b656e6d7d6ab9a2178cb40a27a42544115e91298b3bf298b4165"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032040/evaluation_receipt.json",
+      "sha256": "4e3f686e4d050494c706cf123d5279f91f0833b6533cb2eb5df9c032b1ebbca5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032041/evaluation_receipt.json",
+      "sha256": "736b501387092d8890fe82f4de2aadfb11dda2969b11a2cc6674d54238c1b3f7"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032042/evaluation_receipt.json",
+      "sha256": "63373813f4b60865ae6c5b63bceb4cdafcb86c89af76515490afa7b0599e38a5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032043/evaluation_receipt.json",
+      "sha256": "429f08bf8808da3d02c2165a874507057d1057b7dd9bf2ad1f734732ef496d1c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032044/evaluation_receipt.json",
+      "sha256": "765c67cb6e40f535b85d2ad486b4e398e0d4a2282e37742960c304ceea6c3bc6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032045/evaluation_receipt.json",
+      "sha256": "3d73fcf9000bd7c026dc804a81c918175106fadc5e4c40af4982f6172207d2db"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032046/evaluation_receipt.json",
+      "sha256": "8ab651021b3890b0b00b7cb73a2c28fac7f90a6c7f22e403a0a97e6cf3109297"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032047/evaluation_receipt.json",
+      "sha256": "13f6039fdaa3282f22526758cbd2573fb531ad562b38dba8d9f41d1bd6d2b6c2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032048/evaluation_receipt.json",
+      "sha256": "07921009abc231c354f2820c7c4d1df35d43fc3c9a17b6370b9abd1f79f9f1d6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032049/evaluation_receipt.json",
+      "sha256": "f5ca2cef356deacb3bd87ec2c370a26cdcacfb90bf4216e78947ccba9ffb1e64"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032050/evaluation_receipt.json",
+      "sha256": "46d04a4a1958879e3fd2d0763c1614f3b3d304fa1d236fb1e7abb20712a4eb57"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032051/evaluation_receipt.json",
+      "sha256": "2fe2b76b69c283729a3d11a4ca3fe77d67bcb7cf56a180372a033d15b9b2f618"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032052/evaluation_receipt.json",
+      "sha256": "4bcce1cc1d7c9dabc7ecc73fb0ba7be2d43256f1a8d27cfa123a7f075c61a852"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032053/evaluation_receipt.json",
+      "sha256": "4534a01ec9274f843e8b7bcf048fc9d27233313f11280b655ab6c68d72c186eb"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032054/evaluation_receipt.json",
+      "sha256": "a3c6d79582b3d40dff8af45925dcea2f7ca415bfae4fa7581439b151f6a480a3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032055/evaluation_receipt.json",
+      "sha256": "3e829f978e38617ab359f0ca74b1b205a9b45360986f10bc0dea21ca3a71e4dd"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032056/evaluation_receipt.json",
+      "sha256": "529451653e5d47dc042cc9f888001cdf6e9ad97efdee55353cc8583645646d6a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032057/evaluation_receipt.json",
+      "sha256": "269168e2da5630ded2f0fa9e67fcf35fb90c1fad09c7d9dcd8b0f22f52761053"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032058/evaluation_receipt.json",
+      "sha256": "9bb8047469feb8eaa326f1edbd2c636548860cc8a21b502a7f8205b53e0f0c74"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032059/evaluation_receipt.json",
+      "sha256": "f35014f2de5483bd8045bbce240bb604d31590f5cb82a17712df14904c6723e0"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032060/evaluation_receipt.json",
+      "sha256": "c6b7949a4910c0f55aee7de485f6b5c981471bc371033be4ae63a250c692c6a4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032061/evaluation_receipt.json",
+      "sha256": "880707eeed567adeb8bd18792746a58a006c951bce194e7efebb18f516b13fef"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032062/evaluation_receipt.json",
+      "sha256": "189089b9c4be57c63059738cee77b292c001514e7b30074548c09cc6fdb6c8d3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032063/evaluation_receipt.json",
+      "sha256": "730858b3f080614e271752774de94d46c1fa87ba91c90fc5855d3f433fbf1754"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032064/evaluation_receipt.json",
+      "sha256": "93b67fbb4cf5a4b1229dc11d1828d16b302f336b0a87b1954d97aff5d6c0cb3d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032065/evaluation_receipt.json",
+      "sha256": "85002cd63c80007bc433f6b9c417b442f1386dd6a3dcef78abf5eebff4520dc4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032066/evaluation_receipt.json",
+      "sha256": "f9757aa4e6ff3986ef26a0cca041fdfed2c05fcd95711ad4bf1649cfa52120f6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032067/evaluation_receipt.json",
+      "sha256": "39e8ebe662ab20691ad673b1f6959922286c029f9213c34c4b0e048b4febce42"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032068/evaluation_receipt.json",
+      "sha256": "06ca82d0c2eaecb8dbd0e3405b1f77c388c20524ec854e39cd89fa6b2e2fd7dd"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032069/evaluation_receipt.json",
+      "sha256": "b528b1e33a087e8d4ff6f55a3ddc51043cb932354bbbf60dd706bf4037fe23fb"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032070/evaluation_receipt.json",
+      "sha256": "a8a759a5a2f447a2d9f18a45e88737ec513c223a7b20f541e3ae90b5fb313de1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032071/evaluation_receipt.json",
+      "sha256": "02500a71f515ccbb5712e3ff5ba90185fa143f07efef2bb11892b4650cf1877b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032072/evaluation_receipt.json",
+      "sha256": "ca50e3742518189bb9718abb8fb0ece7206ff8b195d559226068b8ea147ee3fa"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032073/evaluation_receipt.json",
+      "sha256": "3784b339486e81fae3db3a7a3cf428867d11589867e61b19856fd37a0e6d7f00"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032074/evaluation_receipt.json",
+      "sha256": "22b6128069bc3d1b31c636bde0a22b49c4373ed6617757455c9bc99f8a401976"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032075/evaluation_receipt.json",
+      "sha256": "ec4842236f96f3d1c609b7aa8e292cb9b97105a03185869091d03ebc1b5df5b6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032076/evaluation_receipt.json",
+      "sha256": "a51e3dfecae41207818eea2a56f1231084029a4698a7792e18569b5e743e01ca"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032077/evaluation_receipt.json",
+      "sha256": "52bafafa7b90a4ae1e610b0cd96f6ad90f7b047268bc157eb9124193ba76e57f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032078/evaluation_receipt.json",
+      "sha256": "591807dc3ac92aff2ec083080661d980badc45cd5471fe7f69bfc3443b0299dc"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032079/evaluation_receipt.json",
+      "sha256": "ab0b019fef03c042b6beb4190fcacda54fbdd1cb57947b228899053be8323a3f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032080/evaluation_receipt.json",
+      "sha256": "974b33d807d0c6812d032155964e4820f5c17b0dfac5c4c0c88e54a8aac3f7a5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032081/evaluation_receipt.json",
+      "sha256": "c5fd253cbfd94e3c180f8db1bc4fc0b3e611e81a9bc04f30577f18b2c1230d38"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032082/evaluation_receipt.json",
+      "sha256": "ad669d293570789afd826d3a0413f015f3b121ec03aeb309bd9729cb2cce5055"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032083/evaluation_receipt.json",
+      "sha256": "8217bb599301649ed809cad71c366fa007683ee74e1b78143b5f6b38d68275c1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032084/evaluation_receipt.json",
+      "sha256": "e8bb0ff3e018aaf7af0239506b16855fd785ca87dabeddafc490bb4a248c77fe"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032085/evaluation_receipt.json",
+      "sha256": "462bcd5f777b60fe20f2981d5c9aa951063b3c226d4b2341da37c26cc59f3e63"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032086/evaluation_receipt.json",
+      "sha256": "093bdb9eb0178fcf1aac807b52f3f2c1d8457d7129302916bfed1cd481cde605"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032087/evaluation_receipt.json",
+      "sha256": "af4f9c951724b5124a6f886a6cf717b9d2aae64f8ce4805054b549190ef1f117"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032088/evaluation_receipt.json",
+      "sha256": "ca09cd0983ab8e1c812571b5f3d3abd869913ad50f20582c11d5e5c27adcef12"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032089/evaluation_receipt.json",
+      "sha256": "a7ceb8999e1b916b5df49fd59a26a2bcf01bf06b77391e0887d3c250cbfe8010"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032090/evaluation_receipt.json",
+      "sha256": "730302669c3994f9f075a67163ccedbffad8a7f2ac78035645d50d7004eeb6a5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032091/evaluation_receipt.json",
+      "sha256": "d76b3bf7a1ca6ca5f0c339690a39e59ba507ca826e611f2e928a1337eb49039c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032092/evaluation_receipt.json",
+      "sha256": "123b85edcddc5a47bf8d2599d403a89b25a947bfcad8854aced7754e599d8b35"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032093/evaluation_receipt.json",
+      "sha256": "9110c3123489d978c3280915423bea681d4ae496d8c1dc95b681006de84087e2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032094/evaluation_receipt.json",
+      "sha256": "d4a51e56fd8d96745a30c3c0c8a81cd5e55e292a2c775b7a2346f9163dcf39d1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032095/evaluation_receipt.json",
+      "sha256": "5b01df67f69b3bbe7016f12ed555edb1b2960d9f22e8b7b65d1c018529bfdd5c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032096/evaluation_receipt.json",
+      "sha256": "2b78b8f897c33823c3bb83edbf648b5ce45f45e405af5d0530214ef351ce5f08"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032097/evaluation_receipt.json",
+      "sha256": "ca7268efde36ba27cc14256acba75d4a18e2edcb241c277149181ec53adcddbb"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032098/evaluation_receipt.json",
+      "sha256": "4ea6676a869379e272b8e290505555e5aa660a8cf148b111cc400ec9e7e62ec0"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032099/evaluation_receipt.json",
+      "sha256": "924cfca7c37f64a8d4f61381cd7981a8989b95e0676f708c8c524ea8fcb8d105"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032100/evaluation_receipt.json",
+      "sha256": "1daeb2d9297c70348680f56c2fc22f9ad92ac12843209185e32cda1995244b78"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032101/evaluation_receipt.json",
+      "sha256": "62903d28180afda8d6da21c6209384dd555f0b49ded4b5973e8ac0c01f5816ac"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032102/evaluation_receipt.json",
+      "sha256": "48ad95f4a59872b4c7ba367c22d14985f886c1dba06385f956347fb05fffb76a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032103/evaluation_receipt.json",
+      "sha256": "4a146ed9f1d42fe45a5afb62fadb3bd86fc1ddf1f04186b390e6891ea805e9fc"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032104/evaluation_receipt.json",
+      "sha256": "b548d85424c4fe9796213410a83f029430126dbcb9d1ced97d3b571cad29fda8"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032105/evaluation_receipt.json",
+      "sha256": "fda14cd44ab0eb2d36ff49e2c26fd9bc1177bb0151197523ea1633f8e534a762"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032106/evaluation_receipt.json",
+      "sha256": "14ea49818808f14cbbf360faec78b43066e25793bba58e8eba7b38e095149a00"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032107/evaluation_receipt.json",
+      "sha256": "574687dc90a2297e1b1015104cd93d6b2161af83ec503b355f4fc424c8f299da"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032108/evaluation_receipt.json",
+      "sha256": "0db897bb1b305625c1db1b7741cba4f0312b191b7d111112e0cb0b90a7272844"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032109/evaluation_receipt.json",
+      "sha256": "794f84389541a05b1fa0ae1008d57dfdfa6a7cf5e76721bf9fd5139e82b9f3d3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032110/evaluation_receipt.json",
+      "sha256": "b6f4ea6fbef95d6216eaa9fb365d19eeef7a0d236bdf0e7986ef6bdaa525e1f6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032111/evaluation_receipt.json",
+      "sha256": "c0c35288a260e794c4002a79f9f4d935657f794dd7adcfc3c7ad2ae7a4b33356"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032112/evaluation_receipt.json",
+      "sha256": "6b2fca152593e40d17d23738476129a6e8c9f1b904003326ff4e594812ff7ec1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032113/evaluation_receipt.json",
+      "sha256": "06b881c54cc9dbb34121d8d19627c8a28e409164272f36e45c0803854b481107"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032114/evaluation_receipt.json",
+      "sha256": "f26b4591f2968910040728da29eef37a36aa3d575458b336777290e4fa93a43c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032115/evaluation_receipt.json",
+      "sha256": "8d2c1950b54d84fb8dcf2d2017eec6ac11974eb471ac8bccf074714722977671"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032116/evaluation_receipt.json",
+      "sha256": "c7005a79543ce61feda1195c53652278b744ebc17c7f274aed6bd2c6f06acc3e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032117/evaluation_receipt.json",
+      "sha256": "18f3b2f6fcb11c3f233f3b4d2fc666d11221a5b0e26f5f633444e67be1cb8067"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032118/evaluation_receipt.json",
+      "sha256": "5f4a9909b51e269abe8b3fd1d469f53662e6b9da96761b6810614e6a7a323d7e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032119/evaluation_receipt.json",
+      "sha256": "57e1543cff9ffa4405163ecebadb20ce6ef8e21c93bd5366cc7b7f2236d17be9"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032120/evaluation_receipt.json",
+      "sha256": "0fc42f071de473150e0143375dacc77bb6bb505f5883a28e8a0914f00c15b8bb"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032121/evaluation_receipt.json",
+      "sha256": "97308a2f850a6a2041031471006e0eacf80a2e4de8f2ce65762f6dac3fc57ed8"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032122/evaluation_receipt.json",
+      "sha256": "5830cc2cee233087954a371d74487c9d6e6f3016609fc2a7fa89098c5531ba84"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032123/evaluation_receipt.json",
+      "sha256": "27175d802b5fc515e62f31ebb21d5aab426227c14f2ae7653d14407d1492f4f8"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032124/evaluation_receipt.json",
+      "sha256": "23ba3642548389ea4d9b8e69d56e36bc90a0f80dcb6d4dde02c9eae7b39b85cb"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032125/evaluation_receipt.json",
+      "sha256": "6c071b2710c183958392db0ec255d221a9a2df60f4e0139bcac0b373cd769977"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032126/evaluation_receipt.json",
+      "sha256": "106898d6b98a1288b55ab2351b1131c46d26a4c646f48912b8228dc5774fbf67"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032127/evaluation_receipt.json",
+      "sha256": "e9ec1763476a7b7ed981b7c50c6817786b51b1f715cb762259bc295ed6babfb4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032128/evaluation_receipt.json",
+      "sha256": "3459a83d5fe5a0cf77b7f54b19b682e20b1a78431c0845b64ca59ebf708aa414"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032129/evaluation_receipt.json",
+      "sha256": "4e0fae45a9b80f604efbd4926c418d4b9eb7bf849c284e53c1f4c55d1431b00e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032130/evaluation_receipt.json",
+      "sha256": "82a0818bdf1620f70f2608a519ea6377e41999d3669394a531322d8af167bb45"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032131/evaluation_receipt.json",
+      "sha256": "f92d7325c7464bb285a2a5dccd85f2b7341ed545a174119b602ba7ce0b5ab160"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032132/evaluation_receipt.json",
+      "sha256": "e16ab557f57a95f9904840e7e90b46d06402bf67bddcd637bd17e56832aed6a3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032133/evaluation_receipt.json",
+      "sha256": "ed66b12e843e3024b93335aae0f6393fc808f51ac7d0ece310b1f46c9776af7d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032134/evaluation_receipt.json",
+      "sha256": "77ebc674a64d69b70990524107ac7bd1107f7f9a84018a9a4a1cf22027441a41"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032135/evaluation_receipt.json",
+      "sha256": "ae5968b0ee50506d996a3be850ea287b51b762157762c583cd627de65b65622a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032136/evaluation_receipt.json",
+      "sha256": "5861d0c0bdc364cb3c860da3d0c8786955766b626fabc6b830b593caffc0c1d3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032137/evaluation_receipt.json",
+      "sha256": "e68b16fdfaa3d6b771684820b60eb447421ff73508c2668642f790f4c933fe1c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032138/evaluation_receipt.json",
+      "sha256": "cdf48f570fbc016c5d0b94cdb90a5f3ee0327bddbdf5e6c9eee16e4a3d22e23a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032139/evaluation_receipt.json",
+      "sha256": "ea3b2d730bc3155193541012ec62ae33d93c67595b6fa4eb7c673271692050e3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032140/evaluation_receipt.json",
+      "sha256": "01e88d35ff4ad9ffd59d691681219194d4d0a59aaf03956685cd2806130e5c3a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032141/evaluation_receipt.json",
+      "sha256": "33dbe081ac64bb3bd3d4233065b15d5f810468b3cfc5c70cde259fb48a6c4862"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032142/evaluation_receipt.json",
+      "sha256": "2babd4f34ab55ce75dd41332e1145382516ce083e4034ce5681c4dd8df55f784"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032143/evaluation_receipt.json",
+      "sha256": "055ee92be1bb73218999bfece2d5b7f527a045bb865eda4ff3ec1e1d6d11c173"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032144/evaluation_receipt.json",
+      "sha256": "aec30d40ec10ed89f4c915c308b8557cffd18d2afbb2d5fb45d8ff3fddd6467f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032145/evaluation_receipt.json",
+      "sha256": "ff3619d009499a8a651adfcf18c57f647fa415f60588c318086a93e551e69c22"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032146/evaluation_receipt.json",
+      "sha256": "6e3f8505b019cdb9bc1fd5217e14c211052ad41af5aeb607a70f61bd0f684e63"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032147/evaluation_receipt.json",
+      "sha256": "fa126734360dfd234ab489ac1ed83e5f6727cc6f7ea702e442cb7b554a8ccde1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032148/evaluation_receipt.json",
+      "sha256": "be2a83a316c0bef472495f7a0b3e6e7aa3ab37b293a077c777f3caf8e67b2f1a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032149/evaluation_receipt.json",
+      "sha256": "c52002f38e937597f9cb49f1afdd8f8881e94ed993d15a10fbe7dcb67b309948"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032150/evaluation_receipt.json",
+      "sha256": "b75e3f653df5ce4b682661133f2d5715d980ea6da4cea4e08e40336239275c79"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032151/evaluation_receipt.json",
+      "sha256": "c905dd55bc9083ebcc93e964f9e2d7f48f4ae7d5d2afec061c114323a928e975"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032152/evaluation_receipt.json",
+      "sha256": "398be9e9cc4dc74afc5425c90f4393ffcab60c3578e633c6f30cac5cf4dc8de0"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032153/evaluation_receipt.json",
+      "sha256": "2d55f9822a54ff94fc660ae30f78897123280a8dcc507e14bd0f7103e5a5a2de"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032154/evaluation_receipt.json",
+      "sha256": "45473fac4d76742102a34b25f7ca044c755cbbbd0a438fcc45294e93859a47a5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032155/evaluation_receipt.json",
+      "sha256": "d508fab65f608d4b0497c9587c098ce6cbfcfdcae1bf0253227fc56c61d0ffd4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032156/evaluation_receipt.json",
+      "sha256": "ad1c1e1817f7a02b6eec22faf598ce7c14dad4b2bd94b176d1e9e3777c88ac0f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032157/evaluation_receipt.json",
+      "sha256": "4f8dae5b3557cb725da7e5d15577a61694f6aa6e71eb19dcf64f0c9b512c1416"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032158/evaluation_receipt.json",
+      "sha256": "5daca06918f5b5c3b4f52848547b0ef398997222ea1e2962867ad7a874c6dc26"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032159/evaluation_receipt.json",
+      "sha256": "1048eda0091e5b94e98a7642391046827b554b19324c4e3077333cb9064a1210"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032160/evaluation_receipt.json",
+      "sha256": "9ef62ebab5125f451337f50fd0e56ad343957e1205936a67ab1f1150815100da"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032161/evaluation_receipt.json",
+      "sha256": "991694a48c76b13ee4915f3c5657eca2d68b69caaeb106c8fb8d745ecae0aafc"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032162/evaluation_receipt.json",
+      "sha256": "0be63c41061470abe3588cde152708e371091392267046aa04ff5f6ad76fe141"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032163/evaluation_receipt.json",
+      "sha256": "7a440b070804a0fa060408860571bf17b3ecb30f1f93173ffffcfd1a7f56ec76"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032164/evaluation_receipt.json",
+      "sha256": "f17903d1d06d3fea0fb5b19f8e6ea42ddc7a4e4696b34f21970ab00b523a031f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032165/evaluation_receipt.json",
+      "sha256": "a779e6816966b55bebe7f4458e840f245a4e75a21c1c8a012663587a14ad275f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032166/evaluation_receipt.json",
+      "sha256": "1041c4c9c9cd5f4ca1e1d50ca7352c2a9bd31b0131421961e383022bca966773"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032167/evaluation_receipt.json",
+      "sha256": "0ff7e6be6106d5809b079ac7dfbd3299d6ecf0a1073a4ad88cf6516ab36ce172"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032168/evaluation_receipt.json",
+      "sha256": "1cfbda99de77493be58a4719ea7f07c37cf879888ba21e464e23b8a8a235d965"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032169/evaluation_receipt.json",
+      "sha256": "59b9b9970b48cbb8d934acea307cde50ca4aee1f478cd76872a40ef551fa5c82"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032170/evaluation_receipt.json",
+      "sha256": "bca0fc427b5b411a2b85176ff8c5e4730032c40547b6b5cccc0fae9606fd9c73"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032171/evaluation_receipt.json",
+      "sha256": "e091763d406b2737812e6282a25fa686b3da0a393c962d6492583c9b46914497"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032172/evaluation_receipt.json",
+      "sha256": "cce633d88110acf00d4623d190a1c7fc030478077fb8d9e18e27a3ddfbab0140"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032173/evaluation_receipt.json",
+      "sha256": "a1af22f552deef182cc25e526d6b44c03db84b5e43b0a6099a85d74226de53a5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032174/evaluation_receipt.json",
+      "sha256": "030eea2c29020b3fd077e6a2ce08b4fb0c7279cfaa21f417767ce9e70f103fe9"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032175/evaluation_receipt.json",
+      "sha256": "7ce475afc736f410c3825dd9952d06d2cdd34dce569142b6d53f0563c5982857"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032176/evaluation_receipt.json",
+      "sha256": "44cdfa5162220dce3dba5977b56099601491cc07ee336f9c20d28d38e0969811"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032177/evaluation_receipt.json",
+      "sha256": "5b7960b0e526655731f67bb7fbd9fc0f6ab99d847f34a4ea58f246d82243c812"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032178/evaluation_receipt.json",
+      "sha256": "aeaf9f894d788ea865b83769a8bc0e6236222689bb4f5663d6f08d48adc26b99"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032179/evaluation_receipt.json",
+      "sha256": "2b7b276965f96b17ed40c379a59887f39cf791c2693b0616c5b3656d23e77516"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032180/evaluation_receipt.json",
+      "sha256": "5bf5b257018826caf08cc79010dc8ae005a26aad7c9fd5f4fab61b1105f04379"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032181/evaluation_receipt.json",
+      "sha256": "ba36317459cb40128e5d6aa32b937037722ca21f1dff8ebcb8cdaaca0532a682"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032182/evaluation_receipt.json",
+      "sha256": "4fa59f92a86320e14c041cfd5f386bd82f5d986ccdcaa30cf03f8a3b6e0caac2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032183/evaluation_receipt.json",
+      "sha256": "8b3f0083afb145341bf95e6e34157a0af7de5259da66b9082dce11c1bab311ed"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032184/evaluation_receipt.json",
+      "sha256": "3731bc554e104380d69003ff40516c459b841ba723f6aeb298554cd0ec17c0ae"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032185/evaluation_receipt.json",
+      "sha256": "8a95d9db203f9d1a56faf9bd2485852d2cc815766883b40db0dff58955c0bae6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032186/evaluation_receipt.json",
+      "sha256": "3dd2f7bb760dcf492a7c52fa31ed9e4c7fa2b169e02e5ddec8c7cf7a4cb85fc4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032187/evaluation_receipt.json",
+      "sha256": "9f39ce00270b3f70f49f83f1141674a9de4ee8abbe188a0a61d9711212148eff"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032188/evaluation_receipt.json",
+      "sha256": "0c7406282159980ee8fbb29665f1e1c81ac8c98bb8dac6ea5608c44dd39ecabc"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032189/evaluation_receipt.json",
+      "sha256": "1964ad659f06b39bf2d44d52f65748a46eea32fcbd88e61934ed9452c544a714"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032190/evaluation_receipt.json",
+      "sha256": "f3ce77f3cbbd104831bd7811de9574e38cf00f314b9201fe4c343d6b39f52601"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032191/evaluation_receipt.json",
+      "sha256": "000a4975f2c1dd2bcd95f21658b05c5bcbd5ee69480deea935477fd126dce774"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032192/evaluation_receipt.json",
+      "sha256": "273d68f300392c208f2ce43dc4cec26120f5f65eb7a0ac301091db07ef93eeed"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032193/evaluation_receipt.json",
+      "sha256": "c71f9b1e2acd2d0011af17d6ca12d98c3842107b871ce7d70f6c4226191be99c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032194/evaluation_receipt.json",
+      "sha256": "c401cbc8346fa8dd3633a27d4dd27e040fdcd7310338580df907c7aaa610898e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032195/evaluation_receipt.json",
+      "sha256": "8d2b00aa71bc3e074b2746ec6166dcc825b007520fea20b7c180269f211607fa"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032196/evaluation_receipt.json",
+      "sha256": "a8f4884e22fbbf359fdada7b175f24392446c80394688b613dd0430cb3846577"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032197/evaluation_receipt.json",
+      "sha256": "4f27370550b9d25d30543b55e1678a73d37723a3f17282ea58ff0eca30ac1a32"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032198/evaluation_receipt.json",
+      "sha256": "bd49497e180d640855cd2bee9d2a65475607cef69b522df505b5fb8b9981ea9a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032199/evaluation_receipt.json",
+      "sha256": "5e29f7327f55097c456ec9e614a2618902bf5894d011402625dd3a71c742c341"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032200/evaluation_receipt.json",
+      "sha256": "19a90b984758c0b36640bfec40c324919b80a6c636e6af1a3dd82843d09cae71"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032201/evaluation_receipt.json",
+      "sha256": "b2f00690679d05cd89915debace18ce6b91a6595295be0c690f5ea94a507ab11"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032202/evaluation_receipt.json",
+      "sha256": "50814d61a772a861012d5a0aed59a23573fe4149bb90facd0238c38ec3b27d1e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032203/evaluation_receipt.json",
+      "sha256": "b8d7d205125324db2095e168e9b389d493c86782062f7d5bd6ecef33f2c796ab"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032204/evaluation_receipt.json",
+      "sha256": "21dd97652547ccbe891238765f3fb1d6a37420da37006efd503c6c5a888cded3"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032205/evaluation_receipt.json",
+      "sha256": "61f80a767b808bb294e38d7c6b534330fff7383eaa5f1aec65ea91509e8ed564"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032206/evaluation_receipt.json",
+      "sha256": "0cb003d5a4e1c2acac2e82ecd81f0949a2cc89ad4e66500a8d02d84639f8a430"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032207/evaluation_receipt.json",
+      "sha256": "79adc1d4ea4fc848c296ef424fe1a4bac76036cf8335a9c740da9c89021a8e46"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032208/evaluation_receipt.json",
+      "sha256": "59c2e2dec55a93ab2bd5d26819629649302820063bbdc1a0667389ff345ae6f8"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032209/evaluation_receipt.json",
+      "sha256": "12aba8ddcc3eef27dcf0805fe9c8acf65a906a9b8ac91e4e796fb971c0c4187a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032210/evaluation_receipt.json",
+      "sha256": "784b0ad8b57b23b62d06d880c6cabd9c787739de7e60444a6f536609c729a0f4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032211/evaluation_receipt.json",
+      "sha256": "3d77b19a026df1c8c4889c6a235a2f6b29f8dd23be0b169d52bd0e654aaabba6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032212/evaluation_receipt.json",
+      "sha256": "1bc74e1f577d47db137b1905c727f39b949b7d952ab80a666443520243a3598a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032213/evaluation_receipt.json",
+      "sha256": "61f55f4b2539d3f3ba75c242406310385ee0cbf46d99c5648a7c6252d62ca47f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032214/evaluation_receipt.json",
+      "sha256": "c515168d0b8a3bd7a9a848263b1de69a953b802d607aeead93960bff2584c9d0"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032215/evaluation_receipt.json",
+      "sha256": "6ccced43fb7b7c569b5855106223d2f657cc25dc21c6d7839a45eb4b7f71d93c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032216/evaluation_receipt.json",
+      "sha256": "445b596c366a78727980100aa2e777f5c9844041de2592f2f923048e1797223d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032217/evaluation_receipt.json",
+      "sha256": "d5fda5d5fe96cd6d0a306710f49811a01253e61e142af97eb31832ea9b88b1f8"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032218/evaluation_receipt.json",
+      "sha256": "78047a58e9a0fe8d516ae87880f9634b243a26f031ab657b41ed56e3b7df188c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032219/evaluation_receipt.json",
+      "sha256": "fb027abcde0a601a73ae3c97c141a06e524ddafc3653fd864b2132e705785a31"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032220/evaluation_receipt.json",
+      "sha256": "e808b035944362ec1f39e9963b215a9238df99b28707cc02ab72e95ee6e37f37"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032221/evaluation_receipt.json",
+      "sha256": "9f5d0ab8db6c8debaf387689789045d46b25ceb5cdfdd4e19b50c5fb30222035"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032222/evaluation_receipt.json",
+      "sha256": "5b93e5c69408352830b7b650a0933114d4ea6909be8753b910480b1dacf24a79"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032223/evaluation_receipt.json",
+      "sha256": "cf10aa79c996c5d145692fa63af4b5b3f92ffa9f181c4cc474752813aea88b8d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032224/evaluation_receipt.json",
+      "sha256": "fdaebeefc25e35658c63bc69587f2f71f791d51b3050fdb16f98f19d7c83e5c5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032225/evaluation_receipt.json",
+      "sha256": "f13fb20868426062b73b4243ef9aa358244e7328b4e493dc6dd181419e38b969"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032226/evaluation_receipt.json",
+      "sha256": "ec649920b85a570723c395795c8a0e96d41ba7cb0dcde16f46f38fd9233dbc63"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032227/evaluation_receipt.json",
+      "sha256": "226a01e02800ab24c8a5d748e86b4796db495b1370cf91caa596e9f2973f4d19"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032228/evaluation_receipt.json",
+      "sha256": "397f49c326b115262c231d6030f29113eddcd05bb918b42e77cf3fea5a2a6c9c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032229/evaluation_receipt.json",
+      "sha256": "839e791fe2e2ce46904a4e1880168c463fb9c9b807519c0b1f8483a046f0d364"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032230/evaluation_receipt.json",
+      "sha256": "182366550787f954b6c953cc50cfa93824b3b361d0b208062236fd5f840f6791"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032231/evaluation_receipt.json",
+      "sha256": "08662533682f8f0c491cb05310be3c70cba4142fbb296fd4d145d50efb553312"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032232/evaluation_receipt.json",
+      "sha256": "566b17082d5103a8e4b976d2011f0c803ed8b203d8d17ecd33b854061fd5fc20"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032233/evaluation_receipt.json",
+      "sha256": "846d83f42b82869f769be16f5c1d57fd4ed2f71cfba509abcc8657c6a1480f21"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032234/evaluation_receipt.json",
+      "sha256": "2a21625bc71b90e33965115b128e5f0024e0e57690f84d07482eeca0398e5131"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032235/evaluation_receipt.json",
+      "sha256": "30300fd434a1cc70bb0ba4e0a64b14fdc8e2ff491a5c82bdce18e207ee633d18"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032236/evaluation_receipt.json",
+      "sha256": "f6499797f803ad5c03afedc7bfa5f265b94196c2b8704fa8828c0b8b4004cb65"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032237/evaluation_receipt.json",
+      "sha256": "a448d822f528adb22bc4a57b0680bf53a9cd20687ac05b630019c08516561338"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032238/evaluation_receipt.json",
+      "sha256": "7b05d1ca3cbf24973492e936f6335178ccbf80c8d6cd28535a043b11c5702da9"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032239/evaluation_receipt.json",
+      "sha256": "8a6324584bce29d686e0a0a1c148527adee93fae2380ac34e981f1ad58261c42"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032240/evaluation_receipt.json",
+      "sha256": "7d405534f5f890bc2acc4f0584fa143c042a691ad3e88babe85bedf108e51429"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032241/evaluation_receipt.json",
+      "sha256": "4740a72375283afbb1dea6fb8c8700d260022a85aa84526496deca71b1b008fd"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032242/evaluation_receipt.json",
+      "sha256": "14de22823362d6de76e56000a32eacbaf2d23df53e9ad72b1e7bba30b77e7b56"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032243/evaluation_receipt.json",
+      "sha256": "023f4946132b5442c014a5b7779b8a988d7d0f10d49076a7cef001771bc4bae4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032244/evaluation_receipt.json",
+      "sha256": "e65cd662431111023b1bb55ecfa21759466d455b19e56d53e298e93775feef3b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032245/evaluation_receipt.json",
+      "sha256": "4013d9aa4c5b42b3020232ada90dc9c6ca4c366e0fa23bb2413eccce6e64e563"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032246/evaluation_receipt.json",
+      "sha256": "458ceb853bce1f162a60f45b8410ad91159123d8a5680914828d01e27ca4a4a0"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032247/evaluation_receipt.json",
+      "sha256": "53817c65a469435384ad4aae5574dcbf6de7bf02b7561b5b8f58c0fa198bd0ce"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032248/evaluation_receipt.json",
+      "sha256": "79dd7b77fb7222f6bd7f7bd09f44835e017ab7abb4502909a14fd3398cd5faf7"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032249/evaluation_receipt.json",
+      "sha256": "0032ed9a663357c237ba5837fd4183c20819981debf510eb07f8e40063ec0ff7"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032250/evaluation_receipt.json",
+      "sha256": "a7bb6a817da44a9318d26be39c51091bcc2977a7e2b3ac8b22a5fa791464f199"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032251/evaluation_receipt.json",
+      "sha256": "46e2e774728737e8c89d8783c588ca70c2f223be99be92c698bfd100443446f5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032252/evaluation_receipt.json",
+      "sha256": "ecb1bc13f620b8969b2c468faecf118736d6a30b2d5d4c9374337d3b7cd360c2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032253/evaluation_receipt.json",
+      "sha256": "49be6e71b35c80607084645034d42a2765a60bd601b42bc7cf4dafb8fa1b6290"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032254/evaluation_receipt.json",
+      "sha256": "894daf1ab5547713cabac2bf3ce8990eab5a359928e9cc116d1c127464db795c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032255/evaluation_receipt.json",
+      "sha256": "759847c63c0e3e4d3deff70a2f7e749b5c55e707dc712af65af8e0dbb7b3228b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032256/evaluation_receipt.json",
+      "sha256": "016fd704b9ba85824f4ec77f3e7788256444d4d9a94a505f231fdedacb6126dc"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032257/evaluation_receipt.json",
+      "sha256": "53b0822257a22e9b8f8e3fa423760d95977da103ad472ac458e67c4de958a3b2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032258/evaluation_receipt.json",
+      "sha256": "7add92f7eb7be9d7302d965bca1d077d4d54453e8cd8d0f025e22f4e59d78990"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032259/evaluation_receipt.json",
+      "sha256": "2639da97f0a97b46e74ad14bdf8681a61fbde87f02405780adfba2f5df24c39b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032260/evaluation_receipt.json",
+      "sha256": "0573ce41fc00f1ffd19282b490697f60dcd1e34de7715658c9b610da1b8e24bb"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032261/evaluation_receipt.json",
+      "sha256": "071eceec0c96286ca8ef8ebc29a4ea92eeeccb0a7300ed9288a8de45b6d9754b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032262/evaluation_receipt.json",
+      "sha256": "55e7c0dbd3d52af2e3ac77bd5718479363cec2b1034605dd128ae754ab455327"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032263/evaluation_receipt.json",
+      "sha256": "5abc667a048835f15a4da120b5f65bd6eb128a22b983088338cbec5d60bd0255"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032264/evaluation_receipt.json",
+      "sha256": "c83bb404004d4b2feeafeca9e32a184786204202aab3ab7541cbc5b10d95c6a7"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032265/evaluation_receipt.json",
+      "sha256": "7e0e074b4ddb3a3a75e74d884910b7b96df6ed932b249f7b3979a5477ecac1f6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032266/evaluation_receipt.json",
+      "sha256": "39a92a4aaad37d87375ab9789022f1e61b76eb4a0fb0cee072ca075af7569afd"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032267/evaluation_receipt.json",
+      "sha256": "7374bc720e3d0871a96512ce7c8f1ad04b8d6b79d3a3a98a502650d12854891d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032268/evaluation_receipt.json",
+      "sha256": "2f407cbeb2fbc0b99b5997dacc6aaa397f5f0e3846feb187851bd4594713af8b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032269/evaluation_receipt.json",
+      "sha256": "e72e374c3d2661a238462ce85aef9f1a2d1d5f1e0e982a5a10395cc2c0cd9bd6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032270/evaluation_receipt.json",
+      "sha256": "2eb54cf3cffcd4108f2b8be96dad8ab3c1d547ae8fd8f5eeccc2c974a5707d22"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032271/evaluation_receipt.json",
+      "sha256": "d323086e2d29c01564e1cac3ecdab50ac558f3963a7b9a7cc2daccbc60e2caa5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032272/evaluation_receipt.json",
+      "sha256": "1211e7f749ab9f3501d64045208663e5bf40a60a78e77ef3fcd50b52042fd515"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032273/evaluation_receipt.json",
+      "sha256": "07e4865eff8d0c462799ce6b0263a882a8458a4243584732e49a9823460f3f1e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032274/evaluation_receipt.json",
+      "sha256": "3588f96add9ca62641410b142104fa19e27e74199de3c63052b7879143f2fffc"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032275/evaluation_receipt.json",
+      "sha256": "5a8bf1a47b3bc5f2846957ca099b6477db9ec0d92dca07a0251189f42dcd99d2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032276/evaluation_receipt.json",
+      "sha256": "e985341825fff6cecddd6f4dd5617925cbcdb385fd7654fc84899555392a22bf"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032277/evaluation_receipt.json",
+      "sha256": "e5024f383c822daaa1cbbb381c7df7c48d00855a796d69841f6eb06836ae08f8"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032278/evaluation_receipt.json",
+      "sha256": "d5a399489083bafcd5fd55e498522944f3354a6f868f3281cba7a77c7f38fb6c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032279/evaluation_receipt.json",
+      "sha256": "1eeb63e700277d50b66bc4235ca33b08459cc6ca1cda042ecec6dbea55930092"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032280/evaluation_receipt.json",
+      "sha256": "07033bbaf752a3e44f8ad00e335aa5dab91edd5ae9857ca3102b8ad03f34fe21"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032281/evaluation_receipt.json",
+      "sha256": "aea507e05ea00df08cecb01eee24f5d24fcc802e51b8868a3ce54ded24924960"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032282/evaluation_receipt.json",
+      "sha256": "b0d03ebc2a8f2be874e87e419ead5121317c4812510f6e953d7f1fbfeaeb55d1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032283/evaluation_receipt.json",
+      "sha256": "9142f0dbe2ddc4ee8ff8dff635be1fa8624446a9f73f5a8bb541a044dba9eb3b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032284/evaluation_receipt.json",
+      "sha256": "cb0897107376803c8fd7107df36b6e029248cc3eae571cd4697bbaf0939f93d7"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032285/evaluation_receipt.json",
+      "sha256": "8a2a5e9abb2435b859b085be60cf2ced5a479276ce46189dd745c02ffa405f62"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032286/evaluation_receipt.json",
+      "sha256": "fe8759afb1248e4f77348f63a8b08d6534ebc5c6084e854033e3bf0f096b982d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032287/evaluation_receipt.json",
+      "sha256": "3958aaee81264dfbf3b017020d4c957c7317e3debc607bac5cfe51d28187734b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032288/evaluation_receipt.json",
+      "sha256": "7b8b551a2859b44e9d3a582e2fe97892f2921b53273712d386d4b8e3d979d033"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032289/evaluation_receipt.json",
+      "sha256": "c7b557c99deef115cf5d30203039280b7a779460c7425ed78d7a96240ac54b02"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032290/evaluation_receipt.json",
+      "sha256": "af2d9217f032f05c9d8314843d6fb84c8cb75b010413d554d9b5787097b5e84d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032291/evaluation_receipt.json",
+      "sha256": "8db32ed3a7bf6339b8a5483ed697fd80bdec3a830644748e2e04d66ac9f861a6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032292/evaluation_receipt.json",
+      "sha256": "74af4f986f46a0d70cd679e8e4e19059337c814ccafea8db2288bf337ce2b001"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032293/evaluation_receipt.json",
+      "sha256": "93afbf590f9388e3c95b1f22a7e0bfb42ac6de957d9f0b75862633c4d5a9c5f8"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032294/evaluation_receipt.json",
+      "sha256": "843aa64bfc09eddce4a607a95acb3cd60dffafd87667bd10fb010283a98b1388"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032295/evaluation_receipt.json",
+      "sha256": "88d4a31af4162a1b68c53d3c953d816343c832cf535c8b80daaa76dffc34913d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032296/evaluation_receipt.json",
+      "sha256": "7c19b111ce6d88490e98b5ad14e7ced0945e3ea059c5f154c17234b772713f9b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032297/evaluation_receipt.json",
+      "sha256": "a6883b4844b06743d46b9b82646cd65daf1fa197967c69cee0ff0c0405aaa09f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032298/evaluation_receipt.json",
+      "sha256": "b7a6bbe5e760bfb1814de1b17a1fdfa749fc3ce49e7817deee153a712a0d0d5a"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032299/evaluation_receipt.json",
+      "sha256": "aa4f4392c6e870fea43431c40d9dcaace221e7a6c45c2352c937d2b6067d6ba7"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-baseline-v2-paired100-20261122-001/shifts/run_10032300/evaluation_receipt.json",
+      "sha256": "5543959ab6dc2aa0fc9a95d6a41d2ff9dd55851c1ff5128edfffbd5e65cfef7d"
+    }
+  ],
+  "primary_outcome": "mean_paired_combined_cost_bg128_minus_rolling",
+  "intervals": {
+    "method": "percentile_bootstrap_over_environment_seed_slots",
+    "replicates": 10000,
+    "seed": 90221,
+    "level": 0.95,
+    "secondary_contrasts": "descriptive_intervals_without_multiplicity_adjustment"
+  },
+  "groups": {
+    "unload_greedy": {
+      "shifts": 60,
+      "mean": {
+        "combined_cost": 2.9056626053022874,
+        "grade_cost": 2.778334289018458,
+        "waiting_cost": 0.12732831628383026,
+        "production_cost": 0.0,
+        "total_wait_seconds": 18335.27754487156,
+        "ore_tons": 18515.503367047735,
+        "waste_tons": 5950.826666666665,
+        "complete_task": 0.21666666666666667,
+        "all_four_windows_compliant": 0.21666666666666667,
+        "ore_target_met": 1.0,
+        "waste_target_met": 1.0
+      },
+      "decisions": 11122,
+      "action_counts": {
+        "completed_candidates": 43513,
+        "completed_plans": 43513,
+        "cross_window_candidates": 1763,
+        "invalid_branches": 0,
+        "max_scored_depth": 1,
+        "multi_step_plans": 0,
+        "nominal_improvements": 0,
+        "planned": 11122,
+        "scored_depth_1_requests": 11122,
+        "search_nodes": 0,
+        "timed_out": 0,
+        "tree_complete": 11122,
+        "work_budget_exhausted": 0
+      },
+      "complete_task_shifts": 13,
+      "waiting_by_stage_mean_seconds": {
+        "load_seconds": 7637.713452033025,
+        "dump_resource_queue_seconds": 233.1140179655054,
+        "dump_capacity_admission_seconds": 10464.450074873026
+      },
+      "windows": [
+        {
+          "window": 0,
+          "compliant": 28,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 1.5922923389634924,
+          "mean_grade": 0.2785895210212749,
+          "mean_tons": 4067.033543532906
+        },
+        {
+          "window": 1,
+          "compliant": 40,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.9680139582616033,
+          "mean_grade": 0.26966999868737285,
+          "mean_tons": 4760.735978117663
+        },
+        {
+          "window": 2,
+          "compliant": 41,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 1.1089768122781147,
+          "mean_grade": 0.2756169197616026,
+          "mean_tons": 4829.987778941589
+        },
+        {
+          "window": 3,
+          "compliant": 50,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.6392682894146288,
+          "mean_grade": 0.27030231424511303,
+          "mean_tons": 4857.746066486655
+        }
+      ],
+      "rpc_shift_p95_median_ms": 137.955325,
+      "rpc_max_ms": 248.191,
+      "rpc_over_target": 0,
+      "fallback_rate": 0.0,
+      "planning_deadline_fraction": 0.0,
+      "native_fallback_telemetry": {
+        "callbacks_with_both_flags": 0,
+        "total_callbacks": 11182
+      },
+      "window_failure_by_direction": [
+        {
+          "ok": 28,
+          "high": 27,
+          "low": 5
+        },
+        {
+          "ok": 40,
+          "low": 12,
+          "high": 8
+        },
+        {
+          "high": 19,
+          "ok": 41
+        },
+        {
+          "high": 7,
+          "low": 3,
+          "ok": 50
+        }
+      ],
+      "window_outcomes": {
+        "ok": 159,
+        "high": 61,
+        "low": 20
+      },
+      "ore_task_shifts": 60,
+      "waste_task_shifts": 60,
+      "windows_compliant_all": 13,
+      "available_native_fallback_callbacks": 0
+    },
+    "fifo_greedy": {
+      "shifts": 60,
+      "mean": {
+        "combined_cost": 1.6038709074739874,
+        "grade_cost": 1.4725644260407071,
+        "waiting_cost": 0.13130648143328075,
+        "production_cost": 0.0,
+        "total_wait_seconds": 18908.133326392424,
+        "ore_tons": 18540.253404867482,
+        "waste_tons": 6012.436666666666,
+        "complete_task": 0.45,
+        "all_four_windows_compliant": 0.45,
+        "ore_target_met": 1.0,
+        "waste_target_met": 1.0
+      },
+      "decisions": 11158,
+      "action_counts": {
+        "completed_candidates": 43646,
+        "completed_plans": 43646,
+        "cross_window_candidates": 1743,
+        "invalid_branches": 0,
+        "max_scored_depth": 1,
+        "multi_step_plans": 0,
+        "nominal_improvements": 0,
+        "planned": 11158,
+        "scored_depth_1_requests": 11158,
+        "search_nodes": 0,
+        "timed_out": 0,
+        "tree_complete": 11158,
+        "work_budget_exhausted": 0
+      },
+      "complete_task_shifts": 27,
+      "waiting_by_stage_mean_seconds": {
+        "load_seconds": 8274.337747640568,
+        "dump_resource_queue_seconds": 208.79434429932567,
+        "dump_capacity_admission_seconds": 10425.00123445253
+      },
+      "windows": [
+        {
+          "window": 0,
+          "compliant": 40,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 1.6054042162416782,
+          "mean_grade": 0.2771261468880923,
+          "mean_tons": 4044.717854864511
+        },
+        {
+          "window": 1,
+          "compliant": 47,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 1.012049010678942,
+          "mean_grade": 0.27225461560033243,
+          "mean_tons": 4804.9257882836355
+        },
+        {
+          "window": 2,
+          "compliant": 56,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.8610349360319638,
+          "mean_grade": 0.2724223224559916,
+          "mean_tons": 4826.139753023444
+        },
+        {
+          "window": 3,
+          "compliant": 59,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.40262943334429446,
+          "mean_grade": 0.2708026032867281,
+          "mean_tons": 4864.470008726834
+        }
+      ],
+      "rpc_shift_p95_median_ms": 136.3952,
+      "rpc_max_ms": 280.455,
+      "rpc_over_target": 0,
+      "fallback_rate": 0.0,
+      "planning_deadline_fraction": 0.0,
+      "native_fallback_telemetry": {
+        "callbacks_with_both_flags": 0,
+        "total_callbacks": 11218
+      },
+      "window_failure_by_direction": [
+        {
+          "ok": 40,
+          "high": 18,
+          "low": 2
+        },
+        {
+          "ok": 47,
+          "high": 8,
+          "low": 5
+        },
+        {
+          "ok": 56,
+          "low": 1,
+          "high": 3
+        },
+        {
+          "ok": 59,
+          "high": 1
+        }
+      ],
+      "window_outcomes": {
+        "ok": 202,
+        "high": 30,
+        "low": 8
+      },
+      "ore_task_shifts": 60,
+      "waste_task_shifts": 60,
+      "windows_compliant_all": 27,
+      "available_native_fallback_callbacks": 0
+    },
+    "rolling": {
+      "shifts": 60,
+      "mean": {
+        "combined_cost": 1.143064353723037,
+        "grade_cost": 1.0201824421127228,
+        "waiting_cost": 0.12288191161031438,
+        "production_cost": 0.0,
+        "total_wait_seconds": 17694.995271885266,
+        "ore_tons": 18407.208141747826,
+        "waste_tons": 5963.743333333332,
+        "complete_task": 0.6833333333333333,
+        "all_four_windows_compliant": 0.6833333333333333,
+        "ore_target_met": 1.0,
+        "waste_target_met": 1.0
+      },
+      "decisions": 11064,
+      "action_counts": {
+        "completed_candidates": 43362,
+        "completed_plans": 208522,
+        "cross_window_candidates": 1715,
+        "invalid_branches": 0,
+        "max_scored_depth": 3,
+        "multi_step_plans": 219377,
+        "nominal_improvements": 7145,
+        "planned": 11064,
+        "retained_multi_step_requests": 10973,
+        "scored_depth_1_requests": 61,
+        "scored_depth_2_requests": 78,
+        "scored_depth_3_requests": 10925,
+        "search_nodes": 219407,
+        "timed_out": 30,
+        "tree_complete": 120,
+        "wall_guard_restored_incumbent": 30,
+        "work_budget_exhausted": 10914
+      },
+      "complete_task_shifts": 41,
+      "waiting_by_stage_mean_seconds": {
+        "load_seconds": 7409.795562537192,
+        "dump_resource_queue_seconds": 259.90379650526666,
+        "dump_capacity_admission_seconds": 10025.29591284281
+      },
+      "windows": [
+        {
+          "window": 0,
+          "compliant": 50,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.9351810732742805,
+          "mean_grade": 0.2728553912018684,
+          "mean_tons": 3976.990185354727
+        },
+        {
+          "window": 1,
+          "compliant": 53,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.7824357472715522,
+          "mean_grade": 0.2721995991294214,
+          "mean_tons": 4784.254945724552
+        },
+        {
+          "window": 2,
+          "compliant": 56,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.7927352449604205,
+          "mean_grade": 0.2726638863191525,
+          "mean_tons": 4856.15303101533
+        },
+        {
+          "window": 3,
+          "compliant": 60,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.2816031233146373,
+          "mean_grade": 0.2704911710186001,
+          "mean_tons": 4789.809979685021
+        }
+      ],
+      "rpc_shift_p95_median_ms": 630.21985,
+      "rpc_max_ms": 870.688,
+      "rpc_over_target": 0,
+      "fallback_rate": 0.0,
+      "planning_deadline_fraction": 0.0027114967462039045,
+      "native_fallback_telemetry": {
+        "callbacks_with_both_flags": 0,
+        "total_callbacks": 11124
+      },
+      "window_failure_by_direction": [
+        {
+          "ok": 50,
+          "high": 8,
+          "low": 2
+        },
+        {
+          "ok": 53,
+          "high": 5,
+          "low": 2
+        },
+        {
+          "ok": 56,
+          "high": 4
+        },
+        {
+          "ok": 60
+        }
+      ],
+      "window_outcomes": {
+        "ok": 219,
+        "high": 17,
+        "low": 4
+      },
+      "ore_task_shifts": 60,
+      "waste_task_shifts": 60,
+      "windows_compliant_all": 41,
+      "available_native_fallback_callbacks": 0
+    },
+    "dispatch_inspired": {
+      "shifts": 60,
+      "mean": {
+        "combined_cost": 3.477539155744849,
+        "grade_cost": 3.274687525503429,
+        "waiting_cost": 0.20285163024142103,
+        "production_cost": 0.0,
+        "total_wait_seconds": 29210.63475476463,
+        "ore_tons": 19175.440203903814,
+        "waste_tons": 5502.481666666665,
+        "complete_task": 0.05,
+        "all_four_windows_compliant": 0.05,
+        "ore_target_met": 1.0,
+        "waste_target_met": 1.0
+      },
+      "decisions": 11363,
+      "action_counts": {
+        "assignments_scored": 752260,
+        "flow_plan_successes": 1843,
+        "live_multitruck_matches": 11303,
+        "lp_optimal": 1843,
+        "matched_1_trucks_requests": 60,
+        "matched_2_trucks_requests": 59,
+        "matched_3_trucks_requests": 11244,
+        "max_matched_trucks": 3,
+        "planned": 11363,
+        "timed_out": 0
+      },
+      "complete_task_shifts": 3,
+      "waiting_by_stage_mean_seconds": {
+        "load_seconds": 4494.968744855146,
+        "dump_resource_queue_seconds": 716.0730098980481,
+        "dump_capacity_admission_seconds": 23999.593000011428
+      },
+      "windows": [
+        {
+          "window": 0,
+          "compliant": 46,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.8071966664369167,
+          "mean_grade": 0.27701916739977395,
+          "mean_tons": 4208.19035492062
+        },
+        {
+          "window": 1,
+          "compliant": 57,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.5336253486689455,
+          "mean_grade": 0.2707637118397737,
+          "mean_tons": 4999.085306592221
+        },
+        {
+          "window": 2,
+          "compliant": 36,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 1.1936154084870687,
+          "mean_grade": 0.27942705754580116,
+          "mean_tons": 4999.447847989371
+        },
+        {
+          "window": 3,
+          "compliant": 10,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 1.4854112761084017,
+          "mean_grade": 0.28364807938355285,
+          "mean_tons": 4968.71669442845
+        }
+      ],
+      "rpc_shift_p95_median_ms": 6.985149999999999,
+      "rpc_max_ms": 107.988,
+      "rpc_over_target": 0,
+      "fallback_rate": 0.0,
+      "planning_deadline_fraction": 0.0,
+      "native_fallback_telemetry": {
+        "callbacks_with_both_flags": 0,
+        "total_callbacks": 11423
+      },
+      "window_failure_by_direction": [
+        {
+          "ok": 46,
+          "high": 14
+        },
+        {
+          "ok": 57,
+          "high": 2,
+          "low": 1
+        },
+        {
+          "ok": 36,
+          "high": 24
+        },
+        {
+          "high": 49,
+          "ok": 10,
+          "low": 1
+        }
+      ],
+      "window_outcomes": {
+        "ok": 149,
+        "high": 89,
+        "low": 2
+      },
+      "ore_task_shifts": 60,
+      "waste_task_shifts": 60,
+      "windows_compliant_all": 3,
+      "available_native_fallback_callbacks": 0
+    },
+    "bg128": {
+      "shifts": 60,
+      "mean": {
+        "combined_cost": 0.23224316304725662,
+        "grade_cost": 0.12637399904631885,
+        "waiting_cost": 0.10586916400093775,
+        "production_cost": 0.0,
+        "total_wait_seconds": 15245.159616135034,
+        "ore_tons": 18530.81524223698,
+        "waste_tons": 6023.825,
+        "complete_task": 1.0,
+        "all_four_windows_compliant": 1.0,
+        "ore_target_met": 1.0,
+        "waste_target_met": 1.0
+      },
+      "decisions": 11196,
+      "action_counts": {
+        "sampled": 11196
+      },
+      "complete_task_shifts": 60,
+      "waiting_by_stage_mean_seconds": {
+        "load_seconds": 4405.270845328249,
+        "dump_resource_queue_seconds": 311.8582887694737,
+        "dump_capacity_admission_seconds": 10528.030482037311
+      },
+      "windows": [
+        {
+          "window": 0,
+          "compliant": 60,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.2881594922927106,
+          "mean_grade": 0.27036934781631144,
+          "mean_tons": 4028.4257371170356
+        },
+        {
+          "window": 1,
+          "compliant": 60,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.2841450192283283,
+          "mean_grade": 0.2694576957434984,
+          "mean_tons": 4801.9843808090645
+        },
+        {
+          "window": 2,
+          "compliant": 60,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.27866732807682204,
+          "mean_grade": 0.2697442149980931,
+          "mean_tons": 4806.661533989424
+        },
+        {
+          "window": 3,
+          "compliant": 60,
+          "empty": 0,
+          "valid_windows": 60,
+          "grade_rmse_pp": 0.26274403968682875,
+          "mean_grade": 0.2701684246169849,
+          "mean_tons": 4893.743590352455
+        }
+      ],
+      "rpc_shift_p95_median_ms": 10.0047,
+      "rpc_max_ms": 110.12,
+      "rpc_over_target": 0,
+      "fallback_rate": 0.0,
+      "planning_deadline_fraction": 0.0,
+      "native_fallback_telemetry": {
+        "callbacks_with_both_flags": 0,
+        "total_callbacks": 11256
+      },
+      "window_failure_by_direction": [
+        {
+          "ok": 60
+        },
+        {
+          "ok": 60
+        },
+        {
+          "ok": 60
+        },
+        {
+          "ok": 60
+        }
+      ],
+      "window_outcomes": {
+        "ok": 240
+      },
+      "ore_task_shifts": 60,
+      "waste_task_shifts": 60,
+      "windows_compliant_all": 60,
+      "available_native_fallback_callbacks": 0
+    }
+  },
+  "comparisons": [
+    {
+      "first": "bg128",
+      "second": "rolling",
+      "effect_direction": "first_minus_second",
+      "primary": true,
+      "metrics": {
+        "combined_cost": {
+          "mean": -0.9108211906757805,
+          "paired_bootstrap_ci95": [
+            -1.1749520523965278,
+            -0.6723143640528085
+          ],
+          "positive": 9,
+          "negative": 51,
+          "ties": 0
+        },
+        "grade_cost": {
+          "mean": -0.8938084430664037,
+          "paired_bootstrap_ci95": [
+            -1.1565424619585452,
+            -0.6572198058147237
+          ],
+          "positive": 7,
+          "negative": 48,
+          "ties": 5
+        },
+        "waiting_cost": {
+          "mean": -0.017012747609376624,
+          "paired_bootstrap_ci95": [
+            -0.024102750734582287,
+            -0.009924632040100103
+          ],
+          "positive": 16,
+          "negative": 44,
+          "ties": 0
+        },
+        "production_cost": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "total_wait_seconds": {
+          "mean": -2449.835655750234,
+          "paired_bootstrap_ci95": [
+            -3470.7961057798498,
+            -1429.1470137744159
+          ],
+          "positive": 16,
+          "negative": 44,
+          "ties": 0
+        },
+        "ore_tons": {
+          "mean": 123.60710048914989,
+          "paired_bootstrap_ci95": [
+            5.915432256544106,
+            242.92803349435044
+          ],
+          "positive": 33,
+          "negative": 27,
+          "ties": 0
+        },
+        "waste_tons": {
+          "mean": 60.081666666666784,
+          "paired_bootstrap_ci95": [
+            -17.31820833333308,
+            143.3394583333333
+          ],
+          "positive": 21,
+          "negative": 39,
+          "ties": 0
+        },
+        "complete_task": {
+          "mean": 0.31666666666666665,
+          "paired_bootstrap_ci95": [
+            0.2,
+            0.43333333333333335
+          ],
+          "positive": 19,
+          "negative": 0,
+          "ties": 41,
+          "both_complete": 41,
+          "both_failed": 0,
+          "mcnemar_two_sided_p": 3.814697265625e-06
+        },
+        "all_four_windows_compliant": {
+          "mean": 0.31666666666666665,
+          "paired_bootstrap_ci95": [
+            0.2,
+            0.43333333333333335
+          ],
+          "positive": 19,
+          "negative": 0,
+          "ties": 41
+        },
+        "ore_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "waste_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        }
+      },
+      "per_window_compliance": [
+        {
+          "window": 0,
+          "mean": 0.16666666666666666,
+          "paired_bootstrap_ci95": [
+            0.08333333333333333,
+            0.26666666666666666
+          ],
+          "positive": 10,
+          "negative": 0,
+          "ties": 50
+        },
+        {
+          "window": 1,
+          "mean": 0.11666666666666667,
+          "paired_bootstrap_ci95": [
+            0.05,
+            0.2
+          ],
+          "positive": 7,
+          "negative": 0,
+          "ties": 53
+        },
+        {
+          "window": 2,
+          "mean": 0.06666666666666667,
+          "paired_bootstrap_ci95": [
+            0.016666666666666666,
+            0.13333333333333333
+          ],
+          "positive": 4,
+          "negative": 0,
+          "ties": 56
+        },
+        {
+          "window": 3,
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        }
+      ]
+    },
+    {
+      "first": "bg128",
+      "second": "dispatch_inspired",
+      "effect_direction": "first_minus_second",
+      "primary": false,
+      "metrics": {
+        "combined_cost": {
+          "mean": -3.245295992697593,
+          "paired_bootstrap_ci95": [
+            -3.543155972530861,
+            -2.9556445261577857
+          ],
+          "positive": 0,
+          "negative": 60,
+          "ties": 0
+        },
+        "grade_cost": {
+          "mean": -3.14831352645711,
+          "paired_bootstrap_ci95": [
+            -3.445678402818508,
+            -2.8604223994401674
+          ],
+          "positive": 0,
+          "negative": 60,
+          "ties": 0
+        },
+        "waiting_cost": {
+          "mean": -0.09698246624048329,
+          "paired_bootstrap_ci95": [
+            -0.10591965383729439,
+            -0.08849572277190583
+          ],
+          "positive": 0,
+          "negative": 60,
+          "ties": 0
+        },
+        "production_cost": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "total_wait_seconds": {
+          "mean": -13965.475138629592,
+          "paired_bootstrap_ci95": [
+            -15252.430152570392,
+            -12743.384079154444
+          ],
+          "positive": 0,
+          "negative": 60,
+          "ties": 0
+        },
+        "ore_tons": {
+          "mean": -644.6249616668358,
+          "paired_bootstrap_ci95": [
+            -710.7633931521548,
+            -579.8065575766559
+          ],
+          "positive": 1,
+          "negative": 59,
+          "ties": 0
+        },
+        "waste_tons": {
+          "mean": 521.3433333333345,
+          "paired_bootstrap_ci95": [
+            380.5012083333345,
+            665.3206666666678
+          ],
+          "positive": 45,
+          "negative": 15,
+          "ties": 0
+        },
+        "complete_task": {
+          "mean": 0.95,
+          "paired_bootstrap_ci95": [
+            0.8833333333333333,
+            1.0
+          ],
+          "positive": 57,
+          "negative": 0,
+          "ties": 3,
+          "both_complete": 3,
+          "both_failed": 0,
+          "mcnemar_two_sided_p": 1.3877787807814457e-17
+        },
+        "all_four_windows_compliant": {
+          "mean": 0.95,
+          "paired_bootstrap_ci95": [
+            0.8833333333333333,
+            1.0
+          ],
+          "positive": 57,
+          "negative": 0,
+          "ties": 3
+        },
+        "ore_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "waste_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        }
+      },
+      "per_window_compliance": [
+        {
+          "window": 0,
+          "mean": 0.23333333333333334,
+          "paired_bootstrap_ci95": [
+            0.13333333333333333,
+            0.35
+          ],
+          "positive": 14,
+          "negative": 0,
+          "ties": 46
+        },
+        {
+          "window": 1,
+          "mean": 0.05,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.11666666666666667
+          ],
+          "positive": 3,
+          "negative": 0,
+          "ties": 57
+        },
+        {
+          "window": 2,
+          "mean": 0.4,
+          "paired_bootstrap_ci95": [
+            0.2833333333333333,
+            0.5333333333333333
+          ],
+          "positive": 24,
+          "negative": 0,
+          "ties": 36
+        },
+        {
+          "window": 3,
+          "mean": 0.8333333333333334,
+          "paired_bootstrap_ci95": [
+            0.7333333333333333,
+            0.9166666666666666
+          ],
+          "positive": 50,
+          "negative": 0,
+          "ties": 10
+        }
+      ]
+    },
+    {
+      "first": "bg128",
+      "second": "fifo_greedy",
+      "effect_direction": "first_minus_second",
+      "primary": false,
+      "metrics": {
+        "combined_cost": {
+          "mean": -1.371627744426731,
+          "paired_bootstrap_ci95": [
+            -1.6464113838182644,
+            -1.0952800485122303
+          ],
+          "positive": 5,
+          "negative": 55,
+          "ties": 0
+        },
+        "grade_cost": {
+          "mean": -1.3461904269943878,
+          "paired_bootstrap_ci95": [
+            -1.6211214658656221,
+            -1.0712840866263527
+          ],
+          "positive": 4,
+          "negative": 49,
+          "ties": 7
+        },
+        "waiting_cost": {
+          "mean": -0.025437317432342992,
+          "paired_bootstrap_ci95": [
+            -0.032184469531249975,
+            -0.018722693917683886
+          ],
+          "positive": 11,
+          "negative": 49,
+          "ties": 0
+        },
+        "production_cost": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "total_wait_seconds": {
+          "mean": -3662.9737102573913,
+          "paired_bootstrap_ci95": [
+            -4634.563612499996,
+            -2696.067924146479
+          ],
+          "positive": 11,
+          "negative": 49,
+          "ties": 0
+        },
+        "ore_tons": {
+          "mean": -9.438162630507758,
+          "paired_bootstrap_ci95": [
+            -120.1309618655401,
+            102.01977884169209
+          ],
+          "positive": 27,
+          "negative": 33,
+          "ties": 0
+        },
+        "waste_tons": {
+          "mean": 11.388333333333382,
+          "paired_bootstrap_ci95": [
+            -44.07033333333323,
+            68.57199999999987
+          ],
+          "positive": 28,
+          "negative": 32,
+          "ties": 0
+        },
+        "complete_task": {
+          "mean": 0.55,
+          "paired_bootstrap_ci95": [
+            0.4166666666666667,
+            0.6666666666666666
+          ],
+          "positive": 33,
+          "negative": 0,
+          "ties": 27,
+          "both_complete": 27,
+          "both_failed": 0,
+          "mcnemar_two_sided_p": 2.3283064365386963e-10
+        },
+        "all_four_windows_compliant": {
+          "mean": 0.55,
+          "paired_bootstrap_ci95": [
+            0.4166666666666667,
+            0.6666666666666666
+          ],
+          "positive": 33,
+          "negative": 0,
+          "ties": 27
+        },
+        "ore_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "waste_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        }
+      },
+      "per_window_compliance": [
+        {
+          "window": 0,
+          "mean": 0.3333333333333333,
+          "paired_bootstrap_ci95": [
+            0.21666666666666667,
+            0.45
+          ],
+          "positive": 20,
+          "negative": 0,
+          "ties": 40
+        },
+        {
+          "window": 1,
+          "mean": 0.21666666666666667,
+          "paired_bootstrap_ci95": [
+            0.11666666666666667,
+            0.3333333333333333
+          ],
+          "positive": 13,
+          "negative": 0,
+          "ties": 47
+        },
+        {
+          "window": 2,
+          "mean": 0.06666666666666667,
+          "paired_bootstrap_ci95": [
+            0.016666666666666666,
+            0.13333333333333333
+          ],
+          "positive": 4,
+          "negative": 0,
+          "ties": 56
+        },
+        {
+          "window": 3,
+          "mean": 0.016666666666666666,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.05
+          ],
+          "positive": 1,
+          "negative": 0,
+          "ties": 59
+        }
+      ]
+    },
+    {
+      "first": "bg128",
+      "second": "unload_greedy",
+      "effect_direction": "first_minus_second",
+      "primary": false,
+      "metrics": {
+        "combined_cost": {
+          "mean": -2.673419442255031,
+          "paired_bootstrap_ci95": [
+            -3.0393377181561068,
+            -2.3132400636998356
+          ],
+          "positive": 1,
+          "negative": 59,
+          "ties": 0
+        },
+        "grade_cost": {
+          "mean": -2.651960289972139,
+          "paired_bootstrap_ci95": [
+            -3.0171938554666,
+            -2.291652718409735
+          ],
+          "positive": 1,
+          "negative": 59,
+          "ties": 0
+        },
+        "waiting_cost": {
+          "mean": -0.02145915228289252,
+          "paired_bootstrap_ci95": [
+            -0.027915341308584796,
+            -0.01502577919471561
+          ],
+          "positive": 13,
+          "negative": 47,
+          "ties": 0
+        },
+        "production_cost": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "total_wait_seconds": {
+          "mean": -3090.117928736522,
+          "paired_bootstrap_ci95": [
+            -4019.8091484362117,
+            -2163.7122040390477
+          ],
+          "positive": 13,
+          "negative": 47,
+          "ties": 0
+        },
+        "ore_tons": {
+          "mean": 15.311875189240405,
+          "paired_bootstrap_ci95": [
+            -85.60825728108071,
+            116.32016991988331
+          ],
+          "positive": 29,
+          "negative": 31,
+          "ties": 0
+        },
+        "waste_tons": {
+          "mean": 72.99833333333328,
+          "paired_bootstrap_ci95": [
+            -10.10558333333362,
+            164.75262499999994
+          ],
+          "positive": 32,
+          "negative": 28,
+          "ties": 0
+        },
+        "complete_task": {
+          "mean": 0.7833333333333333,
+          "paired_bootstrap_ci95": [
+            0.6666666666666666,
+            0.8833333333333333
+          ],
+          "positive": 47,
+          "negative": 0,
+          "ties": 13,
+          "both_complete": 13,
+          "both_failed": 0,
+          "mcnemar_two_sided_p": 1.4210854715202004e-14
+        },
+        "all_four_windows_compliant": {
+          "mean": 0.7833333333333333,
+          "paired_bootstrap_ci95": [
+            0.6666666666666666,
+            0.8833333333333333
+          ],
+          "positive": 47,
+          "negative": 0,
+          "ties": 13
+        },
+        "ore_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "waste_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        }
+      },
+      "per_window_compliance": [
+        {
+          "window": 0,
+          "mean": 0.5333333333333333,
+          "paired_bootstrap_ci95": [
+            0.4,
+            0.65
+          ],
+          "positive": 32,
+          "negative": 0,
+          "ties": 28
+        },
+        {
+          "window": 1,
+          "mean": 0.3333333333333333,
+          "paired_bootstrap_ci95": [
+            0.21666666666666667,
+            0.45
+          ],
+          "positive": 20,
+          "negative": 0,
+          "ties": 40
+        },
+        {
+          "window": 2,
+          "mean": 0.31666666666666665,
+          "paired_bootstrap_ci95": [
+            0.2,
+            0.43333333333333335
+          ],
+          "positive": 19,
+          "negative": 0,
+          "ties": 41
+        },
+        {
+          "window": 3,
+          "mean": 0.16666666666666666,
+          "paired_bootstrap_ci95": [
+            0.08333333333333333,
+            0.26666666666666666
+          ],
+          "positive": 10,
+          "negative": 0,
+          "ties": 50
+        }
+      ]
+    },
+    {
+      "first": "rolling",
+      "second": "fifo_greedy",
+      "effect_direction": "first_minus_second",
+      "primary": false,
+      "metrics": {
+        "combined_cost": {
+          "mean": -0.4608065537509507,
+          "paired_bootstrap_ci95": [
+            -0.8160617107036273,
+            -0.08644709823339715
+          ],
+          "positive": 23,
+          "negative": 37,
+          "ties": 0
+        },
+        "grade_cost": {
+          "mean": -0.4523819839279843,
+          "paired_bootstrap_ci95": [
+            -0.8046407643506189,
+            -0.08084741619411144
+          ],
+          "positive": 24,
+          "negative": 35,
+          "ties": 1
+        },
+        "waiting_cost": {
+          "mean": -0.00842456982296637,
+          "paired_bootstrap_ci95": [
+            -0.015573565935397818,
+            -0.0016180334912482411
+          ],
+          "positive": 24,
+          "negative": 36,
+          "ties": 0
+        },
+        "production_cost": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "total_wait_seconds": {
+          "mean": -1213.1380545071568,
+          "paired_bootstrap_ci95": [
+            -2242.5934946972857,
+            -232.9968227397468
+          ],
+          "positive": 24,
+          "negative": 36,
+          "ties": 0
+        },
+        "ore_tons": {
+          "mean": -133.04526311965765,
+          "paired_bootstrap_ci95": [
+            -233.36473670762126,
+            -33.54846622008886
+          ],
+          "positive": 25,
+          "negative": 35,
+          "ties": 0
+        },
+        "waste_tons": {
+          "mean": -48.6933333333334,
+          "paired_bootstrap_ci95": [
+            -143.0249583333334,
+            42.01170833333328
+          ],
+          "positive": 32,
+          "negative": 28,
+          "ties": 0
+        },
+        "complete_task": {
+          "mean": 0.23333333333333334,
+          "paired_bootstrap_ci95": [
+            0.06666666666666667,
+            0.4
+          ],
+          "positive": 22,
+          "negative": 8,
+          "ties": 30,
+          "both_complete": 19,
+          "both_failed": 11,
+          "mcnemar_two_sided_p": 0.016124801710247997
+        },
+        "all_four_windows_compliant": {
+          "mean": 0.23333333333333334,
+          "paired_bootstrap_ci95": [
+            0.06666666666666667,
+            0.4
+          ],
+          "positive": 22,
+          "negative": 8,
+          "ties": 30
+        },
+        "ore_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "waste_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        }
+      },
+      "per_window_compliance": [
+        {
+          "window": 0,
+          "mean": 0.16666666666666666,
+          "paired_bootstrap_ci95": [
+            0.03333333333333333,
+            0.3
+          ],
+          "positive": 15,
+          "negative": 5,
+          "ties": 40
+        },
+        {
+          "window": 1,
+          "mean": 0.1,
+          "paired_bootstrap_ci95": [
+            -0.03333333333333333,
+            0.23333333333333334
+          ],
+          "positive": 12,
+          "negative": 6,
+          "ties": 42
+        },
+        {
+          "window": 2,
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            -0.1,
+            0.08333333333333333
+          ],
+          "positive": 4,
+          "negative": 4,
+          "ties": 52
+        },
+        {
+          "window": 3,
+          "mean": 0.016666666666666666,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.05
+          ],
+          "positive": 1,
+          "negative": 0,
+          "ties": 59
+        }
+      ]
+    },
+    {
+      "first": "fifo_greedy",
+      "second": "unload_greedy",
+      "effect_direction": "first_minus_second",
+      "primary": false,
+      "metrics": {
+        "combined_cost": {
+          "mean": -1.3017916978283006,
+          "paired_bootstrap_ci95": [
+            -1.7658945411814277,
+            -0.8366113312276122
+          ],
+          "positive": 14,
+          "negative": 46,
+          "ties": 0
+        },
+        "grade_cost": {
+          "mean": -1.3057698629777508,
+          "paired_bootstrap_ci95": [
+            -1.7698425483320692,
+            -0.8421437976332734
+          ],
+          "positive": 14,
+          "negative": 46,
+          "ties": 0
+        },
+        "waiting_cost": {
+          "mean": 0.003978165149450473,
+          "paired_bootstrap_ci95": [
+            -0.0027984592147230914,
+            0.01104006270926378
+          ],
+          "positive": 33,
+          "negative": 27,
+          "ties": 0
+        },
+        "production_cost": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "total_wait_seconds": {
+          "mean": 572.8557815208684,
+          "paired_bootstrap_ci95": [
+            -402.9781269201251,
+            1589.7690301339842
+          ],
+          "positive": 33,
+          "negative": 27,
+          "ties": 0
+        },
+        "ore_tons": {
+          "mean": 24.750037819748165,
+          "paired_bootstrap_ci95": [
+            -74.0608591812581,
+            122.16633412393693
+          ],
+          "positive": 34,
+          "negative": 26,
+          "ties": 0
+        },
+        "waste_tons": {
+          "mean": 61.6099999999999,
+          "paired_bootstrap_ci95": [
+            -24.399833333333326,
+            155.7791666666666
+          ],
+          "positive": 30,
+          "negative": 30,
+          "ties": 0
+        },
+        "complete_task": {
+          "mean": 0.23333333333333334,
+          "paired_bootstrap_ci95": [
+            0.06666666666666667,
+            0.4
+          ],
+          "positive": 21,
+          "negative": 7,
+          "ties": 32,
+          "both_complete": 6,
+          "both_failed": 26,
+          "mcnemar_two_sided_p": 0.012540951371192932
+        },
+        "all_four_windows_compliant": {
+          "mean": 0.23333333333333334,
+          "paired_bootstrap_ci95": [
+            0.06666666666666667,
+            0.4
+          ],
+          "positive": 21,
+          "negative": 7,
+          "ties": 32
+        },
+        "ore_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        },
+        "waste_target_met": {
+          "mean": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "ties": 60
+        }
+      },
+      "per_window_compliance": [
+        {
+          "window": 0,
+          "mean": 0.2,
+          "paired_bootstrap_ci95": [
+            0.016666666666666666,
+            0.38333333333333336
+          ],
+          "positive": 22,
+          "negative": 10,
+          "ties": 28
+        },
+        {
+          "window": 1,
+          "mean": 0.11666666666666667,
+          "paired_bootstrap_ci95": [
+            -0.03333333333333333,
+            0.26666666666666666
+          ],
+          "positive": 15,
+          "negative": 8,
+          "ties": 37
+        },
+        {
+          "window": 2,
+          "mean": 0.25,
+          "paired_bootstrap_ci95": [
+            0.11666666666666667,
+            0.38333333333333336
+          ],
+          "positive": 18,
+          "negative": 3,
+          "ties": 39
+        },
+        {
+          "window": 3,
+          "mean": 0.15,
+          "paired_bootstrap_ci95": [
+            0.05,
+            0.25
+          ],
+          "positive": 10,
+          "negative": 1,
+          "ties": 49
+        }
+      ]
+    }
+  ],
+  "engineering_acceptance": {
+    "unload_greedy": {
+      "passed": 60,
+      "failed": 0
+    },
+    "fifo_greedy": {
+      "passed": 60,
+      "failed": 0
+    },
+    "rolling": {
+      "passed": 60,
+      "failed": 0
+    },
+    "dispatch_inspired": {
+      "passed": 60,
+      "failed": 0
+    },
+    "bg128": {
+      "passed": 60,
+      "failed": 0
+    }
+  },
+  "scheduled_slots": 100,
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/baseline_comparison_001/paired_v2_100_001/prepared_001/suite.json",
+    "sha256": "93e139033ebcfa09947135565476c951cce31f0e100986adc0f87f04c9433243"
+  },
+  "offline_identity_and_settlement_checks": {
+    "environment_seeds": 60,
+    "actor_sampling_seeds": 60,
+    "effective_java_states": 300,
+    "distinct_initial_observations": 1,
+    "duplicate_physical_rows_by_policy": {
+      "unload_greedy": 0,
+      "fifo_greedy": 0,
+      "rolling": 0,
+      "dispatch_inspired": 0,
+      "bg128": 0
+    }
+  },
+  "first_run": 10032001,
+  "last_run": 10032300,
+  "snapshot_at_utc": "2026-11-22T05:28:28.046155+00:00",
+  "inference": "descriptive_interim; planned final analysis uses all 100 paired slots"
+}

@@ -1,0 +1,63 @@
+// Offline JVM test. No simulation engine or physical run needed.
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+public final class FleetResilienceChecks {
+    static void check(boolean ok) { if (!ok) throw new AssertionError(); }
+    static void near(double x, double y) { check(Math.abs(x-y) < 1e-8); }
+    static void mustFail(Runnable fn) {
+        try { fn.run(); } catch (IllegalStateException expected) { return; }
+        throw new AssertionError("invalid ledger/order accepted");
+    }
+    static Map<String, Double> end(FleetResilienceState s, double ore, double metal) {
+        Map<String, Double> c = new HashMap<>();
+        s.components(c);
+        s.terminal(c, ore, metal, 60., 18., Arrays.asList(new double[]{20.,.25}, new double[]{20.,.35}), 1e-5);
+        return c;
+    }
+    public static void main(String[] args) {
+        FleetResilienceState s = new FleetResilienceState(1,4,5400.25);
+        s.startDump(4,5350.25,50.0);
+        s.startDump(6,5390.25,10.0);
+        check(!s.triggerDue(5400.) && s.triggerDue(5400.25));
+        check(s.hasDueDump(5400.25));
+        s.defer(4); s.defer(2);
+        mustFail(() -> s.trigger(5400.25));
+        s.finishDump(4,5400.25);
+        mustFail(() -> s.trigger(5400.25));
+        s.finishDump(6,5400.25);
+        s.trigger(5400.25);
+        check(!s.contains(s.dispatchableMask,4) && s.contains(s.inSystemMask,4));
+        check(s.nextDeferred()==4 && s.nextDeferred()==2 && s.nextDeferred()==null);
+        // Processed prior to exit contributes to the four fixed windows only.
+        s.processed(5390.,5400.,10.,.20);
+        s.exit(4,21600.);
+        check(!s.contains(s.inSystemMask,4) && !s.contains(s.dispatchableMask,4));
+        // One slice crosses the left boundary; the last crosses the right boundary.
+        s.processed(21590.,21610.,20.,.25);
+        s.processed(21620.,21630.,10.,.27);
+        s.processed(28790.,28810.,20.,.29);
+        s.processed(28810.,28820.,10.,.35);
+        Map<String,Double> expected = end(s,100.,30.);
+        near(expected.get("fleet.window_ore_tons"),30.);
+        near(expected.get("fleet.window_metal_tons"),8.1);
+        near(expected.get("fleet.fifo_metal_tons"),12.);
+        check(expected.get("config.fleet.active_count")==8.);
+        mustFail(() -> end(s,99.,30.));
+        mustFail(() -> end(s,100.,29.));
+        mustFail(() -> s.exit(4,21601.));
+        FleetResilienceState healthy = new FleetResilienceState(0,-1,-1);
+        healthy.processed(7200.,14400.,150.,.30);
+        near(end(healthy,100.,30.).get("fleet.window_metal_tons"),0.);
+        FleetResilienceState late = new FleetResilienceState(0,1,19800.);
+        late.trigger(19800.);
+        near(end(late,100.,30.).get("fleet.exit_seconds"),-1.);
+        late.exit(1,21600.25);
+        late.processed(21600.,28800.,7200.,.27);
+        mustFail(() -> end(late,100.,30.));
+        Map<String,Double> tail = new HashMap<>();
+        late.terminal(tail,7200.,1944.,7200.,1944.,java.util.Collections.emptyList(),1e-5);
+        near(tail.get("fleet.window_ore_tons"),7199.75);
+        System.out.println("PASS: ties, masks, no-exit, exact/late windows, two independent FIFO balances");
+    }
+}

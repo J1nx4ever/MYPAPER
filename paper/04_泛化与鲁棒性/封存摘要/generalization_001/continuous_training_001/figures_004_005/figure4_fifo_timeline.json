@@ -1,0 +1,4781 @@
+{
+  "data": {
+    "bins": {
+      "dispatch_count_by_site": [
+        [
+          3,
+          3,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          2
+        ]
+      ],
+      "ore_unloaded_tons_by_site": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          183.4,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          147.0,
+          147.0,
+          0.0,
+          193.0
+        ],
+        [
+          0.0,
+          340.0,
+          0.0,
+          193.0
+        ],
+        [
+          0.0,
+          91.7,
+          0.0,
+          238.7
+        ],
+        [
+          238.7,
+          0.0,
+          0.0,
+          147.0
+        ],
+        [
+          284.7,
+          0.0,
+          0.0,
+          193.0
+        ],
+        [
+          91.7,
+          147.0,
+          0.0,
+          147.0
+        ],
+        [
+          0.0,
+          183.4,
+          0.0,
+          193.0
+        ],
+        [
+          284.7,
+          147.0,
+          0.0,
+          0.0
+        ],
+        [
+          193.0,
+          147.0,
+          0.0,
+          91.7
+        ],
+        [
+          193.0,
+          193.0,
+          0.0,
+          91.7
+        ],
+        [
+          147.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          193.0,
+          376.4,
+          0.0,
+          0.0
+        ],
+        [
+          147.0,
+          0.0,
+          0.0,
+          238.7
+        ],
+        [
+          91.7,
+          193.0,
+          0.0,
+          193.0
+        ],
+        [
+          147.0,
+          238.7,
+          0.0,
+          0.0
+        ],
+        [
+          147.0,
+          91.7,
+          0.0,
+          193.0
+        ],
+        [
+          147.0,
+          91.7,
+          0.0,
+          147.0
+        ],
+        [
+          0.0,
+          284.7,
+          0.0,
+          183.4
+        ],
+        [
+          386.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          147.0,
+          0.0,
+          91.7
+        ],
+        [
+          193.0,
+          91.7,
+          0.0,
+          91.7
+        ],
+        [
+          147.0,
+          0.0,
+          0.0,
+          284.7
+        ],
+        [
+          0.0,
+          238.7,
+          0.0,
+          0.0
+        ],
+        [
+          91.7,
+          147.0,
+          0.0,
+          238.7
+        ],
+        [
+          386.0,
+          193.0,
+          0.0,
+          0.0
+        ],
+        [
+          183.4,
+          91.7,
+          0.0,
+          147.0
+        ],
+        [
+          284.7,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          91.7,
+          0.0,
+          340.0
+        ],
+        [
+          193.0,
+          238.7,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          238.7,
+          0.0,
+          193.0
+        ],
+        [
+          91.7,
+          0.0,
+          0.0,
+          91.7
+        ],
+        [
+          193.0,
+          147.0,
+          0.0,
+          91.7
+        ],
+        [
+          284.7,
+          147.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          91.7,
+          0.0,
+          340.0
+        ],
+        [
+          193.0,
+          238.7,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          91.7,
+          0.0,
+          193.0
+        ],
+        [
+          340.0,
+          0.0,
+          0.0,
+          340.0
+        ],
+        [
+          147.0,
+          91.7,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          91.7,
+          0.0,
+          340.0
+        ],
+        [
+          284.7,
+          147.0,
+          0.0,
+          91.7
+        ],
+        [
+          147.0,
+          147.0,
+          0.0,
+          91.7
+        ],
+        [
+          0.0,
+          193.0,
+          0.0,
+          193.0
+        ],
+        [
+          468.09999999999997,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          147.0,
+          0.0,
+          294.0
+        ],
+        [
+          193.0,
+          193.0,
+          0.0,
+          0.0
+        ],
+        [
+          91.7,
+          91.7,
+          0.0,
+          284.7
+        ]
+      ],
+      "physically_processed_tons_by_site": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          125.16672302130061,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          205.23327697870215,
+          0.0,
+          0.0,
+          98.15380160009431
+        ],
+        [
+          0.0,
+          147.00000000000333,
+          0.0,
+          269.6666666666615
+        ],
+        [
+          0.0,
+          339.99999999999676,
+          0.0,
+          76.6666666666694
+        ],
+        [
+          144.75380160009115,
+          91.69999999999999,
+          0.0,
+          180.21286506657566
+        ],
+        [
+          185.64619839991025,
+          0.0,
+          0.0,
+          231.0204682667563
+        ],
+        [
+          192.99999999999557,
+          0.0,
+          0.0,
+          223.66666666666987
+        ],
+        [
+          91.70000000000083,
+          146.99999999999875,
+          0.0,
+          177.9666666666664
+        ],
+        [
+          185.92046826676057,
+          183.40000000000077,
+          0.0,
+          47.34619839990454
+        ],
+        [
+          122.66666666666578,
+          293.99999999999847,
+          0.0,
+          0.0
+        ],
+        [
+          169.11286506656822,
+          155.85380160009635,
+          0.0,
+          91.70000000000061
+        ],
+        [
+          287.8204682667668,
+          37.146198399899376,
+          0.0,
+          91.69999999999999
+        ],
+        [
+          52.17953173323087,
+          211.82402502357263,
+          0.0,
+          0.0
+        ],
+        [
+          192.9999999999987,
+          164.57597497642246,
+          0.0,
+          59.090691690250445
+        ],
+        [
+          146.99999999999918,
+          90.05735835692357,
+          0.0,
+          179.60930830974877
+        ],
+        [
+          91.69999999999962,
+          131.96666666667326,
+          0.0,
+          192.99999999999903
+        ],
+        [
+          146.99999999999997,
+          269.6666666666714,
+          0.0,
+          0.0
+        ],
+        [
+          146.9999999999998,
+          76.66666666667312,
+          0.0,
+          192.99999999999892
+        ],
+        [
+          146.99999999999997,
+          46.742641643054135,
+          0.0,
+          222.9240250236161
+        ],
+        [
+          24.490691690291843,
+          284.6999999999994,
+          0.0,
+          107.47597497638101
+        ],
+        [
+          361.50930830970515,
+          55.157358356966355,
+          0.0,
+          0.0
+        ],
+        [
+          141.42402502363836,
+          183.54264164303203,
+          0.0,
+          91.69999999999935
+        ],
+        [
+          198.5759749763591,
+          0.0,
+          0.0,
+          204.8969218771766
+        ],
+        [
+          0.0,
+          180.99051458286522,
+          0.0,
+          171.50307812282148
+        ],
+        [
+          91.69999999999959,
+          86.2666666666718,
+          0.0,
+          238.69999999999996
+        ],
+        [
+          192.99999999999912,
+          211.85318393961273,
+          0.0,
+          0.0
+        ],
+        [
+          317.0770318558243,
+          99.58963481084679,
+          0.0,
+          0.0
+        ],
+        [
+          177.96666666667252,
+          91.70000000000002,
+          0.0,
+          146.99999999999838
+        ],
+        [
+          166.05630147749883,
+          0.0,
+          0.0,
+          250.61036518917248
+        ],
+        [
+          0.0,
+          327.27703185584613,
+          0.0,
+          89.38963481082588
+        ],
+        [
+          192.9999999999992,
+          94.82296814415125,
+          0.0,
+          128.8436985225196
+        ],
+        [
+          60.704292525656975,
+          146.99999999999918,
+          0.0,
+          155.8563014774788
+        ],
+        [
+          109.56786975958242,
+          146.99999999999872,
+          0.0,
+          0.0
+        ],
+        [
+          307.42783771475865,
+          17.53882895191335,
+          0.0,
+          91.69999999999932
+        ],
+        [
+          91.69999999999922,
+          129.46117104808664,
+          0.0,
+          195.50549561858645
+        ],
+        [
+          180.47216228526145,
+          91.70000000000002,
+          0.0,
+          144.49450438141062
+        ],
+        [
+          12.527837714737736,
+          330.3999999999981,
+          0.0,
+          73.73882895193393
+        ],
+        [
+          297.4054956186067,
+          0.0,
+          0.0,
+          119.26117104806411
+        ],
+        [
+          76.66666666667382,
+          0.0,
+          0.0,
+          339.99999999999835
+        ],
+        [
+          112.92783771471683,
+          183.39999999999975,
+          0.0,
+          90.0678806630734
+        ],
+        [
+          166.73454732974716,
+          0.0,
+          0.0,
+          249.93211933692555
+        ],
+        [
+          117.96545267025174,
+          146.99999999999912,
+          0.0,
+          151.7012139964218
+        ],
+        [
+          146.99999999999955,
+          237.9678806630945,
+          0.0,
+          31.6987860035782
+        ],
+        [
+          121.63454732976928,
+          102.0321193369042,
+          0.0,
+          192.99999999999838
+        ],
+        [
+          346.465452670229,
+          0.0,
+          0.0,
+          70.20121399644185
+        ],
+        [
+          45.86788066311629,
+          146.99999999999918,
+          0.0,
+          223.79878600355713
+        ],
+        [
+          223.66666666667254,
+          192.9999999999984,
+          0.0,
+          0.0
+        ]
+      ],
+      "seconds": 600
+    },
+    "boundary_crossing_batches": [
+      {
+        "actual_grade": 0.362962648269476,
+        "batch_id": "batch-30",
+        "dispatch_decision": 35,
+        "dispatch_seconds": 4884.437970745513,
+        "fifo_wait_seconds": 278.8299926387217,
+        "processed_tons_by_window": {
+          "1": 155.85380160009638,
+          "2": 37.146198399899376
+        },
+        "processing": [
+          {
+            "metal_tons": 2.322028372735283,
+            "physical_end_seconds": 6984.782825839361,
+            "physical_start_seconds": 6975.570525695859,
+            "tons": 6.3974306552098135,
+            "visible_seconds": 6984.782825839361,
+            "window": 1
+          },
+          {
+            "metal_tons": 44.111463173307115,
+            "physical_end_seconds": 7159.78845595699,
+            "physical_start_seconds": 6984.782825839361,
+            "tons": 121.53168758168539,
+            "visible_seconds": 7159.78845595699,
+            "window": 1
+          },
+          {
+            "metal_tons": 10.13561702559407,
+            "physical_end_seconds": 7200.0,
+            "physical_start_seconds": 7159.78845595699,
+            "tons": 27.92468336320116,
+            "visible_seconds": 7200.199999995642,
+            "window": 1
+          },
+          {
+            "metal_tons": 13.48268254437085,
+            "physical_end_seconds": 7253.4905256958555,
+            "physical_start_seconds": 7200.0,
+            "tons": 37.146198399899376,
+            "visible_seconds": 7253.599999995594,
+            "window": 2
+          }
+        ],
+        "role": "H",
+        "signed_metal_surplus_tons_by_window": {
+          "1": 14.488582139610452,
+          "2": 3.453208976398017
+        },
+        "site": 1,
+        "truck": 7,
+        "unload_seconds": 6696.740533057137,
+        "unloaded_metal_tons": 70.05179111600887,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.2951824483196439,
+        "batch_id": "batch-66",
+        "dispatch_decision": 82,
+        "dispatch_seconds": 12537.36321166314,
+        "fifo_wait_seconds": 291.03497452554257,
+        "processed_tons_by_window": {
+          "2": 21.496921877176586,
+          "3": 171.50307812282148
+        },
+        "processing": [
+          {
+            "metal_tons": 6.3455140310411,
+            "physical_end_seconds": 14400.0,
+            "physical_start_seconds": 14369.044432496865,
+            "tons": 21.496921877176586,
+            "visible_seconds": 14400.000000017324,
+            "window": 2
+          },
+          {
+            "metal_tons": 18.197808591472565,
+            "physical_end_seconds": 14488.775076299062,
+            "physical_start_seconds": 14400.0,
+            "tons": 61.64935854101571,
+            "visible_seconds": 14488.775076299062,
+            "window": 3
+          },
+          {
+            "metal_tons": 7.330911877845904,
+            "physical_end_seconds": 14524.53774838269,
+            "physical_start_seconds": 14488.775076299062,
+            "tons": 24.835188946964376,
+            "visible_seconds": 14524.53774838269,
+            "window": 3
+          },
+          {
+            "metal_tons": 25.09597802533113,
+            "physical_end_seconds": 14646.964432496861,
+            "physical_start_seconds": 14524.53774838269,
+            "tons": 85.0185306348414,
+            "visible_seconds": 14647.000000018223,
+            "window": 3
+          }
+        ],
+        "role": "M",
+        "signed_metal_surplus_tons_by_window": {
+          "2": 0.5413451242034215,
+          "3": 4.3188674014878
+        },
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 14078.009457971322,
+        "unloaded_metal_tons": 56.970212525691274,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.2986962165034289,
+        "batch_id": "batch-100",
+        "dispatch_decision": 134,
+        "dispatch_seconds": 20075.17608630926,
+        "fifo_wait_seconds": 267.0167966752124,
+        "processed_tons_by_window": {
+          "3": 2.5054956185874384,
+          "4": 144.4945043814106
+        },
+        "processing": [
+          {
+            "metal_tons": 0.748382061737986,
+            "physical_end_seconds": 21600.0,
+            "physical_start_seconds": 21596.392086309235,
+            "tons": 2.5054956185874384,
+            "visible_seconds": 21600.000000043518,
+            "window": 3
+          },
+          {
+            "metal_tons": 10.837956055495209,
+            "physical_end_seconds": 21652.249261482473,
+            "physical_start_seconds": 21600.0,
+            "tons": 36.28420936282865,
+            "visible_seconds": 21652.249261482473,
+            "window": 4
+          },
+          {
+            "metal_tons": 16.979081917932763,
+            "physical_end_seconds": 21734.104593458338,
+            "physical_start_seconds": 21652.249261482473,
+            "tons": 56.84398053879551,
+            "visible_seconds": 21734.104593458338,
+            "window": 4
+          },
+          {
+            "metal_tons": 1.0555009900210681,
+            "physical_end_seconds": 21739.193112634854,
+            "physical_start_seconds": 21734.104593458338,
+            "tons": 3.533693872580242,
+            "visible_seconds": 21739.193112634854,
+            "window": 4
+          },
+          {
+            "metal_tons": 2.519596517731311,
+            "physical_end_seconds": 21751.339965474188,
+            "physical_start_seconds": 21739.193112634854,
+            "tons": 8.435314471759929,
+            "visible_seconds": 21751.339965474188,
+            "window": 4
+          },
+          {
+            "metal_tons": 11.76782628308513,
+            "physical_end_seconds": 21808.072086309232,
+            "physical_start_seconds": 21751.339965474188,
+            "tons": 39.39730613544628,
+            "visible_seconds": 21808.200000044275,
+            "window": 4
+          }
+        ],
+        "role": "M",
+        "signed_metal_surplus_tons_by_window": {
+          "3": 0.07189824471937767,
+          "4": 4.146445581284615
+        },
+        "site": 3,
+        "truck": 4,
+        "unload_seconds": 21329.375289634023,
+        "unloaded_metal_tons": 43.90834382600405,
+        "unloaded_tons": 147.0
+      }
+    ],
+    "canonical_events": 631,
+    "dispatch_to_unload_seconds_10th_50th_90th": [
+      1107.1287390610166,
+      1432.3851883884627,
+      1817.7626075794813
+    ],
+    "dispatches": [
+      {
+        "decision": 0,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-0",
+        "role": "H",
+        "seconds": 0.0,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 1,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-1",
+        "role": "L",
+        "seconds": 0.0,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 2,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-2",
+        "role": "W",
+        "seconds": 0.0,
+        "site": 2,
+        "truck": 1
+      },
+      {
+        "decision": 3,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-3",
+        "role": "L",
+        "seconds": 0.0,
+        "site": 0,
+        "truck": 2
+      },
+      {
+        "decision": 4,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-4",
+        "role": "H",
+        "seconds": 1.5999999999999999,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 5,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-5",
+        "role": "L",
+        "seconds": 1.7999999999999998,
+        "site": 0,
+        "truck": 5
+      },
+      {
+        "decision": 6,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-6",
+        "role": "M",
+        "seconds": 3.800000000000001,
+        "site": 3,
+        "truck": 6
+      },
+      {
+        "decision": 7,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-7",
+        "role": "M",
+        "seconds": 5.8000000000000025,
+        "site": 3,
+        "truck": 7
+      },
+      {
+        "decision": 8,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-8",
+        "role": "H",
+        "seconds": 7.600000000000004,
+        "site": 1,
+        "truck": 8
+      },
+      {
+        "decision": 9,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-9",
+        "role": "W",
+        "seconds": 993.4692375097608,
+        "site": 2,
+        "truck": 0
+      },
+      {
+        "decision": 10,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-10",
+        "role": "H",
+        "seconds": 1101.9240875758687,
+        "site": 1,
+        "truck": 1
+      },
+      {
+        "decision": 11,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-11",
+        "role": "M",
+        "seconds": 1151.8079188493277,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 12,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-12",
+        "role": "M",
+        "seconds": 1446.9785256958562,
+        "site": 3,
+        "truck": 5
+      },
+      {
+        "decision": 13,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-13",
+        "role": "W",
+        "seconds": 1485.261121173343,
+        "site": 2,
+        "truck": 6
+      },
+      {
+        "decision": 14,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-14",
+        "role": "L",
+        "seconds": 1638.4630343680892,
+        "site": 0,
+        "truck": 3
+      },
+      {
+        "decision": 15,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-15",
+        "role": "W",
+        "seconds": 1850.051767717322,
+        "site": 2,
+        "truck": 7
+      },
+      {
+        "decision": 16,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-16",
+        "role": "M",
+        "seconds": 2038.2832327027158,
+        "site": 3,
+        "truck": 4
+      },
+      {
+        "decision": 17,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-17",
+        "role": "W",
+        "seconds": 2080.345949032549,
+        "site": 2,
+        "truck": 0
+      },
+      {
+        "decision": 18,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-18",
+        "role": "M",
+        "seconds": 2329.469274833086,
+        "site": 3,
+        "truck": 8
+      },
+      {
+        "decision": 19,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-19",
+        "role": "L",
+        "seconds": 2434.811739372101,
+        "site": 0,
+        "truck": 2
+      },
+      {
+        "decision": 20,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-20",
+        "role": "L",
+        "seconds": 2566.1149278987755,
+        "site": 0,
+        "truck": 1
+      },
+      {
+        "decision": 21,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-21",
+        "role": "H",
+        "seconds": 2788.4308426864973,
+        "site": 1,
+        "truck": 5
+      },
+      {
+        "decision": 22,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-22",
+        "role": "L",
+        "seconds": 2813.3259815776837,
+        "site": 0,
+        "truck": 6
+      },
+      {
+        "decision": 23,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-23",
+        "role": "M",
+        "seconds": 3008.1650340694327,
+        "site": 3,
+        "truck": 3
+      },
+      {
+        "decision": 24,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-24",
+        "role": "W",
+        "seconds": 3275.446510845378,
+        "site": 2,
+        "truck": 4
+      },
+      {
+        "decision": 25,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-25",
+        "role": "M",
+        "seconds": 3350.43303121707,
+        "site": 3,
+        "truck": 7
+      },
+      {
+        "decision": 26,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-26",
+        "role": "L",
+        "seconds": 3356.4193687624625,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 27,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-27",
+        "role": "H",
+        "seconds": 3484.6075238839107,
+        "site": 1,
+        "truck": 2
+      },
+      {
+        "decision": 28,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-28",
+        "role": "H",
+        "seconds": 3741.9377093823923,
+        "site": 1,
+        "truck": 1
+      },
+      {
+        "decision": 29,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-29",
+        "role": "W",
+        "seconds": 3752.549086269607,
+        "site": 2,
+        "truck": 8
+      },
+      {
+        "decision": 30,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-30",
+        "role": "L",
+        "seconds": 4046.4230182675733,
+        "site": 0,
+        "truck": 6
+      },
+      {
+        "decision": 31,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-31",
+        "role": "H",
+        "seconds": 4330.946763432611,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 32,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-32",
+        "role": "L",
+        "seconds": 4368.989271746955,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 33,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-33",
+        "role": "H",
+        "seconds": 4546.00461428826,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 34,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-34",
+        "role": "W",
+        "seconds": 4588.346600294797,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 35,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-35",
+        "role": "H",
+        "seconds": 4884.437970745513,
+        "site": 1,
+        "truck": 7
+      },
+      {
+        "decision": 36,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-36",
+        "role": "W",
+        "seconds": 4991.511326410656,
+        "site": 2,
+        "truck": 2
+      },
+      {
+        "decision": 37,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-37",
+        "role": "L",
+        "seconds": 5175.884629767789,
+        "site": 0,
+        "truck": 8
+      },
+      {
+        "decision": 38,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-38",
+        "role": "M",
+        "seconds": 5184.469752724401,
+        "site": 3,
+        "truck": 1
+      },
+      {
+        "decision": 39,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-39",
+        "role": "L",
+        "seconds": 5434.728217305406,
+        "site": 0,
+        "truck": 6
+      },
+      {
+        "decision": 40,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-40",
+        "role": "W",
+        "seconds": 5529.415148968939,
+        "site": 2,
+        "truck": 0
+      },
+      {
+        "decision": 41,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-41",
+        "role": "W",
+        "seconds": 5887.024159765231,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 42,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-42",
+        "role": "W",
+        "seconds": 5967.20520512449,
+        "site": 2,
+        "truck": 3
+      },
+      {
+        "decision": 43,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-43",
+        "role": "L",
+        "seconds": 6075.22955078002,
+        "site": 0,
+        "truck": 4
+      },
+      {
+        "decision": 44,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-44",
+        "role": "M",
+        "seconds": 6151.477775722641,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 45,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-45",
+        "role": "H",
+        "seconds": 6350.6268212101195,
+        "site": 1,
+        "truck": 8
+      },
+      {
+        "decision": 46,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-46",
+        "role": "H",
+        "seconds": 6375.293736472024,
+        "site": 1,
+        "truck": 1
+      },
+      {
+        "decision": 47,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-47",
+        "role": "H",
+        "seconds": 6696.740533057137,
+        "site": 1,
+        "truck": 7
+      },
+      {
+        "decision": 48,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-48",
+        "role": "H",
+        "seconds": 6758.326190749781,
+        "site": 1,
+        "truck": 0
+      },
+      {
+        "decision": 49,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-49",
+        "role": "L",
+        "seconds": 6950.115182108885,
+        "site": 0,
+        "truck": 6
+      },
+      {
+        "decision": 50,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-50",
+        "role": "W",
+        "seconds": 6984.782825839361,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 51,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-51",
+        "role": "M",
+        "seconds": 7159.78845595699,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 52,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-52",
+        "role": "M",
+        "seconds": 7291.831208460356,
+        "site": 3,
+        "truck": 4
+      },
+      {
+        "decision": 53,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-53",
+        "role": "L",
+        "seconds": 7301.1136584215965,
+        "site": 0,
+        "truck": 3
+      },
+      {
+        "decision": 54,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-54",
+        "role": "H",
+        "seconds": 8074.828844370577,
+        "site": 1,
+        "truck": 5
+      },
+      {
+        "decision": 55,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-55",
+        "role": "M",
+        "seconds": 8094.973403966059,
+        "site": 3,
+        "truck": 8
+      },
+      {
+        "decision": 56,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-56",
+        "role": "H",
+        "seconds": 8180.6595213719565,
+        "site": 1,
+        "truck": 1
+      },
+      {
+        "decision": 57,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-57",
+        "role": "L",
+        "seconds": 8361.549222940926,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 58,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-58",
+        "role": "W",
+        "seconds": 8382.500370497348,
+        "site": 2,
+        "truck": 6
+      },
+      {
+        "decision": 59,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-59",
+        "role": "H",
+        "seconds": 8434.77956492588,
+        "site": 1,
+        "truck": 2
+      },
+      {
+        "decision": 60,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-60",
+        "role": "L",
+        "seconds": 8666.116856205968,
+        "site": 0,
+        "truck": 3
+      },
+      {
+        "decision": 61,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-61",
+        "role": "L",
+        "seconds": 8869.514606827113,
+        "site": 0,
+        "truck": 4
+      },
+      {
+        "decision": 62,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-62",
+        "role": "M",
+        "seconds": 9169.42911590139,
+        "site": 3,
+        "truck": 7
+      },
+      {
+        "decision": 63,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-63",
+        "role": "H",
+        "seconds": 9389.365949465988,
+        "site": 1,
+        "truck": 0
+      },
+      {
+        "decision": 64,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-64",
+        "role": "W",
+        "seconds": 9586.87660864733,
+        "site": 2,
+        "truck": 8
+      },
+      {
+        "decision": 65,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-65",
+        "role": "L",
+        "seconds": 9771.298484654624,
+        "site": 0,
+        "truck": 5
+      },
+      {
+        "decision": 66,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-66",
+        "role": "H",
+        "seconds": 9883.204382342543,
+        "site": 1,
+        "truck": 1
+      },
+      {
+        "decision": 67,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-67",
+        "role": "H",
+        "seconds": 9895.70652099297,
+        "site": 1,
+        "truck": 6
+      },
+      {
+        "decision": 68,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-68",
+        "role": "M",
+        "seconds": 10117.749523071236,
+        "site": 3,
+        "truck": 3
+      },
+      {
+        "decision": 69,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-69",
+        "role": "M",
+        "seconds": 10229.470253386335,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 70,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-70",
+        "role": "W",
+        "seconds": 10457.97173763722,
+        "site": 2,
+        "truck": 4
+      },
+      {
+        "decision": 71,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-71",
+        "role": "L",
+        "seconds": 10756.661748115786,
+        "site": 0,
+        "truck": 7
+      },
+      {
+        "decision": 72,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-72",
+        "role": "M",
+        "seconds": 10857.32619802303,
+        "site": 3,
+        "truck": 0
+      },
+      {
+        "decision": 73,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-73",
+        "role": "H",
+        "seconds": 11079.742804095973,
+        "site": 1,
+        "truck": 5
+      },
+      {
+        "decision": 74,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-74",
+        "role": "L",
+        "seconds": 11117.273232663234,
+        "site": 0,
+        "truck": 8
+      },
+      {
+        "decision": 75,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-75",
+        "role": "W",
+        "seconds": 11385.969545390055,
+        "site": 2,
+        "truck": 3
+      },
+      {
+        "decision": 76,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-76",
+        "role": "W",
+        "seconds": 11423.8153089746,
+        "site": 2,
+        "truck": 2
+      },
+      {
+        "decision": 77,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-77",
+        "role": "W",
+        "seconds": 11719.116137523964,
+        "site": 2,
+        "truck": 6
+      },
+      {
+        "decision": 78,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-78",
+        "role": "W",
+        "seconds": 11727.142376413121,
+        "site": 2,
+        "truck": 4
+      },
+      {
+        "decision": 79,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-79",
+        "role": "M",
+        "seconds": 11824.516634235799,
+        "site": 3,
+        "truck": 1
+      },
+      {
+        "decision": 80,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-80",
+        "role": "H",
+        "seconds": 11964.893034890109,
+        "site": 1,
+        "truck": 0
+      },
+      {
+        "decision": 81,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-81",
+        "role": "L",
+        "seconds": 12265.4508947167,
+        "site": 0,
+        "truck": 7
+      },
+      {
+        "decision": 82,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-82",
+        "role": "M",
+        "seconds": 12537.36321166314,
+        "site": 3,
+        "truck": 8
+      },
+      {
+        "decision": 83,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-83",
+        "role": "W",
+        "seconds": 12648.48313284131,
+        "site": 2,
+        "truck": 3
+      },
+      {
+        "decision": 84,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-84",
+        "role": "M",
+        "seconds": 12671.799650442737,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 85,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-85",
+        "role": "H",
+        "seconds": 12801.105131957207,
+        "site": 1,
+        "truck": 5
+      },
+      {
+        "decision": 86,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-86",
+        "role": "L",
+        "seconds": 12920.645809085958,
+        "site": 0,
+        "truck": 4
+      },
+      {
+        "decision": 87,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-87",
+        "role": "M",
+        "seconds": 12930.988226587724,
+        "site": 3,
+        "truck": 1
+      },
+      {
+        "decision": 88,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-88",
+        "role": "W",
+        "seconds": 13256.16101931776,
+        "site": 2,
+        "truck": 6
+      },
+      {
+        "decision": 89,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-89",
+        "role": "H",
+        "seconds": 13370.327721124844,
+        "site": 1,
+        "truck": 0
+      },
+      {
+        "decision": 90,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-90",
+        "role": "W",
+        "seconds": 13534.886570755047,
+        "site": 2,
+        "truck": 7
+      },
+      {
+        "decision": 91,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-91",
+        "role": "M",
+        "seconds": 13685.912650664355,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 92,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-92",
+        "role": "M",
+        "seconds": 13774.08511349684,
+        "site": 3,
+        "truck": 3
+      },
+      {
+        "decision": 93,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-93",
+        "role": "H",
+        "seconds": 14025.316432496871,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 94,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-94",
+        "role": "L",
+        "seconds": 14052.799000734056,
+        "site": 0,
+        "truck": 1
+      },
+      {
+        "decision": 95,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-95",
+        "role": "H",
+        "seconds": 14078.009457971322,
+        "site": 1,
+        "truck": 8
+      },
+      {
+        "decision": 96,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-96",
+        "role": "L",
+        "seconds": 14488.775076299062,
+        "site": 0,
+        "truck": 6
+      },
+      {
+        "decision": 97,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-97",
+        "role": "W",
+        "seconds": 14524.53774838269,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 98,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-98",
+        "role": "L",
+        "seconds": 14951.053659000674,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 99,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-99",
+        "role": "L",
+        "seconds": 15003.03428747077,
+        "site": 0,
+        "truck": 7
+      },
+      {
+        "decision": 100,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-100",
+        "role": "W",
+        "seconds": 15025.995727089648,
+        "site": 2,
+        "truck": 3
+      },
+      {
+        "decision": 101,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-101",
+        "role": "H",
+        "seconds": 15029.516222420727,
+        "site": 1,
+        "truck": 2
+      },
+      {
+        "decision": 102,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-102",
+        "role": "L",
+        "seconds": 15071.739864774516,
+        "site": 0,
+        "truck": 1
+      },
+      {
+        "decision": 103,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-103",
+        "role": "M",
+        "seconds": 15535.398006832269,
+        "site": 3,
+        "truck": 4
+      },
+      {
+        "decision": 104,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-104",
+        "role": "L",
+        "seconds": 15744.40356396978,
+        "site": 0,
+        "truck": 6
+      },
+      {
+        "decision": 105,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-105",
+        "role": "W",
+        "seconds": 15824.218889034186,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 106,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-106",
+        "role": "M",
+        "seconds": 16065.489074127623,
+        "site": 3,
+        "truck": 8
+      },
+      {
+        "decision": 107,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-107",
+        "role": "W",
+        "seconds": 16163.494890228474,
+        "site": 2,
+        "truck": 7
+      },
+      {
+        "decision": 108,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-108",
+        "role": "L",
+        "seconds": 16242.294659174442,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 109,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-109",
+        "role": "H",
+        "seconds": 16340.865205471559,
+        "site": 1,
+        "truck": 1
+      },
+      {
+        "decision": 110,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-110",
+        "role": "M",
+        "seconds": 16376.228161526047,
+        "site": 3,
+        "truck": 3
+      },
+      {
+        "decision": 111,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-111",
+        "role": "H",
+        "seconds": 16564.062570229187,
+        "site": 1,
+        "truck": 2
+      },
+      {
+        "decision": 112,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-112",
+        "role": "H",
+        "seconds": 16795.852814921658,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 113,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-113",
+        "role": "W",
+        "seconds": 17103.373276934188,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 114,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-114",
+        "role": "L",
+        "seconds": 17155.93029635016,
+        "site": 0,
+        "truck": 6
+      },
+      {
+        "decision": 115,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-115",
+        "role": "H",
+        "seconds": 17280.087280893506,
+        "site": 1,
+        "truck": 0
+      },
+      {
+        "decision": 116,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-116",
+        "role": "M",
+        "seconds": 17538.619402546978,
+        "site": 3,
+        "truck": 8
+      },
+      {
+        "decision": 117,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-117",
+        "role": "W",
+        "seconds": 17570.9862307745,
+        "site": 2,
+        "truck": 7
+      },
+      {
+        "decision": 118,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-118",
+        "role": "H",
+        "seconds": 17623.217371896895,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 119,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-119",
+        "role": "W",
+        "seconds": 17717.05565592948,
+        "site": 2,
+        "truck": 1
+      },
+      {
+        "decision": 120,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-120",
+        "role": "M",
+        "seconds": 18073.720198515286,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 121,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-121",
+        "role": "W",
+        "seconds": 18297.962760272447,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 122,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-122",
+        "role": "H",
+        "seconds": 18388.337540013392,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 123,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-123",
+        "role": "W",
+        "seconds": 18528.516188886813,
+        "site": 2,
+        "truck": 6
+      },
+      {
+        "decision": 124,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-124",
+        "role": "L",
+        "seconds": 18709.44654317238,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 125,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-125",
+        "role": "L",
+        "seconds": 18892.41054864577,
+        "site": 0,
+        "truck": 7
+      },
+      {
+        "decision": 126,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-126",
+        "role": "W",
+        "seconds": 18911.026245634206,
+        "site": 2,
+        "truck": 1
+      },
+      {
+        "decision": 127,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-127",
+        "role": "L",
+        "seconds": 18977.07302008152,
+        "site": 0,
+        "truck": 8
+      },
+      {
+        "decision": 128,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-128",
+        "role": "H",
+        "seconds": 19129.29773805774,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 129,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-129",
+        "role": "M",
+        "seconds": 19201.40476438502,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 130,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-130",
+        "role": "W",
+        "seconds": 19384.284978158554,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 131,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-131",
+        "role": "L",
+        "seconds": 19712.585818763055,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 132,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-132",
+        "role": "M",
+        "seconds": 19951.765535209182,
+        "site": 3,
+        "truck": 6
+      },
+      {
+        "decision": 133,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-133",
+        "role": "H",
+        "seconds": 19999.0246511557,
+        "site": 1,
+        "truck": 1
+      },
+      {
+        "decision": 134,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-134",
+        "role": "M",
+        "seconds": 20075.17608630926,
+        "site": 3,
+        "truck": 4
+      },
+      {
+        "decision": 135,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-135",
+        "role": "W",
+        "seconds": 20168.637067653057,
+        "site": 2,
+        "truck": 7
+      },
+      {
+        "decision": 136,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-136",
+        "role": "H",
+        "seconds": 20257.679066606604,
+        "site": 1,
+        "truck": 2
+      },
+      {
+        "decision": 137,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-137",
+        "role": "L",
+        "seconds": 20422.702975244854,
+        "site": 0,
+        "truck": 8
+      },
+      {
+        "decision": 138,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-138",
+        "role": "W",
+        "seconds": 20542.318025758465,
+        "site": 2,
+        "truck": 5
+      },
+      {
+        "decision": 139,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-139",
+        "role": "H",
+        "seconds": 20604.725503902875,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 140,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-140",
+        "role": "H",
+        "seconds": 20835.38237246611,
+        "site": 1,
+        "truck": 0
+      },
+      {
+        "decision": 141,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-141",
+        "role": "M",
+        "seconds": 21244.104806448613,
+        "site": 3,
+        "truck": 6
+      },
+      {
+        "decision": 142,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-142",
+        "role": "W",
+        "seconds": 21329.375289634023,
+        "site": 2,
+        "truck": 4
+      },
+      {
+        "decision": 143,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-143",
+        "role": "W",
+        "seconds": 21396.80352611459,
+        "site": 2,
+        "truck": 1
+      },
+      {
+        "decision": 144,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-144",
+        "role": "L",
+        "seconds": 21652.249261482473,
+        "site": 0,
+        "truck": 7
+      },
+      {
+        "decision": 145,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-145",
+        "role": "M",
+        "seconds": 21734.104593458338,
+        "site": 3,
+        "truck": 8
+      },
+      {
+        "decision": 146,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-146",
+        "role": "L",
+        "seconds": 21739.193112634854,
+        "site": 0,
+        "truck": 5
+      },
+      {
+        "decision": 147,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-147",
+        "role": "W",
+        "seconds": 21751.339965474188,
+        "site": 2,
+        "truck": 2
+      },
+      {
+        "decision": 148,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-148",
+        "role": "M",
+        "seconds": 22138.30075719502,
+        "site": 3,
+        "truck": 3
+      },
+      {
+        "decision": 149,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-149",
+        "role": "H",
+        "seconds": 22263.38689526579,
+        "site": 1,
+        "truck": 0
+      },
+      {
+        "decision": 150,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-150",
+        "role": "W",
+        "seconds": 22628.943461624174,
+        "site": 2,
+        "truck": 6
+      },
+      {
+        "decision": 151,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-151",
+        "role": "L",
+        "seconds": 22652.436990884726,
+        "site": 0,
+        "truck": 4
+      },
+      {
+        "decision": 152,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-152",
+        "role": "W",
+        "seconds": 22774.414139373934,
+        "site": 2,
+        "truck": 1
+      },
+      {
+        "decision": 153,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-153",
+        "role": "M",
+        "seconds": 22903.547912814087,
+        "site": 3,
+        "truck": 7
+      },
+      {
+        "decision": 154,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-154",
+        "role": "H",
+        "seconds": 22925.717909364183,
+        "site": 1,
+        "truck": 2
+      },
+      {
+        "decision": 155,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-155",
+        "role": "M",
+        "seconds": 23111.918414568572,
+        "site": 3,
+        "truck": 5
+      },
+      {
+        "decision": 156,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-156",
+        "role": "L",
+        "seconds": 23313.528870867718,
+        "site": 0,
+        "truck": 8
+      },
+      {
+        "decision": 157,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-157",
+        "role": "H",
+        "seconds": 23362.46441801371,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 158,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-158",
+        "role": "H",
+        "seconds": 23681.59485361391,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 159,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-159",
+        "role": "M",
+        "seconds": 23803.044968718685,
+        "site": 3,
+        "truck": 0
+      },
+      {
+        "decision": 160,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-160",
+        "role": "L",
+        "seconds": 23805.017378444038,
+        "site": 0,
+        "truck": 1
+      },
+      {
+        "decision": 161,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-161",
+        "role": "H",
+        "seconds": 24150.460340274385,
+        "site": 1,
+        "truck": 6
+      },
+      {
+        "decision": 162,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-162",
+        "role": "M",
+        "seconds": 24338.254251845177,
+        "site": 3,
+        "truck": 2
+      },
+      {
+        "decision": 163,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-163",
+        "role": "M",
+        "seconds": 24354.528647033127,
+        "site": 3,
+        "truck": 7
+      },
+      {
+        "decision": 164,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-164",
+        "role": "L",
+        "seconds": 24515.386912041136,
+        "site": 0,
+        "truck": 5
+      },
+      {
+        "decision": 165,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-165",
+        "role": "L",
+        "seconds": 24758.324387880137,
+        "site": 0,
+        "truck": 8
+      },
+      {
+        "decision": 166,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-166",
+        "role": "L",
+        "seconds": 24764.298364080678,
+        "site": 0,
+        "truck": 1
+      },
+      {
+        "decision": 167,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-167",
+        "role": "H",
+        "seconds": 24977.933739390617,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 168,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-168",
+        "role": "L",
+        "seconds": 25096.953278296187,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 169,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-169",
+        "role": "L",
+        "seconds": 25446.20697659427,
+        "site": 0,
+        "truck": 2
+      },
+      {
+        "decision": 170,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-170",
+        "role": "M",
+        "seconds": 25451.88117976941,
+        "site": 3,
+        "truck": 4
+      },
+      {
+        "decision": 171,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-171",
+        "role": "M",
+        "seconds": 25714.350016364766,
+        "site": 3,
+        "truck": 5
+      },
+      {
+        "decision": 172,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-172",
+        "role": "H",
+        "seconds": 25956.440097304938,
+        "site": 1,
+        "truck": 6
+      },
+      {
+        "decision": 173,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-173",
+        "role": "L",
+        "seconds": 26243.97610825472,
+        "site": 0,
+        "truck": 7
+      },
+      {
+        "decision": 174,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-174",
+        "role": "M",
+        "seconds": 26518.463573636785,
+        "site": 3,
+        "truck": 8
+      },
+      {
+        "decision": 175,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-175",
+        "role": "M",
+        "seconds": 26625.873949890618,
+        "site": 3,
+        "truck": 1
+      },
+      {
+        "decision": 176,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-176",
+        "role": "L",
+        "seconds": 26757.84334671472,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 177,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-177",
+        "role": "H",
+        "seconds": 26877.455244735265,
+        "site": 1,
+        "truck": 2
+      },
+      {
+        "decision": 178,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-178",
+        "role": "H",
+        "seconds": 27108.066583763415,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 179,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-179",
+        "role": "H",
+        "seconds": 27320.153176508415,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 180,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-180",
+        "role": "M",
+        "seconds": 27528.347951309905,
+        "site": 3,
+        "truck": 5
+      },
+      {
+        "decision": 181,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-181",
+        "role": "L",
+        "seconds": 27821.63225666564,
+        "site": 0,
+        "truck": 7
+      },
+      {
+        "decision": 182,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-182",
+        "role": "H",
+        "seconds": 28104.66639783833,
+        "site": 1,
+        "truck": 6
+      },
+      {
+        "decision": 183,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-183",
+        "role": "M",
+        "seconds": 28213.01988259973,
+        "site": 3,
+        "truck": 0
+      },
+      {
+        "decision": 184,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-184",
+        "role": "H",
+        "seconds": 28509.626380531565,
+        "site": 1,
+        "truck": 8
+      },
+      {
+        "decision": 185,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-185",
+        "role": "M",
+        "seconds": 28629.572617999078,
+        "site": 3,
+        "truck": 1
+      },
+      {
+        "decision": 186,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-186",
+        "role": "L",
+        "seconds": 28747.36632484681,
+        "site": 0,
+        "truck": 2
+      }
+    ],
+    "first_10_minute_dispatches": [
+      {
+        "decision": 0,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-0",
+        "role": "H",
+        "seconds": 0.0,
+        "site": 1,
+        "truck": 3
+      },
+      {
+        "decision": 1,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-1",
+        "role": "L",
+        "seconds": 0.0,
+        "site": 0,
+        "truck": 0
+      },
+      {
+        "decision": 2,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-2",
+        "role": "W",
+        "seconds": 0.0,
+        "site": 2,
+        "truck": 1
+      },
+      {
+        "decision": 3,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-3",
+        "role": "L",
+        "seconds": 0.0,
+        "site": 0,
+        "truck": 2
+      },
+      {
+        "decision": 4,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-4",
+        "role": "H",
+        "seconds": 1.5999999999999999,
+        "site": 1,
+        "truck": 4
+      },
+      {
+        "decision": 5,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-5",
+        "role": "L",
+        "seconds": 1.7999999999999998,
+        "site": 0,
+        "truck": 5
+      },
+      {
+        "decision": 6,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-6",
+        "role": "M",
+        "seconds": 3.800000000000001,
+        "site": 3,
+        "truck": 6
+      },
+      {
+        "decision": 7,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-7",
+        "role": "M",
+        "seconds": 5.8000000000000025,
+        "site": 3,
+        "truck": 7
+      },
+      {
+        "decision": 8,
+        "request_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451-8",
+        "role": "H",
+        "seconds": 7.600000000000004,
+        "site": 1,
+        "truck": 8
+      }
+    ],
+    "ore_unload_batches": [
+      {
+        "actual_grade": 0.17321484110124363,
+        "batch_id": "batch-1",
+        "dispatch_decision": 1,
+        "dispatch_seconds": 0.0,
+        "fifo_wait_seconds": 0.0,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 993.4692375097608,
+        "unloaded_metal_tons": 15.883800928984042,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.17321484110124363,
+        "batch_id": "batch-2",
+        "dispatch_decision": 3,
+        "dispatch_seconds": 0.0,
+        "fifo_wait_seconds": 0.0,
+        "role": "L",
+        "site": 0,
+        "truck": 2,
+        "unload_seconds": 1151.8079188493277,
+        "unloaded_metal_tons": 15.883800928984042,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.1732148411012436,
+        "batch_id": "batch-3",
+        "dispatch_decision": 5,
+        "dispatch_seconds": 1.7999999999999998,
+        "fifo_wait_seconds": 0.0,
+        "role": "L",
+        "site": 0,
+        "truck": 5,
+        "unload_seconds": 1446.9785256958562,
+        "unloaded_metal_tons": 25.46258164188281,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2904506424762834,
+        "batch_id": "batch-4",
+        "dispatch_decision": 6,
+        "dispatch_seconds": 3.800000000000001,
+        "fifo_wait_seconds": 173.39740452251817,
+        "role": "M",
+        "site": 3,
+        "truck": 6,
+        "unload_seconds": 1485.261121173343,
+        "unloaded_metal_tons": 56.05697399792269,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3569110065700639,
+        "batch_id": "batch-5",
+        "dispatch_decision": 0,
+        "dispatch_seconds": 0.0,
+        "fifo_wait_seconds": 298.11549132777986,
+        "role": "H",
+        "site": 1,
+        "truck": 3,
+        "unload_seconds": 1638.4630343680892,
+        "unloaded_metal_tons": 52.4659179657994,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2904506424762834,
+        "batch_id": "batch-6",
+        "dispatch_decision": 7,
+        "dispatch_seconds": 5.8000000000000025,
+        "fifo_wait_seconds": 298.20675797855165,
+        "role": "M",
+        "site": 3,
+        "truck": 7,
+        "unload_seconds": 1850.051767717322,
+        "unloaded_metal_tons": 56.05697399792269,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3569110065700639,
+        "batch_id": "batch-7",
+        "dispatch_decision": 4,
+        "dispatch_seconds": 1.5999999999999999,
+        "fifo_wait_seconds": 387.89529299315427,
+        "role": "H",
+        "site": 1,
+        "truck": 4,
+        "unload_seconds": 2038.2832327027158,
+        "unloaded_metal_tons": 52.4659179657994,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.3569110065700639,
+        "batch_id": "batch-8",
+        "dispatch_decision": 8,
+        "dispatch_seconds": 7.600000000000004,
+        "fifo_wait_seconds": 308.38925086278505,
+        "role": "H",
+        "site": 1,
+        "truck": 8,
+        "unload_seconds": 2329.469274833086,
+        "unloaded_metal_tons": 68.88382426802234,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.2904506424762833,
+        "batch_id": "batch-9",
+        "dispatch_decision": 11,
+        "dispatch_seconds": 1151.8079188493277,
+        "fifo_wait_seconds": 480.966786323766,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 2434.811739372101,
+        "unloaded_metal_tons": 26.634323915075182,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3589593858732809,
+        "batch_id": "batch-10",
+        "dispatch_decision": 10,
+        "dispatch_seconds": 1101.9240875758687,
+        "fifo_wait_seconds": 481.71159779709205,
+        "role": "H",
+        "site": 1,
+        "truck": 1,
+        "unload_seconds": 2566.1149278987755,
+        "unloaded_metal_tons": 32.91657568457986,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2924914155317042,
+        "batch_id": "batch-11",
+        "dispatch_decision": 12,
+        "dispatch_seconds": 1446.9785256958562,
+        "fifo_wait_seconds": 391.44368300937094,
+        "role": "M",
+        "site": 3,
+        "truck": 5,
+        "unload_seconds": 2788.4308426864973,
+        "unloaded_metal_tons": 42.99623808316052,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.17321484110124363,
+        "batch_id": "batch-12",
+        "dispatch_decision": 14,
+        "dispatch_seconds": 1638.4630343680892,
+        "fifo_wait_seconds": 383.3894916264362,
+        "role": "L",
+        "site": 0,
+        "truck": 3,
+        "unload_seconds": 3008.1650340694327,
+        "unloaded_metal_tons": 25.462581641882814,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2928563653242934,
+        "batch_id": "batch-13",
+        "dispatch_decision": 16,
+        "dispatch_seconds": 2038.2832327027158,
+        "fifo_wait_seconds": 327.7880148504919,
+        "role": "M",
+        "site": 3,
+        "truck": 4,
+        "unload_seconds": 3275.446510845378,
+        "unloaded_metal_tons": 43.049885702671126,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.16348502368700815,
+        "batch_id": "batch-14",
+        "dispatch_decision": 19,
+        "dispatch_seconds": 2434.811739372101,
+        "fifo_wait_seconds": 330.3070018119597,
+        "role": "L",
+        "site": 0,
+        "truck": 2,
+        "unload_seconds": 3484.6075238839107,
+        "unloaded_metal_tons": 14.991576672098647,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16030276791911052,
+        "batch_id": "batch-15",
+        "dispatch_decision": 20,
+        "dispatch_seconds": 2566.1149278987755,
+        "fifo_wait_seconds": 205.02481631347882,
+        "role": "L",
+        "site": 0,
+        "truck": 1,
+        "unload_seconds": 3741.9377093823923,
+        "unloaded_metal_tons": 14.699763818182435,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2928563653242934,
+        "batch_id": "batch-16",
+        "dispatch_decision": 18,
+        "dispatch_seconds": 2329.469274833086,
+        "fifo_wait_seconds": 326.46143942626486,
+        "role": "M",
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 3752.549086269607,
+        "unloaded_metal_tons": 56.52127850758862,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.16030276791911047,
+        "batch_id": "batch-17",
+        "dispatch_decision": 22,
+        "dispatch_seconds": 2813.3259815776837,
+        "fifo_wait_seconds": 310.5075074282945,
+        "role": "L",
+        "site": 0,
+        "truck": 6,
+        "unload_seconds": 4046.4230182675733,
+        "unloaded_metal_tons": 30.93843420838832,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.29695803795549447,
+        "batch_id": "batch-18",
+        "dispatch_decision": 23,
+        "dispatch_seconds": 3008.1650340694327,
+        "fifo_wait_seconds": 303.90376226325316,
+        "role": "M",
+        "site": 3,
+        "truck": 3,
+        "unload_seconds": 4330.946763432611,
+        "unloaded_metal_tons": 43.65283157945769,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.16030276791911052,
+        "batch_id": "batch-19",
+        "dispatch_decision": 26,
+        "dispatch_seconds": 3356.4193687624625,
+        "fifo_wait_seconds": 477.5412539489098,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 4368.989271746955,
+        "unloaded_metal_tons": 14.699763818182435,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.359297745859835,
+        "batch_id": "batch-20",
+        "dispatch_decision": 21,
+        "dispatch_seconds": 2788.4308426864973,
+        "fifo_wait_seconds": 390.2319254010681,
+        "role": "H",
+        "site": 1,
+        "truck": 5,
+        "unload_seconds": 4588.346600294797,
+        "unloaded_metal_tons": 52.81676864139574,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2982542693241731,
+        "batch_id": "batch-21",
+        "dispatch_decision": 25,
+        "dispatch_seconds": 3350.43303121707,
+        "fifo_wait_seconds": 305.82055495035365,
+        "role": "M",
+        "site": 3,
+        "truck": 7,
+        "unload_seconds": 4884.437970745513,
+        "unloaded_metal_tons": 57.56307397956541,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3592977458598352,
+        "batch_id": "batch-22",
+        "dispatch_decision": 27,
+        "dispatch_seconds": 3484.6075238839107,
+        "fifo_wait_seconds": 476.66719928520615,
+        "role": "H",
+        "site": 1,
+        "truck": 2,
+        "unload_seconds": 4991.511326410656,
+        "unloaded_metal_tons": 32.94760329534689,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3592977458598352,
+        "batch_id": "batch-23",
+        "dispatch_decision": 28,
+        "dispatch_seconds": 3741.9377093823923,
+        "fifo_wait_seconds": 415.75677297146194,
+        "role": "H",
+        "site": 1,
+        "truck": 1,
+        "unload_seconds": 5184.469752724401,
+        "unloaded_metal_tons": 32.94760329534689,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16394623141629974,
+        "batch_id": "batch-24",
+        "dispatch_decision": 30,
+        "dispatch_seconds": 4046.4230182675733,
+        "fifo_wait_seconds": 297.54630839045785,
+        "role": "L",
+        "site": 0,
+        "truck": 6,
+        "unload_seconds": 5434.728217305406,
+        "unloaded_metal_tons": 31.64162266334585,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.16537994087909286,
+        "batch_id": "batch-25",
+        "dispatch_decision": 32,
+        "dispatch_seconds": 4368.989271746955,
+        "fifo_wait_seconds": 480.7793767269204,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 5529.415148968939,
+        "unloaded_metal_tons": 15.165340578612815,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3606963922896368,
+        "batch_id": "batch-26",
+        "dispatch_decision": 31,
+        "dispatch_seconds": 4330.946763432611,
+        "fifo_wait_seconds": 175.0373205713704,
+        "role": "H",
+        "site": 1,
+        "truck": 3,
+        "unload_seconds": 5967.20520512449,
+        "unloaded_metal_tons": 53.02236966657661,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.362962648269476,
+        "batch_id": "batch-27",
+        "dispatch_decision": 33,
+        "dispatch_seconds": 4546.00461428826,
+        "fifo_wait_seconds": 278.69297491584166,
+        "role": "H",
+        "site": 1,
+        "truck": 4,
+        "unload_seconds": 6075.22955078002,
+        "unloaded_metal_tons": 53.35550929561297,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.16537994087909277,
+        "batch_id": "batch-28",
+        "dispatch_decision": 37,
+        "dispatch_seconds": 5175.884629767789,
+        "fifo_wait_seconds": 214.97570448574243,
+        "role": "L",
+        "site": 0,
+        "truck": 8,
+        "unload_seconds": 6350.6268212101195,
+        "unloaded_metal_tons": 31.918328589664906,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.29825426932417326,
+        "batch_id": "batch-29",
+        "dispatch_decision": 38,
+        "dispatch_seconds": 5184.469752724401,
+        "fifo_wait_seconds": 468.2287892238346,
+        "role": "M",
+        "site": 3,
+        "truck": 1,
+        "unload_seconds": 6375.293736472024,
+        "unloaded_metal_tons": 27.34991649702669,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.362962648269476,
+        "batch_id": "batch-30",
+        "dispatch_decision": 35,
+        "dispatch_seconds": 4884.437970745513,
+        "fifo_wait_seconds": 278.8299926387217,
+        "processed_tons_by_window": {
+          "1": 155.85380160009638,
+          "2": 37.146198399899376
+        },
+        "role": "H",
+        "signed_metal_surplus_tons_by_window": {
+          "1": 14.488582139610452,
+          "2": 3.453208976398017
+        },
+        "site": 1,
+        "truck": 7,
+        "unload_seconds": 6696.740533057137,
+        "unloaded_metal_tons": 70.05179111600887,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.1678526714019347,
+        "batch_id": "batch-31",
+        "dispatch_decision": 39,
+        "dispatch_seconds": 5434.728217305406,
+        "fifo_wait_seconds": 303.3753435869703,
+        "role": "L",
+        "site": 0,
+        "truck": 6,
+        "unload_seconds": 6950.115182108885,
+        "unloaded_metal_tons": 32.3955655805734,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.29825426932417326,
+        "batch_id": "batch-32",
+        "dispatch_decision": 44,
+        "dispatch_seconds": 6151.477775722641,
+        "fifo_wait_seconds": 371.6220697388608,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 7159.78845595699,
+        "unloaded_metal_tons": 27.34991649702669,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.1694869717819197,
+        "batch_id": "batch-33",
+        "dispatch_decision": 43,
+        "dispatch_seconds": 6075.22955078002,
+        "fifo_wait_seconds": 371.62731723549587,
+        "role": "L",
+        "site": 0,
+        "truck": 4,
+        "unload_seconds": 7291.831208460356,
+        "unloaded_metal_tons": 24.914584851942198,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.36016311538236473,
+        "batch_id": "batch-34",
+        "dispatch_decision": 45,
+        "dispatch_seconds": 6350.6268212101195,
+        "fifo_wait_seconds": 0.0,
+        "role": "H",
+        "site": 1,
+        "truck": 8,
+        "unload_seconds": 8094.973403966059,
+        "unloaded_metal_tons": 69.51148126879639,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3568985646868446,
+        "batch_id": "batch-35",
+        "dispatch_decision": 46,
+        "dispatch_seconds": 6375.293736472024,
+        "fifo_wait_seconds": 192.2338825940924,
+        "role": "H",
+        "site": 1,
+        "truck": 1,
+        "unload_seconds": 8180.6595213719565,
+        "unloaded_metal_tons": 32.72759838178365,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3568985646868446,
+        "batch_id": "batch-36",
+        "dispatch_decision": 48,
+        "dispatch_seconds": 6758.326190749781,
+        "fifo_wait_seconds": 143.39218102512132,
+        "role": "H",
+        "site": 1,
+        "truck": 0,
+        "unload_seconds": 8361.549222940926,
+        "unloaded_metal_tons": 32.72759838178365,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.1694869717819197,
+        "batch_id": "batch-37",
+        "dispatch_decision": 49,
+        "dispatch_seconds": 6950.115182108885,
+        "fifo_wait_seconds": 254.48903346869884,
+        "role": "L",
+        "site": 0,
+        "truck": 6,
+        "unload_seconds": 8382.500370497348,
+        "unloaded_metal_tons": 32.710985553910504,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.29292707711049887,
+        "batch_id": "batch-38",
+        "dispatch_decision": 51,
+        "dispatch_seconds": 7159.78845595699,
+        "fifo_wait_seconds": 480.12983904016073,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 8434.77956492588,
+        "unloaded_metal_tons": 26.861412971032745,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16317973249649148,
+        "batch_id": "batch-39",
+        "dispatch_decision": 53,
+        "dispatch_seconds": 7301.1136584215965,
+        "fifo_wait_seconds": 380.84054776006997,
+        "role": "L",
+        "site": 0,
+        "truck": 3,
+        "unload_seconds": 8666.116856205968,
+        "unloaded_metal_tons": 23.987420676984247,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2921326712540736,
+        "batch_id": "batch-40",
+        "dispatch_decision": 52,
+        "dispatch_seconds": 7291.831208460356,
+        "fifo_wait_seconds": 389.12279713892167,
+        "role": "M",
+        "site": 3,
+        "truck": 4,
+        "unload_seconds": 8869.514606827113,
+        "unloaded_metal_tons": 42.94350267434882,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.3568985646868445,
+        "batch_id": "batch-41",
+        "dispatch_decision": 47,
+        "dispatch_seconds": 6696.740533057137,
+        "fifo_wait_seconds": 300.88828806464153,
+        "role": "H",
+        "site": 1,
+        "truck": 7,
+        "unload_seconds": 9169.42911590139,
+        "unloaded_metal_tons": 68.88142298456098,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.16050282279976905,
+        "batch_id": "batch-42",
+        "dispatch_decision": 57,
+        "dispatch_seconds": 8361.549222940926,
+        "fifo_wait_seconds": 358.87145450003845,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 9389.365949465988,
+        "unloaded_metal_tons": 14.718108850738822,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2921326712540736,
+        "batch_id": "batch-43",
+        "dispatch_decision": 55,
+        "dispatch_seconds": 8094.973403966059,
+        "fifo_wait_seconds": 293.4087953186954,
+        "role": "M",
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 9586.87660864733,
+        "unloaded_metal_tons": 56.381605552036206,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3676156184143648,
+        "batch_id": "batch-44",
+        "dispatch_decision": 54,
+        "dispatch_seconds": 8074.828844370577,
+        "fifo_wait_seconds": 386.90691931139554,
+        "role": "H",
+        "site": 1,
+        "truck": 5,
+        "unload_seconds": 9771.298484654624,
+        "unloaded_metal_tons": 54.039495906911625,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.37090218155747107,
+        "batch_id": "batch-45",
+        "dispatch_decision": 56,
+        "dispatch_seconds": 8180.6595213719565,
+        "fifo_wait_seconds": 486.6810216234735,
+        "role": "H",
+        "site": 1,
+        "truck": 1,
+        "unload_seconds": 9883.204382342543,
+        "unloaded_metal_tons": 34.0117300488201,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16050282279976938,
+        "batch_id": "batch-46",
+        "dispatch_decision": 60,
+        "dispatch_seconds": 8666.116856205968,
+        "fifo_wait_seconds": 384.18388089477776,
+        "role": "L",
+        "site": 0,
+        "truck": 3,
+        "unload_seconds": 10117.749523071236,
+        "unloaded_metal_tons": 23.5939149515661,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.37090218155747107,
+        "batch_id": "batch-47",
+        "dispatch_decision": 59,
+        "dispatch_seconds": 8434.77956492588,
+        "fifo_wait_seconds": 484.1431505796754,
+        "role": "H",
+        "site": 1,
+        "truck": 2,
+        "unload_seconds": 10229.470253386335,
+        "unloaded_metal_tons": 34.0117300488201,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16050282279976938,
+        "batch_id": "batch-48",
+        "dispatch_decision": 61,
+        "dispatch_seconds": 8869.514606827113,
+        "fifo_wait_seconds": 387.6896663287898,
+        "role": "L",
+        "site": 0,
+        "truck": 4,
+        "unload_seconds": 10457.97173763722,
+        "unloaded_metal_tons": 23.5939149515661,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2927356516013188,
+        "batch_id": "batch-49",
+        "dispatch_decision": 62,
+        "dispatch_seconds": 9169.42911590139,
+        "fifo_wait_seconds": 300.6796558502192,
+        "role": "M",
+        "site": 3,
+        "truck": 7,
+        "unload_seconds": 10756.661748115786,
+        "unloaded_metal_tons": 56.49798075905453,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.37090218155747107,
+        "batch_id": "batch-50",
+        "dispatch_decision": 63,
+        "dispatch_seconds": 9389.365949465988,
+        "fifo_wait_seconds": 477.93520594296933,
+        "role": "H",
+        "site": 1,
+        "truck": 0,
+        "unload_seconds": 10857.32619802303,
+        "unloaded_metal_tons": 34.0117300488201,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16515930254202135,
+        "batch_id": "batch-51",
+        "dispatch_decision": 65,
+        "dispatch_seconds": 9771.298484654624,
+        "fifo_wait_seconds": 387.5665998700242,
+        "role": "L",
+        "site": 0,
+        "truck": 5,
+        "unload_seconds": 11079.742804095973,
+        "unloaded_metal_tons": 24.278417473677138,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.29316436635175375,
+        "batch_id": "batch-52",
+        "dispatch_decision": 68,
+        "dispatch_seconds": 10117.749523071236,
+        "fifo_wait_seconds": 293.019858575939,
+        "role": "M",
+        "site": 3,
+        "truck": 3,
+        "unload_seconds": 11385.969545390055,
+        "unloaded_metal_tons": 43.0951618537078,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.29316436635175314,
+        "batch_id": "batch-53",
+        "dispatch_decision": 69,
+        "dispatch_seconds": 10229.470253386335,
+        "fifo_wait_seconds": 466.8540949913913,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 11423.8153089746,
+        "unloaded_metal_tons": 26.883172394455762,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3716018045487651,
+        "batch_id": "batch-54",
+        "dispatch_decision": 67,
+        "dispatch_seconds": 9895.70652099297,
+        "fifo_wait_seconds": 303.601266442025,
+        "role": "H",
+        "site": 1,
+        "truck": 6,
+        "unload_seconds": 11719.116137523964,
+        "unloaded_metal_tons": 71.71914827791167,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.37257745745473675,
+        "batch_id": "batch-55",
+        "dispatch_decision": 66,
+        "dispatch_seconds": 9883.204382342543,
+        "fifo_wait_seconds": 476.1207697301852,
+        "role": "H",
+        "site": 1,
+        "truck": 1,
+        "unload_seconds": 11824.516634235799,
+        "unloaded_metal_tons": 34.16535284859936,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.29316436635175314,
+        "batch_id": "batch-56",
+        "dispatch_decision": 72,
+        "dispatch_seconds": 10857.32619802303,
+        "fifo_wait_seconds": 467.7923690758744,
+        "role": "M",
+        "site": 3,
+        "truck": 0,
+        "unload_seconds": 11964.893034890109,
+        "unloaded_metal_tons": 26.883172394455762,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.1655396331169956,
+        "batch_id": "batch-57",
+        "dispatch_decision": 71,
+        "dispatch_seconds": 10756.661748115786,
+        "fifo_wait_seconds": 299.28250924928034,
+        "role": "L",
+        "site": 0,
+        "truck": 7,
+        "unload_seconds": 12265.4508947167,
+        "unloaded_metal_tons": 31.94914919158015,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.1648417789290566,
+        "batch_id": "batch-58",
+        "dispatch_decision": 74,
+        "dispatch_seconds": 11117.273232663234,
+        "fifo_wait_seconds": 305.29019230283484,
+        "role": "L",
+        "site": 0,
+        "truck": 8,
+        "unload_seconds": 12537.36321166314,
+        "unloaded_metal_tons": 31.814463333307923,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3725774574547375,
+        "batch_id": "batch-59",
+        "dispatch_decision": 73,
+        "dispatch_seconds": 11079.742804095973,
+        "fifo_wait_seconds": 319.46827200876214,
+        "role": "H",
+        "site": 1,
+        "truck": 5,
+        "unload_seconds": 12801.105131957207,
+        "unloaded_metal_tons": 54.76888624584642,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.29393242590114643,
+        "batch_id": "batch-60",
+        "dispatch_decision": 79,
+        "dispatch_seconds": 11824.516634235799,
+        "fifo_wait_seconds": 401.2651773782418,
+        "role": "M",
+        "site": 3,
+        "truck": 1,
+        "unload_seconds": 12930.988226587724,
+        "unloaded_metal_tons": 26.953603455135127,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.37257745745473675,
+        "batch_id": "batch-61",
+        "dispatch_decision": 80,
+        "dispatch_seconds": 11964.893034890109,
+        "fifo_wait_seconds": 93.97368284112054,
+        "role": "H",
+        "site": 1,
+        "truck": 0,
+        "unload_seconds": 13370.327721124844,
+        "unloaded_metal_tons": 34.16535284859936,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.15938959392648305,
+        "batch_id": "batch-62",
+        "dispatch_decision": 81,
+        "dispatch_seconds": 12265.4508947167,
+        "fifo_wait_seconds": 61.46283321091505,
+        "role": "L",
+        "site": 0,
+        "truck": 7,
+        "unload_seconds": 13534.886570755047,
+        "unloaded_metal_tons": 30.76219162781123,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.2951824483196433,
+        "batch_id": "batch-63",
+        "dispatch_decision": 84,
+        "dispatch_seconds": 12671.799650442737,
+        "fifo_wait_seconds": 188.35675330160302,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 13685.912650664355,
+        "unloaded_metal_tons": 27.06823051091129,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.15938959392648305,
+        "batch_id": "batch-64",
+        "dispatch_decision": 86,
+        "dispatch_seconds": 12920.645809085958,
+        "fifo_wait_seconds": 0.0,
+        "role": "L",
+        "site": 0,
+        "truck": 4,
+        "unload_seconds": 14025.316432496871,
+        "unloaded_metal_tons": 23.43027030719301,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2951824483196433,
+        "batch_id": "batch-65",
+        "dispatch_decision": 87,
+        "dispatch_seconds": 12930.988226587724,
+        "fifo_wait_seconds": 184.1974317628119,
+        "role": "M",
+        "site": 3,
+        "truck": 1,
+        "unload_seconds": 14052.799000734056,
+        "unloaded_metal_tons": 27.06823051091129,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2951824483196439,
+        "batch_id": "batch-66",
+        "dispatch_decision": 82,
+        "dispatch_seconds": 12537.36321166314,
+        "fifo_wait_seconds": 291.03497452554257,
+        "processed_tons_by_window": {
+          "2": 21.496921877176586,
+          "3": 171.50307812282148
+        },
+        "role": "M",
+        "signed_metal_surplus_tons_by_window": {
+          "2": 0.5413451242034215,
+          "3": 4.3188674014878
+        },
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 14078.009457971322,
+        "unloaded_metal_tons": 56.970212525691274,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3671950334397754,
+        "batch_id": "batch-67",
+        "dispatch_decision": 85,
+        "dispatch_seconds": 12801.105131957207,
+        "fifo_wait_seconds": 122.42668411417071,
+        "role": "H",
+        "site": 1,
+        "truck": 5,
+        "unload_seconds": 14524.53774838269,
+        "unloaded_metal_tons": 53.977669915646985,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.3589357965892291,
+        "batch_id": "batch-68",
+        "dispatch_decision": 89,
+        "dispatch_seconds": 13370.327721124844,
+        "fifo_wait_seconds": 0.0,
+        "role": "H",
+        "site": 1,
+        "truck": 0,
+        "unload_seconds": 14951.053659000674,
+        "unloaded_metal_tons": 32.91441254723231,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2965255167394779,
+        "batch_id": "batch-69",
+        "dispatch_decision": 92,
+        "dispatch_seconds": 13774.08511349684,
+        "fifo_wait_seconds": 57.10593191102453,
+        "role": "M",
+        "site": 3,
+        "truck": 3,
+        "unload_seconds": 15025.995727089648,
+        "unloaded_metal_tons": 43.589250960703254,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.298568915861935,
+        "batch_id": "batch-70",
+        "dispatch_decision": 91,
+        "dispatch_seconds": 13685.912650664355,
+        "fifo_wait_seconds": 265.2654365799408,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 15029.516222420727,
+        "unloaded_metal_tons": 27.37876958453944,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.15938959392648272,
+        "batch_id": "batch-71",
+        "dispatch_decision": 94,
+        "dispatch_seconds": 14052.799000734056,
+        "fifo_wait_seconds": 355.08979422615084,
+        "role": "L",
+        "site": 0,
+        "truck": 1,
+        "unload_seconds": 15071.739864774516,
+        "unloaded_metal_tons": 14.616025763058467,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.35893579658922986,
+        "batch_id": "batch-72",
+        "dispatch_decision": 93,
+        "dispatch_seconds": 14025.316432496871,
+        "fifo_wait_seconds": 23.47965216839657,
+        "role": "H",
+        "site": 1,
+        "truck": 4,
+        "unload_seconds": 15535.398006832269,
+        "unloaded_metal_tons": 52.76356209861679,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.16374607215390707,
+        "batch_id": "batch-73",
+        "dispatch_decision": 96,
+        "dispatch_seconds": 14488.775076299062,
+        "fifo_wait_seconds": 26.154095030882672,
+        "role": "L",
+        "site": 0,
+        "truck": 6,
+        "unload_seconds": 15744.40356396978,
+        "unloaded_metal_tons": 31.602991925704064,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.35893579658922986,
+        "batch_id": "batch-74",
+        "dispatch_decision": 95,
+        "dispatch_seconds": 14078.009457971322,
+        "fifo_wait_seconds": 0.0,
+        "role": "H",
+        "site": 1,
+        "truck": 8,
+        "unload_seconds": 16065.489074127623,
+        "unloaded_metal_tons": 69.27460874172137,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.1651249302013319,
+        "batch_id": "batch-75",
+        "dispatch_decision": 99,
+        "dispatch_seconds": 15003.03428747077,
+        "fifo_wait_seconds": 179.9141838991436,
+        "role": "L",
+        "site": 0,
+        "truck": 7,
+        "unload_seconds": 16163.494890228474,
+        "unloaded_metal_tons": 31.869111528857058,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.16512493020133157,
+        "batch_id": "batch-76",
+        "dispatch_decision": 98,
+        "dispatch_seconds": 14951.053659000674,
+        "fifo_wait_seconds": 379.034414953172,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 16242.294659174442,
+        "unloaded_metal_tons": 15.141956099462105,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.1634028952280054,
+        "batch_id": "batch-77",
+        "dispatch_decision": 102,
+        "dispatch_seconds": 15071.739864774516,
+        "fifo_wait_seconds": 412.51186865605086,
+        "role": "L",
+        "site": 0,
+        "truck": 1,
+        "unload_seconds": 16340.865205471559,
+        "unloaded_metal_tons": 14.984045492408097,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3592894654278564,
+        "batch_id": "batch-78",
+        "dispatch_decision": 101,
+        "dispatch_seconds": 15029.516222420727,
+        "fifo_wait_seconds": 321.362503898421,
+        "role": "H",
+        "site": 1,
+        "truck": 2,
+        "unload_seconds": 16564.062570229187,
+        "unloaded_metal_tons": 32.94684397973443,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2985689158619356,
+        "batch_id": "batch-79",
+        "dispatch_decision": 103,
+        "dispatch_seconds": 15535.398006832269,
+        "fifo_wait_seconds": 221.62025920594897,
+        "role": "M",
+        "site": 3,
+        "truck": 4,
+        "unload_seconds": 16795.852814921658,
+        "unloaded_metal_tons": 43.889630631704534,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.15825925163376606,
+        "batch_id": "batch-80",
+        "dispatch_decision": 104,
+        "dispatch_seconds": 15744.40356396978,
+        "fifo_wait_seconds": 73.22277777744239,
+        "role": "L",
+        "site": 0,
+        "truck": 6,
+        "unload_seconds": 17155.93029635016,
+        "unloaded_metal_tons": 30.54403556531685,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.15825925163376575,
+        "batch_id": "batch-81",
+        "dispatch_decision": 108,
+        "dispatch_seconds": 16242.294659174442,
+        "fifo_wait_seconds": 226.98579323409285,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 17280.087280893506,
+        "unloaded_metal_tons": 14.51237337481632,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2985689158619356,
+        "batch_id": "batch-82",
+        "dispatch_decision": 106,
+        "dispatch_seconds": 16065.489074127623,
+        "fifo_wait_seconds": 100.50167158061959,
+        "role": "M",
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 17538.619402546978,
+        "unloaded_metal_tons": 57.62380076135358,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.28971414564333275,
+        "batch_id": "batch-83",
+        "dispatch_decision": 110,
+        "dispatch_seconds": 16376.228161526047,
+        "fifo_wait_seconds": 293.82370223069665,
+        "role": "M",
+        "site": 3,
+        "truck": 3,
+        "unload_seconds": 17623.217371896895,
+        "unloaded_metal_tons": 42.58797940956992,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.3593342171359383,
+        "batch_id": "batch-84",
+        "dispatch_decision": 109,
+        "dispatch_seconds": 16340.865205471559,
+        "fifo_wait_seconds": 411.6654181981103,
+        "role": "H",
+        "site": 1,
+        "truck": 1,
+        "unload_seconds": 17717.05565592948,
+        "unloaded_metal_tons": 32.950947711365544,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3593342171359383,
+        "batch_id": "batch-85",
+        "dispatch_decision": 111,
+        "dispatch_seconds": 16564.062570229187,
+        "fifo_wait_seconds": 187.04887561230134,
+        "role": "H",
+        "site": 1,
+        "truck": 2,
+        "unload_seconds": 18073.720198515286,
+        "unloaded_metal_tons": 32.950947711365544,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.359334217135939,
+        "batch_id": "batch-86",
+        "dispatch_decision": 112,
+        "dispatch_seconds": 16795.852814921658,
+        "fifo_wait_seconds": 4.479534114190756,
+        "role": "H",
+        "site": 1,
+        "truck": 4,
+        "unload_seconds": 18388.337540013392,
+        "unloaded_metal_tons": 52.82212991898303,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.1582946315961141,
+        "batch_id": "batch-87",
+        "dispatch_decision": 114,
+        "dispatch_seconds": 17155.93029635016,
+        "fifo_wait_seconds": 75.98088524076593,
+        "role": "L",
+        "site": 0,
+        "truck": 6,
+        "unload_seconds": 18528.516188886813,
+        "unloaded_metal_tons": 30.55086389805002,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3593610025816685,
+        "batch_id": "batch-88",
+        "dispatch_decision": 115,
+        "dispatch_seconds": 17280.087280893506,
+        "fifo_wait_seconds": 172.97053095519368,
+        "role": "H",
+        "site": 1,
+        "truck": 0,
+        "unload_seconds": 18709.44654317238,
+        "unloaded_metal_tons": 32.953403936739,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.28906781205073395,
+        "batch_id": "batch-89",
+        "dispatch_decision": 116,
+        "dispatch_seconds": 17538.619402546978,
+        "fifo_wait_seconds": 37.39205404605309,
+        "role": "M",
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 18977.07302008152,
+        "unloaded_metal_tons": 55.79008772579165,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.36003599581407153,
+        "batch_id": "batch-90",
+        "dispatch_decision": 118,
+        "dispatch_seconds": 17623.217371896895,
+        "fifo_wait_seconds": 163.08733606982787,
+        "role": "H",
+        "site": 1,
+        "truck": 3,
+        "unload_seconds": 19129.29773805774,
+        "unloaded_metal_tons": 52.92529138466851,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2890678120507334,
+        "batch_id": "batch-91",
+        "dispatch_decision": 120,
+        "dispatch_seconds": 18073.720198515286,
+        "fifo_wait_seconds": 302.6603097425432,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 19201.40476438502,
+        "unloaded_metal_tons": 26.507518365052253,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16801401268116953,
+        "batch_id": "batch-92",
+        "dispatch_decision": 124,
+        "dispatch_seconds": 18709.44654317238,
+        "fifo_wait_seconds": 0.0,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 19712.585818763055,
+        "unloaded_metal_tons": 15.406884962863247,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.36003599581407153,
+        "batch_id": "batch-93",
+        "dispatch_decision": 122,
+        "dispatch_seconds": 18388.337540013392,
+        "fifo_wait_seconds": 0.0,
+        "role": "H",
+        "site": 1,
+        "truck": 4,
+        "unload_seconds": 20075.17608630926,
+        "unloaded_metal_tons": 52.92529138466851,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.16801401268116986,
+        "batch_id": "batch-94",
+        "dispatch_decision": 125,
+        "dispatch_seconds": 18892.41054864577,
+        "fifo_wait_seconds": 118.2190186562002,
+        "role": "L",
+        "site": 0,
+        "truck": 7,
+        "unload_seconds": 20168.637067653057,
+        "unloaded_metal_tons": 32.42670444746578,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.29047479808853166,
+        "batch_id": "batch-95",
+        "dispatch_decision": 129,
+        "dispatch_seconds": 19201.40476438502,
+        "fifo_wait_seconds": 307.09701970264723,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 20257.679066606604,
+        "unloaded_metal_tons": 26.636538984718353,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16801401268116986,
+        "batch_id": "batch-96",
+        "dispatch_decision": 127,
+        "dispatch_seconds": 18977.07302008152,
+        "fifo_wait_seconds": 274.12111106439625,
+        "role": "L",
+        "site": 0,
+        "truck": 8,
+        "unload_seconds": 20422.702975244854,
+        "unloaded_metal_tons": 32.42670444746578,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.36003599581407153,
+        "batch_id": "batch-97",
+        "dispatch_decision": 128,
+        "dispatch_seconds": 19129.29773805774,
+        "fifo_wait_seconds": 370.0185824063701,
+        "role": "H",
+        "site": 1,
+        "truck": 3,
+        "unload_seconds": 20604.725503902875,
+        "unloaded_metal_tons": 52.92529138466851,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.16437691671330426,
+        "batch_id": "batch-98",
+        "dispatch_decision": 131,
+        "dispatch_seconds": 19712.585818763055,
+        "fifo_wait_seconds": 351.04171384313304,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 20835.38237246611,
+        "unloaded_metal_tons": 15.073363262610002,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2986962165034289,
+        "batch_id": "batch-99",
+        "dispatch_decision": 132,
+        "dispatch_seconds": 19951.765535209182,
+        "fifo_wait_seconds": 74.3672798606276,
+        "role": "M",
+        "site": 3,
+        "truck": 6,
+        "unload_seconds": 21244.104806448613,
+        "unloaded_metal_tons": 57.64836978516178,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.2986962165034289,
+        "batch_id": "batch-100",
+        "dispatch_decision": 134,
+        "dispatch_seconds": 20075.17608630926,
+        "fifo_wait_seconds": 267.0167966752124,
+        "processed_tons_by_window": {
+          "3": 2.5054956185874384,
+          "4": 144.4945043814106
+        },
+        "role": "M",
+        "signed_metal_surplus_tons_by_window": {
+          "3": 0.07189824471937767,
+          "4": 4.146445581284615
+        },
+        "site": 3,
+        "truck": 4,
+        "unload_seconds": 21329.375289634023,
+        "unloaded_metal_tons": 43.90834382600405,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.36081546466984465,
+        "batch_id": "batch-101",
+        "dispatch_decision": 133,
+        "dispatch_seconds": 19999.0246511557,
+        "fifo_wait_seconds": 411.2685601946432,
+        "role": "H",
+        "site": 1,
+        "truck": 1,
+        "unload_seconds": 21396.80352611459,
+        "unloaded_metal_tons": 33.086778110224756,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16325621381878397,
+        "batch_id": "batch-102",
+        "dispatch_decision": 137,
+        "dispatch_seconds": 20422.702975244854,
+        "fifo_wait_seconds": 206.01549285088913,
+        "role": "L",
+        "site": 0,
+        "truck": 8,
+        "unload_seconds": 21734.104593458338,
+        "unloaded_metal_tons": 31.508449267025306,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3620105067001057,
+        "batch_id": "batch-103",
+        "dispatch_decision": 136,
+        "dispatch_seconds": 20257.679066606604,
+        "fifo_wait_seconds": 466.7001208350339,
+        "role": "H",
+        "site": 1,
+        "truck": 2,
+        "unload_seconds": 21751.339965474188,
+        "unloaded_metal_tons": 33.196363464399695,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3620105067001065,
+        "batch_id": "batch-104",
+        "dispatch_decision": 139,
+        "dispatch_seconds": 20604.725503902875,
+        "fifo_wait_seconds": 211.7873291142023,
+        "role": "H",
+        "site": 1,
+        "truck": 3,
+        "unload_seconds": 22138.30075719502,
+        "unloaded_metal_tons": 53.215544484915654,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.3620105067001057,
+        "batch_id": "batch-105",
+        "dispatch_decision": 140,
+        "dispatch_seconds": 20835.38237246611,
+        "fifo_wait_seconds": 298.38119104342695,
+        "role": "H",
+        "site": 1,
+        "truck": 0,
+        "unload_seconds": 22263.38689526579,
+        "unloaded_metal_tons": 33.196363464399695,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.29586887774562265,
+        "batch_id": "batch-106",
+        "dispatch_decision": 141,
+        "dispatch_seconds": 21244.104806448613,
+        "fifo_wait_seconds": 64.87262468504196,
+        "role": "M",
+        "site": 3,
+        "truck": 6,
+        "unload_seconds": 22628.943461624174,
+        "unloaded_metal_tons": 57.102693404905175,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.16325621381878397,
+        "batch_id": "batch-107",
+        "dispatch_decision": 144,
+        "dispatch_seconds": 21652.249261482473,
+        "fifo_wait_seconds": 68.18817349512392,
+        "role": "L",
+        "site": 0,
+        "truck": 7,
+        "unload_seconds": 22903.547912814087,
+        "unloaded_metal_tons": 31.508449267025306,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.17028102748775717,
+        "batch_id": "batch-108",
+        "dispatch_decision": 146,
+        "dispatch_seconds": 21739.193112634854,
+        "fifo_wait_seconds": 137.73767174063323,
+        "role": "L",
+        "site": 0,
+        "truck": 5,
+        "unload_seconds": 23111.918414568572,
+        "unloaded_metal_tons": 25.031311040700302,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2869359496875535,
+        "batch_id": "batch-109",
+        "dispatch_decision": 145,
+        "dispatch_seconds": 21734.104593458338,
+        "fifo_wait_seconds": 147.807215441484,
+        "role": "M",
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 23313.528870867718,
+        "unloaded_metal_tons": 55.378638289697825,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.2869359496875535,
+        "batch_id": "batch-110",
+        "dispatch_decision": 148,
+        "dispatch_seconds": 22138.30075719502,
+        "fifo_wait_seconds": 376.7916682954856,
+        "role": "M",
+        "site": 3,
+        "truck": 3,
+        "unload_seconds": 23362.46441801371,
+        "unloaded_metal_tons": 42.179584604070364,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.17327219451072456,
+        "batch_id": "batch-111",
+        "dispatch_decision": 151,
+        "dispatch_seconds": 22652.436990884726,
+        "fifo_wait_seconds": 269.3412326952821,
+        "role": "L",
+        "site": 0,
+        "truck": 4,
+        "unload_seconds": 23681.59485361391,
+        "unloaded_metal_tons": 25.471012593076512,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.3620105067001057,
+        "batch_id": "batch-112",
+        "dispatch_decision": 149,
+        "dispatch_seconds": 22263.38689526579,
+        "fifo_wait_seconds": 359.5711175905053,
+        "role": "H",
+        "site": 1,
+        "truck": 0,
+        "unload_seconds": 23803.044968718685,
+        "unloaded_metal_tons": 33.196363464399695,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.36605966210495894,
+        "batch_id": "batch-113",
+        "dispatch_decision": 154,
+        "dispatch_seconds": 22925.717909364183,
+        "fifo_wait_seconds": 0.0,
+        "role": "H",
+        "site": 1,
+        "truck": 2,
+        "unload_seconds": 24338.254251845177,
+        "unloaded_metal_tons": 33.567671015024736,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2924188179580724,
+        "batch_id": "batch-114",
+        "dispatch_decision": 153,
+        "dispatch_seconds": 22903.547912814087,
+        "fifo_wait_seconds": 115.7736048120496,
+        "role": "M",
+        "site": 3,
+        "truck": 7,
+        "unload_seconds": 24354.528647033127,
+        "unloaded_metal_tons": 56.43683186590797,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.300263324702795,
+        "batch_id": "batch-115",
+        "dispatch_decision": 155,
+        "dispatch_seconds": 23111.918414568572,
+        "fifo_wait_seconds": 232.83533980403445,
+        "role": "M",
+        "site": 3,
+        "truck": 5,
+        "unload_seconds": 24515.386912041136,
+        "unloaded_metal_tons": 44.138708731310864,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.17327219451072456,
+        "batch_id": "batch-116",
+        "dispatch_decision": 156,
+        "dispatch_seconds": 23313.528870867718,
+        "fifo_wait_seconds": 201.5778639650307,
+        "role": "L",
+        "site": 0,
+        "truck": 8,
+        "unload_seconds": 24758.324387880137,
+        "unloaded_metal_tons": 33.44153354056984,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.1725772861594631,
+        "batch_id": "batch-117",
+        "dispatch_decision": 160,
+        "dispatch_seconds": 23805.017378444038,
+        "fifo_wait_seconds": 473.52388776448424,
+        "role": "L",
+        "site": 0,
+        "truck": 1,
+        "unload_seconds": 24764.298364080678,
+        "unloaded_metal_tons": 15.825337140822768,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3694366577126076,
+        "batch_id": "batch-118",
+        "dispatch_decision": 157,
+        "dispatch_seconds": 23362.46441801371,
+        "fifo_wait_seconds": 391.93651245454384,
+        "role": "H",
+        "site": 1,
+        "truck": 3,
+        "unload_seconds": 24977.933739390617,
+        "unloaded_metal_tons": 54.30718868375332,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.3002633247027944,
+        "batch_id": "batch-119",
+        "dispatch_decision": 159,
+        "dispatch_seconds": 23803.044968718685,
+        "fifo_wait_seconds": 484.5969735489707,
+        "role": "M",
+        "site": 3,
+        "truck": 0,
+        "unload_seconds": 25096.953278296187,
+        "unloaded_metal_tons": 27.534146875246247,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3002633247027944,
+        "batch_id": "batch-120",
+        "dispatch_decision": 162,
+        "dispatch_seconds": 24338.254251845177,
+        "fifo_wait_seconds": 267.39127525088406,
+        "role": "M",
+        "site": 3,
+        "truck": 2,
+        "unload_seconds": 25446.20697659427,
+        "unloaded_metal_tons": 27.534146875246247,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.3694366577126076,
+        "batch_id": "batch-121",
+        "dispatch_decision": 158,
+        "dispatch_seconds": 23681.59485361391,
+        "fifo_wait_seconds": 393.76507207574105,
+        "role": "H",
+        "site": 1,
+        "truck": 4,
+        "unload_seconds": 25451.88117976941,
+        "unloaded_metal_tons": 54.30718868375332,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.17144107106788983,
+        "batch_id": "batch-122",
+        "dispatch_decision": 164,
+        "dispatch_seconds": 24515.386912041136,
+        "fifo_wait_seconds": 342.97623548038246,
+        "role": "L",
+        "site": 0,
+        "truck": 5,
+        "unload_seconds": 25714.350016364766,
+        "unloaded_metal_tons": 25.201837446979805,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.36827319945282533,
+        "batch_id": "batch-123",
+        "dispatch_decision": 161,
+        "dispatch_seconds": 24150.460340274385,
+        "fifo_wait_seconds": 312.5661545402072,
+        "role": "H",
+        "site": 1,
+        "truck": 6,
+        "unload_seconds": 25956.440097304938,
+        "unloaded_metal_tons": 71.07672749439529,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.3000344473742183,
+        "batch_id": "batch-124",
+        "dispatch_decision": 163,
+        "dispatch_seconds": 24354.528647033127,
+        "fifo_wait_seconds": 302.95014359042034,
+        "role": "M",
+        "site": 3,
+        "truck": 7,
+        "unload_seconds": 26243.97610825472,
+        "unloaded_metal_tons": 57.906648343224134,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.17144107106788983,
+        "batch_id": "batch-125",
+        "dispatch_decision": 165,
+        "dispatch_seconds": 24758.324387880137,
+        "fifo_wait_seconds": 306.3826782083488,
+        "role": "L",
+        "site": 0,
+        "truck": 8,
+        "unload_seconds": 26518.463573636785,
+        "unloaded_metal_tons": 33.088126716102735,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.1714410710678895,
+        "batch_id": "batch-126",
+        "dispatch_decision": 166,
+        "dispatch_seconds": 24764.298364080678,
+        "fifo_wait_seconds": 476.8923019545109,
+        "role": "L",
+        "site": 0,
+        "truck": 1,
+        "unload_seconds": 26625.873949890618,
+        "unloaded_metal_tons": 15.721146216925467,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16588389541566426,
+        "batch_id": "batch-127",
+        "dispatch_decision": 168,
+        "dispatch_seconds": 25096.953278296187,
+        "fifo_wait_seconds": 476.97090513040894,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 26757.84334671472,
+        "unloaded_metal_tons": 15.211553209616413,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.16268517747151368,
+        "batch_id": "batch-128",
+        "dispatch_decision": 169,
+        "dispatch_seconds": 25446.20697659427,
+        "fifo_wait_seconds": 489.4070071098613,
+        "role": "L",
+        "site": 0,
+        "truck": 2,
+        "unload_seconds": 26877.455244735265,
+        "unloaded_metal_tons": 14.918230774137804,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2998336231034244,
+        "batch_id": "batch-129",
+        "dispatch_decision": 170,
+        "dispatch_seconds": 25451.88117976941,
+        "fifo_wait_seconds": 390.84366808171035,
+        "role": "M",
+        "site": 3,
+        "truck": 4,
+        "unload_seconds": 27108.066583763415,
+        "unloaded_metal_tons": 44.075542596203384,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.36336780787104006,
+        "batch_id": "batch-130",
+        "dispatch_decision": 167,
+        "dispatch_seconds": 24977.933739390617,
+        "fifo_wait_seconds": 390.4370753367075,
+        "role": "H",
+        "site": 1,
+        "truck": 3,
+        "unload_seconds": 27320.153176508415,
+        "unloaded_metal_tons": 53.41506775704289,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.2998336231034244,
+        "batch_id": "batch-131",
+        "dispatch_decision": 171,
+        "dispatch_seconds": 25714.350016364766,
+        "fifo_wait_seconds": 393.92230053521416,
+        "role": "M",
+        "site": 3,
+        "truck": 5,
+        "unload_seconds": 27528.347951309905,
+        "unloaded_metal_tons": 44.075542596203384,
+        "unloaded_tons": 147.0
+      },
+      {
+        "actual_grade": 0.162685177471514,
+        "batch_id": "batch-132",
+        "dispatch_decision": 173,
+        "dispatch_seconds": 26243.97610825472,
+        "fifo_wait_seconds": 312.31799517947,
+        "role": "L",
+        "site": 0,
+        "truck": 7,
+        "unload_seconds": 27821.63225666564,
+        "unloaded_metal_tons": 31.398239252002202,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.36336780787104006,
+        "batch_id": "batch-133",
+        "dispatch_decision": 172,
+        "dispatch_seconds": 25956.440097304938,
+        "fifo_wait_seconds": 307.20385400677696,
+        "role": "H",
+        "site": 1,
+        "truck": 6,
+        "unload_seconds": 28104.66639783833,
+        "unloaded_metal_tons": 70.12998691911073,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.16268517747151368,
+        "batch_id": "batch-134",
+        "dispatch_decision": 176,
+        "dispatch_seconds": 26757.84334671472,
+        "fifo_wait_seconds": 476.77036924537606,
+        "role": "L",
+        "site": 0,
+        "truck": 0,
+        "unload_seconds": 28213.01988259973,
+        "unloaded_metal_tons": 14.918230774137804,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.2998689119618917,
+        "batch_id": "batch-135",
+        "dispatch_decision": 174,
+        "dispatch_seconds": 26518.463573636785,
+        "role": "M",
+        "site": 3,
+        "truck": 8,
+        "unload_seconds": 28509.626380531565,
+        "unloaded_metal_tons": 57.8747000086451,
+        "unloaded_tons": 193.0
+      },
+      {
+        "actual_grade": 0.29990946664110957,
+        "batch_id": "batch-136",
+        "dispatch_decision": 175,
+        "dispatch_seconds": 26625.873949890618,
+        "role": "M",
+        "site": 3,
+        "truck": 1,
+        "unload_seconds": 28629.572617999078,
+        "unloaded_metal_tons": 27.50169809098975,
+        "unloaded_tons": 91.7
+      },
+      {
+        "actual_grade": 0.36336780787103934,
+        "batch_id": "batch-137",
+        "dispatch_decision": 177,
+        "dispatch_seconds": 26877.455244735265,
+        "role": "H",
+        "site": 1,
+        "truck": 2,
+        "unload_seconds": 28747.36632484681,
+        "unloaded_metal_tons": 33.32082798177431,
+        "unloaded_tons": 91.7
+      }
+    ],
+    "ore_unloaded_batches": 137,
+    "pre_boundary_dispatches": {
+      "count_by_role": {
+        "H": 4,
+        "L": 3,
+        "M": 2,
+        "W": 4
+      },
+      "interval_convention": "left closed, right open",
+      "interval_seconds": [
+        5400,
+        7200
+      ]
+    },
+    "processed_batches": 134,
+    "raw_process_calls": 135018,
+    "sites": {
+      "0": {
+        "mean_grade": 0.166,
+        "role": "L"
+      },
+      "1": {
+        "mean_grade": 0.365,
+        "role": "H"
+      },
+      "2": {
+        "mean_grade": 0.0,
+        "role": "W"
+      },
+      "3": {
+        "mean_grade": 0.293,
+        "role": "M"
+      }
+    },
+    "time_semantics": {
+      "dispatch": "Original RPC time and selected action; counts include all four sites.",
+      "process": "Physical first-in/first-out intervals, not recorder visibility timestamps. Mass allocated to 10-minute bins by interval overlap at constant rate within each event.",
+      "scope": "One descriptive complete shift. Lags combine observed travel, loading, queues and FIFO as labeled. No counterfactual effect or intent is inferred from the trajectory.",
+      "signed_metal_surplus": "Each contribution is metal_tons minus 0.27 times ore tons.",
+      "unload": "Physical arrival and deposit at the crusher FIFO; ore only."
+    },
+    "unload_to_first_process_seconds_10th_50th_90th": [
+      43.30621740554454,
+      303.1627435886953,
+      476.50327041869986
+    ],
+    "unloaded_minus_processed_tons_at_shift_end": 391.5654526703038,
+    "windows": [
+      {
+        "actual_grade": 0.27162993329564217,
+        "actual_processed_metal_tons": 1135.0202904007142,
+        "actual_processed_tons": 4178.553801600089,
+        "grade_deviation_percentage_points": 0.16299332956421497,
+        "interval_seconds": [
+          0,
+          7200
+        ],
+        "ore_unloaded_by_site": {
+          "0": {
+            "metal_tons": 269.1431610707825,
+            "signed_metal_surplus_tons": -167.2308389292175,
+            "tons": 1616.2
+          },
+          "1": {
+            "metal_tons": 501.87388119448894,
+            "signed_metal_surplus_tons": 124.92688119448889,
+            "tons": 1396.1000000000001
+          },
+          "3": {
+            "metal_tons": 437.2314127574173,
+            "signed_metal_surplus_tons": 35.44441275741718,
+            "tons": 1488.1000000000001
+          }
+        },
+        "ore_unloaded_weighted_grade": 0.2684757921568502,
+        "processed_by_site": {
+          "0": {
+            "metal_tons": 236.74759549020834,
+            "signed_metal_surplus_tons": -147.51640450979036,
+            "tons": 1423.199999999995
+          },
+          "1": {
+            "metal_tons": 488.3911986501159,
+            "signed_metal_surplus_tons": 121.47367221809037,
+            "tons": 1358.9538016000945
+          },
+          "3": {
+            "metal_tons": 409.8814962603902,
+            "signed_metal_surplus_tons": 32.853496260390614,
+            "tons": 1396.3999999999983
+          }
+        },
+        "settlement_visible_seconds": 7200.199999995642,
+        "window": 1
+      },
+      {
+        "actual_grade": 0.26492899960234784,
+        "actual_processed_metal_tons": 1280.7047007905844,
+        "actual_processed_tons": 4834.1431202770445,
+        "grade_deviation_percentage_points": -0.5071000397652181,
+        "interval_seconds": [
+          7200,
+          14400
+        ],
+        "ore_unloaded_by_site": {
+          "0": {
+            "metal_tons": 285.7534217702773,
+            "signed_metal_surplus_tons": -185.58557822972273,
+            "tons": 1745.7
+          },
+          "1": {
+            "metal_tons": 554.7415272912533,
+            "signed_metal_surplus_tons": 145.71852729125328,
+            "tons": 1514.9
+          },
+          "3": {
+            "metal_tons": 417.60628560174064,
+            "signed_metal_surplus_tons": 33.342285601740514,
+            "tons": 1423.2000000000003
+          }
+        },
+        "ore_unloaded_weighted_grade": 0.2686069504810776,
+        "processed_by_site": {
+          "0": {
+            "metal_tons": 318.14898735084904,
+            "signed_metal_surplus_tons": -205.30001264914807,
+            "tons": 1938.6999999999894
+          },
+          "1": {
+            "metal_tons": 568.2242098356201,
+            "signed_metal_surplus_tons": 149.17173626765037,
+            "tons": 1552.0461983998875
+          },
+          "3": {
+            "metal_tons": 394.33150360411526,
+            "signed_metal_surplus_tons": 31.614334697279162,
+            "tons": 1343.3969218771706
+          }
+        },
+        "settlement_visible_seconds": 14400.000000017324,
+        "window": 2
+      },
+      {
+        "actual_grade": 0.26842748297949176,
+        "actual_processed_metal_tons": 1264.5104882484643,
+        "actual_processed_tons": 4710.808573741386,
+        "grade_deviation_percentage_points": -0.15725170205082573,
+        "interval_seconds": [
+          14400,
+          21600
+        ],
+        "ore_unloaded_by_site": {
+          "0": {
+            "metal_tons": 279.15506076807776,
+            "signed_metal_surplus_tons": -182.05893923192235,
+            "tons": 1708.2000000000003
+          },
+          "1": {
+            "metal_tons": 585.4171788256352,
+            "signed_metal_surplus_tons": 146.61317882563515,
+            "tons": 1625.2000000000003
+          },
+          "3": {
+            "metal_tons": 425.56029003459884,
+            "signed_metal_surplus_tons": 36.19329003459876,
+            "tons": 1442.1000000000001
+          }
+        },
+        "ore_unloaded_weighted_grade": 0.2701565343164719,
+        "processed_by_site": {
+          "0": {
+            "metal_tons": 279.1550607680763,
+            "signed_metal_surplus_tons": -182.05893923192139,
+            "tons": 1708.1999999999912
+          },
+          "1": {
+            "metal_tons": 552.3304007154076,
+            "signed_metal_surplus_tons": 138.28540071540982,
+            "tons": 1533.4999999999916
+          },
+          "3": {
+            "metal_tons": 433.0250267649804,
+            "signed_metal_surplus_tons": 36.36571185480176,
+            "tons": 1469.1085737414023
+          }
+        },
+        "settlement_visible_seconds": 21600.000000043518,
+        "window": 3
+      },
+      {
+        "actual_grade": 0.26822266133564093,
+        "actual_processed_metal_tons": 1332.9939523677278,
+        "actual_processed_tons": 4969.729051711179,
+        "grade_deviation_percentage_points": -0.1777338664359085,
+        "interval_seconds": [
+          21600,
+          28800
+        ],
+        "ore_unloaded_by_site": {
+          "0": {
+            "metal_tons": 313.2434572391222,
+            "signed_metal_surplus_tons": -190.17154276087786,
+            "tons": 1864.5000000000002
+          },
+          "1": {
+            "metal_tons": 522.9292934129693,
+            "signed_metal_surplus_tons": 136.15429341296925,
+            "tons": 1432.5
+          },
+          "3": {
+            "metal_tons": 541.7388822816504,
+            "signed_metal_surplus_tons": 48.15188228165033,
+            "tons": 1828.1000000000001
+          }
+        },
+        "ore_unloaded_weighted_grade": 0.26885556046394055,
+        "processed_by_site": {
+          "0": {
+            "metal_tons": 310.776262880032,
+            "signed_metal_surplus_tons": -188.54406489900924,
+            "tons": 1849.3345473297823
+          },
+          "1": {
+            "metal_tons": 522.6952435414173,
+            "signed_metal_surplus_tons": 135.92024354141915,
+            "tons": 1432.4999999999932
+          },
+          "3": {
+            "metal_tons": 499.52244594627894,
+            "signed_metal_surplus_tons": 43.79092976329997,
+            "tons": 1687.8945043814035
+          }
+        },
+        "settlement_visible_seconds": 28800.0,
+        "window": 4
+      }
+    ]
+  },
+  "identity": {
+    "actor_sampling_seed": 61785287540777,
+    "candidate_id": "s01_BG128",
+    "config_sha256": "d7f852af232bcf38f54f86ec06bdfaeb93df3d4954b0245fb7adb4af4009dd07",
+    "decision_feature_config_sha256": "094ad5afa3913a2ed455426ccac5ba67ee87e49fae06e38bde1e9c87002dc5b8",
+    "decision_feature_version": "task-query-optional-commitment-summary-v1",
+    "environment_seed": 101729932282451,
+    "episode_id": "dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451",
+    "graph_contract_sha256": "2806a94319314e2c1486f700f2333a3aff0bbe7e8af60f48480155c7ab95818d",
+    "journal_file_sha256": "5000b953299b6e1d0148d05d917403975f411e5e81870e37eb4050dc81aa2801",
+    "journal_logical_sha256": "71f906a3a9ce9882bcef30a9773209424a38d782fe71b2fd454f431cf54f7ca1",
+    "observation_schema": "dispatch.physical.v3",
+    "policy_sha256": "99cf52513539491f1e2076b57efa78350a52dcf7bbd2225ad2b725ece95a77c8",
+    "policy_version": "1c9c56b749f431a1642cfa9738a9b1e202b96573839a5e57422dd10d1ea169d6",
+    "raw_manifest_sha256": "c162a2cfb51b3d679e57b7aaba8e7b460d021fe0277adf4ac90fb19aacfd74e2",
+    "raw_process_calls": 135018,
+    "recording_id": "bg128-continuous-mixed-20261119-001-s01_BG128_eval_joint_shift_new",
+    "reward_version": "grade-deadband004-production8-8-wait02-v1",
+    "run_index": 10002149,
+    "scene_group": "bg128-continuous-mixed-20261119-001-joint_shift-0024",
+    "scene_id": "joint_shift",
+    "source_kind": "fixed_actor",
+    "split": "validation",
+    "tokenization_version": "material-journal-v1-causal-aggregate"
+  },
+  "schema": "bg128-figure4-fifo-timeline-v1",
+  "selection": {
+    "checkpoint": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0032/checkpoint.pt",
+      "sha256": "b8b81c0821535cdfdff3c9352c11d69bc91d14fbe97694ab5f45c08fb97c3c9a"
+    },
+    "criterion": "Minimum Euclidean distance from the four conditional cohort medians after IQR scaling. Exclude a dimension with zero IQR. Break ties by run_index.",
+    "distance": 0.23095217407039811,
+    "eligible": 100,
+    "frozen_report": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/evaluation_complete.json",
+      "sha256": "16b80619c0943ec76b66fd31875d366477b93af97d15be8c45bcb705578e638e"
+    },
+    "frozen_report_mtime_utc": "2026-11-20T02:14:06.356965+00:00",
+    "iqr": {
+      "four_window_grade_rmse": 0.0016557421764463376,
+      "ore_tons": 326.62488028620646,
+      "total_wait_seconds": 3215.506781575981,
+      "waste_tons": 313.5750000000007
+    },
+    "medians": {
+      "four_window_grade_rmse": 0.0029397919371604506,
+      "ore_tons": 18737.704378870796,
+      "total_wait_seconds": 16966.510755940777,
+      "waste_tons": 6034.3499999999985
+    },
+    "selected_features": {
+      "four_window_grade_rmse": 0.002915624722458523,
+      "ore_tons": 18693.23454730954,
+      "total_wait_seconds": 17536.490571853505,
+      "waste_tons": 6016.699999999999
+    },
+    "total_completed": 100,
+    "universe": "All 100 sealed fixed mixed-u32 joint_shift validation shifts in the bound report."
+  },
+  "source_references": {
+    "actor": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/actor.pt",
+      "sha256": "99cf52513539491f1e2076b57efa78350a52dcf7bbd2225ad2b725ece95a77c8"
+    },
+    "config": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/grade_assignment_generalization_001/continuous_training_001/prepared_001/configs/s01_BG128_eval_joint_shift_new.json",
+      "sha256": "d7f852af232bcf38f54f86ec06bdfaeb93df3d4954b0245fb7adb4af4009dd07"
+    },
+    "episode": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/material/run_10002149.h5",
+      "sha256": "27343be782a6dd9961acd4d9d825efd73fdf5acf70422b73cb1b16176d31a991"
+    },
+    "episode_manifest": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/material/run_10002149.h5.manifest.json",
+      "sha256": "3c1c0f194bccca7c482abe572f44bc2fb8373c93a39b0945f86915f8c91b0c22"
+    },
+    "episode_seal": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/material/run_10002149.h5.seal.json",
+      "sha256": "b863889cadb8cfe015328c0ed92c4d34dd917b2a623fc62fc7a6be9e85106b98"
+    },
+    "episodes.json": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/episodes/run_10002149/episodes.json",
+      "sha256": "e761bbd5e5de09bb19c6813c697001c307be30a36ac1d230acb8d9194839ad73"
+    },
+    "journal": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001_materials/s01_BG128_eval_joint_shift_new/dispatch-production-wait-shortfall-v2-run-10002149-seed-101729932282451/material_events.bin",
+      "sha256": "5000b953299b6e1d0148d05d917403975f411e5e81870e37eb4050dc81aa2801"
+    },
+    "raw_manifest": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/episodes/run_10002149/manifest.json",
+      "sha256": "c162a2cfb51b3d679e57b7aaba8e7b460d021fe0277adf4ac90fb19aacfd74e2"
+    },
+    "receipt": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/episodes/run_10002149/material_receipt.json",
+      "sha256": "7984e745fbae22030eb9f4bb1f51f0a81417a15660debfaa4740efebffa7a73d"
+    },
+    "samples.h5": {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/joint_shift/new/episodes/run_10002149/samples.h5",
+      "sha256": "f56eb3d5548eb45c5f6f59d57a6308e76421040d37dd0a176404f49e8bdef30b"
+    }
+  }
+}

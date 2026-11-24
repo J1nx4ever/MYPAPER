@@ -1,0 +1,1259 @@
+{
+  "schema": "bg128-action-mask-appendix-v1",
+  "actor_digest": "1c9c56b749f431a1642cfa9738a9b1e202b96573839a5e57422dd10d1ea169d6",
+  "scope": "offline mutation of availability and matching RPC action mask/tonnes on copied states; no failure event or simulator rollout",
+  "samples": 72,
+  "masked_action_zero": 72,
+  "physical_observed_waste_guards": [
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "load": 2,
+      "before_seconds": 25668.16977300589,
+      "after_seconds": 25695.279472775812,
+      "before_committed_tons": 5998.399999999999,
+      "after_committed_tons": 6191.399999999999,
+      "before_probability": 0.3722893297672272,
+      "after_probability": 0.0,
+      "compatible_dump": 1
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "load": 2,
+      "before_seconds": 25735.876710760687,
+      "after_seconds": 25841.3574661839,
+      "before_committed_tons": 5913.699999999997,
+      "after_committed_tons": 6060.699999999997,
+      "before_probability": 0.270283967256546,
+      "after_probability": 0.0,
+      "compatible_dump": 1
+    }
+  ],
+  "offline_test": [
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.5352680087089539,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.18487855792045593,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 2,
+      "is_ore": true,
+      "original_probability": 0.056752052158117294,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 3,
+      "is_ore": false,
+      "original_probability": 0.223101407289505,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 37,
+      "seconds": 4672.331869141674,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.11781368404626846,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 37,
+      "seconds": 4672.331869141674,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.2122817486524582,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 37,
+      "seconds": 4672.331869141674,
+      "masked_load": 2,
+      "is_ore": true,
+      "original_probability": 0.5626871585845947,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 37,
+      "seconds": 4672.331869141674,
+      "masked_load": 3,
+      "is_ore": false,
+      "original_probability": 0.10721739381551743,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 74,
+      "seconds": 10717.065749159414,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.24070894718170166,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 74,
+      "seconds": 10717.065749159414,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.2845683991909027,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 74,
+      "seconds": 10717.065749159414,
+      "masked_load": 2,
+      "is_ore": true,
+      "original_probability": 0.145471453666687,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 74,
+      "seconds": 10717.065749159414,
+      "masked_load": 3,
+      "is_ore": false,
+      "original_probability": 0.3292511999607086,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 111,
+      "seconds": 16476.579914602695,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.10316307097673416,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 111,
+      "seconds": 16476.579914602695,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.3870033025741577,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 111,
+      "seconds": 16476.579914602695,
+      "masked_load": 2,
+      "is_ore": true,
+      "original_probability": 0.5041939616203308,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 111,
+      "seconds": 16476.579914602695,
+      "masked_load": 3,
+      "is_ore": false,
+      "original_probability": 0.005639611277729273,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 148,
+      "seconds": 22804.774533914675,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.19587889313697815,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 148,
+      "seconds": 22804.774533914675,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.2955341339111328,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 148,
+      "seconds": 22804.774533914675,
+      "masked_load": 2,
+      "is_ore": true,
+      "original_probability": 0.3566341996192932,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 148,
+      "seconds": 22804.774533914675,
+      "masked_load": 3,
+      "is_ore": false,
+      "original_probability": 0.15195277333259583,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 185,
+      "seconds": 28775.594960892497,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.12950342893600464,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 185,
+      "seconds": 28775.594960892497,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.5343535542488098,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 185,
+      "seconds": 28775.594960892497,
+      "masked_load": 2,
+      "is_ore": true,
+      "original_probability": 0.2416922152042389,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "nominal",
+      "run": 10001125,
+      "sequence": 185,
+      "seconds": 28775.594960892497,
+      "masked_load": 3,
+      "is_ore": false,
+      "original_probability": 0.09445078670978546,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.10645350813865662,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.39605268836021423,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.17442753911018372,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.3230663239955902,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 33,
+      "seconds": 4719.793968262,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.0642145648598671,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 33,
+      "seconds": 4719.793968262,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.4155236482620239,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 33,
+      "seconds": 4719.793968262,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.34694337844848633,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 33,
+      "seconds": 4719.793968262,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.17331847548484802,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 67,
+      "seconds": 9998.408673319993,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.42507851123809814,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 67,
+      "seconds": 9998.408673319993,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.2977904975414276,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 67,
+      "seconds": 9998.408673319993,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.1280020922422409,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 67,
+      "seconds": 9998.408673319993,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.14912888407707214,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 101,
+      "seconds": 15548.26141356014,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.10421114414930344,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 101,
+      "seconds": 15548.26141356014,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.35852745175361633,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 101,
+      "seconds": 15548.26141356014,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.25300437211990356,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 101,
+      "seconds": 15548.26141356014,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.28425705432891846,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 135,
+      "seconds": 20680.10042349446,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.46088922023773193,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 135,
+      "seconds": 20680.10042349446,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.11622340977191925,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 135,
+      "seconds": 20680.10042349446,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.09240370243787766,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 135,
+      "seconds": 20680.10042349446,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.33048370480537415,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 169,
+      "seconds": 25668.16977300589,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.30579477548599243,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 169,
+      "seconds": 25668.16977300589,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.11643490195274353,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 169,
+      "seconds": 25668.16977300589,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.3722893297672272,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "joint_shift",
+      "run": 10002125,
+      "sequence": 169,
+      "seconds": 25668.16977300589,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.20548096299171448,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.569788932800293,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.19694535434246063,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.15063846111297607,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 0,
+      "seconds": 0.0,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.08262718468904495,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 34,
+      "seconds": 4484.242609910562,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.22331826388835907,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 34,
+      "seconds": 4484.242609910562,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.08703932911157608,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 34,
+      "seconds": 4484.242609910562,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.6604553461074829,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 34,
+      "seconds": 4484.242609910562,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.029187018051743507,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 68,
+      "seconds": 9704.109472184877,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.024700989946722984,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 68,
+      "seconds": 9704.109472184877,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.17016316950321198,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 68,
+      "seconds": 9704.109472184877,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.20437142252922058,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 68,
+      "seconds": 9704.109472184877,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.6007643938064575,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 102,
+      "seconds": 15499.947374601956,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.2565135359764099,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 102,
+      "seconds": 15499.947374601956,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.15103530883789062,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 102,
+      "seconds": 15499.947374601956,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.3482726812362671,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 102,
+      "seconds": 15499.947374601956,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.24417847394943237,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 136,
+      "seconds": 20517.58390394602,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.4032321572303772,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 136,
+      "seconds": 20517.58390394602,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.10847776383161545,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 136,
+      "seconds": 20517.58390394602,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.34552958607673645,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 136,
+      "seconds": 20517.58390394602,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.14276058971881866,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 171,
+      "seconds": 25735.876710760687,
+      "masked_load": 0,
+      "is_ore": true,
+      "original_probability": 0.21674475073814392,
+      "masked_probability": 0.0,
+      "legal_after": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 171,
+      "seconds": 25735.876710760687,
+      "masked_load": 1,
+      "is_ore": true,
+      "original_probability": 0.2594926357269287,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 171,
+      "seconds": 25735.876710760687,
+      "masked_load": 2,
+      "is_ore": false,
+      "original_probability": 0.270283967256546,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "compatible_dump_unchanged": true
+    },
+    {
+      "scenario": "waste_swap",
+      "run": 10002325,
+      "sequence": 171,
+      "seconds": 25735.876710760687,
+      "masked_load": 3,
+      "is_ore": true,
+      "original_probability": 0.2534785866737366,
+      "masked_probability": 0.0,
+      "legal_after": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "compatible_dump_unchanged": true
+    }
+  ]
+}

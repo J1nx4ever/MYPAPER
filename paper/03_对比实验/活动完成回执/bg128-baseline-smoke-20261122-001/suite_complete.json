@@ -1,0 +1,19 @@
+{
+  "campaign_id": "bg128-baseline-smoke-20261122-001",
+  "evaluation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/single_shift_validation.json",
+    "sha256": "5bde520436ddb5f4d9a67e97ea674f396ce3d6e7e1ed6eaa49e5c6fd83b43c05"
+  },
+  "optimizer_updates": 0,
+  "physical_shifts": 4,
+  "protected_core": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "status": "COMPLETE",
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/baseline_comparison_001/prepared_001/suite.json",
+    "sha256": "95d9a33c48170088ca21edd7638bc0c643d016b253b9b99ce48f55512d6f4424"
+  },
+  "training_shifts": 0
+}

@@ -1,0 +1,19 @@
+{
+  "campaign_id": "bg128-baseline-audit-20261122-002",
+  "evaluation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/audit_002/single_shift_validation.json",
+    "sha256": "f5fa50624c90d5b13d28e1bbc144f6eef6648033e1c846b17c2c368cc81dc99d"
+  },
+  "optimizer_updates": 0,
+  "physical_shifts": 5,
+  "protected_core": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "status": "COMPLETE",
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/baseline_comparison_001/audit_002/prepared_001/suite.json",
+    "sha256": "d2a186f499c687861eceb1f6c35ccd1300c217c037d57a1967c062f6725db049"
+  },
+  "training_shifts": 0
+}

@@ -1,0 +1,600 @@
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import platform
+import subprocess
+import sys
+import time
+import uuid
+from pathlib import Path
+from typing import Any, Optional
+
+import numpy as np
+import stable_baselines3
+from stable_baselines3.common.callbacks import BaseCallback
+from stable_baselines3.common.monitor import Monitor
+
+from .dispatch_bridge import DispatchCallbackBridge
+from .dispatch_env import DispatchEnv
+from .dispatch_service import create_server
+from .episode_runner import ParameterVariationEpisodeRunner
+from .episode_budget_ppo import EpisodeBudgetPPO
+from .masked_policy import DispatchMaskedPolicy, POLICY_CONTRACT_ID
+from .observation_projection_wrapper import (
+    FIFOObservationWrapper,
+    PROJECTION_CONTRACT_ID,
+)
+from .stage_statistics import StageStatisticsCallback
+from .rollout_debug import RolloutDebug
+from .reward_contract import (
+    FROZEN_REWARD_PARAMETERS,
+    REWARD_CONTRACT_ID,
+    WINDOWS_PER_EPISODE,
+)
+
+
+from .observation_contract import (
+    AGENT_OBSERVATION_SIZE, OBSERVATION_SCHEMA_ID, OBSERVATION_SIZE, OBSERVATION_ALP_PATH,
+)
+from .protocol_artifacts import verify_protocol_artifacts
+from .reward_config import RewardConfiguration, configuration_to_components
+from .alp_audit import validate_alp_contract
+from . import p0_ablation_contract as ablation
+
+class TrainingProgressCallback(BaseCallback):
+    def __init__(
+        self,
+        target_episodes: int,
+        transitions_path: Optional[Path],
+        *,
+        ppo_seed: int,
+    ) -> None:
+        super().__init__()
+        self.target_episodes = target_episodes
+        self.transitions_path = transitions_path
+        self.completed_episodes = 0
+        self.ppo_seed = int(ppo_seed)
+        self._transitions_file: Optional[Any] = None
+        self._stage_start_timesteps = 0
+
+    def _on_training_start(self) -> None:
+        self._stage_start_timesteps = self.num_timesteps
+        if self.transitions_path is not None:
+            self.transitions_path.parent.mkdir(parents=True, exist_ok=True)
+            self._transitions_file = self.transitions_path.open(
+                "x", encoding="utf-8", buffering=1
+            )
+
+    def _on_step(self) -> bool:
+        infos = self.locals.get("infos", [])
+        actions = np.asarray(self.locals.get("actions", [])).reshape(-1)
+        rewards = np.asarray(self.locals.get("rewards", [])).reshape(-1)
+        dones = np.asarray(self.locals.get("dones", [])).reshape(-1)
+
+        for index, info in enumerate(infos):
+            action = int(actions[index]) if index < len(actions) else None
+            reward = float(rewards[index]) if index < len(rewards) else None
+            done = bool(dones[index]) if index < len(dones) else False
+            record = {
+                "timesteps": self.num_timesteps,
+                "stage_timesteps": self.num_timesteps - self._stage_start_timesteps,
+                "stage_episode_index": self.completed_episodes + 1,
+                "episode_id": info.get("episode_id"),
+                "request_id": info.get("request_id"),
+                "decision_sequence": info.get("decision_sequence"),
+                "sim_time_seconds": info.get("sim_time_seconds"),
+                "sim_time_delta_seconds": info.get("sim_time_delta_seconds"),
+                "action": action,
+                "previous_action_reported": info.get("previous_action"),
+                "reward": reward,
+                "transition_reward_raw": info.get("transition_reward_raw"),
+                "reward_components": info.get("reward_components", {}),
+                "done": done,
+                "ppo_seed": self.ppo_seed,
+                "experiment_run_index": info.get("experiment_run_index"),
+                "experiment_seed": info.get("experiment_seed"),
+                "reward_contract_id": info.get("reward_contract_id"),
+                "observation_schema_id": info.get("observation_schema_id"),
+                "closed_windows": info.get("closed_windows", []),
+            }
+            audit = getattr(self.model, "_rollout_debug", None)
+            if audit is not None:
+                record.update(audit.event(
+                    "training_transition", info,
+                    transition_index=self.num_timesteps,
+                    action=action,
+                    reward=reward,
+                    done=done,
+                ))
+            if self._transitions_file is not None:
+                self._transitions_file.write(
+                    json.dumps(record, ensure_ascii=False) + "\n"
+                )
+
+            if done:
+                self.completed_episodes += 1
+                episode = info.get("episode", {})
+                print(
+                    "Completed episode "
+                    f"{self.completed_episodes}/{self.target_episodes}: "
+                    f"reward={episode.get('r', 'n/a')}, "
+                    f"length={episode.get('l', 'n/a')}, "
+                    f"episode_id={info.get('episode_id', 'n/a')}",
+                    flush=True,
+                )
+
+        if self.completed_episodes >= self.target_episodes:
+            self.model.request_episode_budget_stop()
+        return True
+
+    def _on_training_end(self) -> None:
+        if self._transitions_file is not None:
+            self._transitions_file.close()
+            self._transitions_file = None
+
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Ordinary PPO with serial AnyLogic Parameter Variation callbacks.")
+    parser.add_argument('--episodes', type=int, required=True)
+    parser.add_argument('--anylogic-seed-manifest', type=Path, required=True)
+    parser.add_argument('--host', default='127.0.0.1')
+    parser.add_argument('--port', type=int, default=50051)
+    parser.add_argument('--seed', type=int, default=123)
+    parser.add_argument('--grade-action', choices=['auto','on','off'], default='auto',
+                        help='Optional expectation for the AnyLogic RPC switch; auto follows the first request.')
+    parser.add_argument('--callback-timeout', type=float, default=3600.0)
+    parser.add_argument('--rpc-workers', type=int, default=8)
+    parser.add_argument('--n-steps', type=int, choices=[128], default=128)
+    parser.add_argument('--batch-size', type=int, default=32)
+    parser.add_argument('--learning-rate', type=float, default=3e-4)
+    parser.add_argument('--ent-coef', type=float, default=0.01)
+    parser.add_argument('--resume-model', type=Path, help='Completed Reward V1.0 masked-policy run with identical configuration only.')
+    parser.add_argument('--output-dir', type=Path)
+    parser.add_argument('--alp-path', type=Path, help='Only used with optional --audit-alp.')
+    parser.add_argument('--audit-alp', action='store_true', help='Optional local ALP audit; never required for runtime configuration.')
+    parser.add_argument('--audit-rollouts', action='store_true', help='Opt in to per-request events and detailed rollout snapshots.')
+    parser.add_argument('--record-transitions', action='store_true', help='Opt in to per-transition JSONL logging.')
+    parser.add_argument('--obs-mode', choices=('f0', 'p0-smoke', 'raw1519', 'fifo_p0_1525', 'zero_tail_1525'), default='f0',
+                        help='f0: raw 1519D baseline. p0-smoke: append six FIFO-only '
+                             'projection features (pipeline smoke only, never official F1). '
+                             'raw1519/fifo_p0_1525: plan-locked arms; zero_tail_1525 requires a scenario plan.')
+    parser.add_argument('--scenario-plan', type=Path, help='Frozen waste-task experiment plan; distinct from historical P0.')
+    parser.add_argument('--ablation-plan', type=Path, help='Frozen P0 pilot plan; required for named experiment arms.')
+    parser.add_argument('--ablation-stage', choices=('formal','integration'), default='formal')
+    return parser.parse_args()
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as file:
+        for chunk in iter(lambda: file.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+def _git_value(*args: str) -> str:
+    try:
+        result = subprocess.run(
+            ["git", *args],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return "unavailable"
+    return result.stdout.strip()
+
+def _prepare_output_dir(output_dir: Path) -> None:
+    if output_dir.exists() and any(output_dir.iterdir()):
+        raise SystemExit(
+            f"--output-dir must be absent or empty; refusing to mix logs: {output_dir}"
+        )
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+def _load_seed_manifest(path: Path, episodes: int) -> list[tuple[int, int]]:
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError as exc:
+        raise SystemExit(f"seed manifest does not exist: {path}") from exc
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"seed manifest is not valid JSON: {path}") from exc
+    if not isinstance(payload, list) or len(payload) != episodes:
+        raise SystemExit(
+            f"seed manifest must contain exactly {episodes} rows: {path}"
+        )
+    rows: list[tuple[int, int]] = []
+    for position, item in enumerate(payload, 1):
+        if not isinstance(item, dict):
+            raise SystemExit(f"seed manifest row {position} must be an object")
+        try:
+            run_index_raw = item["run_index"]
+            experiment_seed_raw = item["experiment_seed"]
+        except KeyError as exc:
+            raise SystemExit(
+                f"seed manifest row {position} requires integer "
+                "run_index and experiment_seed"
+            ) from exc
+        if (
+            not isinstance(run_index_raw, int)
+            or isinstance(run_index_raw, bool)
+            or not isinstance(experiment_seed_raw, int)
+            or isinstance(experiment_seed_raw, bool)
+        ):
+            raise SystemExit(
+                f"seed manifest row {position} requires integer "
+                "run_index and experiment_seed"
+            )
+        run_index = run_index_raw
+        experiment_seed = experiment_seed_raw
+        if run_index <= 0 or experiment_seed <= 0:
+            raise SystemExit(
+                f"seed manifest row {position} values must be positive"
+            )
+        rows.append((run_index, experiment_seed))
+    if len({row[0] for row in rows}) != len(rows):
+        raise SystemExit("seed manifest run_index values must be unique")
+    if len({row[1] for row in rows}) != len(rows):
+        raise SystemExit("seed manifest experiment_seed values must be unique")
+    return rows
+
+def _validate_resume_contract(
+    resume_model: Path, reward_config=None, obs_mode: str = 'f0'
+) -> None:
+    parent = resume_model.resolve().parent
+    manifest_path = parent / "run_manifest.json"
+    success_path = parent / "SUCCESS.json"
+    if not manifest_path.is_file() or not success_path.is_file():
+        raise SystemExit(
+            "--resume-model must come from a completed P0 run containing "
+            "run_manifest.json and SUCCESS.json"
+        )
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        success = json.loads(success_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit("resume run metadata is not valid JSON") from exc
+    for label, payload in (("run_manifest", manifest), ("SUCCESS", success)):
+        if payload.get("reward_contract_id") != REWARD_CONTRACT_ID:
+            raise SystemExit(f"resume {label} has an incompatible reward contract")
+        if reward_config is not None and payload.get("reward_configuration_fingerprint") != reward_config.fingerprint:
+            raise SystemExit(f"resume {label} has a different reward/ablation configuration")
+        if payload.get("policy_contract_id") != POLICY_CONTRACT_ID:
+            raise SystemExit(f"resume {label} lacks the compatible masked policy contract")
+    if manifest.get("observation_schema_id") != OBSERVATION_SCHEMA_ID:
+        raise SystemExit("resume run has an incompatible observation schema")
+    expected_dimension = OBSERVATION_SIZE if obs_mode == 'f0' else AGENT_OBSERVATION_SIZE
+    for label, payload in (("run_manifest", manifest), ("SUCCESS", success)):
+        # Runs predating the projection wrapper are raw 1519D F0 runs.
+        resumed_mode = payload.get("agent_observation_mode", "f0")
+        resumed_dimension = payload.get("agent_observation_dimension", OBSERVATION_SIZE)
+        if resumed_mode != obs_mode or resumed_dimension != expected_dimension:
+            raise SystemExit(
+                f"resume {label} uses agent observation mode {resumed_mode!r} "
+                f"({resumed_dimension}D), which cannot be resumed as "
+                f"{obs_mode} ({expected_dimension}D)"
+            )
+    if success.get("model_sha256") != _sha256(resume_model.resolve()):
+        raise SystemExit("resume model hash does not match SUCCESS.json")
+
+def _manifest(args: argparse.Namespace, output_dir: Path, reward_config: RewardConfiguration) -> dict[str, Any]:
+    repository_root = Path(__file__).resolve().parents[1]
+    alp_path = args.alp_path.resolve() if args.audit_alp else None
+    proto_path = repository_root / "proto-src/src/main/proto/dispatch.proto"
+    proto_jar_path = repository_root / "dist/DRL-Dispatching-1.2.0.jar"
+    seed_manifest_path = args.anylogic_seed_manifest.resolve()
+    resume_model = args.resume_model.resolve() if args.resume_model else None
+    return {
+        "audit_run_id": str(uuid.uuid4()),
+        "status": "running",
+        "created_unix_seconds": time.time(),
+        "command": [sys.executable, *sys.argv],
+        "output_dir": str(output_dir.resolve()),
+        "git_commit": _git_value("rev-parse", "HEAD"),
+        "git_status_porcelain": _git_value("status", "--porcelain"),
+        "python_version": platform.python_version(),
+        "numpy_version": np.__version__,
+        "stable_baselines3_version": stable_baselines3.__version__,
+        "reward_contract_id": REWARD_CONTRACT_ID,
+        "reward_spec_sha256": _sha256(repository_root / 'python/reward_v1_configuration.json'),
+        "observation_schema_sha256": _sha256(repository_root / 'python/observation_schema.json'),
+        "observation_schema_id": OBSERVATION_SCHEMA_ID,
+        "observation_dimension": OBSERVATION_SIZE,
+        "agent_observation_mode": args.obs_mode,
+        "agent_observation_dimension": (
+            OBSERVATION_SIZE if args.obs_mode in ('f0','raw1519') else AGENT_OBSERVATION_SIZE
+        ),
+        "projection_contract_id": (
+            None if args.obs_mode in ('f0','raw1519') else ('dispatch.physical.v3+zero-tail-six.v1' if args.obs_mode=='zero_tail_1525' else PROJECTION_CONTRACT_ID)
+        ),
+        "alp_path": str(alp_path) if alp_path else None,
+        "configuration_source": "anylogic_rpc",
+        "runtime_reward_configuration_received": True,
+        "runtime_reward_parameters": configuration_to_components(reward_config),
+        "local_alp_audit_requested": args.audit_alp,
+        # A disk hash identifies the audited source, not the GUI's loaded model.
+        "alp_runtime_verified": False,
+        "windows_per_episode": WINDOWS_PER_EPISODE,
+        "frozen_reward_parameters": FROZEN_REWARD_PARAMETERS,
+        "alp_sha256": _sha256(alp_path) if alp_path else None,
+        "proto_sha256": _sha256(proto_path),
+        "proto_jar_sha256": _sha256(proto_jar_path),
+        "anylogic_seed_manifest": str(seed_manifest_path),
+        "anylogic_seed_manifest_sha256": _sha256(seed_manifest_path),
+        "anylogic_episode_metadata": [
+            {
+                "run_index": run_index,
+                "experiment_seed": experiment_seed,
+            }
+            for run_index, experiment_seed in _load_seed_manifest(
+                seed_manifest_path, args.episodes
+            )
+        ],
+        "episodes_requested": args.episodes,
+        "ppo_seed": args.seed,
+        "learning_rate": args.learning_rate,
+        "ent_coef": args.ent_coef,
+        "n_steps": args.n_steps,
+        "batch_size": args.batch_size,
+        "audit_rollouts": args.audit_rollouts,
+        "record_transitions": args.record_transitions,
+        "process_pid": os.getpid(),
+        "algorithm": "PPO",
+        "reward_configuration": reward_config.to_dict(),
+        "reward_configuration_fingerprint": reward_config.fingerprint,
+        "ablation_variant": reward_config.variant,
+        "policy_class": "python.masked_policy.DispatchMaskedPolicy",
+        "policy_contract_id": POLICY_CONTRACT_ID,
+        "action_mask_indices": [19, 20, 21, 22],
+        "ppo_configuration": dict(n_epochs=10, gamma=.995, gae_lambda=.95,
+            clip_range=.2, clip_range_vf=None, max_grad_norm=.5,
+            normalize_advantage=True, net_arch=dict(pi=[128,128], vf=[128,128]), target_kl=None),
+        "protected_core_sha256": _sha256(repository_root / "python/episode_budget_ppo.py"),
+        "resume_model": str(resume_model) if resume_model else None,
+        "resume_model_sha256": _sha256(resume_model) if resume_model else None,
+    }
+
+def _validate_expected_variant(expected, reward_config):
+    if expected != 'auto' and (expected == 'on') != reward_config.grade_action_enabled:
+        raise SystemExit('--grade-action does not match AnyLogic runtime configuration')
+
+
+def main() -> None:
+    args = parse_args()
+    contract = ablation
+    scenario = None
+    identity_key = 'p0_ablation'
+    if args.scenario_plan is not None:
+        from . import waste_task_experiment_contract as contract
+        from .scenario_contract import ScenarioConfiguration
+        scenario = ScenarioConfiguration(**contract.load_plan(args.scenario_plan)['scenario_configuration'])
+        identity_key = 'waste_task_experiment'
+    elif args.obs_mode == 'zero_tail_1525':
+        raise ValueError('zero_tail_1525 requires --scenario-plan')
+    ablation_identity = contract.validate_train_args(args)
+    if args.episodes <= 0:
+        raise SystemExit("--episodes must be positive")
+    if args.n_steps < 2 or args.batch_size <= 1 or args.batch_size > args.n_steps:
+        raise SystemExit("require n_steps >= 2 and 1 < batch_size <= n_steps")
+    if args.callback_timeout <= 0:
+        raise SystemExit("--callback-timeout must be positive")
+    if args.learning_rate <= 0:
+        raise SystemExit("--learning-rate must be positive")
+    if args.ent_coef < 0:
+        raise SystemExit("--ent-coef must be non-negative")
+    if args.resume_model is not None and not args.resume_model.is_file():
+        raise SystemExit(
+            f"--resume-model does not exist or is not a file: "
+            f"{args.resume_model}"
+        )
+    if args.obs_mode == 'p0-smoke' and args.resume_model is not None:
+        raise SystemExit(
+            "--obs-mode p0-smoke cannot resume a checkpoint; F0 and F1 must be "
+            "trained independently from scratch"
+        )
+    expected_episode_metadata = _load_seed_manifest(
+        args.anylogic_seed_manifest, args.episodes
+    )
+
+    repository_root = Path(__file__).resolve().parents[1]
+    verify_protocol_artifacts(repository_root)
+    local_audit = None
+    if args.audit_alp:
+        if args.alp_path is None:
+            raise SystemExit('--audit-alp requires --alp-path')
+        local_audit = validate_alp_contract(args.alp_path)
+    bridge = DispatchCallbackBridge(expected_episode_metadata=expected_episode_metadata,
+                                    runtime_configuration=True, expected_scenario=scenario)
+    server = None
+    env = None
+    rollout_debug = None
+    manifest = None
+    run_completed = False
+    optimizer_hook = None
+    try:
+        server = create_server(bridge, host=args.host, port=args.port, max_workers=args.rpc_workers)
+        server.start()
+        print(f'Dispatch gRPC listening on {args.host}:{args.port}; waiting for AnyLogic EPISODE_START configuration. No ALP upload needed.', flush=True)
+        reward_config = bridge.wait_for_configuration(timeout=args.callback_timeout)
+        _validate_expected_variant(args.grade_action, reward_config)
+        if ablation_identity is not None:
+            contract.validate_reward(reward_config)
+        if local_audit is not None and local_audit['reward_configuration_fingerprint'] != reward_config.fingerprint:
+            raise RuntimeError('optional local audit disagrees with received runtime configuration')
+        if args.resume_model is not None:
+            _validate_resume_contract(args.resume_model, reward_config, args.obs_mode)
+        run_stamp = time.strftime('%Y%m%d-%H%M%S')
+        output_dir = args.output_dir or Path('runs') / REWARD_CONTRACT_ID / reward_config.variant / f'seed-{args.seed}' / f'ppo-{run_stamp}-{uuid.uuid4().hex[:8]}'
+        _prepare_output_dir(output_dir)
+        manifest = _manifest(args, output_dir, reward_config)
+        manifest['optional_local_alp_audit'] = local_audit
+        manifest['source_kind'] = 'real_anylogic_rpc'
+        if ablation_identity is not None:
+            manifest[identity_key] = ablation_identity
+            if scenario is not None:
+                from .scenario_contract import metadata
+                manifest.update(**metadata(bridge.scenario_config), p0_snapshot_audit_enabled=False)
+        (output_dir/'run_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+        (output_dir/'tensorboard').mkdir(exist_ok=True)
+        if args.audit_rollouts:
+            rollout_debug = RolloutDebug(output_dir/'rollout_audit', source_kind='real_anylogic',
+                audit_run_id=manifest['audit_run_id'],seed_manifest_path=args.anylogic_seed_manifest,
+                capture_rollouts=True,
+                expected_episode_identities=[dict(run_index=i,experiment_seed=seed,
+                    episode_id=f'{REWARD_CONTRACT_ID}-run-{i}-seed-{seed}') for i,seed in expected_episode_metadata])
+            bridge.rollout_audit = rollout_debug
+            rollout_debug.event('runtime_configuration_received', reward_configuration=reward_config.to_dict())
+        base_env = DispatchEnv(bridge,runner=ParameterVariationEpisodeRunner(total_episodes=args.episodes),
+                               callback_timeout=args.callback_timeout)
+        if scenario is not None:
+            from .waste_task_observation import wrap_experiment
+            base_env = wrap_experiment(base_env,scenario,args.obs_mode,output_dir/'experiment_episodes.jsonl')
+        elif args.obs_mode in ('p0-smoke','fifo_p0_1525'):
+            base_env = FIFOObservationWrapper(base_env)
+        env = Monitor(base_env, filename=str(output_dir/'monitor.csv'))
+        progress = TrainingProgressCallback(args.episodes,
+            output_dir/'transitions.jsonl' if args.record_transitions else None,ppo_seed=args.seed)
+        callbacks = [StageStatisticsCallback(output_dir,reward_config,manifest),progress]
+        print(f'Received {reward_config.variant}, waste weight={reward_config.waste_shortfall_weight}; outputs: {output_dir}',flush=True)
+        if args.resume_model is not None:
+            print(f"Loading PPO model from {args.resume_model}", flush=True)
+            model = EpisodeBudgetPPO.load(
+                args.resume_model,
+                env=env,
+                learning_rate=args.learning_rate,
+                n_steps=128,
+                batch_size=args.batch_size,
+                ent_coef=args.ent_coef,
+                seed=args.seed,
+                tensorboard_log=str(output_dir / "tensorboard"),
+                device="auto",
+            )
+            if type(model.policy) is not DispatchMaskedPolicy:
+                raise RuntimeError('Checkpoint does not contain DispatchMaskedPolicy')
+        else:
+            model = EpisodeBudgetPPO(
+                DispatchMaskedPolicy,
+                env,
+                learning_rate=args.learning_rate,
+                n_steps=args.n_steps,
+                batch_size=args.batch_size,
+                n_epochs=10,
+                gamma=0.995,
+                gae_lambda=0.95,
+                clip_range=0.2,
+                ent_coef=args.ent_coef,
+                policy_kwargs={
+                    "net_arch": {"pi": [128, 128], "vf": [128, 128]}
+                },
+                tensorboard_log=str(output_dir / "tensorboard"),
+                seed=args.seed,
+                verbose=1,
+            )
+
+        if ablation_identity is not None:
+            contract.check_model(model,contract.load_plan(args.scenario_plan or args.ablation_plan),args.obs_mode)
+        if scenario is not None:
+            manifest['initial_policy_sha256'] = contract.policy_digest(model.policy)
+        optimizer_steps = [0]
+        def count_optimizer_step(optimizer, hook_args, hook_kwargs):
+            optimizer_steps[0] += 1
+        optimizer_hook = model.policy.optimizer.register_step_post_hook(count_optimizer_step)
+        model._rollout_debug = rollout_debug
+        print(
+            f"Training ready; runtime configuration locked. "
+            f"Episode budget: {args.episodes}; "
+            f"outputs: {output_dir}",
+            flush=True,
+        )
+        training_started = time.perf_counter()
+        model.learn(
+            total_timesteps=2**62,
+            callback=callbacks,
+            tb_log_name="dispatch_ppo",
+            reset_num_timesteps=args.resume_model is None,
+        )
+        if progress.completed_episodes != args.episodes:
+            raise RuntimeError(
+                f"training stopped with {progress.completed_episodes} completed episodes; "
+                f"expected {args.episodes}"
+            )
+        training_elapsed = time.perf_counter() - training_started
+        optimizer_hook.remove()
+        model.save(output_dir / "dispatch_ppo")
+        finish_audit = model.finish_audit()
+        manifest['training_accounting'] = dict(optimizer_steps=optimizer_steps[0],
+            ppo_epoch_updates=int(model._n_updates),
+            rollout_update_calls=finish_audit['events'].count('ppo_update_completed'),
+            training_elapsed_seconds=training_elapsed)
+        manifest['device'] = str(model.device)
+        manifest.update(status="complete", training_finish=finish_audit)
+        (output_dir / "run_manifest.json").write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        (output_dir / "training_finish.json").write_text(
+            json.dumps(finish_audit, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        model_path = output_dir / "dispatch_ppo.zip"
+        success = {
+            "policy_contract_id": POLICY_CONTRACT_ID,
+            "reward_configuration": reward_config.to_dict(),
+            "reward_configuration_fingerprint": reward_config.fingerprint,
+            "ablation_variant": reward_config.variant,
+            "status": "complete",
+            "audit_run_id": manifest["audit_run_id"],
+            "process_pid": os.getpid(),
+            "completed_episodes": progress.completed_episodes,
+            "model_sha256": _sha256(model_path),
+            "final_num_timesteps": model.num_timesteps,
+            "training_finish": finish_audit,
+            "reward_contract_id": REWARD_CONTRACT_ID,
+            "observation_schema_id": OBSERVATION_SCHEMA_ID,
+            "agent_observation_mode": args.obs_mode,
+            "agent_observation_dimension": manifest["agent_observation_dimension"],
+            "projection_contract_id": manifest["projection_contract_id"],
+            "anylogic_seed_manifest_sha256": _sha256(
+                args.anylogic_seed_manifest.resolve()
+            ),
+        }
+        success['training_accounting'] = manifest['training_accounting']
+        if ablation_identity is not None:
+            success.update({identity_key:ablation_identity},ppo_seed=args.seed,checkpoint_kind='final_episode_budget')
+            if scenario is not None:
+                success.update(**metadata(bridge.scenario_config),p0_snapshot_audit_enabled=False,
+                    initial_policy_sha256=manifest['initial_policy_sha256'],
+                    stage_episodes_sha256=_sha256(output_dir/'stage_episodes.jsonl'),
+                    experiment_episodes_sha256=_sha256(output_dir/'experiment_episodes.jsonl'))
+                contract.check_completed_training(manifest,success,output_dir,contract.load_plan(args.scenario_plan))
+            contract.check_training_integrity(manifest,success)
+            final_plan=contract.load_plan(args.scenario_plan or args.ablation_plan)
+            contract.require(ablation_identity==contract.identity(final_plan,args.obs_mode,args.ablation_stage),
+                             'implementation changed during training')
+        (output_dir / "SUCCESS.json").write_text(
+            json.dumps(success, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        run_completed = True
+        print(f"Saved PPO model to {output_dir / 'dispatch_ppo.zip'}", flush=True)
+    except BaseException as exc:
+        if manifest is not None:
+            manifest.update(status='failed', error=f'{type(exc).__name__}: {exc}')
+            (output_dir/'run_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+        raise
+    finally:
+        if optimizer_hook is not None:
+            optimizer_hook.remove()
+        if env is not None:
+            env.close()
+        else:
+            bridge.close()
+        if server is not None:
+            server.stop(grace=2).wait()
+        if rollout_debug is not None:
+            rollout_debug.close(status="complete" if run_completed else "incomplete")
+
+if __name__ == "__main__":
+    main()

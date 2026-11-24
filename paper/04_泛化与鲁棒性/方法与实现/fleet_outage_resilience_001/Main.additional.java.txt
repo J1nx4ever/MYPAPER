@@ -1,0 +1,88 @@
+// Main -> Advanced Java -> Additional class code. Append inside the generated Main class.
+FleetResilienceState fleetResilience;
+
+boolean fleetProcessOwns(Truck t) {
+    for (LoadSite s : loadSites) {
+        for (int i = 0; i < s.queueLoad.size(); i++) if (s.queueLoad.get(i) == t) return true;
+        for (int i = 0; i < s.seize.size(); i++) if (s.seize.get(i) == t) return true;
+        for (int i = 0; i < s.delay.size(); i++) if (s.delay.get(i) == t) return true;
+    }
+    for (DumpSite s : dumpSites) {
+        if (s.obsAdmissionTruck == t || s.dumpCapacityWaitOrder.contains(t)) return true;
+        for (int i = 0; i < s.queueDump.size(); i++) if (s.queueDump.get(i) == t) return true;
+        for (int i = 0; i < s.seizeDump.size(); i++) if (s.seizeDump.get(i) == t) return true;
+        for (int i = 0; i < s.delayDump.size(); i++) if (s.delayDump.get(i) == t) return true;
+    }
+    return false;
+}
+
+void fleetTryExit(double now) {
+    int id = fleetResilience.faultId;
+    Truck t = trucks.get(id);
+    if (t.truckId != id) throw new IllegalStateException("Physical truck IDs must follow init1 order");
+    boolean atSafeStop = "COMPLETED".equals(t.executionPhase)
+        || "NO_AVAILABLE_MATERIAL".equals(t.executionPhase)
+        || (!t.initialDispatchDone && "IDLE".equals(t.executionPhase));
+    if (!atSafeStop || t.isMoving() || t.currentSegment != null || t.isLoaded
+        || t.payloadTons != 0.0 || t.plannedPayloadTons != 0.0 || t.incomingLoadSiteId >= 0
+        || t.isWaitingForLoadResource || t.isWaitingForDumpResource
+        || t.hasEnteredCurrentProcess || fleetProcessOwns(t)) return;
+
+    // Only relocate after the real road arrival and process-resource release.
+    // Keep the last targetLoadSiteId for the original trip-completion statistics.
+    for (Truck other : trucks)
+        if (other.initialPredecessor == t) other.initialPredecessor = t.initialPredecessor;
+    t.initialPredecessor = null;
+    t.currentRouteSegments = null;
+    t.currentRouteNodes = null;
+    t.setTruckIdle(false);
+    t.setLocation(parking);
+    t.currentNode = "";
+    t.setSpeed(0.0, MPS);
+    t.egoSpeed = 0.0;
+    t.dynamicAccel = 0.0;
+    t.initialDispatchDone = false;
+    t.executionPhase = "PARKED_OUT";
+    t.obsResetMotion();
+    fleetResilience.exit(id, now);
+    updateFrontRearVehicles();
+    updateNextSegmentFrontVehicles();
+}
+
+void fleetSync() {
+    double now = time(SECOND);
+    if (fleetResilience.triggerDue(now)) {
+        // The DumpSite Delay registers all scheduled completions before they are due.
+        if (fleetResilience.hasDueDump(now)) return;
+        fleetResilience.trigger(now);
+    }
+    if (fleetResilience.triggerSeconds >= 0 && fleetResilience.exitSeconds < 0)
+        fleetTryExit(now);
+    Integer id;
+    while ((id = fleetResilience.nextDeferred()) != null) {
+        if (fleetResilience.contains(fleetResilience.dispatchableMask, id))
+            trucks.get(id).fleetDispatchNow();
+    }
+}
+
+void fleetDispatch(Truck t) {
+    double now = time(SECOND);
+    if (now >= rlShiftSeconds) return;
+    fleetSync();
+    if (fleetResilience.triggerDue(now)) {
+        fleetResilience.defer(t.truckId);
+    } else if (fleetResilience.contains(fleetResilience.dispatchableMask, t.truckId)) {
+        t.fleetDispatchNow();
+    }
+}
+
+void fleetAuditWasteCommitment() {
+    double expected = totalWasteMoved;
+    for (LoadSite s : loadSites) if (!s.isOre) expected += s.reservedTons;
+    for (Truck t : trucks)
+        if (fleetResilience.contains(fleetResilience.inSystemMask, t.truckId) && t.isLoaded && !t.payloadIsOre)
+            expected += t.payloadTons;
+    double committed = getWasteTaskCommittedTons();
+    if (!Double.isFinite(expected) || Math.abs(committed - expected) > cpMassBalanceEpsilon)
+        throw new IllegalStateException("Waste commitment differs from delivered + in transit + reserved");
+}

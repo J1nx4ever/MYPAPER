@@ -1,0 +1,19 @@
+{
+  "campaign_id": "bg128-baseline-all-recheck-20261122-001",
+  "evaluation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/all_recheck_001/single_shift_validation.json",
+    "sha256": "cb6ded4188edd7cae4ef0babb3036ad5979fc540c3bf9c11a4bf68c63d0902f9"
+  },
+  "optimizer_updates": 0,
+  "physical_shifts": 5,
+  "protected_core": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "status": "COMPLETE",
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/baseline_comparison_001/all_recheck_001/prepared_001/suite.json",
+    "sha256": "87ca00fbfce52f546a2f70b340516bf05f045e916746deb1d958788b04ce4230"
+  },
+  "training_shifts": 0
+}

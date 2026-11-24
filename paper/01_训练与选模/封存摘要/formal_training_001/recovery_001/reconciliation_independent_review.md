@@ -1,0 +1,7 @@
+# BG128 已应用迁移独立只读复核
+
+生产APPLIEDreceipt、原整DB只读备份、原UNKNOWN payload/checksum/error、事务内审计表、新COMPLETE row和原STOP全部通过独立核验。原511个PLANNED row与迁移前逐字节一致，campaign/approval/cap512及0commits不变。原BudgetLedger.resume可直接接受当前状态：COMPLETE1、PLANNED511。
+
+仅在临时生产DB副本中，给其余31个首批slot写合成记账fixture并提交一次合成checkpoint，原BudgetLedger.commit/commit_record/resume均接受带reconciliation字段的首行。该检查没有生产写入、注册、真实班次、模型Forward或优化器更新。临时副本已删除。
+
+合并预算仍20983班，未增预留；当前全历史状态计数和完整检查见 [reconciliation_independent_review.json](reconciliation_independent_review.json)。原STOP保持不变，恢复采样仍须使用明确的新恢复控制入口。

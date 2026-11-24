@@ -1,0 +1,50 @@
+{
+  "cross_arm_rpc_rejected": true,
+  "evaluation_shifts": 40,
+  "fingerprints": {
+    "actor": "1c9c56b749f431a1642cfa9738a9b1e202b96573839a5e57422dd10d1ea169d6",
+    "critic": "d4a0bea25710c4e4c57a62042ddef4b7729caf816c4c891cac466fd224585d18"
+  },
+  "java": {
+    "altered_sidecar_rejected": true,
+    "altered_speed_sidecar_rejected": true,
+    "compiled": true,
+    "freeform_boundaries_checked": true,
+    "paste_fragment_stub_checked": true,
+    "rows_checked": 40,
+    "simulation_started": false,
+    "source_roles_and_grades_checked": true,
+    "speed_0_15_rows": 20,
+    "speed_0_25_rows": 20,
+    "speed_rows_checked": 40,
+    "unknown_run_rejected": true
+  },
+  "nominal_rpc_fixture": true,
+  "optimizer_updates": 0,
+  "paired_slots": 20,
+  "protected_core": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "status": "PASS_OFFLINE_NO_LISTENER",
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/speed_congestion_001/prepared_001/suite.json",
+    "sha256": "fd0c35e85d9f17232169875763475b71d09d600bf80f08e0b7b7b1c70c72ea39"
+  },
+  "regression_tests": {
+    "status": "PASS",
+    "passed": 45,
+    "modules": [
+      "business_graph_summary_evaluation_v1/test_runtime.py",
+      "business_graph_summary_evaluation_v1/test_budget.py"
+    ]
+  },
+  "report_pipeline_fixture": {
+    "status": "PASS",
+    "historical_source_shifts": 20,
+    "fixture_pairs": 20,
+    "zero_difference_when_repeated": true,
+    "new_physical_runs": 0
+  },
+  "campaign_status": "PREPARED_OFFLINE_ONLY"
+}

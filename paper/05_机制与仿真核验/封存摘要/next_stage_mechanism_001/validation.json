@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "unique_source_files_verified": 1230,
+  "selected_real_states_verified": 118,
+  "replay_prefixes_verified": 987,
+  "decomposition_outputs_verified": 1375,
+  "branch_groups_verified": 550,
+  "successful_control_exclusions": 0,
+  "all_observed_outcomes_within_optimistic_prefix_bounds": true,
+  "near_boundary_interval_certificate": {
+    "fifo_tons_interval": [
+      408.79043936729414,
+      408.79051387310045
+    ],
+    "capacity_tons_interval": [
+      346.64032777307324,
+      346.64046426301286
+    ],
+    "grade_upper": 0.2599859424941042
+  },
+  "realized_dispatch_chains": 987,
+  "unmatched_ore_unload_batches": 0,
+  "narrow_discrete_support_checks": 275,
+  "exact_original_update_reconstructions": 3,
+  "new_physical_shifts": 0,
+  "official_training_updates": 0,
+  "offline_actor_optimizer_steps": 2212,
+  "offline_critic_optimizer_steps": 2212,
+  "rejected_attempt_offline_actor_optimizer_steps": 744,
+  "rejected_attempt_offline_critic_optimizer_steps": 744,
+  "total_including_rejected_offline_actor_optimizer_steps": 2956,
+  "total_including_rejected_offline_critic_optimizer_steps": 2956,
+  "protected_ppo": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "test_count": 4,
+  "mathematical_tests": "test_diagnostics.py: four boundary/support/KL tests passed",
+  "mathematical_test_implementation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/next_stage_mechanism_001/test_diagnostics.py",
+    "sha256": "338096b6445bb6c4e17b2dbb0387deeaeadc7997ad116014c7fc386c80e87960"
+  },
+  "audit_implementation": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/next_stage_mechanism_001/audit.py",
+    "sha256": "fe63ed323740514f105d365cb11b877d6a598259d3d41a0921e47196c065b6f1"
+  },
+  "external_diagnostic_modules": [
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/physical_realization_v1/risk.py",
+      "sha256": "b6808674f3614276020548e3fdcb120edd30691c7fd02f420af351021dfc16d6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/checkpoint_evaluation_001/trained_analysis_001/analyze_first_window_failures.py",
+      "sha256": "fcb8bc321b8021a0a50c92cef5c6c8f21ec30a9c9980378d49fcb269c1023878"
+    }
+  ]
+}

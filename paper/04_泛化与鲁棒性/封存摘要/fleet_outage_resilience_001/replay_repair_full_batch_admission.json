@@ -1,0 +1,141 @@
+{
+  "test": "32 archived physical shifts; old-log-probability, frozen targets and one shuffled gradient minibatch",
+  "source_u0": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-001/models/warmup/u0000/checkpoint.pt",
+    "sha256": "7bb809db30e5539c34abb22415af5137500ec22ad0652cdeea2cba1859ab681b"
+  },
+  "decisions": 5959,
+  "physical_runs_started": 0,
+  "actor_minibatch_loss": -0.06908882805146277,
+  "critic_minibatch_loss": 0.12170241739477206,
+  "archives": [
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/grade_swap/new/material/run_10004125.h5",
+      "sha256": "d1fd5b2103fa543200da3f628c3c858d552871b0bc057d11800c1a12bdae9534"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_1/new/material/run_10004225.h5",
+      "sha256": "cceb151e9f10112cb7d3ba956f9cd4e93428204e6ac7dcca6c54a084c872a144"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_2/new/material/run_10004325.h5",
+      "sha256": "1d0aab8969c9f8784e30ec5aeea67521f5bbba708732450bdbe3bf3461861164"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/joint_shift/new/material/run_10004525.h5",
+      "sha256": "4adaf3dc278358e13fcc9f445a47ee785c9914a9deaaad2b13eb23252e0da00b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/new_numeric/new/material/run_10004425.h5",
+      "sha256": "ef2166dcbf10c53b7afa1aadc0f5965a40699c536601df7a28dd8fe4a2a062c1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/material/run_10004025.h5",
+      "sha256": "71ce5819889ea38592b64ffaead06900f55250d3a8609b3023b198d3b337a950"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/waste_swap/new/material/run_10004625.h5",
+      "sha256": "1f2818ef4ced6a82b0a847f29c00879704f97c3583db5867e8116c49c2c1904d"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/grade_swap/new/material/run_10004126.h5",
+      "sha256": "c4a8d1cb05cee9815acc79cf0705bb40f429009426dc02be1f3b1b74017e5088"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_1/new/material/run_10004226.h5",
+      "sha256": "a07fc878abbdfb32c0e5efdaaa831ee1efa018386f032dc5adf3c3a08a99d8ce"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_2/new/material/run_10004326.h5",
+      "sha256": "5803ad03d1f385886fe7be5452627ce1d0238b2de34f75754a45bdd62cba8823"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/joint_shift/new/material/run_10004526.h5",
+      "sha256": "05e5c51b0d3180b8bc7ce43e905c9613e874f52569ac40fe82b06db8ce03e1c1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/new_numeric/new/material/run_10004426.h5",
+      "sha256": "9a68409b22676074c994d9f2a73311aa27cd3f72449b2e525be3d5f5c41e74a6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/material/run_10004026.h5",
+      "sha256": "def1a90a1c2b5fd728ed497be3f755d25c9b34fbd394c202a6445327ff617c23"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/waste_swap/new/material/run_10004626.h5",
+      "sha256": "e75bdbc45b420ca725b7973e507f80bff35f6658cfa74e7e215aaffd169a6d8f"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/grade_swap/new/material/run_10004127.h5",
+      "sha256": "74cc9a7d1e2bfb776459985b7b7e097601fd25c16b6b7fad828e584cbed89479"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_1/new/material/run_10004227.h5",
+      "sha256": "3d2d2b30354c3f0edb0ce1a622e47d7fa3def5e6fb866110116d5c0938ffe4d4"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_2/new/material/run_10004327.h5",
+      "sha256": "f2103a97f540bd0a4a86b9e28a8eef446ac415b689c6c2237cf3d28fb3b03765"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/joint_shift/new/material/run_10004527.h5",
+      "sha256": "9d7be7f66c01bf1cb03809fd4d36c67e660baefc5161064648ab302dcdbbeac5"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/new_numeric/new/material/run_10004427.h5",
+      "sha256": "9b4ac092e7ef6cd90fee29bc2dba39074312741d40fec1a83b650ddd2a7ff1e2"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/material/run_10004027.h5",
+      "sha256": "d0f71a71bf66da480656108c8941b8a46427ded1c5086bf858698504443febf6"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/waste_swap/new/material/run_10004627.h5",
+      "sha256": "b757495d3efce379cd4f4769550aa7c1de3180bdfaa59f340933f6789178fb9e"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/grade_swap/new/material/run_10004128.h5",
+      "sha256": "5ef7ae199d71b36766ee3ded9e70f1fc57dedae502e4091afba8eb809614324b"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_1/new/material/run_10004228.h5",
+      "sha256": "7e97d9bb223ead572ec30e2c0f87cadcffd35e0dedc351e630833868a0e2ea01"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_2/new/material/run_10004328.h5",
+      "sha256": "af6ab855be5cad4fb209be8ab788fcc9de5d005fe18ba9fba41c617a61570187"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/joint_shift/new/material/run_10004528.h5",
+      "sha256": "89e915394612506787a0a9887183d467424207e3c1c2cf3aabd821a22785c6dd"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/new_numeric/new/material/run_10004428.h5",
+      "sha256": "dd43e02daccf9062effa9509b5c4bc40524721ecfdf2924be507aa91e0d28a55"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/material/run_10004028.h5",
+      "sha256": "97e70b8020cdb1a71cf38e941ad8600afdc2b6aa88d11055bfdbacbb9d6e80bd"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/waste_swap/new/material/run_10004628.h5",
+      "sha256": "aa8ff011b3e98c9f5c38939d078bf014ef4b6a648f15081776e0f49b39601a73"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/grade_swap/new/material/run_10004129.h5",
+      "sha256": "b3d47bae45e6b6debbc1bc91859cf38ca765eff83bf508d7bbe50e7f11d0c324"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_1/new/material/run_10004229.h5",
+      "sha256": "a111a7ba998a7490ada95e5382e53666ef8f5650fae10a8223eac40a1dec9af1"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_2/new/material/run_10004329.h5",
+      "sha256": "df377afa89b4cc4ee59f7d0e8e138bab2ddd1652a3bc5e799eedc19330467e31"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/joint_shift/new/material/run_10004529.h5",
+      "sha256": "0013614d1b9e4cb4d09a4775ed3d2dc375a88fa70f403a21eced443c0f1be1bd"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+// Additional Class -> FleetResilienceState. Keep the package supplied by AnyLogic.
+public final class FleetResilienceState {
+    public static final int ALL = (1 << 9) - 1;
+    public final int openingMask;
+    public final int faultId;
+    public final double scheduledSeconds;
+    public int dispatchableMask;
+    public int inSystemMask;
+    public double triggerSeconds = -1;
+    public double exitSeconds = -1;
+    private double windowOre, windowMetal;
+    private final double[] dueDump = new double[9];
+    private final java.util.ArrayDeque<Integer> deferred = new java.util.ArrayDeque<Integer>();
+
+    public FleetResilienceState(int disabled, int id, double sec) {
+        if ((disabled & ~ALL) != 0 || Integer.bitCount(disabled) > 3)
+            throw new IllegalArgumentException("opening fleet outside 6–9");
+        openingMask = ALL ^ disabled;
+        if ((id == -1 && sec != -1) || (id != -1 &&
+            (id < 0 || id >= 9 || !Double.isFinite(sec) || sec <= 0 || sec >= 28800
+             || (openingMask & (1 << id)) == 0 || Integer.bitCount(openingMask) < 7)))
+            throw new IllegalArgumentException("invalid fault row");
+        faultId = id;
+        scheduledSeconds = sec;
+        dispatchableMask = inSystemMask = openingMask;
+        java.util.Arrays.fill(dueDump, -1);
+    }
+    public boolean contains(int mask, int id) {
+        if (id < 0 || id >= 9) throw new IllegalArgumentException("truck ID");
+        return (mask & (1 << id)) != 0;
+    }
+    // The Delay expression returns this exact duration in SECONDS. Model time unit is second.
+    public double startDump(int id, double now, double durationSeconds) {
+        if (dueDump[id] >= 0 || !Double.isFinite(durationSeconds) || durationSeconds <= 0)
+            throw new IllegalStateException("invalid/repeated unload service");
+        dueDump[id] = now + durationSeconds;
+        return durationSeconds;
+    }
+    public void finishDump(int id, double now) {
+        if (dueDump[id] != now)
+            throw new IllegalStateException("dump exit must execute at its scheduled completion");
+        dueDump[id] = -1;
+    }
+    public boolean triggerDue(double now) {
+        return faultId >= 0 && triggerSeconds < 0 && now >= scheduledSeconds;
+    }
+    public boolean hasDueDump(double now) {
+        for (double due : dueDump) {
+            if (due >= 0 && due < now) throw new IllegalStateException("missed unloading boundary");
+            if (due == now) return true;
+        }
+        return false;
+    }
+    public void trigger(double now) {
+        if (!triggerDue(now) || now != scheduledSeconds || hasDueDump(now))
+            throw new IllegalStateException("invalid fault event ordering");
+        triggerSeconds = now;
+        dispatchableMask &= ~(1 << faultId);
+    }
+    public void defer(int id) {
+        if (deferred.contains(id)) throw new IllegalStateException("duplicate deferred dispatch");
+        deferred.addLast(id);
+    }
+    public Integer nextDeferred() { return deferred.pollFirst(); }
+    public void exit(int id, double now) {
+        if (id != faultId || triggerSeconds < 0 || now < triggerSeconds || exitSeconds >= 0 ||
+            contains(dispatchableMask, id) || !contains(inSystemMask, id))
+            throw new IllegalStateException("invalid withdrawal transition");
+        exitSeconds = now;
+        inSystemMask &= ~(1 << id);
+    }
+    // Each slice represents continuous processing of material at one constant grade.
+    public void processed(double start, double end, double tons, double grade) {
+        if (exitSeconds < 0 || end <= exitSeconds || start >= exitSeconds + 7200) return;
+        if (end <= start || tons <= 0 || !Double.isFinite(tons) || !Double.isFinite(grade)
+            || grade < 0 || grade > 1) throw new IllegalStateException("invalid crusher slice");
+        double overlap = Math.min(end, exitSeconds + 7200) - Math.max(start, exitSeconds);
+        if (overlap > 0) {
+            double included = tons * Math.min(1.0, overlap / (end - start));
+            windowOre += included;
+            windowMetal += included * grade;
+        }
+    }
+    public void components(java.util.Map<String, Double> c) {
+        c.put("config.fleet.outage_version", 2.0);
+        c.put("config.fleet.disabled_mask", (double)(ALL ^ openingMask));
+        c.put("config.fleet.active_count", (double)Integer.bitCount(openingMask));
+        c.put("fleet.dispatchable_mask", (double)dispatchableMask);
+        c.put("fleet.in_system_mask", (double)inSystemMask);
+        c.put("fleet.trigger_seconds", triggerSeconds);
+        c.put("fleet.exit_seconds", exitSeconds);
+    }
+    private static void balance(double received, double processed, double residual, double eps) {
+        if (!Double.isFinite(received) || !Double.isFinite(processed) || !Double.isFinite(residual)
+            || received < 0 || processed < 0 || residual < 0 || !Double.isFinite(eps) || eps < 0
+            || Math.abs(received - processed - residual) > eps)
+            throw new IllegalStateException("FIFO identity: " + received + " vs " + processed + " + " + residual);
+    }
+    public void terminal(java.util.Map<String, Double> c, double received, double receivedMetal,
+                         double processedOre, double processedMetal, Iterable<double[]> fifo, double epsilon) {
+        if (!deferred.isEmpty() || (faultId >= 0 && triggerSeconds < 0))
+            throw new IllegalStateException("unresolved dispatch or missed scheduled fault at END");
+        double q = 0, m = 0;
+        for (double[] batch : fifo) {
+            if (batch == null || batch.length != 2 || !Double.isFinite(batch[0]) || batch[0] < 0
+                || !Double.isFinite(batch[1]) || batch[1] < 0 || batch[1] > 1)
+                throw new IllegalStateException("invalid physical FIFO batch");
+            q += batch[0];
+            m += batch[0] * batch[1];
+        }
+        balance(received, processedOre, q, epsilon);
+        balance(receivedMetal, processedMetal, m, epsilon);
+        if (!Double.isFinite(windowOre) || !Double.isFinite(windowMetal)
+            || windowMetal < 0 || windowOre < 0 || windowMetal > windowOre + epsilon
+            || windowOre > processedOre + epsilon || windowMetal > processedMetal + epsilon
+            || (exitSeconds < 0 && (windowOre != 0 || windowMetal != 0)))
+            throw new IllegalStateException("exit-window totals inconsistent with the full-shift ledger");
+        c.put("fleet.incoming_ore_tons", received);
+        c.put("fleet.incoming_metal_tons", receivedMetal);
+        c.put("fleet.processed_ore_tons", processedOre);
+        c.put("fleet.processed_metal_tons", processedMetal);
+        c.put("fleet.fifo_ore_tons", q);
+        c.put("fleet.fifo_metal_tons", m);
+        c.put("fleet.window_ore_tons", windowOre);
+        c.put("fleet.window_metal_tons", windowMetal);
+    }
+}

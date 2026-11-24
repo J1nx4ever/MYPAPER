@@ -1,0 +1,197 @@
+{
+  "schema": "bg128-full-u32-directional-replay-v1",
+  "checkpoint_update": 32,
+  "evaluation": "Frozen Actor inference on identical observed states drawn from the Full s01 held-out trajectories",
+  "grade_archive": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/structural_ablation_001/mechanism_grade_response.json",
+    "sha256": "0880b6a8a47a21145f99505817a66f31aaa8a6c425bcef0daa06724b75f83524"
+  },
+  "archived_shifts": 50,
+  "archived_dispatch_decisions": 400,
+  "strata": 40,
+  "decisions_per_stratum": 10,
+  "physical_shifts_added": 0,
+  "optimizer_updates": 0,
+  "intervention": "Zero the second GAT layer material aggregate only at the receiving nodes, before the original group projection, retaining masks, scores, attention weights and group presence.",
+  "compensation_metric": "Equally weighted contrast across scenario, window and decision rank, comparing the conditional expected ore dispatch grade when the C128 nominal forecast is below versus above 27%, in percentage points.",
+  "protected_ppo_core_sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96",
+  "full_seeds": {
+    "s01": {
+      "frozen_actor": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/nominal/new/actor.pt",
+        "sha256": "99cf52513539491f1e2076b57efa78350a52dcf7bbd2225ad2b725ece95a77c8"
+      },
+      "fingerprint": "1c9c56b749f431a1642cfa9738a9b1e202b96573839a5e57422dd10d1ea169d6",
+      "checkpoint": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/arms/s01_BG128/updates/0032/checkpoint.pt",
+        "sha256": "b8b81c0821535cdfdff3c9352c11d69bc91d14fbe97694ab5f45c08fb97c3c9a"
+      },
+      "sealed_report": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261119-001/evaluation/nominal/new/evaluation_complete.json",
+        "sha256": "6358f2b7c4898149c915a1839e4851e91d6ac56910787911f30ba6605d50a96e"
+      },
+      "results": {
+        "native": {
+          "compensation_pp": 7.950880170814574,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.7724800668656826,
+          "by_scenario_pp": {
+            "held_order_1": 8.266410975039951,
+            "held_order_2": 9.951132516539285,
+            "joint_shift": 6.232010659244326,
+            "new_numeric": 7.343871993488735,
+            "waste_swap": 7.960974709760576
+          }
+        },
+        "dump_to_load": {
+          "compensation_pp": 4.358963652773508,
+          "positive_strata": 33,
+          "ore_choice_probability": 0.7777507967245765,
+          "by_scenario_pp": {
+            "held_order_1": 8.36794349267369,
+            "held_order_2": 4.916102058357662,
+            "joint_shift": -0.24682945296877978,
+            "new_numeric": 5.983738556173113,
+            "waste_swap": 2.7738636096318565
+          },
+          "compensation_change_pp": -3.5919165180410655,
+          "mean_action_total_variation": 0.34471356868743896,
+          "greedy_action_flip_count": 182
+        },
+        "load_to_dump": {
+          "compensation_pp": 7.9358211435401245,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.6235563044705921,
+          "by_scenario_pp": {
+            "held_order_1": 8.251120718509432,
+            "held_order_2": 9.960479065066291,
+            "joint_shift": 6.188830852508545,
+            "new_numeric": 7.324854159355164,
+            "waste_swap": 7.953820922261192
+          },
+          "compensation_change_pp": -0.0150590272744493,
+          "mean_action_total_variation": 0.22082428634166718,
+          "greedy_action_flip_count": 100
+        }
+      }
+    },
+    "s02": {
+      "frozen_actor": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/actor.pt",
+        "sha256": "e1575fec566c647a882c63934ec57c908cef28d43f076431ef9103cc9b73e0a9"
+      },
+      "fingerprint": "189a2c571c4bcf0fbe978330d92dddb84f3b196b753f7ed93e533988d4c59abd",
+      "checkpoint": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0032/checkpoint.pt",
+        "sha256": "67b7b2c7104079836ccef8f5747e7aebb4e9e5a92dcaac67c94e42412f104f41"
+      },
+      "sealed_report": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/evaluation_complete.json",
+        "sha256": "3f97cb06313de78f0c249dee072560f3fdad9d6023e8ec83401c5a7aea3dc53f"
+      },
+      "results": {
+        "native": {
+          "compensation_pp": 8.452999053890743,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.7760706654936075,
+          "by_scenario_pp": {
+            "held_order_1": 7.85149417964239,
+            "held_order_2": 11.733877707095372,
+            "joint_shift": 7.678969476431136,
+            "new_numeric": 7.183201477262708,
+            "waste_swap": 7.817452429022108
+          }
+        },
+        "dump_to_load": {
+          "compensation_pp": 8.573075576680047,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.8068436115980149,
+          "by_scenario_pp": {
+            "held_order_1": 8.054798958225856,
+            "held_order_2": 12.279859073578365,
+            "joint_shift": 7.671317583511747,
+            "new_numeric": 7.384382926093208,
+            "waste_swap": 7.475019341991062
+          },
+          "compensation_change_pp": 0.12007652278930436,
+          "mean_action_total_variation": 0.10138490796089172,
+          "greedy_action_flip_count": 46
+        },
+        "load_to_dump": {
+          "compensation_pp": 8.4617456529254,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.8152983805909753,
+          "by_scenario_pp": {
+            "held_order_1": 7.8575768249375475,
+            "held_order_2": 11.749021137517596,
+            "joint_shift": 7.689222477731251,
+            "new_numeric": 7.1810135510232715,
+            "waste_swap": 7.831894273417337
+          },
+          "compensation_change_pp": 0.00874659903465691,
+          "mean_action_total_variation": 0.06887467950582504,
+          "greedy_action_flip_count": 40
+        }
+      }
+    },
+    "s03": {
+      "frozen_actor": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/evaluation/nominal/new/actor.pt",
+        "sha256": "08f6e86691032e1223d0a9afa93e49c281f93d5300a4eb4d50785a1c765effac"
+      },
+      "fingerprint": "7e8df0a8ccf7f975b787c97426008ef4ba50a48fb7ef4395ee7389c72ba315bd",
+      "checkpoint": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/arms/s01_BG128/updates/0032/checkpoint.pt",
+        "sha256": "f0844556cfb277f3292319bc66a8c3f24fa3d581110269d2f4c97e0c1b80281d"
+      },
+      "sealed_report": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/evaluation/nominal/new/evaluation_complete.json",
+        "sha256": "db3b5c0e4897a687ab18bcd81eeaf342283a2b05cff9ff35cb47ca123d6ac0c6"
+      },
+      "results": {
+        "native": {
+          "compensation_pp": 7.774226919355847,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.7176513342559337,
+          "by_scenario_pp": {
+            "held_order_1": 6.0416591549676575,
+            "held_order_2": 11.023783746219816,
+            "joint_shift": 7.389925333242568,
+            "new_numeric": 6.607489359378814,
+            "waste_swap": 7.808277002970377
+          }
+        },
+        "dump_to_load": {
+          "compensation_pp": 7.309047132730484,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.7212271566316485,
+          "by_scenario_pp": {
+            "held_order_1": 4.742978098278954,
+            "held_order_2": 11.94939692673229,
+            "joint_shift": 6.887683138960884,
+            "new_numeric": 6.638367315133413,
+            "waste_swap": 6.326810184546879
+          },
+          "compensation_change_pp": -0.4651797866253631,
+          "mean_action_total_variation": 0.09992337971925735,
+          "greedy_action_flip_count": 83
+        },
+        "load_to_dump": {
+          "compensation_pp": 7.746987253635649,
+          "positive_strata": 40,
+          "ore_choice_probability": 0.6852348055690527,
+          "by_scenario_pp": {
+            "held_order_1": 6.015297898981306,
+            "held_order_2": 10.971950127018822,
+            "joint_shift": 7.383299809599679,
+            "new_numeric": 6.5740695926878185,
+            "waste_swap": 7.790318839890617
+          },
+          "compensation_change_pp": -0.02723966572019787,
+          "mean_action_total_variation": 0.08571107685565948,
+          "greedy_action_flip_count": 69
+        }
+      }
+    }
+  }
+}

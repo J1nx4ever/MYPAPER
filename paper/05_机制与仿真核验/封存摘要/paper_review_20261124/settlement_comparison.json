@@ -1,0 +1,155 @@
+{
+  "campaigns": {
+    "s01": "bg128-continuous-mixed-20261119-001",
+    "s02": "bg128-continuous-mixed-20261120-s02",
+    "s03": "bg128-continuous-mixed-20261120-s03"
+  },
+  "definition": "Actual ore entering crusher FIFO (UNLOAD) versus ore crushed (PROCESS), each event assigned to its recorded 2 h window. Grade = metal tons / ore tons. Empty fails; compliant is 26% to 28% inclusive with epsilon 1e-12. Differences are absolute percentage points. Both calculations use the same trajectory. Four-window rates ignore production targets.",
+  "all": {
+    "shifts": 2100,
+    "windows": 8400,
+    "both_grades_defined": 8400,
+    "unload_compliant_only_windows": 17,
+    "process_compliant_only_windows": 220,
+    "all_four_compliant_unload_shifts": 1890,
+    "all_four_compliant_process_shifts": 2077,
+    "mean_absolute_grade_gap_pp": 0.35205605825398273,
+    "p95_absolute_grade_gap_pp": 0.8679243571277482,
+    "max_process_ore_reconstruction_error_t": 0.0,
+    "max_process_metal_reconstruction_error_t": 0.0
+  },
+  "by_training_seed": {
+    "s01": {
+      "shifts": 700,
+      "windows": 2800,
+      "both_grades_defined": 2800,
+      "unload_compliant_only_windows": 2,
+      "process_compliant_only_windows": 79,
+      "all_four_compliant_unload_shifts": 627,
+      "all_four_compliant_process_shifts": 697,
+      "mean_absolute_grade_gap_pp": 0.3622725418896838,
+      "p95_absolute_grade_gap_pp": 0.8813886421325954,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "s02": {
+      "shifts": 700,
+      "windows": 2800,
+      "both_grades_defined": 2800,
+      "unload_compliant_only_windows": 3,
+      "process_compliant_only_windows": 50,
+      "all_four_compliant_unload_shifts": 650,
+      "all_four_compliant_process_shifts": 694,
+      "mean_absolute_grade_gap_pp": 0.3390111393024269,
+      "p95_absolute_grade_gap_pp": 0.8314840499842246,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "s03": {
+      "shifts": 700,
+      "windows": 2800,
+      "both_grades_defined": 2800,
+      "unload_compliant_only_windows": 12,
+      "process_compliant_only_windows": 91,
+      "all_four_compliant_unload_shifts": 613,
+      "all_four_compliant_process_shifts": 686,
+      "mean_absolute_grade_gap_pp": 0.3548844935698375,
+      "p95_absolute_grade_gap_pp": 0.8776295580678946,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    }
+  },
+  "by_scenario": {
+    "nominal": {
+      "shifts": 300,
+      "windows": 1200,
+      "both_grades_defined": 1200,
+      "unload_compliant_only_windows": 4,
+      "process_compliant_only_windows": 40,
+      "all_four_compliant_unload_shifts": 263,
+      "all_four_compliant_process_shifts": 295,
+      "mean_absolute_grade_gap_pp": 0.36971068168746596,
+      "p95_absolute_grade_gap_pp": 0.9221070539310581,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "grade_swap": {
+      "shifts": 300,
+      "windows": 1200,
+      "both_grades_defined": 1200,
+      "unload_compliant_only_windows": 3,
+      "process_compliant_only_windows": 39,
+      "all_four_compliant_unload_shifts": 264,
+      "all_four_compliant_process_shifts": 295,
+      "mean_absolute_grade_gap_pp": 0.35563561014123535,
+      "p95_absolute_grade_gap_pp": 0.8771679037207294,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "held_order_1": {
+      "shifts": 300,
+      "windows": 1200,
+      "both_grades_defined": 1200,
+      "unload_compliant_only_windows": 1,
+      "process_compliant_only_windows": 32,
+      "all_four_compliant_unload_shifts": 270,
+      "all_four_compliant_process_shifts": 299,
+      "mean_absolute_grade_gap_pp": 0.3846071220049635,
+      "p95_absolute_grade_gap_pp": 0.9037889750263879,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "held_order_2": {
+      "shifts": 300,
+      "windows": 1200,
+      "both_grades_defined": 1200,
+      "unload_compliant_only_windows": 3,
+      "process_compliant_only_windows": 31,
+      "all_four_compliant_unload_shifts": 271,
+      "all_four_compliant_process_shifts": 297,
+      "mean_absolute_grade_gap_pp": 0.3666740613525762,
+      "p95_absolute_grade_gap_pp": 0.8732734829947089,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "new_numeric": {
+      "shifts": 300,
+      "windows": 1200,
+      "both_grades_defined": 1200,
+      "unload_compliant_only_windows": 2,
+      "process_compliant_only_windows": 17,
+      "all_four_compliant_unload_shifts": 283,
+      "all_four_compliant_process_shifts": 298,
+      "mean_absolute_grade_gap_pp": 0.31889387743425535,
+      "p95_absolute_grade_gap_pp": 0.7903422346421195,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "joint_shift": {
+      "shifts": 300,
+      "windows": 1200,
+      "both_grades_defined": 1200,
+      "unload_compliant_only_windows": 3,
+      "process_compliant_only_windows": 30,
+      "all_four_compliant_unload_shifts": 270,
+      "all_four_compliant_process_shifts": 295,
+      "mean_absolute_grade_gap_pp": 0.3161633149002904,
+      "p95_absolute_grade_gap_pp": 0.7790475211922846,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    },
+    "waste_swap": {
+      "shifts": 300,
+      "windows": 1200,
+      "both_grades_defined": 1200,
+      "unload_compliant_only_windows": 1,
+      "process_compliant_only_windows": 31,
+      "all_four_compliant_unload_shifts": 269,
+      "all_four_compliant_process_shifts": 298,
+      "mean_absolute_grade_gap_pp": 0.3527077402570923,
+      "p95_absolute_grade_gap_pp": 0.8658010584688375,
+      "max_process_ore_reconstruction_error_t": 0.0,
+      "max_process_metal_reconstruction_error_t": 0.0
+    }
+  }
+}
