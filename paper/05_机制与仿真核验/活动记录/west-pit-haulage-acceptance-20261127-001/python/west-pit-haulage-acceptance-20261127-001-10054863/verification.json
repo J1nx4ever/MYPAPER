@@ -1,0 +1,29 @@
+{
+  "recording_id": "west-pit-haulage-acceptance-20261127-001-10054863",
+  "run_index": 10054863,
+  "config_sha256": "e417459aa573b091fd9b446f6354939bad02b4bed1efcd0b4ea2ee8b24a5774f",
+  "environment_seed": 985030552,
+  "model_sha256": "2fc3d84a9b4bee5aa5f96c89afbc97d77813b6b88e13eb92f83711a4681f304a",
+  "gis_image_sha256": "309408d871e3140d0a344ee8c8780fbc5bb0fb0e72e565b67f79818af0be08eb",
+  "shift_seconds": 28800,
+  "fleet": 9,
+  "loaded_t": 33195.0,
+  "aboard_t": 1045.0,
+  "residual_t": 0.0,
+  "destination_t": [
+    8578.0,
+    2075.0,
+    3860.0,
+    17637.0
+  ],
+  "destination_trips": [
+    42,
+    10,
+    19,
+    87
+  ],
+  "trips": 158,
+  "max_queue": 2,
+  "mean_cycle_min": 26.480607848063528,
+  "all_checks": "passed"
+}

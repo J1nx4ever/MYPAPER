@@ -1,0 +1,50 @@
+{
+  "result": "PASS",
+  "saved_model": {
+    "path": "/home/jinx/Models/DRL-PPO-baseline2/DRL-PPO-baseline2.alp",
+    "sha256_before_after": "f02d0413f52c483284b7e40291e8a1b2a2c58f662b8b289e793e9971af31c0fd"
+  },
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001/suite.json",
+    "sha256": "1f0663684cd6665194fa12aa138f65a7afc764799a62b4171f8236125c6529b3"
+  },
+  "protected_core": {
+    "path": "/home/jinx/Faith/python/episode_budget_ppo.py",
+    "sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96"
+  },
+  "policy": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-repair01/models/dynamic/u0009/checkpoint.pt",
+    "sha256": "b13e86feb74656def9077e412dbf4443857fba777ecec5e8ac758fd79a191f36"
+  },
+  "actor_digest": "16b82688d37c0786d5b1510f0598763feb3d37cef590a68c4d5f05aa8b55e5a6",
+  "historical_scene": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-001/shifts/run_10043852/receipt.json",
+    "sha256": "c4952a21a4dc6588d7be5c6fe480d219e945bd0bc01bed0b7564e59ef619cf97"
+  },
+  "physical_identity": {
+    "run_index": 10045001,
+    "recording_id": "bg128-fleet-outage-visual-demo-20261124-001-10045001",
+    "experiment_seed": 173391452439347,
+    "actor_sampling_seed": 88655618899752,
+    "config_sha256": "49e7d5745772fb844211f58218c9ef57db38944b71af93f8a0f8ee82ad77b48c",
+    "python_output": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/shifts/run_10045001",
+    "event_directory": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/anylogic_events/run_10045001"
+  },
+  "gui_simulation_parameter_differences": {
+    "bcOutputDir": [
+      "\"bc_policy4_data\"",
+      "\"/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/offline-native-003-p0-test-20261030_events\""
+    ]
+  },
+  "parameter_difference_reason": "bcCollectEnabled=false, path unused",
+  "observed_check": "frozen Java/Python identities, SDK type check, temporary mocked RPC and ledger lifecycle",
+  "budget": {
+    "additional_if_started": 1,
+    "new_actor_sampling_seeds": 1,
+    "new_environment_seeds": 1,
+    "new_java_rng_states": 5,
+    "registered_before": 43046,
+    "total_if_started": 43047
+  },
+  "physical_runs_started": 0
+}

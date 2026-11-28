@@ -1,0 +1,512 @@
+{
+  "by_scenario": {
+    "grade_swap": {
+      "mean_reinforce_minus_ppo": {
+        "combined_cost": 2.6119311862281522,
+        "ore_tons": 516.1969234335809,
+        "total_wait_seconds": 3079.6516502124323,
+        "waste_tons": -1042.5559999999996
+      },
+      "means": {
+        "combined_cost": {
+          "ppo": 0.434014371287981,
+          "reinforce": 3.045945557516133
+        },
+        "ore_tons": {
+          "ppo": 18453.902706898596,
+          "reinforce": 18970.099630332177
+        },
+        "total_wait_seconds": {
+          "ppo": 18293.742206103805,
+          "reinforce": 21373.393856316237
+        },
+        "waste_tons": {
+          "ppo": 6067.216999999999,
+          "reinforce": 5024.660999999998
+        }
+      },
+      "outcomes": {
+        "all_four_windows_compliant": {
+          "only_ppo": 80,
+          "only_reinforce": 0,
+          "ppo": 98,
+          "reinforce": 18
+        },
+        "complete_task": {
+          "only_ppo": 81,
+          "only_reinforce": 0,
+          "ppo": 98,
+          "reinforce": 17
+        },
+        "ore_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        },
+        "waste_target_met": {
+          "only_ppo": 9,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 91
+        }
+      },
+      "shifts_per_policy": 100
+    },
+    "held_order_1": {
+      "mean_reinforce_minus_ppo": {
+        "combined_cost": 2.8727470570950313,
+        "ore_tons": 278.95096626380274,
+        "total_wait_seconds": 5664.9743616375235,
+        "waste_tons": -951.2119999999996
+      },
+      "means": {
+        "combined_cost": {
+          "ppo": 0.27758492945395385,
+          "reinforce": 3.1503319865489847
+        },
+        "ore_tons": {
+          "ppo": 18639.569224652856,
+          "reinforce": 18918.520190916657
+        },
+        "total_wait_seconds": {
+          "ppo": 14533.588161364878,
+          "reinforce": 20198.5625230024
+        },
+        "waste_tons": {
+          "ppo": 6031.790999999998,
+          "reinforce": 5080.578999999999
+        }
+      },
+      "outcomes": {
+        "all_four_windows_compliant": {
+          "only_ppo": 78,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 22
+        },
+        "complete_task": {
+          "only_ppo": 78,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 22
+        },
+        "ore_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        },
+        "waste_target_met": {
+          "only_ppo": 3,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 97
+        }
+      },
+      "shifts_per_policy": 100
+    },
+    "held_order_2": {
+      "mean_reinforce_minus_ppo": {
+        "combined_cost": 2.832336561599283,
+        "ore_tons": 528.1322744934267,
+        "total_wait_seconds": 6677.370311595552,
+        "waste_tons": -1073.3199999999995
+      },
+      "means": {
+        "combined_cost": {
+          "ppo": 0.2850908184613705,
+          "reinforce": 3.1174273800606533
+        },
+        "ore_tons": {
+          "ppo": 18433.820428804047,
+          "reinforce": 18961.952703297477
+        },
+        "total_wait_seconds": {
+          "ppo": 14883.062602021255,
+          "reinforce": 21560.43291361681
+        },
+        "waste_tons": {
+          "ppo": 6026.060999999999,
+          "reinforce": 4952.740999999998
+        }
+      },
+      "outcomes": {
+        "all_four_windows_compliant": {
+          "only_ppo": 82,
+          "only_reinforce": 0,
+          "ppo": 99,
+          "reinforce": 17
+        },
+        "complete_task": {
+          "only_ppo": 82,
+          "only_reinforce": 0,
+          "ppo": 99,
+          "reinforce": 17
+        },
+        "ore_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        },
+        "waste_target_met": {
+          "only_ppo": 10,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 90
+        }
+      },
+      "shifts_per_policy": 100
+    },
+    "joint_shift": {
+      "mean_reinforce_minus_ppo": {
+        "combined_cost": 2.093956288643427,
+        "ore_tons": 96.40524886799652,
+        "total_wait_seconds": 1244.9630066034772,
+        "waste_tons": -133.7149999999999
+      },
+      "means": {
+        "combined_cost": {
+          "ppo": 0.3596872873269729,
+          "reinforce": 2.4536435759704
+        },
+        "ore_tons": {
+          "ppo": 18706.703487008206,
+          "reinforce": 18803.1087358762
+        },
+        "total_wait_seconds": {
+          "ppo": 18731.150391239178,
+          "reinforce": 19976.11339784265
+        },
+        "waste_tons": {
+          "ppo": 5739.321999999998,
+          "reinforce": 5605.606999999998
+        }
+      },
+      "outcomes": {
+        "all_four_windows_compliant": {
+          "only_ppo": 73,
+          "only_reinforce": 1,
+          "ppo": 99,
+          "reinforce": 27
+        },
+        "complete_task": {
+          "only_ppo": 72,
+          "only_reinforce": 1,
+          "ppo": 98,
+          "reinforce": 27
+        },
+        "ore_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        },
+        "waste_target_met": {
+          "only_ppo": 1,
+          "only_reinforce": 1,
+          "ppo": 99,
+          "reinforce": 99
+        }
+      },
+      "shifts_per_policy": 100
+    },
+    "new_numeric": {
+      "mean_reinforce_minus_ppo": {
+        "combined_cost": 2.751261912192545,
+        "ore_tons": 382.6807600153299,
+        "total_wait_seconds": 5390.434594965465,
+        "waste_tons": -957.2649999999994
+      },
+      "means": {
+        "combined_cost": {
+          "ppo": 0.25333190474676187,
+          "reinforce": 3.0045938169393067
+        },
+        "ore_tons": {
+          "ppo": 18528.59850058013,
+          "reinforce": 18911.27926059546
+        },
+        "total_wait_seconds": {
+          "ppo": 15352.464252593027,
+          "reinforce": 20742.898847558492
+        },
+        "waste_tons": {
+          "ppo": 6023.093999999998,
+          "reinforce": 5065.828999999999
+        }
+      },
+      "outcomes": {
+        "all_four_windows_compliant": {
+          "only_ppo": 77,
+          "only_reinforce": 0,
+          "ppo": 99,
+          "reinforce": 22
+        },
+        "complete_task": {
+          "only_ppo": 80,
+          "only_reinforce": 0,
+          "ppo": 99,
+          "reinforce": 19
+        },
+        "ore_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        },
+        "waste_target_met": {
+          "only_ppo": 6,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 94
+        }
+      },
+      "shifts_per_policy": 100
+    },
+    "nominal": {
+      "mean_reinforce_minus_ppo": {
+        "combined_cost": 3.091176666011813,
+        "ore_tons": 359.5889943328883,
+        "total_wait_seconds": 5478.528506296603,
+        "waste_tons": -954.1959999999995
+      },
+      "means": {
+        "combined_cost": {
+          "ppo": 0.2713603690355525,
+          "reinforce": 3.3625370350473656
+        },
+        "ore_tons": {
+          "ppo": 18568.788727569692,
+          "reinforce": 18928.37772190258
+        },
+        "total_wait_seconds": {
+          "ppo": 15181.636922675025,
+          "reinforce": 20660.165428971628
+        },
+        "waste_tons": {
+          "ppo": 5990.239999999999,
+          "reinforce": 5036.043999999998
+        }
+      },
+      "outcomes": {
+        "all_four_windows_compliant": {
+          "only_ppo": 88,
+          "only_reinforce": 0,
+          "ppo": 99,
+          "reinforce": 11
+        },
+        "complete_task": {
+          "only_ppo": 89,
+          "only_reinforce": 0,
+          "ppo": 99,
+          "reinforce": 10
+        },
+        "ore_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        },
+        "waste_target_met": {
+          "only_ppo": 8,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 92
+        }
+      },
+      "shifts_per_policy": 100
+    },
+    "waste_swap": {
+      "mean_reinforce_minus_ppo": {
+        "combined_cost": 2.554691905977214,
+        "ore_tons": 109.55474375828591,
+        "total_wait_seconds": 3194.478104074942,
+        "waste_tons": -227.8839999999998
+      },
+      "means": {
+        "combined_cost": {
+          "ppo": 0.23319347408895855,
+          "reinforce": 2.787885380066173
+        },
+        "ore_tons": {
+          "ppo": 18689.17652415232,
+          "reinforce": 18798.731267910603
+        },
+        "total_wait_seconds": {
+          "ppo": 16661.80004032009,
+          "reinforce": 19856.278144395033
+        },
+        "waste_tons": {
+          "ppo": 5790.092999999998,
+          "reinforce": 5562.208999999998
+        }
+      },
+      "outcomes": {
+        "all_four_windows_compliant": {
+          "only_ppo": 73,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 27
+        },
+        "complete_task": {
+          "only_ppo": 73,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 27
+        },
+        "ore_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        },
+        "waste_target_met": {
+          "only_ppo": 0,
+          "only_reinforce": 0,
+          "ppo": 100,
+          "reinforce": 100
+        }
+      },
+      "shifts_per_policy": 100
+    }
+  },
+  "campaign": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/prepared_001/suite.json",
+    "sha256": "15cddfad63d114ab97d6faa265d71f3a7755044191eb336e6f6edab1f3152fe1"
+  },
+  "historical_completion": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/suite_complete.json",
+    "sha256": "45d7735b6612b55404bdf240f2c7885667f5e80ba07ffaea07aa38eefdb808fc"
+  },
+  "overall": {
+    "mean_reinforce_minus_ppo": {
+      "combined_cost": 2.686871653963924,
+      "ore_tons": 324.5014158807587,
+      "total_wait_seconds": 4390.057219340856,
+      "waste_tons": -762.8782857142853
+    },
+    "means": {
+      "combined_cost": {
+        "ppo": 0.3020375934859359,
+        "reinforce": 2.9889092474498598
+      },
+      "ore_tons": {
+        "ppo": 18574.36565709512,
+        "reinforce": 18898.86707297588
+      },
+      "total_wait_seconds": {
+        "ppo": 16233.92065375961,
+        "reinforce": 20623.977873100466
+      },
+      "waste_tons": {
+        "ppo": 5952.545428571427,
+        "reinforce": 5189.667142857142
+      }
+    },
+    "outcomes": {
+      "all_four_windows_compliant": {
+        "only_ppo": 551,
+        "only_reinforce": 1,
+        "ppo": 694,
+        "reinforce": 144
+      },
+      "complete_task": {
+        "only_ppo": 555,
+        "only_reinforce": 1,
+        "ppo": 693,
+        "reinforce": 139
+      },
+      "ore_target_met": {
+        "only_ppo": 0,
+        "only_reinforce": 0,
+        "ppo": 700,
+        "reinforce": 700
+      },
+      "waste_target_met": {
+        "only_ppo": 37,
+        "only_reinforce": 1,
+        "ppo": 699,
+        "reinforce": 663
+      }
+    },
+    "shifts_per_policy": 700
+  },
+  "paired_shifts": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_shifts.csv",
+    "sha256": "539bb61d7f2c8fde1e5e549a2521cb96efb4f6768cddfb9bb4a82c28bfc63cf9"
+  },
+  "sources": {
+    "grade_swap": {
+      "ppo": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/grade_swap/new/evaluation_complete.json",
+        "sha256": "c44af83b0f12ae36b30f3d4479d5a46d8d971aff3985ac6f51bfdac194e19a35"
+      },
+      "reinforce": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/evaluation/grade_swap/new/evaluation_complete.json",
+        "sha256": "19cee4deaab7ed1816eb8fa16cdf69923bc5e1d3f0c11603f7cd9b414d04cc5d"
+      }
+    },
+    "held_order_1": {
+      "ppo": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_1/new/evaluation_complete.json",
+        "sha256": "dc8997b0ddfc60965f11237b6a564477fe0d9059c9c78596614b8c68c2e03559"
+      },
+      "reinforce": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/evaluation/held_order_1/new/evaluation_complete.json",
+        "sha256": "569a4bf22bc9928e3facc80e7e6efec143c21525aecffb9c7609e15e5a24a9f1"
+      }
+    },
+    "held_order_2": {
+      "ppo": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/held_order_2/new/evaluation_complete.json",
+        "sha256": "6c1851343ce40a7cacebbae25bac409fe9ff5d558e9c64755b887de1f154b791"
+      },
+      "reinforce": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/evaluation/held_order_2/new/evaluation_complete.json",
+        "sha256": "8e94f78fb1003855b1ac789b9a2356bb29f5b7acd3f51855ed5ebfb3cc6d751b"
+      }
+    },
+    "joint_shift": {
+      "ppo": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/joint_shift/new/evaluation_complete.json",
+        "sha256": "bb841494f40cdff9e5e9e7b4255eaf4797bc7b89a6e93c050ee90d24c91bdcad"
+      },
+      "reinforce": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/evaluation/joint_shift/new/evaluation_complete.json",
+        "sha256": "647cc4fd5dfb8f2b872aa72e80d5e8cd0bb695588b2c5c2cb9a915b5263b7d8d"
+      }
+    },
+    "new_numeric": {
+      "ppo": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/new_numeric/new/evaluation_complete.json",
+        "sha256": "434562ed484ed5489679e18fc273e34aa1450a7230613f14340178f34aa27bc5"
+      },
+      "reinforce": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/evaluation/new_numeric/new/evaluation_complete.json",
+        "sha256": "d6dd94ee783f646b520c8d505ced6825280c5c0f89c693319e5fc8aa1a638611"
+      }
+    },
+    "nominal": {
+      "ppo": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/nominal/new/evaluation_complete.json",
+        "sha256": "3f97cb06313de78f0c249dee072560f3fdad9d6023e8ec83401c5a7aea3dc53f"
+      },
+      "reinforce": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/evaluation/nominal/new/evaluation_complete.json",
+        "sha256": "e8a8104689214795fff7138de23912ec4e4d41a17d7b3adf86d8d89f0c6e886b"
+      }
+    },
+    "waste_swap": {
+      "ppo": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/evaluation/waste_swap/new/evaluation_complete.json",
+        "sha256": "121d32e82a2648cdf3349ddc8cc417db100087b829036de1f8bdfc73bf9523fb"
+      },
+      "reinforce": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/evaluation/waste_swap/new/evaluation_complete.json",
+        "sha256": "6f5088dda37451e61bf2425eb99eb2ef3204ffa34e3119b9ffe4149604cad9a1"
+      }
+    }
+  }
+}

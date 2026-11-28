@@ -1,0 +1,27 @@
+AnyLogic SDK 本地离线验证
+版本 8.9.0.202404161236 / javac 21.0.6
+
+在项目根目录执行以下命令可复验
+
+plugins=/home/jinx/apps/AnyLoigc/anylogic/plugins
+sdk=8.9.0.202404161236
+querydsl="$plugins/com.anylogic.third_party_libraries_$sdk/lib/database/querydsl"
+cp="$plugins/com.anylogic.engine_$sdk/com.anylogic.engine.jar:$plugins/com.anylogic.engine.editorapi_$sdk/com.anylogic.engine.editorapi.jar:$plugins/com.anylogic.engine.datautil_$sdk/com.anylogic.engine.datautil.jar:$querydsl/querydsl-sql-5.0.0.jar:$querydsl/querydsl-core-5.0.0.jar"
+work=$(mktemp -d /tmp/faith-anylogic-network.XXXXXX)
+javac -cp "$cp" -d "$work" experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/synthetic_layout_probe_001/SyntheticSiteNetworkProbe.java
+java -Djava.awt.headless=true -cp "$work:$cp" SyntheticSiteNetworkProbe
+
+编译和探针进程均以状态 0 退出。探针标准输出如下，坐标和距离均为模型空间单位。
+
+A load=(100,0) dump=(180,0) viaJunction=false geometry=80.00000 route=80.00000
+B load=(200,100) dump=(400,300) viaJunction=false geometry=282.84271 route=282.84271
+C load=(200,100) dump=(400,300) viaJunction=true geometry=400.00000 route=400.00000
+PASS: all site bindings, network routes and path lengths match.
+
+独立创建三个 Engine 来初始化三个网络。由于未创建 Experiment，标准错误包含以下预期提示。
+
+Couldn't load model properties: Engine has no reference to experiment. Probably it was created manually by using constructor. For 'custom experiments' please use function createEngine().
+Couldn't load model properties: Engine has no reference to experiment. Probably it was created manually by using constructor. For 'custom experiments' please use function createEngine().
+Couldn't load model properties: Engine has no reference to experiment. Probably it was created manually by using constructor. For 'custom experiments' please use function createEngine().
+
+本次验证使用合成平面坐标、原生路网查询和通用 Agent 节点绑定，未加载 ALP 或推进仿真时间。

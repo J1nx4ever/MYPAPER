@@ -1,0 +1,106 @@
+{
+  "batches": {
+    "1": {
+      "actor": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/train_u0001/actor.pt",
+        "sha256": "7c2ac5ad5431b490dd183131ba3d74f6ad04cb9657fb8f394b33a2f6d0eba89a"
+      },
+      "baseline_before": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "estimates": {
+        "full_shift": {
+          "mean_gradient_norm": 0.3932343953193602,
+          "sample_covariance_trace": 12.700845673919352,
+          "shifts": 32
+        },
+        "remaining_phase_ema": {
+          "mean_gradient_norm": 0.3850463253099704,
+          "sample_covariance_trace": 5.731071027756929,
+          "shifts": 32
+        },
+        "remaining_same_scalar": {
+          "mean_gradient_norm": 0.3850463253099704,
+          "sample_covariance_trace": 5.731071027756929,
+          "shifts": 32
+        }
+      }
+    },
+    "16": {
+      "actor": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/train_u0016/actor.pt",
+        "sha256": "459ed53a5c39ef049f2e7dbe2a56b053e27b5f98b68a299dd2bd12381d4d5b18"
+      },
+      "baseline_before": [
+        -4.602940475225148,
+        -3.3204083693256496,
+        -2.193183265841589,
+        -1.148230187961278,
+        0.0
+      ],
+      "estimates": {
+        "full_shift": {
+          "mean_gradient_norm": 0.537541174071855,
+          "sample_covariance_trace": 6.714653858261999,
+          "shifts": 32
+        },
+        "remaining_phase_ema": {
+          "mean_gradient_norm": 0.8976519139477691,
+          "sample_covariance_trace": 3.7279962079028017,
+          "shifts": 32
+        },
+        "remaining_same_scalar": {
+          "mean_gradient_norm": 0.18375545546101124,
+          "sample_covariance_trace": 13.576386090658785,
+          "shifts": 32
+        }
+      }
+    },
+    "32": {
+      "actor": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/train_u0032/actor.pt",
+        "sha256": "5b4048e1391d67da9b87530f59736c6ae21bfe7171e784d9544a5f7ab878c716"
+      },
+      "baseline_before": [
+        -3.1143300726507337,
+        -2.2809023130711794,
+        -1.5569458104799883,
+        -0.7999874488490853,
+        0.0
+      ],
+      "estimates": {
+        "full_shift": {
+          "mean_gradient_norm": 2.081838326770669,
+          "sample_covariance_trace": 196.46863938224527,
+          "shifts": 32
+        },
+        "remaining_phase_ema": {
+          "mean_gradient_norm": 1.5568333962682033,
+          "sample_covariance_trace": 85.39297380802708,
+          "shifts": 32
+        },
+        "remaining_same_scalar": {
+          "mean_gradient_norm": 0.9559496636334206,
+          "sample_covariance_trace": 197.1848797375947,
+          "shifts": 32
+        }
+      }
+    }
+  },
+  "completion": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/suite_complete.json",
+    "sha256": "6fabcaa84bfb9e9efdda903fd4967db9cbeac3c1a3617d6227d5eaddee3b8b8e"
+  },
+  "physical_shifts_started": 0,
+  "policy_weights_updated": 0,
+  "sampled_batches": [
+    1,
+    16,
+    32
+  ],
+  "scope": "Across-shift sample dispersion of the 128 final shared scorer weights. Each estimate uses the original on-policy actions at the same frozen Actor. This is an offline comparison, not a new policy performance estimate."
+}

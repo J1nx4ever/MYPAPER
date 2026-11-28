@@ -8,3 +8,7 @@
 - [学习器](实验共用模块/business_graph_summary_v1/learner.py)
 - [原 PPO 核心的只读参考副本](仓库公共实现/python/episode_budget_ppo.py)
 - [AnyLogic 主模型原件](../../experiments/lagrangian_ppo_v1/anylogic/3d/DRL-PPO-baseline1/DRL-PPO-baseline1.alp)
+
+- [逐步对齐的整班回报学习器](../03_对比实验/算法实现/business_graph_matched_reinforce_v1/learner.py)
+- [可变路网和策略接入](../04_泛化与鲁棒性/方法与实现/variable_topology_training_001/README.md)
+- [跨窗物料的复算与冻结 Actor 检查](../05_机制与仿真核验/方法与实现/delayed_realization_001/README.md)

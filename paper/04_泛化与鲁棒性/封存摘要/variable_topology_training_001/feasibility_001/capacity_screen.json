@@ -1,0 +1,26 @@
+[
+  {
+    "layout_id": "tree_A",
+    "layout_sha256": "03828278ea2d57d4664e0f9dd19531f93c5482140ec44d1a878c163ba4ffdba0",
+    "vehicles_by_type": [
+      3,
+      3,
+      3
+    ],
+    "nominal_joint_target_multiple": 1.25,
+    "nominal_screen_pass": true,
+    "model_scope": "fractional full-load trips, no queue, nominal speeds, whole-shift mean grade"
+  },
+  {
+    "layout_id": "loop_B",
+    "layout_sha256": "701b8ced3ff63d22ba62b0818461ed8fbed48a33e7d0fe0decc5c1dd51565198",
+    "vehicles_by_type": [
+      3,
+      2,
+      2
+    ],
+    "nominal_joint_target_multiple": 1.2499999999999996,
+    "nominal_screen_pass": true,
+    "model_scope": "fractional full-load trips, no queue, nominal speeds, whole-shift mean grade"
+  }
+]

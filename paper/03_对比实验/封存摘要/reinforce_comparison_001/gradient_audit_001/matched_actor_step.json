@@ -1,0 +1,32 @@
+{
+  "source_checkpoint": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/initial.pt",
+    "sha256": "418cd7a5edd9a6b8f25b1892b6a7e9456a164a98f9cde0e3100fdc99fbf08a26"
+  },
+  "training_targets": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/updates/0001/training_targets.h5",
+    "sha256": "1454bd37f2b97fbc0a006c7d6639bb07798e9dc595289fd3199754fd7682d468"
+  },
+  "audit_source": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/matched_actor_step.py",
+    "sha256": "2a58724c0dc077eb6d6329e6d3c573ca8d10e79319d9e5a497959cdf53ad2552"
+  },
+  "shifts": 32,
+  "decisions": 5844,
+  "original_batch_actor_steps": 732,
+  "matched_actor_steps": 1,
+  "critic_steps_in_this_actor_only_probe": 0,
+  "physical_shifts_launched": 0,
+  "saved_models": 0,
+  "actor_digest_before": "2e3685082d4bbf607153062c7da0e820aef94ae168ec5cbf88cadd0165b4ed32",
+  "actor_digest_after_in_memory": "b288cfbfdc17496e171db24aaea40806846e028133d22ba422a4977cafc95988",
+  "cost_gae_lambda": 0.95,
+  "probability_ratio_clip": 0.2,
+  "advantage_processing": "standardize",
+  "entropy_coefficient": 0.01,
+  "gradient_norm_before_clip": 0.007978887297213078,
+  "max_gradient_norm": 0.5,
+  "actor_lr": 0.0003,
+  "adam_eps": 1e-05,
+  "actor_loss": -0.013627615546283778
+}

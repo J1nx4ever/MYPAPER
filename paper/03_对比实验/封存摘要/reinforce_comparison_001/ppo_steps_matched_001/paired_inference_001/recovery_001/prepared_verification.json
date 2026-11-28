@@ -1,0 +1,29 @@
+{
+  "evaluation_shifts": 658,
+  "comparison_shifts": 700,
+  "reused_completed_shifts": 42,
+  "scenarios": 7,
+  "training_shifts": 0,
+  "training_updates": 0,
+  "actor_digest": "927360f5e2c4334a6eba12ad21866fb3b757addf024cafc19f40eef3b1002b37",
+  "checkpoint": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-20261128-s02/arms/s01_BG128/updates/0032/checkpoint.pt",
+    "sha256": "fc0e2f44a22209387bdb619e0069978cf6b344eb27852971e4c780368f2a5f4b"
+  },
+  "actor_artifact": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-20261128-s02/arms/s01_BG128/final_actor.pt",
+    "sha256": "b184f31a01e7442c4f5a904df6f10e4b8e3f487738751c605a82289951b0f138"
+  },
+  "budget": {
+    "allocated_before": 54029,
+    "new_physical_identities": 658,
+    "superseded_unused_reservations": 657,
+    "allocated_after": 54030,
+    "registered_gross_after": 54687,
+    "retained_complete": 42,
+    "retained_unknown": 1,
+    "replacement_of": 10096043,
+    "row_count_checked": 129482
+  },
+  "registered_shifts": 0
+}

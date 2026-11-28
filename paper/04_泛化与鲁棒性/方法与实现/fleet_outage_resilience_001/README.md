@@ -16,6 +16,8 @@
 
 ## 在 baseline2 中操作
 
+用户现场验收使用 [独立一班的 Simulation 演示入口](visual_acceptance_demo_001/manual_anylogic_demo.md)。演示使用冻结动态 u9 和新的物理身份。
+
 原活动在 32 班后遇到首次 PPO 概率回放错误。本轮补 32 班的**实际启动入口**使用[修复版操作清单与 CampaignPlan](replay_repair_001/README.md)。
 
 针对已手工保存的 baseline2，见[保存版本复核与修正](saved_alp_audit_001/README.md)，其中补充了六车班单车容差的精确上报方式。

@@ -199,14 +199,16 @@
       "sources": [
         "experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/suite_complete.json",
         "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/mixed_seed_replication_001/s02/paired_evaluation.json",
-        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/mixed_seed_replication_001/three_seed_analysis.md"
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/mixed_seed_replication_001/three_seed_analysis.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json"
       ],
       "verification": "本次逐字节通过套件可定位引用、已提交更新的封印及逐班材料 SHA256；本行来源套件共1724份入样班次 manifest/HDF5 配对，逐场从封存班末重数。",
       "status": "已封存实跑",
       "source_ids": [
         "S131",
         "S067",
-        "S069"
+        "S069",
+        "S208"
       ]
     },
     {
@@ -373,7 +375,7 @@
     {
       "id": "M17",
       "family": "派生统计",
-      "experiment": "三个 Full 训练种子联合汇总",
+      "experiment": "首批三个 Full 训练日程联合汇总",
       "policy": "M08–M10 Full/u32；对照 M07",
       "train": "引用三个1024班训练，各32次更新",
       "evaluation": "3×700评测已列；主分析3×500，新增0班",
@@ -387,7 +389,7 @@
         "experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/suite_complete.json",
         "experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s03/suite_complete.json"
       ],
-      "verification": "从逐班物理结果重计上述三个500班计数，并与训练汇总核对。",
+      "verification": "从逐班物理结果重计上述三个500班计数，并与训练汇总核对。 原三种子汇总保留为初始三种子结果，扩展 Full 的五种子标称见 M26。",
       "status": "历史复核／汇总",
       "source_ids": [
         "S069",
@@ -431,7 +433,7 @@
     {
       "id": "M19",
       "family": "派生统计",
-      "experiment": "一层与两层三种子对照",
+      "experiment": "一层与两层的原三日程对照",
       "policy": "M08–M10 vs M14–M16",
       "train": "三个相应 Full 训练工况日程；各模型独立训练和采样",
       "evaluation": "6×700已列，五留出各500；新增0班",
@@ -447,7 +449,7 @@
         "experiments/lagrangian_ppo_v1/runs/bg128-gat1-replication-20261123-s02/suite_complete.json",
         "experiments/lagrangian_ppo_v1/runs/bg128-gat1-replication-20261123-s03/suite_complete.json"
       ],
-      "verification": "独立从3×2×7个评测成果逐班重计；核对两个训练种子层级与同序双种子。",
+      "verification": "独立从3×2×7个评测成果逐班重计；核对两个训练种子层级与同序双种子。 保留原三种子结果作为发现阶段，五种子扩展统计与区间以 M25 为准。",
       "status": "历史复核／汇总",
       "source_ids": [
         "S059",
@@ -462,18 +464,18 @@
     {
       "id": "M20",
       "family": "未封存范围",
-      "experiment": "混合 s04 / s05 范围核对",
+      "experiment": "旧混合训练 s04 / s05 范围核对（2026-11-20）",
       "policy": "混合 Full s04、s05",
       "train": "s04 195个记录完成班与6次提交，另1个CLAIMED；s05未启动",
       "evaluation": "无封存整组固定u32评估",
       "pairing": "独立于 M08–M10",
-      "result": "不进入三训练种子分母。",
+      "result": "旧 s04 的 195 个已完成训练班保留在历史账本，旧 s05 未启动。11 月 25 日另启的 s04、s05 四组训练已完成，见 M21–M24。",
       "use": "排除记录（不计论文已完成样本）",
       "sources": [
         "experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s04/training_progress.json",
         "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/mixed_seed_replication_001/three_seed_analysis.md"
       ],
-      "verification": "s04 无 suite_complete.json；与封存三种子说明核对。 只读核对账本为195 COMPLETE、1 CLAIMED、1,528 PLANNED。",
+      "verification": "s04 无 suite_complete.json；与封存三种子说明核对。 只读核对账本为195 COMPLETE、1 CLAIMED、1,528 PLANNED。 保留旧 20261120-s04 的195班和旧s05未启动历史；本轮 M21–M24 使用 20261125 新的运行、独立u0和固定u32，不把旧195班纳入训练或评测。",
       "status": "未封存／未启动",
       "source_ids": [
         "S140",
@@ -1434,6 +1436,665 @@
         "S129",
         "S206",
         "S062"
+      ]
+    },
+    {
+      "id": "M21",
+      "family": "传播深度与跨种子复现",
+      "experiment": "两轮GAT Full 新训练日程 s04",
+      "status": "已封存",
+      "policy": "Full s04/u32",
+      "train": "独立初始化，1,024 班、32 次更新",
+      "evaluation": "1,024训练班，32次PPO更新。700个物理评测班，评测更新0次。",
+      "pairing": "配对双方逐班匹配1,024个训练工况，各自独立初始化、采样与训练。每个固定u32在七工况×100槽冻结推理，沿用P4的100对双种子。",
+      "result": "五留出完整任务489/500，四窗全部合规498/500，矿石达产500/500，废石达产491/500。车队平均累计等待4.697车时/班。",
+      "use": "深度对照的新训练日程",
+      "verification": "主集为五个共同留出工况，标称和grade_swap单列。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/nominal/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/grade_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_1/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_2/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/new_numeric/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/joint_shift/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/waste_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/README.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json"
+      ],
+      "source_ids": [
+        "S209",
+        "S210",
+        "S211",
+        "S212",
+        "S213",
+        "S214",
+        "S215",
+        "S216",
+        "S217",
+        "S218",
+        "S208"
+      ]
+    },
+    {
+      "id": "M22",
+      "family": "传播深度与跨种子复现",
+      "experiment": "一轮GAT＋逐节点MLP 新训练日程 s04",
+      "status": "已封存",
+      "policy": "GAT1＋逐节点 MLP s04/u32",
+      "train": "独立初始化，1,024 班、32 次更新",
+      "evaluation": "1,024训练班，32次PPO更新。700个物理评测班，评测更新0次。",
+      "pairing": "配对双方逐班匹配1,024个训练工况，各自独立初始化、采样与训练。每个固定u32在七工况×100槽冻结推理，沿用P4的100对双种子。",
+      "result": "五留出完整任务480/500，四窗全部合规492/500，矿石达产500/500，废石达产488/500。车队平均累计等待4.991车时/班。",
+      "use": "深度对照的新训练日程",
+      "verification": "主集为五个共同留出工况，标称和grade_swap单列。 run 10049254 以既有物料回放完成核销，追加物理班数为零。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/nominal/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/grade_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_1/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_2/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/new_numeric/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/joint_shift/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/waste_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/README.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/gat1-s04/recovery_001/reconciliation.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json"
+      ],
+      "source_ids": [
+        "S219",
+        "S220",
+        "S221",
+        "S222",
+        "S223",
+        "S224",
+        "S225",
+        "S226",
+        "S217",
+        "S218",
+        "S227",
+        "S208"
+      ]
+    },
+    {
+      "id": "M23",
+      "family": "传播深度与跨种子复现",
+      "experiment": "两轮GAT Full 新训练日程 s05",
+      "status": "已封存",
+      "policy": "Full s05/u32",
+      "train": "独立初始化，1,024 班、32 次更新",
+      "evaluation": "1,024训练班，32次PPO更新。700个物理评测班，评测更新0次。",
+      "pairing": "配对双方逐班匹配1,024个训练工况，各自独立初始化、采样与训练。每个固定u32在七工况×100槽冻结推理，沿用P4的100对双种子。",
+      "result": "五留出完整任务493/500，四窗全部合规493/500，矿石达产500/500，废石达产500/500。车队平均累计等待5.812车时/班。",
+      "use": "深度对照的新训练日程",
+      "verification": "主集为五个共同留出工况，标称和grade_swap单列。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/nominal/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/grade_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_1/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_2/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/new_numeric/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/joint_shift/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/waste_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/README.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json"
+      ],
+      "source_ids": [
+        "S228",
+        "S229",
+        "S230",
+        "S231",
+        "S232",
+        "S233",
+        "S234",
+        "S235",
+        "S217",
+        "S218",
+        "S208"
+      ]
+    },
+    {
+      "id": "M24",
+      "family": "传播深度与跨种子复现",
+      "experiment": "一轮GAT＋逐节点MLP 新训练日程 s05",
+      "status": "已封存",
+      "policy": "GAT1＋逐节点 MLP s05/u32",
+      "train": "独立初始化，1,024 班、32 次更新",
+      "evaluation": "1,024训练班，32次PPO更新。700个物理评测班，评测更新0次。",
+      "pairing": "配对双方逐班匹配1,024个训练工况，各自独立初始化、采样与训练。每个固定u32在七工况×100槽冻结推理，沿用P4的100对双种子。",
+      "result": "五留出完整任务496/500，四窗全部合规496/500，矿石达产500/500，废石达产500/500。车队平均累计等待5.437车时/班。",
+      "use": "深度对照的新训练日程",
+      "verification": "主集为五个共同留出工况，标称和grade_swap单列。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/nominal/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/grade_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_1/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_2/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/new_numeric/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/joint_shift/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/waste_swap/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/README.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json"
+      ],
+      "source_ids": [
+        "S236",
+        "S237",
+        "S238",
+        "S239",
+        "S240",
+        "S241",
+        "S242",
+        "S243",
+        "S217",
+        "S218",
+        "S208"
+      ]
+    },
+    {
+      "id": "M25",
+      "family": "传播深度与跨种子复现",
+      "experiment": "传播深度的五个训练日程配对扩展",
+      "status": "派生统计／已核对",
+      "policy": "Full、GAT1 各五个 u32",
+      "train": "引用已冻结训练结果",
+      "evaluation": "7000个已列评测run，五留出每种架构2,500班。新增评测0班。",
+      "pairing": "Full与GAT1各5个独立训练的u32。7000个评测物理班共享100对双种子；主集合计5工况×100槽×5日程/架构。各训练日程等权，以5对日程估计架构差的不确定性。",
+      "result": "五个留出工况，Full 2,464/2,500（98.56%），GAT1 2,418/2,500（96.72%）。GAT1−Full为−1.84个百分点，跨训练日程95% CI [−5.66, +1.98]，双侧符号翻转p=0.25；累计等待差+0.043车时/班，95% CI [−0.747,+0.833]。GAT1在s01、s05领先；废石欠产65对14，矿石均达产。",
+      "use": "跨训练日程的架构差值与不确定性",
+      "verification": "先s01–s03后追加s04/s05。固定十个模型的评测槽重采样95%区间[−2.88,−0.88]个百分点只描述评测槽不确定性。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/paired_statistics.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/report_zh.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json"
+      ],
+      "source_ids": [
+        "S244",
+        "S245",
+        "S217"
+      ]
+    },
+    {
+      "id": "M26",
+      "family": "传播深度与跨种子复现",
+      "experiment": "五个 Full/u32 标称百槽配对及实际加工品位",
+      "status": "派生统计／已核对",
+      "policy": "五个 Full/u32",
+      "train": "引用已冻结训练结果",
+      "evaluation": "500个已有评测班、2,000个窗口。新增物理班0。",
+      "pairing": "五个已训练Full在相同标称工况按槽配对，500个已封存物理班、100对双种子。按训练种子两两比较完整任务与全车队排队时长。",
+      "result": "五种子标准工况完整任务依次97、99、98、97、98/100；91槽五者均成功。2,000实际加工窗中7窗越界，6个发生在首窗。品位RMSE 0.319个百分点。完整任务十对Holm校正p均为1。",
+      "use": "标称面板的逐策略对照",
+      "verification": "比较对象为五个冻结策略；s02的99/100属于此P4标称面板，独立标称基线比较使用P5。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/full_nominal_wilcoxon.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/full_nominal_100.xlsx",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json"
+      ],
+      "source_ids": [
+        "S246",
+        "S247",
+        "S217"
+      ]
+    },
+    {
+      "id": "B19",
+      "family": "学习方法对比",
+      "experiment": "整班 REINFORCE 原版 S02 训练与部分独评",
+      "status": "训练封存，独评终止",
+      "policy": "初版整班 REINFORCE s02",
+      "train": "1,024 班，32 批，每批 1 次 Actor Adam",
+      "evaluation": "训练 1,024 班。独评 130 COMPLETE、1 UNKNOWN、569 PLANNED。",
+      "pairing": "复用 Full S02 初始 Actor、工况日程、四候选掩码与联合成本。整班负成本回报配跨批 EMA，每批执行一次 Actor Adam。",
+      "result": "初版完成 32 个训练批次，Actor 共 32 步；相同采样班数的 PPO 共 23,612 步。旧独评只完成计划中 130 班。",
+      "use": "研发历史与训练预算",
+      "verification": "旧训练过程样本和独评明细已按清理清单处理。保留封存摘要、最终权重、账本及审计；130 班不进入最终七工况分母。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/training_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/legacy_cleanup.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/actor_budget.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/README.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json"
+      ],
+      "source_ids": [
+        "S248",
+        "S249",
+        "S250",
+        "S251",
+        "S252",
+        "S208"
+      ]
+    },
+    {
+      "id": "B20",
+      "family": "学习方法对比",
+      "experiment": "整班回报梯度、优化预算与离线信用分配诊断",
+      "status": "离线复核完成",
+      "policy": "初版整班更新及历史样本",
+      "train": "引用已冻结训练结果",
+      "evaluation": "32 批预算和信号审计。信用分配 3×32 班。单 Actor 步回放首批 32 班与 5,844 次决策。新增物理班 0。",
+      "pairing": "用旧版更新摘要审计 Actor/Critic 步数、决策行访问量，并在 u1、u16、u32 的冻结数据分析整班回报和分阶段剩余回报。",
+      "result": "早版训练 189,239 次决策中，137,334 次在首窗结算后。三批评分头的班间梯度样本协方差迹为 12.70、6.71、196.47，换剩余回报及分阶段基线后为 5.73、3.73、85.39。",
+      "use": "整班信号和优化过程诊断",
+      "verification": "评分头离线梯度离散度是诊断量；其对应的闭环新策略未在这项回放中训练。 另有 s01 首批 32 个历史班的离线一步更新，5,853 次决策，新物理班为 0。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/README.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/actor_budget.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/adam_audit.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/signal_audit.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/credit_replay.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/direction_audit.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/matched_actor_step.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/preliminary_s01/offline_replay.json"
+      ],
+      "source_ids": [
+        "S253",
+        "S251",
+        "S254",
+        "S255",
+        "S256",
+        "S257",
+        "S258",
+        "S259"
+      ]
+    },
+    {
+      "id": "B21",
+      "family": "学习方法对比",
+      "experiment": "整班回报变体按 Full S02 逐批对齐 Actor 步数",
+      "status": "训练封存",
+      "policy": "步数对齐整班变体 s02",
+      "train": "1,024 班，32 批，Actor Adam 共 23,612 步",
+      "evaluation": "1,024 个完整训练班、32 次策略发布。整班版 187,437 次采样决策。",
+      "pairing": "从共同 u0 按相同 1,024 槽工况日程独立采样。整班权重为负联合成本减去跨批 EMA；四轮数据复用、概率比裁剪、熵项、学习率和逐批 Actor 步数与 PPO 对齐。",
+      "result": "32 批分别对齐到 720–744 次 Actor Adam，合计 23,612。PPO 和整班版反传分别访问 753,544、749,748 个决策行次；Critic 分别为 23,612、0 步。",
+      "use": "按同样优化预算比较训练方法",
+      "verification": "两方法各使用 S02 一组初始权重；训练双种子各自独立。整班版使用未经批内标准化的班级回报与标量 EMA，PPO 使用由价值网络构造并标准化的时序 GAE。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-20261128-s02/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/training_complete.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/README.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/prepared_verification.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/real_first_batch_replay.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/actor_budget.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json"
+      ],
+      "source_ids": [
+        "S260",
+        "S261",
+        "S262",
+        "S263",
+        "S264",
+        "S251",
+        "S208"
+      ]
+    },
+    {
+      "id": "B22",
+      "family": "学习方法对比",
+      "experiment": "固定 S02/u32 独评中断与接续",
+      "status": "接续封存",
+      "policy": "步数对齐整班变体 s02/u32",
+      "train": "引用已冻结训练结果",
+      "evaluation": "42+658=700 完整。另记 1 UNKNOWN（10096043）。原余 657 未启动物理身份转移额度。",
+      "pairing": "保留前缀 42 班；在原第 43 个槽启动新物理 run，并用新身份跑完其余 657 槽，沿用冻结工况和环境/Actor 双种子。",
+      "result": "原第 43 班已有领取和部分动作，状态 UNKNOWN。42 份原完整回执与 658 份接续回执覆盖 700 个唯一工况槽，优化器更新为零。",
+      "use": "评测覆盖、恢复和分母核对",
+      "verification": "本行记录 B23 同一活动的接续过程，论文评测样本分母为 700。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/interruption_closed.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/interruption_evidence.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/prepared_verification.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/README.md"
+      ],
+      "source_ids": [
+        "S265",
+        "S266",
+        "S267",
+        "S268",
+        "S269"
+      ]
+    },
+    {
+      "id": "B23",
+      "family": "学习方法对比",
+      "experiment": "固定 S02/u32 七工况配对／PPO 与步数对齐的整班回报变体",
+      "status": "正式配对独评封存",
+      "policy": "Full PPO 与整班回报变体，各 s02/u32",
+      "train": "引用已冻结训练结果",
+      "evaluation": "历史 PPO 700 班（同 M09），整班版新增 700 个完整班。跨七工况复用同一组 100 对双种子。均为 1 个训练种子。",
+      "pairing": "两策略使用同一 BG128 架构、训练工况日程与联合成本，各 1,024 个训练班、23,612 个 Actor Adam 步。七工况每工况 100 个共享双种子槽，对齐历史 Full S02 固定 u32。",
+      "result": "七工况 PPO 与整班版联合达标 693/700、139/700，四窗达标 694、144，矿量达标均 700，废量达标 699、663。联合达标配对仅 PPO 555 槽、仅整班版 1 槽。均成本 0.3020、2.9889；班均等待 16,234、20,624 车秒。",
+      "use": "同模型表示下两种训练方案的固定策略表现",
+      "verification": "比较两种训练目标及信用分配配置的整体效果。整班版保留 PPO 式裁剪与四轮复用。比较覆盖整班基线、价值估计和时序优势三方面。五留出子集联达标 PPO 496/500、整班版 112/500。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_shifts.csv",
+        "experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/suite_complete.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/README.md",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/paired_inference_001/paired_metrics.py"
+      ],
+      "source_ids": [
+        "S265",
+        "S270",
+        "S271",
+        "S131",
+        "S272",
+        "S273"
+      ]
+    },
+    {
+      "id": "A01",
+      "family": "实际加工与冻结策略回放",
+      "experiment": "五训练种子的跨窗物料兑现",
+      "status": "完成，封存轨迹离线复算",
+      "policy": "五个 Full/u32",
+      "train": "引用已冻结训练结果",
+      "evaluation": "5 个训练种子 × 5 个工况 × 100 个配对槽，共 2,500 既有班、10,000 窗。新增物理班 0。",
+      "pairing": "混合训练 Full s01–s05 固定 u32，五个共同留出工况；按卸入、实际破碎和关窗事件逐批核对实际破碎吨位和金属量。",
+      "result": "五个留出工况中每班平均 764.28 t 在前窗卸载、后窗破碎，占实破量 4.13%；班末余矿 315.24 t/班。实际窗口品位 RMSE 0.31557 个百分点，22/10,000 窗越界，空窗 0 个，2,478/2,500 班四窗均合规。",
+      "use": "按实际破碎时点核算跨窗质量",
+      "verification": "每个工况和策略共用 100 对随机种子。四窗合规、窗口 RMSE 与整班达标是不同指标。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/delayed_realization_001/README.md"
+      ],
+      "source_ids": [
+        "S274",
+        "S217",
+        "S275"
+      ]
+    },
+    {
+      "id": "A02",
+      "family": "实际加工与冻结策略回放",
+      "experiment": "截止点附近相近高品位批次的兑现窗口",
+      "status": "完成，观察性配对",
+      "policy": "Full s04/s05，held_order_1",
+      "train": "引用已冻结训练结果",
+      "evaluation": "两个模型各 100 班，100 配对槽 × 3 个内窗边界。300 个边界中 16 个边界形成配对，2 对完全分离，另 1 对达到 80% 对 20% 的阈值。均为 A01 既有轨迹子集。",
+      "pairing": "held_order_1 的 Full s04 与 s05 逐槽配对；匹配相同装点、品位均高于 28%、吨差≤0.01 t、品位差≤0.1 个百分点、卸入均距关窗≤900 s 且时差≤60 s 的批次，每槽每边界取一对。",
+      "result": "匹配的 16 对中有 2 对一批全部于本窗破碎、另一批全部进入下一窗。槽 97 第三窗两批同为 91.7 t、卸入时差 6.67 s，前方 FIFO 分别有 337.01 t 和约 0 t，兑现窗分别为第四窗和第三窗。",
+      "use": "物料截止时间的配对案例",
+      "verification": "配对来自两条真实轨迹；同槽仍可能有不同的历史动作和交通状态。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/matched_batches.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/delayed_realization_001/README.md",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_1/new/evaluation_complete.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_1/new/evaluation_complete.json"
+      ],
+      "source_ids": [
+        "S276",
+        "S275",
+        "S212",
+        "S231"
+      ]
+    },
+    {
+      "id": "A03",
+      "family": "实际加工与冻结策略回放",
+      "experiment": "置换 FIFO 批次次序后的冻结策略响应",
+      "status": "完成，冻结 Actor 输入干预",
+      "policy": "五个冻结 Full/u32",
+      "train": "引用已冻结训练结果",
+      "evaluation": "50 个既有班、150 个内窗边界、146 个合格决策。五个模型共用同一组观测。新增训练更新与物理班均为 0。",
+      "pairing": "在 Full s01 五个留出工况中取相同十个双种子槽，选临近截止点的合格决策；对事实 FIFO 调换前两批，重算 C128，仅将变化的显式当前窗/次窗投影输入五个冻结 u32。",
+      "result": "146 个合格状态中显式投影改变 133 个，五个冻结策略在各自全部 133 个状态上动作概率都发生变化。s01 至 s05 的平均总变差距离为 0.0148、0.0240、0.0174、0.0205、0.0245，众数动作分别改变 5、7、5、4、6 次；其余 13 个投影不变的状态各策略输出均未变。",
+      "use": "冻结策略对显式分窗投影的敏感性",
+      "verification": "该结果验证显式分窗投影响应；单独去掉显式投影后的重训、闭环评估和早晚兑现挑战只列为后续方案。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/delayed_realization_001/README.md"
+      ],
+      "source_ids": [
+        "S277",
+        "S275"
+      ]
+    },
+    {
+      "id": "A04",
+      "family": "车队现场演示",
+      "experiment": "九车退场独立现场演示的登记结果",
+      "status": "已登记，中止（UNKNOWN）",
+      "policy": "动态 u9 现场演示",
+      "train": "工程验收或诊断",
+      "evaluation": "1 个登记槽，0 个完整终局。原四方留出测试的有效样本仍为 36 配对槽、144 班。",
+      "pairing": "冻结 dynamic u9。复用历史 10043852 的场景，run 10045001 使用新双种子、recording 和配置身份。",
+      "result": "准备自检通过；新班开始时观察到 9 辆可调度、9 辆在系统。后续等待通过验证的 RPC 超时，控制器 STOP，账本 UNKNOWN。",
+      "use": "演示状态审计",
+      "verification": "此条记录现场演示状态；整班达标率、退场成功率无可用分母。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/run_status.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/launch_intent.json",
+        "experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/fleet_resilience_budget.sqlite",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/preflight.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001/suite.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001/scenario_table.csv"
+      ],
+      "source_ids": [
+        "S278",
+        "S279",
+        "S280",
+        "S281",
+        "S282",
+        "S283"
+      ]
+    },
+    {
+      "id": "T01",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "合成布局的坐标、可达性与可变路网输入",
+      "status": "工程核验",
+      "policy": "冻结模型离线前向；原生 SDK 和 Simulation",
+      "train": "工程验收或诊断",
+      "evaluation": "SDK 两图。原生可视化有 A 图到达回执。训练路网 A/B 各一次离线前向。",
+      "pairing": "按坐标改变与连接改变分开核验；另做原生到达回调及不同节点、道路数量的输入核查。",
+      "result": "A 图原生到装点与卸点的坐标误差均为 0。训练接口可处理树图 A（7 节点、12 有向路）和环图 B（8 节点、16 有向路），标称输入的 Actor / Critic 输出逐位一致。",
+      "use": "可变路网接口与物理坐标验证",
+      "verification": "SDK 路径采样、原生到站及策略前向分别验证不同对象。早期 A/B/C 合成几何探针和后续训练 A/B 图分别编号。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_layout_probe_001/layout_probe.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_layout_probe_001/anylogic_network_probe.txt",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_topology_arrival_001/coordinate_checks.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_topology_simulation_001/A_coordinate_checks.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/offline_probe.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/layouts.json"
+      ],
+      "source_ids": [
+        "S284",
+        "S285",
+        "S286",
+        "S287",
+        "S288",
+        "S289"
+      ]
+    },
+    {
+      "id": "T02",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "A/B 路网单趟与整班可行性验证",
+      "status": "物理验收",
+      "policy": "固定参考派车",
+      "train": "工程验收或诊断",
+      "evaluation": "A/B 各 1 单趟，各 1 个八小时可行性班。",
+      "pairing": "先查路段与装卸守恒，再用参考调度验证两图在指定配置存在联合达标的物理班。",
+      "result": "两次单趟各实收 147 t。参考策略在 A/B 都满足各自验收任务，实破矿 19,402.3 / 17,894.7 t，四窗均合规。",
+      "use": "物理可行性",
+      "verification": "早期无实跑证书的准入状态已由两个完整见证班更新。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/physical_trip_001/tree_A_trip_check.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/physical_trip_001/loop_B_trip_check.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/capacity_screen.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/witness_collection.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/witness_index.json"
+      ],
+      "source_ids": [
+        "S290",
+        "S291",
+        "S292",
+        "S293",
+        "S294"
+      ]
+    },
+    {
+      "id": "T03",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "冻结动态 u9 在两张路网上的先导整班",
+      "status": "已完成先导与中断记录",
+      "policy": "动态出勤 u9；合法动作取最大概率",
+      "train": "引用已冻结训练结果",
+      "evaluation": "A 1 个有效班，B 2 个有效班。初次 B 物理身份 10054042 为 UNKNOWN。",
+      "pairing": "A 九车，B 七车；B 另核对沿用九车任务与按开班运力缩放目标的独立运行。",
+      "result": "A 沿用标称目标达标。B 修复班四窗合规但矿量不足；B 缩放目标后矿废均达产，四窗中三窗合规。",
+      "use": "跨图统计试验的先导验证",
+      "verification": "两个诊断身份 10054044、10054045 均为 UNKNOWN。前者仅有开班记录，后者重放 56 个已执行动作。三个未完成身份均排除在完整班外。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/trial_evaluation.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/trial_evaluation_B.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/trial_evaluation_B.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/capacity_scaled_001/trial_evaluation_B.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/diagnostic_10054045/diagnostic_status.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/README.md"
+      ],
+      "source_ids": [
+        "S295",
+        "S296",
+        "S297",
+        "S298",
+        "S299",
+        "S300"
+      ]
+    },
+    {
+      "id": "T04",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "冻结动态 u9 在树图 A 与环图 B 上的零样本迁移",
+      "status": "已封存实跑",
+      "policy": "同一动态 u9，贪心推理",
+      "train": "引用已冻结训练结果",
+      "evaluation": "各 50 班，共 100 个新物理班、16,912 次派车。",
+      "pairing": "A 九车，原矿废目标；B 七车，按开班运力缩放目标。两图使用相互独立的环境种子。",
+      "result": "A 联合达标 50/50，B 为 22/50，两组矿废均 50/50 达产。B 第三、四窗分别有 37、31 班合规。",
+      "use": "跨路网与车队组合的零样本表现",
+      "verification": "两组拓扑、出勤和目标同时变化；组间差值对应整体工况。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.md",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/README.md"
+      ],
+      "source_ids": [
+        "S301",
+        "S302",
+        "S303"
+      ]
+    },
+    {
+      "id": "T05",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "环图 B 上的微调、验证选模与历史 B50 配对复测",
+      "status": "已封存实跑",
+      "policy": "动态 u9 热启动，B 图本地 u0–u4",
+      "train": "从动态 u9 热启动，128 班、4 次 PPO 更新",
+      "evaluation": "128 训练班，4 次 PPO 更新，80 验证班，50 新复测班。本活动 258 个物理班。",
+      "pairing": "128 个训练班后，从 u0–u4 用独立的同一组 16 个验证槽选模；用历史 B50 原种子贪心复测选出的 u2。",
+      "result": "u2、u3、u4 验证均 16/16，按预设取较早的 u2。配对复测从 22/50 提升为 47/50；25 槽改善、0 槽退步，精确 McNemar p=5.96×10⁻⁸。",
+      "use": "少量同场训练对 B 图任务的改善",
+      "verification": "历史冻结 u9 的 50 班已在 T04 登记；B50 是已知面板上的同种子复测。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/paired_test.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/finetune_report.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/budget_audit.json"
+      ],
+      "source_ids": [
+        "S304",
+        "S305",
+        "S306",
+        "S307"
+      ]
+    },
+    {
+      "id": "T06",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "A 图高品位点停工与同种子开放对照",
+      "status": "已封存配对单例",
+      "policy": "Full s02/u32，贪心",
+      "train": "引用已冻结训练结果",
+      "evaluation": "同一环境种子、两个独立 run。每班 190 次派车。",
+      "pairing": "第 4 小时起停工 30 分钟，另开同种子无停工对照。",
+      "result": "两班均联合达标。停工前 115 次派车和 1,028 条业务事件一致；已在途车辆到场后多等待 29.55 分钟，实破矿石均为 19,456.03 t。",
+      "use": "扰动的物理兑现与派车屏蔽",
+      "verification": "该配对与后续三策略 30 槽使用不同身份。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/summary.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.md"
+      ],
+      "source_ids": [
+        "S308",
+        "S309",
+        "S310"
+      ]
+    },
+    {
+      "id": "T07",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "A 图高品位点停工强度的三策略配对",
+      "status": "已封存正式配对",
+      "policy": "Full s02/u32、Flat-PPO s01/u32、品位修订路径流量匹配",
+      "train": "引用已冻结训练结果",
+      "evaluation": "270 个新物理班、51,491 次派车。",
+      "pairing": "A 图九车，第 4 小时开始停工 0/30/60 分钟；30 个环境种子各跑三策略×三强度。神经策略均用贪心推理。",
+      "result": "三种强度下 Full 和流量规则各 30/30，Flat 依次为 5/30、7/30、6/30。60 分钟时 Full 对 Flat 差 +80 个百分点（Holm p<0.0001），对流量规则差 0（p=1）。",
+      "use": "等种子停工鲁棒性与强基线比较",
+      "verification": "Full 与 Flat 使用各自冻结权重；六项 30→60 分钟交互检验经校正均未达显著。实际停工期间流量规则 30/60 分钟的 268/531 次决策均进入内部备用分支。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.md",
+        "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/budget_audit.json",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/protocol.json"
+      ],
+      "source_ids": [
+        "S311",
+        "S312",
+        "S313",
+        "S314"
+      ]
+    },
+    {
+      "id": "T08",
+      "family": "拓扑迁移与运行扰动",
+      "experiment": "西采场资料接入与装运卸演示验收",
+      "status": "工程演示",
+      "policy": "西采场九车、固定情景派车",
+      "train": "工程验收或诊断",
+      "evaluation": "5 个准备身份。10054863、10054864 有完整验收，10054862 仅有开始标记。",
+      "pairing": "依据设备分区、线路资料及情景假设构造西采场演示，按实装、实卸及班末车载量核对守恒。",
+      "result": "两个 8 h 验收班分别实装 33,195 和 32,764 t，各完成 158 趟，班末守恒残差均为 0 t。",
+      "use": "现场资料与仿真工程的衔接",
+      "verification": "该演示使用设定的运输规则及部分估计参数，场内记录没有 BG128 策略绩效。",
+      "sources": [
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/README.md",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/README.md",
+        "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/launch_identity.json",
+        "experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054863/verification.json",
+        "experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054864/verification.json"
+      ],
+      "source_ids": [
+        "S315",
+        "S316",
+        "S317",
+        "S318",
+        "S319"
       ]
     }
   ],
@@ -3557,6 +4218,1250 @@
       "evidence_id": "R06",
       "panel": "车队测试36槽",
       "source_id": "S047"
+    },
+    {
+      "evidence_id": "M21",
+      "model": "Full u32",
+      "seed": "s04",
+      "scenario": "nominal",
+      "n": 100,
+      "complete": 97,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 97,
+      "cost": 0.35917330448145113,
+      "wait": 18581.12046302691,
+      "ore_tons": 19001.3207483653,
+      "waste_tons": 5218.620999999998,
+      "panel": "P4",
+      "run_first": 10047025,
+      "run_last": 10047124,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/nominal/new/evaluation_complete.json",
+      "source_id": "S210"
+    },
+    {
+      "evidence_id": "M21",
+      "model": "Full u32",
+      "seed": "s04",
+      "scenario": "grade_swap",
+      "n": 100,
+      "complete": 98,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 99,
+      "cost": 0.3035212981371971,
+      "wait": 19011.47907898616,
+      "ore_tons": 19066.41989621691,
+      "waste_tons": 5331.5779999999995,
+      "panel": "P4",
+      "run_first": 10047125,
+      "run_last": 10047224,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/grade_swap/new/evaluation_complete.json",
+      "source_id": "S211"
+    },
+    {
+      "evidence_id": "M21",
+      "model": "Full u32",
+      "seed": "s04",
+      "scenario": "held_order_1",
+      "n": 100,
+      "complete": 97,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 97,
+      "cost": 0.3865168928851294,
+      "wait": 18021.49053240115,
+      "ore_tons": 19026.78614665019,
+      "waste_tons": 5166.070999999999,
+      "panel": "P4",
+      "run_first": 10047225,
+      "run_last": 10047324,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_1/new/evaluation_complete.json",
+      "source_id": "S212"
+    },
+    {
+      "evidence_id": "M21",
+      "model": "Full u32",
+      "seed": "s04",
+      "scenario": "held_order_2",
+      "n": 100,
+      "complete": 95,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 96,
+      "cost": 0.31920086443833867,
+      "wait": 16426.54069268777,
+      "ore_tons": 18932.63419130879,
+      "waste_tons": 5250.386999999999,
+      "panel": "P4",
+      "run_first": 10047325,
+      "run_last": 10047424,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_2/new/evaluation_complete.json",
+      "source_id": "S213"
+    },
+    {
+      "evidence_id": "M21",
+      "model": "Full u32",
+      "seed": "s04",
+      "scenario": "new_numeric",
+      "n": 100,
+      "complete": 97,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 98,
+      "cost": 0.31857072740798265,
+      "wait": 18027.530814499307,
+      "ore_tons": 18995.98012833479,
+      "waste_tons": 5306.853999999999,
+      "panel": "P4",
+      "run_first": 10047425,
+      "run_last": 10047524,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/new_numeric/new/evaluation_complete.json",
+      "source_id": "S214"
+    },
+    {
+      "evidence_id": "M21",
+      "model": "Full u32",
+      "seed": "s04",
+      "scenario": "joint_shift",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.2834074266138495,
+      "wait": 16598.604600211907,
+      "ore_tons": 18598.393568818577,
+      "waste_tons": 6056.9299999999985,
+      "panel": "P4",
+      "run_first": 10047525,
+      "run_last": 10047624,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/joint_shift/new/evaluation_complete.json",
+      "source_id": "S215"
+    },
+    {
+      "evidence_id": "M21",
+      "model": "Full u32",
+      "seed": "s04",
+      "scenario": "waste_swap",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.2980667221736131,
+      "wait": 15470.349850399187,
+      "ore_tons": 18646.131367586248,
+      "waste_tons": 6045.180999999999,
+      "panel": "P4",
+      "run_first": 10047625,
+      "run_last": 10047724,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/waste_swap/new/evaluation_complete.json",
+      "source_id": "S216"
+    },
+    {
+      "evidence_id": "M22",
+      "model": "GAT1 u32",
+      "seed": "s04",
+      "scenario": "nominal",
+      "n": 100,
+      "complete": 96,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 96,
+      "cost": 0.3602695769290601,
+      "wait": 20129.46633439239,
+      "ore_tons": 19010.60411918921,
+      "waste_tons": 4919.556,
+      "panel": "P4",
+      "run_first": 10048749,
+      "run_last": 10048848,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/nominal/new/evaluation_complete.json",
+      "source_id": "S220"
+    },
+    {
+      "evidence_id": "M22",
+      "model": "GAT1 u32",
+      "seed": "s04",
+      "scenario": "grade_swap",
+      "n": 100,
+      "complete": 99,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.3471903551976085,
+      "wait": 18032.538553849954,
+      "ore_tons": 19001.614727722957,
+      "waste_tons": 5491.725999999999,
+      "panel": "P4",
+      "run_first": 10048849,
+      "run_last": 10048948,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/grade_swap/new/evaluation_complete.json",
+      "source_id": "S221"
+    },
+    {
+      "evidence_id": "M22",
+      "model": "GAT1 u32",
+      "seed": "s04",
+      "scenario": "held_order_1",
+      "n": 100,
+      "complete": 92,
+      "fourwindows": 96,
+      "ore_met": 100,
+      "waste_met": 96,
+      "cost": 0.5291041604937213,
+      "wait": 20525.841387550525,
+      "ore_tons": 19038.689538647108,
+      "waste_tons": 4803.500999999999,
+      "panel": "P4",
+      "run_first": 10048949,
+      "run_last": 10049048,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_1/new/evaluation_complete.json",
+      "source_id": "S222"
+    },
+    {
+      "evidence_id": "M22",
+      "model": "GAT1 u32",
+      "seed": "s04",
+      "scenario": "held_order_2",
+      "n": 100,
+      "complete": 92,
+      "fourwindows": 97,
+      "ore_met": 100,
+      "waste_met": 95,
+      "cost": 0.3432743797342064,
+      "wait": 17611.441675432354,
+      "ore_tons": 18909.667011556612,
+      "waste_tons": 5023.438999999999,
+      "panel": "P4",
+      "run_first": 10049049,
+      "run_last": 10049148,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_2/new/evaluation_complete.json",
+      "source_id": "S223"
+    },
+    {
+      "evidence_id": "M22",
+      "model": "GAT1 u32",
+      "seed": "s04",
+      "scenario": "new_numeric",
+      "n": 100,
+      "complete": 97,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 97,
+      "cost": 0.28948088824507456,
+      "wait": 20084.780275986595,
+      "ore_tons": 19011.418615586048,
+      "waste_tons": 4860.140999999999,
+      "panel": "P4",
+      "run_first": 10049149,
+      "run_last": 10049248,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/new_numeric/new/evaluation_complete.json",
+      "source_id": "S224"
+    },
+    {
+      "evidence_id": "M22",
+      "model": "GAT1 u32",
+      "seed": "s04",
+      "scenario": "joint_shift",
+      "n": 100,
+      "complete": 99,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.30360258635369664,
+      "wait": 16084.513480573874,
+      "ore_tons": 18630.23348140689,
+      "waste_tons": 6063.809999999999,
+      "panel": "P4",
+      "run_first": 10049249,
+      "run_last": 10049348,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/joint_shift/new/evaluation_complete.json",
+      "source_id": "S225"
+    },
+    {
+      "evidence_id": "M22",
+      "model": "GAT1 u32",
+      "seed": "s04",
+      "scenario": "waste_swap",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.23917013361611833,
+      "wait": 15525.179129891714,
+      "ore_tons": 18644.101712278138,
+      "waste_tons": 5971.351999999998,
+      "panel": "P4",
+      "run_first": 10049349,
+      "run_last": 10049448,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/waste_swap/new/evaluation_complete.json",
+      "source_id": "S226"
+    },
+    {
+      "evidence_id": "M23",
+      "model": "Full u32",
+      "seed": "s05",
+      "scenario": "nominal",
+      "n": 100,
+      "complete": 98,
+      "fourwindows": 98,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.4401408753436804,
+      "wait": 20158.41947518246,
+      "ore_tons": 18239.269764896977,
+      "waste_tons": 6058.1309999999985,
+      "panel": "P4",
+      "run_first": 10050473,
+      "run_last": 10050572,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/nominal/new/evaluation_complete.json",
+      "source_id": "S229"
+    },
+    {
+      "evidence_id": "M23",
+      "model": "Full u32",
+      "seed": "s05",
+      "scenario": "grade_swap",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.37377598041267057,
+      "wait": 21372.239940949632,
+      "ore_tons": 18338.973004728145,
+      "waste_tons": 6046.766999999998,
+      "panel": "P4",
+      "run_first": 10050573,
+      "run_last": 10050672,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/grade_swap/new/evaluation_complete.json",
+      "source_id": "S230"
+    },
+    {
+      "evidence_id": "M23",
+      "model": "Full u32",
+      "seed": "s05",
+      "scenario": "held_order_1",
+      "n": 100,
+      "complete": 98,
+      "fourwindows": 98,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.5311881368951119,
+      "wait": 19461.20824548252,
+      "ore_tons": 18151.338550836943,
+      "waste_tons": 6044.413999999998,
+      "panel": "P4",
+      "run_first": 10050673,
+      "run_last": 10050772,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_1/new/evaluation_complete.json",
+      "source_id": "S231"
+    },
+    {
+      "evidence_id": "M23",
+      "model": "Full u32",
+      "seed": "s05",
+      "scenario": "held_order_2",
+      "n": 100,
+      "complete": 97,
+      "fourwindows": 97,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.3421423565198388,
+      "wait": 18171.25788157886,
+      "ore_tons": 18081.090734149275,
+      "waste_tons": 6046.7249999999985,
+      "panel": "P4",
+      "run_first": 10050773,
+      "run_last": 10050872,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_2/new/evaluation_complete.json",
+      "source_id": "S232"
+    },
+    {
+      "evidence_id": "M23",
+      "model": "Full u32",
+      "seed": "s05",
+      "scenario": "new_numeric",
+      "n": 100,
+      "complete": 99,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.35500232655228503,
+      "wait": 20526.302013989258,
+      "ore_tons": 18208.514933152823,
+      "waste_tons": 6048.313999999998,
+      "panel": "P4",
+      "run_first": 10050873,
+      "run_last": 10050972,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/new_numeric/new/evaluation_complete.json",
+      "source_id": "S233"
+    },
+    {
+      "evidence_id": "M23",
+      "model": "Full u32",
+      "seed": "s05",
+      "scenario": "joint_shift",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.27810790691102005,
+      "wait": 23699.100428090263,
+      "ore_tons": 17891.719038646894,
+      "waste_tons": 6065.586999999999,
+      "panel": "P4",
+      "run_first": 10050973,
+      "run_last": 10051072,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/joint_shift/new/evaluation_complete.json",
+      "source_id": "S234"
+    },
+    {
+      "evidence_id": "M23",
+      "model": "Full u32",
+      "seed": "s05",
+      "scenario": "waste_swap",
+      "n": 100,
+      "complete": 99,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.3540535576966298,
+      "wait": 22757.130632198136,
+      "ore_tons": 17994.613922345958,
+      "waste_tons": 6076.593999999998,
+      "panel": "P4",
+      "run_first": 10051073,
+      "run_last": 10051172,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/waste_swap/new/evaluation_complete.json",
+      "source_id": "S235"
+    },
+    {
+      "evidence_id": "M24",
+      "model": "GAT1 u32",
+      "seed": "s05",
+      "scenario": "nominal",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.2667899814284796,
+      "wait": 17376.203149778194,
+      "ore_tons": 18425.668868061457,
+      "waste_tons": 6014.735999999999,
+      "panel": "P4",
+      "run_first": 10052197,
+      "run_last": 10052296,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/nominal/new/evaluation_complete.json",
+      "source_id": "S237"
+    },
+    {
+      "evidence_id": "M24",
+      "model": "GAT1 u32",
+      "seed": "s05",
+      "scenario": "grade_swap",
+      "n": 100,
+      "complete": 99,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.3457069023208966,
+      "wait": 19312.95383807402,
+      "ore_tons": 18369.502678896362,
+      "waste_tons": 6071.663999999998,
+      "panel": "P4",
+      "run_first": 10052297,
+      "run_last": 10052396,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/grade_swap/new/evaluation_complete.json",
+      "source_id": "S238"
+    },
+    {
+      "evidence_id": "M24",
+      "model": "GAT1 u32",
+      "seed": "s05",
+      "scenario": "held_order_1",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.30587225353178726,
+      "wait": 16493.56747890306,
+      "ore_tons": 18467.59268168171,
+      "waste_tons": 6029.4969999999985,
+      "panel": "P4",
+      "run_first": 10052397,
+      "run_last": 10052496,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_1/new/evaluation_complete.json",
+      "source_id": "S239"
+    },
+    {
+      "evidence_id": "M24",
+      "model": "GAT1 u32",
+      "seed": "s05",
+      "scenario": "held_order_2",
+      "n": 100,
+      "complete": 97,
+      "fourwindows": 97,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.3888112978780542,
+      "wait": 15753.4065640379,
+      "ore_tons": 18151.1836829854,
+      "waste_tons": 6019.232999999998,
+      "panel": "P4",
+      "run_first": 10052497,
+      "run_last": 10052596,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_2/new/evaluation_complete.json",
+      "source_id": "S240"
+    },
+    {
+      "evidence_id": "M24",
+      "model": "GAT1 u32",
+      "seed": "s05",
+      "scenario": "new_numeric",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.23868405849379465,
+      "wait": 17114.99403542367,
+      "ore_tons": 18396.478911508468,
+      "waste_tons": 6041.911999999998,
+      "panel": "P4",
+      "run_first": 10052597,
+      "run_last": 10052696,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/new_numeric/new/evaluation_complete.json",
+      "source_id": "S241"
+    },
+    {
+      "evidence_id": "M24",
+      "model": "GAT1 u32",
+      "seed": "s05",
+      "scenario": "joint_shift",
+      "n": 100,
+      "complete": 100,
+      "fourwindows": 100,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.42576531519598954,
+      "wait": 26984.740429477282,
+      "ore_tons": 17536.154468811917,
+      "waste_tons": 6086.607999999998,
+      "panel": "P4",
+      "run_first": 10052697,
+      "run_last": 10052796,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/joint_shift/new/evaluation_complete.json",
+      "source_id": "S242"
+    },
+    {
+      "evidence_id": "M24",
+      "model": "GAT1 u32",
+      "seed": "s05",
+      "scenario": "waste_swap",
+      "n": 100,
+      "complete": 99,
+      "fourwindows": 99,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 0.3368412710773096,
+      "wait": 21526.0316035375,
+      "ore_tons": 17926.28025129172,
+      "waste_tons": 6087.381999999999,
+      "panel": "P4",
+      "run_first": 10052797,
+      "run_last": 10052896,
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/waste_swap/new/evaluation_complete.json",
+      "source_id": "S243"
+    },
+    {
+      "evidence_id": "M25",
+      "model": "Full u32",
+      "seed": "s01–s05 等权",
+      "scenario": "五个共同留出工况（派生汇总）",
+      "n": 2500,
+      "complete": 2464,
+      "fourwindows": 2478,
+      "ore_met": 2500,
+      "waste_met": 2486,
+      "cost": 0.33650992146152076,
+      "wait": 18166.16551919692,
+      "ore_tons": 18506.633149280053,
+      "waste_tons": 5854.178799999999,
+      "panel": "P4（重复汇总）",
+      "run_first": null,
+      "run_last": null,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/paired_statistics.json",
+      "source_id": "S244"
+    },
+    {
+      "evidence_id": "M25",
+      "model": "GAT1 u32",
+      "seed": "s01–s05 等权",
+      "scenario": "五个共同留出工况（派生汇总）",
+      "n": 2500,
+      "complete": 2418,
+      "fourwindows": 2481,
+      "ore_met": 2500,
+      "waste_met": 2435,
+      "cost": 0.3302741595313309,
+      "wait": 18321.11162659347,
+      "ore_tons": 18721.828874512423,
+      "waste_tons": 5576.778519999999,
+      "panel": "P4（重复汇总）",
+      "run_first": null,
+      "run_last": null,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/paired_statistics.json",
+      "source_id": "S244"
+    },
+    {
+      "evidence_id": "B23",
+      "model": "整班回报 + EMA（Actor 步数对齐）",
+      "seed": "s02/u32",
+      "scenario": "nominal",
+      "n": 100,
+      "panel": "P4",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "run_first": 10096001,
+      "run_last": 10097058,
+      "complete": 10,
+      "fourwindows": 11,
+      "ore_met": 100,
+      "waste_met": 92,
+      "cost": 3.3625370350473656,
+      "ore_tons": 18928.37772190258,
+      "waste_tons": 5036.043999999998,
+      "wait": 20660.165428971628,
+      "source_id": "S270"
+    },
+    {
+      "evidence_id": "B23",
+      "model": "整班回报 + EMA（Actor 步数对齐）",
+      "seed": "s02/u32",
+      "scenario": "grade_swap",
+      "n": 100,
+      "panel": "P4",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "run_first": 10097059,
+      "run_last": 10097158,
+      "complete": 17,
+      "fourwindows": 18,
+      "ore_met": 100,
+      "waste_met": 91,
+      "cost": 3.045945557516133,
+      "ore_tons": 18970.099630332177,
+      "waste_tons": 5024.660999999998,
+      "wait": 21373.393856316237,
+      "source_id": "S270"
+    },
+    {
+      "evidence_id": "B23",
+      "model": "整班回报 + EMA（Actor 步数对齐）",
+      "seed": "s02/u32",
+      "scenario": "held_order_1",
+      "n": 100,
+      "panel": "P4",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "run_first": 10097159,
+      "run_last": 10097258,
+      "complete": 22,
+      "fourwindows": 22,
+      "ore_met": 100,
+      "waste_met": 97,
+      "cost": 3.1503319865489847,
+      "ore_tons": 18918.520190916657,
+      "waste_tons": 5080.578999999999,
+      "wait": 20198.5625230024,
+      "source_id": "S270"
+    },
+    {
+      "evidence_id": "B23",
+      "model": "整班回报 + EMA（Actor 步数对齐）",
+      "seed": "s02/u32",
+      "scenario": "held_order_2",
+      "n": 100,
+      "panel": "P4",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "run_first": 10097259,
+      "run_last": 10097358,
+      "complete": 17,
+      "fourwindows": 17,
+      "ore_met": 100,
+      "waste_met": 90,
+      "cost": 3.1174273800606533,
+      "ore_tons": 18961.952703297477,
+      "waste_tons": 4952.740999999998,
+      "wait": 21560.43291361681,
+      "source_id": "S270"
+    },
+    {
+      "evidence_id": "B23",
+      "model": "整班回报 + EMA（Actor 步数对齐）",
+      "seed": "s02/u32",
+      "scenario": "new_numeric",
+      "n": 100,
+      "panel": "P4",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "run_first": 10097359,
+      "run_last": 10097458,
+      "complete": 19,
+      "fourwindows": 22,
+      "ore_met": 100,
+      "waste_met": 94,
+      "cost": 3.0045938169393067,
+      "ore_tons": 18911.27926059546,
+      "waste_tons": 5065.828999999999,
+      "wait": 20742.898847558492,
+      "source_id": "S270"
+    },
+    {
+      "evidence_id": "B23",
+      "model": "整班回报 + EMA（Actor 步数对齐）",
+      "seed": "s02/u32",
+      "scenario": "joint_shift",
+      "n": 100,
+      "panel": "P4",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "run_first": 10097459,
+      "run_last": 10097558,
+      "complete": 27,
+      "fourwindows": 27,
+      "ore_met": 100,
+      "waste_met": 99,
+      "cost": 2.4536435759704,
+      "ore_tons": 18803.1087358762,
+      "waste_tons": 5605.606999999998,
+      "wait": 19976.11339784265,
+      "source_id": "S270"
+    },
+    {
+      "evidence_id": "B23",
+      "model": "整班回报 + EMA（Actor 步数对齐）",
+      "seed": "s02/u32",
+      "scenario": "waste_swap",
+      "n": 100,
+      "panel": "P4",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "run_first": 10097559,
+      "run_last": 10097658,
+      "complete": 27,
+      "fourwindows": 27,
+      "ore_met": 100,
+      "waste_met": 100,
+      "cost": 2.787885380066173,
+      "ore_tons": 18798.731267910603,
+      "waste_tons": 5562.208999999998,
+      "wait": 19856.278144395033,
+      "source_id": "S270"
+    },
+    {
+      "evidence_id": "T02",
+      "model": "参考调度",
+      "seed": "确定性见证",
+      "scenario": "tree_A",
+      "panel": "路网可行性单班",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/witness_collection.json",
+      "n": 1,
+      "complete": 1,
+      "fourwindows": 1,
+      "ore_met": 1,
+      "waste_met": 1,
+      "ore_tons": 19402.31505777367,
+      "waste_tons": 4473.8,
+      "run_first": 10054031,
+      "run_last": 10054031,
+      "source_id": "S293"
+    },
+    {
+      "evidence_id": "T02",
+      "model": "参考调度",
+      "seed": "确定性见证",
+      "scenario": "loop_B",
+      "panel": "路网可行性单班",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/witness_collection.json",
+      "n": 1,
+      "complete": 1,
+      "fourwindows": 1,
+      "ore_met": 1,
+      "waste_met": 1,
+      "ore_tons": 17894.682785314773,
+      "waste_tons": 4446.5,
+      "run_first": 10054032,
+      "run_last": 10054032,
+      "source_id": "S293"
+    },
+    {
+      "evidence_id": "T03",
+      "model": "动态 u9",
+      "seed": "贪心",
+      "scenario": "A 九车",
+      "panel": "独立先导班",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/trial_evaluation.json",
+      "n": 1,
+      "complete": 1,
+      "fourwindows": 1,
+      "ore_met": 1,
+      "waste_met": 1,
+      "ore_tons": 19406.43982024251,
+      "waste_tons": 6118.0,
+      "run_first": 10054041,
+      "run_last": 10054041,
+      "source_id": "S295"
+    },
+    {
+      "evidence_id": "T03",
+      "model": "动态 u9",
+      "seed": "贪心",
+      "scenario": "B 七车／沿用九车目标",
+      "panel": "独立先导班",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/trial_evaluation_B.json",
+      "n": 1,
+      "complete": 0,
+      "fourwindows": 1,
+      "ore_met": 0,
+      "waste_met": 1,
+      "ore_tons": 13778.514484689626,
+      "waste_tons": 6051.099999999998,
+      "run_first": 10054043,
+      "run_last": 10054043,
+      "source_id": "S297"
+    },
+    {
+      "evidence_id": "T03",
+      "model": "动态 u9",
+      "seed": "贪心",
+      "scenario": "B 七车／运力缩放",
+      "panel": "独立先导班",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/capacity_scaled_001/trial_evaluation_B.json",
+      "n": 1,
+      "complete": 0,
+      "fourwindows": 0,
+      "ore_met": 1,
+      "waste_met": 1,
+      "ore_tons": 15161.85140543698,
+      "waste_tons": 4490.799999999999,
+      "run_first": 10054046,
+      "run_last": 10054046,
+      "source_id": "S298"
+    },
+    {
+      "evidence_id": "T04",
+      "model": "动态 u9",
+      "seed": "贪心",
+      "scenario": "A",
+      "panel": "A50 独立",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.json",
+      "n": 50,
+      "complete": 50,
+      "fourwindows": 50,
+      "ore_met": 50,
+      "waste_met": 50,
+      "ore_tons": 18857.552605489513,
+      "waste_tons": 6074.989999999999,
+      "pointer": "groups.A",
+      "source_id": "S301"
+    },
+    {
+      "evidence_id": "T04",
+      "model": "动态 u9",
+      "seed": "贪心",
+      "scenario": "B",
+      "panel": "B50 历史",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.json",
+      "n": 50,
+      "complete": 22,
+      "fourwindows": 22,
+      "ore_met": 50,
+      "waste_met": 50,
+      "ore_tons": 14855.35663392133,
+      "waste_tons": 4496.641999999999,
+      "pointer": "groups.B",
+      "source_id": "S301"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u0 采样",
+      "seed": "动态 u9 热启动",
+      "scenario": "训练／环图 B",
+      "panel": "B图训练",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 32,
+      "complete": 16,
+      "fourwindows": 16,
+      "ore_met": 32,
+      "waste_met": 32,
+      "ore_tons": 15692.092757248562,
+      "waste_tons": 4485.696874999999,
+      "cost": 1.7360068423417392,
+      "pointer": "training",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u1 采样",
+      "seed": "动态 u9 热启动",
+      "scenario": "训练／环图 B",
+      "panel": "B图训练",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 32,
+      "complete": 25,
+      "fourwindows": 25,
+      "ore_met": 32,
+      "waste_met": 32,
+      "ore_tons": 15851.06907291371,
+      "waste_tons": 4500.874999999999,
+      "cost": 0.797283024816219,
+      "pointer": "training",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u2 采样",
+      "seed": "动态 u9 热启动",
+      "scenario": "训练／环图 B",
+      "panel": "B图训练",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 32,
+      "complete": 31,
+      "fourwindows": 31,
+      "ore_met": 32,
+      "waste_met": 32,
+      "ore_tons": 16018.755026857958,
+      "waste_tons": 4488.234374999999,
+      "cost": 0.44816200071806234,
+      "pointer": "training",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u3 采样",
+      "seed": "动态 u9 热启动",
+      "scenario": "训练／环图 B",
+      "panel": "B图训练",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 32,
+      "complete": 32,
+      "fourwindows": 32,
+      "ore_met": 32,
+      "waste_met": 32,
+      "ore_tons": 16143.872746686287,
+      "waste_tons": 4483.924999999998,
+      "cost": 0.09120585933669667,
+      "pointer": "training",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u0",
+      "seed": "动态 u9 热启动",
+      "scenario": "验证／环图 B",
+      "panel": "B图16验证槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 16,
+      "complete": 4,
+      "fourwindows": 4,
+      "ore_met": 16,
+      "waste_met": 16,
+      "ore_tons": 14662.000737022365,
+      "waste_tons": 4482.581249999999,
+      "cost": null,
+      "pointer": "validation",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u1",
+      "seed": "动态 u9 热启动",
+      "scenario": "验证／环图 B",
+      "panel": "B图16验证槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 16,
+      "complete": 15,
+      "fourwindows": 15,
+      "ore_met": 16,
+      "waste_met": 16,
+      "ore_tons": 15669.266429338111,
+      "waste_tons": 4517.1937499999985,
+      "cost": null,
+      "pointer": "validation",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u2",
+      "seed": "动态 u9 热启动",
+      "scenario": "验证／环图 B",
+      "panel": "B图16验证槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 16,
+      "complete": 16,
+      "fourwindows": 16,
+      "ore_met": 16,
+      "waste_met": 16,
+      "ore_tons": 15981.95658963108,
+      "waste_tons": 4492.324999999999,
+      "cost": null,
+      "pointer": "validation",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u3",
+      "seed": "动态 u9 热启动",
+      "scenario": "验证／环图 B",
+      "panel": "B图16验证槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 16,
+      "complete": 16,
+      "fourwindows": 16,
+      "ore_met": 16,
+      "waste_met": 16,
+      "ore_tons": 16099.887858791912,
+      "waste_tons": 4514.881249999999,
+      "cost": null,
+      "pointer": "validation",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u4",
+      "seed": "动态 u9 热启动",
+      "scenario": "验证／环图 B",
+      "panel": "B图16验证槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 16,
+      "complete": 16,
+      "fourwindows": 16,
+      "ore_met": 16,
+      "waste_met": 16,
+      "ore_tons": 16069.064273687925,
+      "waste_tons": 4501.7562499999985,
+      "cost": null,
+      "pointer": "validation",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T05",
+      "model": "B 本地 u2",
+      "seed": "动态 u9 热启动",
+      "scenario": "复测／环图 B",
+      "panel": "B50 历史",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "n": 50,
+      "complete": 47,
+      "fourwindows": 47,
+      "ore_met": 50,
+      "waste_met": 50,
+      "ore_tons": 15888.677813839988,
+      "waste_tons": 4502.435999999999,
+      "cost": null,
+      "pointer": "test",
+      "source_id": "S304"
+    },
+    {
+      "evidence_id": "T06",
+      "model": "Full s02/u32",
+      "seed": "贪心",
+      "scenario": "A 0 min",
+      "panel": "停工单例同槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.json",
+      "n": 1,
+      "complete": 1,
+      "fourwindows": 1,
+      "ore_met": 1,
+      "waste_met": 1,
+      "ore_tons": 19456.03094056276,
+      "waste_tons": 6007.699999999999,
+      "wait": 97414.88372266975,
+      "run_first": 10056052,
+      "run_last": 10056052,
+      "source_id": "S309"
+    },
+    {
+      "evidence_id": "T06",
+      "model": "Full s02/u32",
+      "seed": "贪心",
+      "scenario": "A 30 min",
+      "panel": "停工单例同槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.json",
+      "n": 1,
+      "complete": 1,
+      "fourwindows": 1,
+      "ore_met": 1,
+      "waste_met": 1,
+      "ore_tons": 19456.03094056275,
+      "waste_tons": 6062.999999999999,
+      "wait": 97660.02653170798,
+      "run_first": 10056051,
+      "run_last": 10056051,
+      "source_id": "S309"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "Full s02/u32",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 0 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 30,
+      "fourwindows": 30,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19451.611994225008,
+      "waste_tons": 6072.873333333332,
+      "wait": 96361.5794588824,
+      "pointer": "descriptive / full / 0 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "Full s02/u32",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 30 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 30,
+      "fourwindows": 30,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19451.611994225004,
+      "waste_tons": 6072.563333333331,
+      "wait": 95798.06953201725,
+      "pointer": "descriptive / full / 30 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "Full s02/u32",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 60 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 30,
+      "fourwindows": 30,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19451.611994225008,
+      "waste_tons": 6075.609999999999,
+      "wait": 95069.13312707332,
+      "pointer": "descriptive / full / 60 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "品位修订路径流量匹配",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 0 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 30,
+      "fourwindows": 30,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19414.260484618815,
+      "waste_tons": 6080.183333333332,
+      "wait": 95472.79882827363,
+      "pointer": "descriptive / flow / 0 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "品位修订路径流量匹配",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 30 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 30,
+      "fourwindows": 30,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19414.26048461881,
+      "waste_tons": 6080.183333333332,
+      "wait": 94906.1195860216,
+      "pointer": "descriptive / flow / 30 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "品位修订路径流量匹配",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 60 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 30,
+      "fourwindows": 30,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19414.260484618815,
+      "waste_tons": 6080.183333333332,
+      "wait": 94329.25565710939,
+      "pointer": "descriptive / flow / 60 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "Flat-PPO s01/u32",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 0 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 5,
+      "fourwindows": 5,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19400.004601856926,
+      "waste_tons": 6066.196666666665,
+      "wait": 96968.639150895,
+      "pointer": "descriptive / flat / 0 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "Flat-PPO s01/u32",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 30 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 7,
+      "fourwindows": 7,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19400.004601856934,
+      "waste_tons": 6062.199999999998,
+      "wait": 96034.46722046967,
+      "pointer": "descriptive / flat / 30 min",
+      "source_id": "S311"
+    },
+    {
+      "evidence_id": "T07",
+      "model": "Flat-PPO s01/u32",
+      "seed": "冻结策略",
+      "scenario": "A 图停工 60 min",
+      "panel": "停工强度30槽",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "n": 30,
+      "complete": 6,
+      "fourwindows": 6,
+      "ore_met": 30,
+      "waste_met": 30,
+      "ore_tons": 19400.004601856934,
+      "waste_tons": 6057.599999999998,
+      "wait": 95274.24654623731,
+      "pointer": "descriptive / flat / 60 min",
+      "source_id": "S311"
     }
   ],
   "sources": [
@@ -3629,12 +5534,12 @@
     {
       "id": "S007",
       "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/README.md",
-      "sha256": "f7d06b8b885c3e7e20a429eab6712724fa92c9db72951865e011dcd9586cc79c",
-      "bytes": 9257,
+      "sha256": "78095ecd5426af26721443894feb85fac453ce2e54b2c6c9356a949bdfb3c65e",
+      "bytes": 9432,
       "evidence_ids": [
         "R04"
       ],
-      "proof": "本次文件 SHA256 已记录",
+      "proof": "说明文档于 11 月 24 日后修订，当前指纹于 11 月 28 日记录；前版见历史快照。",
       "copy": "04_泛化与鲁棒性/方法与实现/fleet_outage_resilience_001/README.md"
     },
     {
@@ -5045,7 +6950,8 @@
       "evidence_ids": [
         "M09",
         "M17",
-        "M19"
+        "M19",
+        "B23"
       ],
       "proof": "本次文件 SHA256 已记录",
       "copy": "01_训练与选模/活动完成回执/bg128-continuous-mixed-20261120-s02/suite_complete.json"
@@ -5902,6 +7808,1260 @@
       ],
       "proof": "本次文件 SHA256 已记录",
       "copy": "05_机制与仿真核验/可解释性分析代码/interpretability_eval/README.md"
+    },
+    {
+      "id": "S208",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261128/training_progress.json",
+      "sha256": "2e0bc489129cfa228840b2db206dcd609c1ca84f41b923aa1bc6a9683290f67d",
+      "bytes": 129990,
+      "evidence_ids": [
+        "M09",
+        "M21",
+        "M22",
+        "M23",
+        "M24",
+        "B19",
+        "B21"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "01_训练与选模/封存摘要/paper_review_20261128/training_progress.json"
+    },
+    {
+      "id": "S209",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/suite_complete.json",
+      "sha256": "d91c29d6d7dfb385373384e3f87da73f31f02b59d3682ea9612715ed499d843a",
+      "bytes": 10953,
+      "evidence_ids": [
+        "M21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "02_消融实验/活动完成回执/bg128-gat-depth-20261125-full-s04/suite_complete.json"
+    },
+    {
+      "id": "S210",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/nominal/new/evaluation_complete.json",
+      "sha256": "3d265689edafe46cba5ace69eac80007863a8318f1441692767600b55a4afa58",
+      "bytes": 905706,
+      "evidence_ids": [
+        "M21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S211",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/grade_swap/new/evaluation_complete.json",
+      "sha256": "2775430f35cfde91a31ce7367ebc2a6364a1c57c7c0ba38d0c9d63bb0696b572",
+      "bytes": 907773,
+      "evidence_ids": [
+        "M21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S212",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_1/new/evaluation_complete.json",
+      "sha256": "de08d707c84bff39a33b5bb459d82fbf72216c75d24e6573c2674e4a4edb918c",
+      "bytes": 909699,
+      "evidence_ids": [
+        "M21",
+        "A02"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S213",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_2/new/evaluation_complete.json",
+      "sha256": "bb2ab4a712260f4f13f5a88f03c373400d7afb6da7c001a04491c362aa50bde0",
+      "bytes": 909964,
+      "evidence_ids": [
+        "M21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S214",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/new_numeric/new/evaluation_complete.json",
+      "sha256": "6f5a62dc02ca1547190bf58cffadc17ef97112181f45c3b63823f5541a0e0265",
+      "bytes": 908843,
+      "evidence_ids": [
+        "M21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S215",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/joint_shift/new/evaluation_complete.json",
+      "sha256": "dd115f099e205d33baae1757949c2c48b257ac8496e159e3a9fe0bd59b12e368",
+      "bytes": 908158,
+      "evidence_ids": [
+        "M21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S216",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/waste_swap/new/evaluation_complete.json",
+      "sha256": "9a14b3d16cdab9177934efd5d5b8aa443f6a96069f85cc71d7395737ef9e8f7a",
+      "bytes": 907469,
+      "evidence_ids": [
+        "M21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S217",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json",
+      "sha256": "3d7483da4ac12919db37108a1d8992f4ec111faed00530ff12c33a024bdc9dcb",
+      "bytes": 97262,
+      "evidence_ids": [
+        "M21",
+        "M22",
+        "M23",
+        "M24",
+        "M25",
+        "M26",
+        "A01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "02_消融实验/封存摘要/gat_weak_ablation_001/seed_extension_001/paired_evaluation_summary.json"
+    },
+    {
+      "id": "S218",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/README.md",
+      "sha256": "bd026dd19f33b317e35f8a3d7de2cda1f86556e37f73689597b094292afbccba",
+      "bytes": 1569,
+      "evidence_ids": [
+        "M21",
+        "M22",
+        "M23",
+        "M24"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "02_消融实验/方法与实现/gat_weak_ablation_001/seed_extension_001/README.md"
+    },
+    {
+      "id": "S219",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/suite_complete.json",
+      "sha256": "3e005094f9ab1717d27bef528aec4967e2eead0e17e1cea1d28a9fc087b42bb5",
+      "bytes": 10953,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "02_消融实验/活动完成回执/bg128-gat-depth-20261125-gat1-s04/suite_complete.json"
+    },
+    {
+      "id": "S220",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/nominal/new/evaluation_complete.json",
+      "sha256": "c8935906511dffcfaa1b6e54d740532d0468840cee51c98c5895421ffbdb4a05",
+      "bytes": 906800,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S221",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/grade_swap/new/evaluation_complete.json",
+      "sha256": "467c4e4ad00649cc7a11baa14d154763d2abc591e6d5211f5d9d55a7b4ab65ea",
+      "bytes": 909182,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S222",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_1/new/evaluation_complete.json",
+      "sha256": "4eb75bad6f7ab4d6ade80eb0882ef7ef51a4fdcdc24c3eca3eb06ca0fade2d8b",
+      "bytes": 912355,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S223",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_2/new/evaluation_complete.json",
+      "sha256": "60624f511b785b07c266f33ac7db0558b1aad83ce8539255de6bce6dec06a241",
+      "bytes": 910565,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S224",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/new_numeric/new/evaluation_complete.json",
+      "sha256": "a82d0a771768e69897f446cefc923a16a7d745eaa2088ae1c37c6a5511ba6478",
+      "bytes": 908870,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S225",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/joint_shift/new/evaluation_complete.json",
+      "sha256": "60b0dcffd1cfe7037fcd34cd6be728135389e8b8907ec2aa8e0e9e625997f74e",
+      "bytes": 910492,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S226",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/waste_swap/new/evaluation_complete.json",
+      "sha256": "36778f3500158a0ad5a2a1b2ea14283b7004f1064920a7f1ba592d89dd8c42d1",
+      "bytes": 908854,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S227",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/gat1-s04/recovery_001/reconciliation.json",
+      "sha256": "ca02750af057f034c27ad0653a82bfc81566fa494657f0e0661a1815b320393e",
+      "bytes": 2857,
+      "evidence_ids": [
+        "M22"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "02_消融实验/封存摘要/gat_weak_ablation_001/seed_extension_001/gat1-s04/recovery_001/reconciliation.json"
+    },
+    {
+      "id": "S228",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/suite_complete.json",
+      "sha256": "6dc9d9528ddd83b559286af0c72479f4cfda4a772a32da6e738b05755b55fee8",
+      "bytes": 10953,
+      "evidence_ids": [
+        "M23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "02_消融实验/活动完成回执/bg128-gat-depth-20261125-full-s05/suite_complete.json"
+    },
+    {
+      "id": "S229",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/nominal/new/evaluation_complete.json",
+      "sha256": "0066cc690ed016aac22746d1e1acde26ddaae3b82f2fd48772099b363599dc02",
+      "bytes": 906340,
+      "evidence_ids": [
+        "M23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S230",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/grade_swap/new/evaluation_complete.json",
+      "sha256": "b5a60f4314597d762fc413cf177ee3d964a436e2c2fb725c5927e130a5b28f8c",
+      "bytes": 907806,
+      "evidence_ids": [
+        "M23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S231",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_1/new/evaluation_complete.json",
+      "sha256": "fc2ec5755760fb7475fa5ee6dc31bcf7ba452870c84240839c543649b3dfb4c6",
+      "bytes": 910997,
+      "evidence_ids": [
+        "M23",
+        "A02"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S232",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_2/new/evaluation_complete.json",
+      "sha256": "6207379edcfb463d589066497412f92d9b2e804cb3db8c313edd55af156bac7e",
+      "bytes": 909940,
+      "evidence_ids": [
+        "M23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S233",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/new_numeric/new/evaluation_complete.json",
+      "sha256": "eeb276f663ae7ad0cea6c466db4804d293c0c5c13b39b9199eebd6a39f6ca412",
+      "bytes": 908599,
+      "evidence_ids": [
+        "M23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S234",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/joint_shift/new/evaluation_complete.json",
+      "sha256": "7cb9b20757948bb42dd68b4b6688e68ea8313926b2e68011d0b046f625682f96",
+      "bytes": 907247,
+      "evidence_ids": [
+        "M23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S235",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/waste_swap/new/evaluation_complete.json",
+      "sha256": "4f0ac527336156375b712c53ac34f3905aea0e17ed2eff351b74146d7192784f",
+      "bytes": 907993,
+      "evidence_ids": [
+        "M23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S236",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/suite_complete.json",
+      "sha256": "d9ae86932e560bbfaa196fb5232fd4dc2d9f19aef352b937c5d84f82b24160d5",
+      "bytes": 10953,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "02_消融实验/活动完成回执/bg128-gat-depth-20261125-gat1-s05/suite_complete.json"
+    },
+    {
+      "id": "S237",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/nominal/new/evaluation_complete.json",
+      "sha256": "3e478912035d0944f624249c4cc268f97ad7e6a8404a2c9c2b2f046453974334",
+      "bytes": 906743,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S238",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/grade_swap/new/evaluation_complete.json",
+      "sha256": "ee5e978504ddf88b52fb65a3f21387b0b3d94b835747e0e9e8879510a80853e6",
+      "bytes": 909498,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S239",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_1/new/evaluation_complete.json",
+      "sha256": "e3481c9f32ad87910d79addd2642ee263cdbf6475d55d9701d5b9975282e0aac",
+      "bytes": 910639,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S240",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_2/new/evaluation_complete.json",
+      "sha256": "130c2879756676c3b2b225f7d3600a3360f7a3de4b235719ee364688161128d4",
+      "bytes": 912199,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S241",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/new_numeric/new/evaluation_complete.json",
+      "sha256": "87add316382a35a82e8ced254c5a4dd24a6d5b755a2b08b3c38af97363fe62e6",
+      "bytes": 909615,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S242",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/joint_shift/new/evaluation_complete.json",
+      "sha256": "dc2a72bf6ce1bc5049c8396a6daf3740dc7f117b8b3ca220826350734e2ef5c0",
+      "bytes": 910126,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S243",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/waste_swap/new/evaluation_complete.json",
+      "sha256": "6843cc2f12875f47e094115a2587dfd07e7d2675dd5437bc0627421860129e2a",
+      "bytes": 908805,
+      "evidence_ids": [
+        "M24"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": ""
+    },
+    {
+      "id": "S244",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/paired_statistics.json",
+      "sha256": "b515b38bd2a2c26cedb17217834f79039f039cb9c48787a9a922f4dab425c962",
+      "bytes": 159323,
+      "evidence_ids": [
+        "M25"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "02_消融实验/封存摘要/gat_weak_ablation_001/seed_extension_001/statistics_001/paired_statistics.json"
+    },
+    {
+      "id": "S245",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/report_zh.md",
+      "sha256": "ea4c3067fb8f85d928193d733829604b58263d8ef2b61840bb3af93f417b1dfe",
+      "bytes": 9728,
+      "evidence_ids": [
+        "M25"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "02_消融实验/封存摘要/gat_weak_ablation_001/seed_extension_001/statistics_001/report_zh.md"
+    },
+    {
+      "id": "S246",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/full_nominal_wilcoxon.md",
+      "sha256": "34d5ff77095bfb02f79482650219910b856d0d5006e8dc8cbc96b38a3e5f229f",
+      "bytes": 4701,
+      "evidence_ids": [
+        "M26"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "02_消融实验/封存摘要/gat_weak_ablation_001/seed_extension_001/statistics_001/full_nominal_wilcoxon.md"
+    },
+    {
+      "id": "S247",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/statistics_001/full_nominal_100.xlsx",
+      "sha256": "1915967a6246cf04007b78b2cd209fb4666f0371e8942455b4f272d4f0029997",
+      "bytes": 21524,
+      "evidence_ids": [
+        "M26"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "02_消融实验/封存摘要/gat_weak_ablation_001/seed_extension_001/statistics_001/full_nominal_100.xlsx"
+    },
+    {
+      "id": "S248",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/suite_complete.json",
+      "sha256": "6fabcaa84bfb9e9efdda903fd4967db9cbeac3c1a3617d6227d5eaddee3b8b8e",
+      "bytes": 9366,
+      "evidence_ids": [
+        "B19"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "03_对比实验/活动完成回执/bg128-reinforce-full-shift-20261127-s02/suite_complete.json"
+    },
+    {
+      "id": "S249",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/training_complete.json",
+      "sha256": "4890645021aaa80cb4b00dbbbefa6753dff5f6b7f904f2be4cc89722ff1f0728",
+      "bytes": 9120,
+      "evidence_ids": [
+        "B19"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/training_complete.json"
+    },
+    {
+      "id": "S250",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/legacy_cleanup.json",
+      "sha256": "a45c4e2fb7e61bc2563376fda52bccc8aae39540496e454022aa13974e96fe26",
+      "bytes": 23754,
+      "evidence_ids": [
+        "B19"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/legacy_cleanup.json"
+    },
+    {
+      "id": "S251",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/actor_budget.json",
+      "sha256": "06a5cda7c5bc16dd17e96df4649358f8d3c6f65ac509996d9ce8816846c05d66",
+      "bytes": 11900,
+      "evidence_ids": [
+        "B19",
+        "B20",
+        "B21"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/gradient_audit_001/actor_budget.json"
+    },
+    {
+      "id": "S252",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/README.md",
+      "sha256": "aeeaf2d26604a9bb7b26e0958f475348694c21271d432d8d5545f796abea6ab1",
+      "bytes": 4503,
+      "evidence_ids": [
+        "B19"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/方法与实现/reinforce_comparison_001/README.md"
+    },
+    {
+      "id": "S253",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/README.md",
+      "sha256": "d7acb937b021d0f87888f768f61ab4b18e8ce42710e50cfb3a61cfd51daa4cf8",
+      "bytes": 5367,
+      "evidence_ids": [
+        "B20"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/方法与实现/reinforce_comparison_001/gradient_audit_001/README.md"
+    },
+    {
+      "id": "S254",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/adam_audit.json",
+      "sha256": "1eb88446e5f355ca1f46a4630e370838f5a791bb8c8a9ac59c10c13f17fe7372",
+      "bytes": 12730,
+      "evidence_ids": [
+        "B20"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/gradient_audit_001/adam_audit.json"
+    },
+    {
+      "id": "S255",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/signal_audit.json",
+      "sha256": "1122ec645f43095445b25dbf3da5a4241ab0902f23878eaa0073e7bbaa0ecdbc",
+      "bytes": 31513,
+      "evidence_ids": [
+        "B20"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/gradient_audit_001/signal_audit.json"
+    },
+    {
+      "id": "S256",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/credit_replay.json",
+      "sha256": "b957ebd66ce9ee8edb44997732b49e14805f70bca995f709adab14da27347026",
+      "bytes": 3493,
+      "evidence_ids": [
+        "B20"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/gradient_audit_001/credit_replay.json"
+    },
+    {
+      "id": "S257",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/direction_audit.json",
+      "sha256": "1954dbfeccd7e5248fdeef5f17c09e77b70a04b666da3d55559b4640b9aa557c",
+      "bytes": 4060,
+      "evidence_ids": [
+        "B20"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/gradient_audit_001/direction_audit.json"
+    },
+    {
+      "id": "S258",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/gradient_audit_001/matched_actor_step.json",
+      "sha256": "00553456f275cf8f46dc6d779e9d02161efd45007f14590df83596a95ba35987",
+      "bytes": 1490,
+      "evidence_ids": [
+        "B20"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/gradient_audit_001/matched_actor_step.json"
+    },
+    {
+      "id": "S259",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/preliminary_s01/offline_replay.json",
+      "sha256": "0365f8dc92ea6e3c907f836386e0680d5deadc017d0d80446a4cbe26a551e378",
+      "bytes": 5108,
+      "evidence_ids": [
+        "B20"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/preliminary_s01/offline_replay.json"
+    },
+    {
+      "id": "S260",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-20261128-s02/suite_complete.json",
+      "sha256": "f35fa611f55edae32a876a8475e407e39b4db7b554556d9310ba78d2758a8b9b",
+      "bytes": 9747,
+      "evidence_ids": [
+        "B21"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/活动完成回执/bg128-reinforce-ppo-steps-20261128-s02/suite_complete.json"
+    },
+    {
+      "id": "S261",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/training_complete.json",
+      "sha256": "3c5ae6ebb142d29aaa6970915d172a365e48345dccb86a1d1c78cc03bf220bb4",
+      "bytes": 9479,
+      "evidence_ids": [
+        "B21"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/training_complete.json"
+    },
+    {
+      "id": "S262",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/README.md",
+      "sha256": "30768a0a3065f0da8754807ab75c0e6dc7adc671fd8e6fcc115a0531abb7e6be",
+      "bytes": 3265,
+      "evidence_ids": [
+        "B21"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/方法与实现/reinforce_comparison_001/ppo_steps_matched_001/README.md"
+    },
+    {
+      "id": "S263",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/prepared_verification.json",
+      "sha256": "e474dcaffcba052fcd0ac18d1277e34a25e013f28937fde0d7699500979f0d2f",
+      "bytes": 2041,
+      "evidence_ids": [
+        "B21"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/prepared_verification.json"
+    },
+    {
+      "id": "S264",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/real_first_batch_replay.json",
+      "sha256": "a56333a0df77bc7461221c5e5d502cf301ad16b611d45f7e2d03ae253c0c00a0",
+      "bytes": 6163,
+      "evidence_ids": [
+        "B21"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/real_first_batch_replay.json"
+    },
+    {
+      "id": "S265",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/suite_complete.json",
+      "sha256": "858dbd65077179a11e4382b81f1f8cdd3e24aa1aeb16e4045499067743d999d8",
+      "bytes": 14443,
+      "evidence_ids": [
+        "B22",
+        "B23"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/活动完成回执/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001/suite_complete.json"
+    },
+    {
+      "id": "S266",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/interruption_closed.json",
+      "sha256": "d2bde5c837ede03df8cbbccdddaee55f7a29b958711b82f4f3c10c64935a27e2",
+      "bytes": 1512,
+      "evidence_ids": [
+        "B22"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/interruption_closed.json"
+    },
+    {
+      "id": "S267",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/interruption_evidence.json",
+      "sha256": "d69dced72b19ffc3df971a3bb1ade4146002d9b5cc078c44d4cff6880839b41e",
+      "bytes": 1405,
+      "evidence_ids": [
+        "B22"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/interruption_evidence.json"
+    },
+    {
+      "id": "S268",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/prepared_verification.json",
+      "sha256": "ea17913cdb05fa41fa1f3eac3a62ac713014def4db92548a5e97de37f947ab19",
+      "bytes": 1083,
+      "evidence_ids": [
+        "B22"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/prepared_verification.json"
+    },
+    {
+      "id": "S269",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/README.md",
+      "sha256": "abb7ccb23198c06058794c280bade046196bfc119e08097e1248e5392b317a15",
+      "bytes": 1651,
+      "evidence_ids": [
+        "B22"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/方法与实现/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/README.md"
+    },
+    {
+      "id": "S270",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+      "sha256": "8a22f6b612538be5817bec7eb65465ca1b4bd498c2a081df9280f2621d844a4a",
+      "bytes": 16039,
+      "evidence_ids": [
+        "B23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json"
+    },
+    {
+      "id": "S271",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_shifts.csv",
+      "sha256": "539bb61d7f2c8fde1e5e549a2521cb96efb4f6768cddfb9bb4a82c28bfc63cf9",
+      "bytes": 178399,
+      "evidence_ids": [
+        "B23"
+      ],
+      "proof": "本轮核对的摘要与源文件一致",
+      "copy": "03_对比实验/封存摘要/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_shifts.csv"
+    },
+    {
+      "id": "S272",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/README.md",
+      "sha256": "f853c5831f8b06a13c365f026b24cd264ad0a62e7b294015e0d06618396bc0d4",
+      "bytes": 1402,
+      "evidence_ids": [
+        "B23"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/方法与实现/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/README.md"
+    },
+    {
+      "id": "S273",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/paired_inference_001/paired_metrics.py",
+      "sha256": "574d78ceb5e263e3bc75a48bc7b551be79e20c6a19c6c13410c5047b08f27bf5",
+      "bytes": 4845,
+      "evidence_ids": [
+        "B23"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "03_对比实验/方法与实现/reinforce_comparison_001/paired_inference_001/paired_metrics.py"
+    },
+    {
+      "id": "S274",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+      "sha256": "cba642c38c8fd10c2045308856bcd37994abdc16398c69ff4717a91b28802c9d",
+      "bytes": 45223,
+      "evidence_ids": [
+        "A01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/封存摘要/delayed_realization_001/material_replay.json"
+    },
+    {
+      "id": "S275",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/delayed_realization_001/README.md",
+      "sha256": "3b4a5b95b797e32e7690a99774e1cfea1312ea0d6bed2a4c4a48167d99c0ac56",
+      "bytes": 7503,
+      "evidence_ids": [
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/方法与实现/delayed_realization_001/README.md"
+    },
+    {
+      "id": "S276",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/matched_batches.json",
+      "sha256": "17eaf05b2e8f3c80eb426d5f45f231b3378a79da1b52a9d9837e6369bcf5eee5",
+      "bytes": 23344,
+      "evidence_ids": [
+        "A02"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/封存摘要/delayed_realization_001/matched_batches.json"
+    },
+    {
+      "id": "S277",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json",
+      "sha256": "3b55075f4e129a52c573714fbf1ebe302197fc1b1702a75c65fd9afad5bbc391",
+      "bytes": 530579,
+      "evidence_ids": [
+        "A03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": ""
+    },
+    {
+      "id": "S278",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/run_status.json",
+      "sha256": "9c3ea314ca4ffe83f49c1a91447822804c13d6fc6c79d1700ee3e55cf4070f25",
+      "bytes": 121,
+      "evidence_ids": [
+        "A04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/活动记录/bg128-fleet-outage-visual-demo-20261124-001/run_status.json"
+    },
+    {
+      "id": "S279",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/launch_intent.json",
+      "sha256": "cf268fa973bdf902264d51ad373e4855f5a70a7e607e1573c7710b9bba9d2ea5",
+      "bytes": 556,
+      "evidence_ids": [
+        "A04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/活动记录/bg128-fleet-outage-visual-demo-20261124-001/launch_intent.json"
+    },
+    {
+      "id": "S280",
+      "source": "experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/fleet_resilience_budget.sqlite",
+      "sha256": "f84fbf73546af1782cb685aa1a04e089ea249467d622e25350342e9b99c91d1d",
+      "bytes": 16384,
+      "evidence_ids": [
+        "A04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": ""
+    },
+    {
+      "id": "S281",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/preflight.json",
+      "sha256": "0a291d46d58b05f937498e8cc0476228f77d3dbad5c2b9ff45615038d1b0b0fe",
+      "bytes": 2489,
+      "evidence_ids": [
+        "A04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/fleet_outage_resilience_001/visual_acceptance_demo_001/preflight.json"
+    },
+    {
+      "id": "S282",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001/suite.json",
+      "sha256": "1f0663684cd6665194fa12aa138f65a7afc764799a62b4171f8236125c6529b3",
+      "bytes": 6032,
+      "evidence_ids": [
+        "A04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/方法与实现/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001/suite.json"
+    },
+    {
+      "id": "S283",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001/scenario_table.csv",
+      "sha256": "e683304060e0192438225abcc4abeb3c6e6ab6720eb1f449f733998e8a0f05af",
+      "bytes": 415,
+      "evidence_ids": [
+        "A04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/方法与实现/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001/scenario_table.csv"
+    },
+    {
+      "id": "S284",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_layout_probe_001/layout_probe.json",
+      "sha256": "01a284f51925ac908656358ac30e93d961287fdff2910780a4df2bb5d628127b",
+      "bytes": 5192,
+      "evidence_ids": [
+        "T01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/封存摘要/synthetic_layout_probe_001/layout_probe.json"
+    },
+    {
+      "id": "S285",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_layout_probe_001/anylogic_network_probe.txt",
+      "sha256": "105537ee9bee48dc7b0c34b6bc198bdc7a4ab0dd2a10240c9bf98d20c33193ae",
+      "bytes": 2102,
+      "evidence_ids": [
+        "T01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/封存摘要/synthetic_layout_probe_001/anylogic_network_probe.txt"
+    },
+    {
+      "id": "S286",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_topology_arrival_001/coordinate_checks.json",
+      "sha256": "08e9d87bfa16042daa468299f79fd45da6c75db45d21aed1561b0f66e133cb56",
+      "bytes": 2751,
+      "evidence_ids": [
+        "T01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/封存摘要/synthetic_topology_arrival_001/coordinate_checks.json"
+    },
+    {
+      "id": "S287",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/synthetic_topology_simulation_001/A_coordinate_checks.json",
+      "sha256": "5e0b1f66239432f8ef187b07458cdf863c04cd0ec93af171ead83a7ebf94da7d",
+      "bytes": 1334,
+      "evidence_ids": [
+        "T01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/封存摘要/synthetic_topology_simulation_001/A_coordinate_checks.json"
+    },
+    {
+      "id": "S288",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/offline_probe.json",
+      "sha256": "3debc8dc0980cda7e7a8568955d35a17e1d9f096918234b366d073de83933a4e",
+      "bytes": 955,
+      "evidence_ids": [
+        "T01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/offline_probe.json"
+    },
+    {
+      "id": "S289",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/layouts.json",
+      "sha256": "2146f319544b06b0124f0c766f5bc1d7496581c4db4e53fbc8e4e29a46ec1b11",
+      "bytes": 938,
+      "evidence_ids": [
+        "T01"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/方法与实现/variable_topology_training_001/layouts.json"
+    },
+    {
+      "id": "S290",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/physical_trip_001/tree_A_trip_check.json",
+      "sha256": "2db4bf3240b565d3b02ceed08d2da2b8d43b3c4651f97832a2c7ff8693956606",
+      "bytes": 1279,
+      "evidence_ids": [
+        "T02"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/physical_trip_001/tree_A_trip_check.json"
+    },
+    {
+      "id": "S291",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/physical_trip_001/loop_B_trip_check.json",
+      "sha256": "5b0edce08dccc884ebd1afd35dfcb81af2029e318f86fd45991d772691a6331b",
+      "bytes": 1278,
+      "evidence_ids": [
+        "T02"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/physical_trip_001/loop_B_trip_check.json"
+    },
+    {
+      "id": "S292",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/capacity_screen.json",
+      "sha256": "5a60565ddd79f37a8dc919b83c85d3437671f1ec90794866844be8792d4e386e",
+      "bytes": 733,
+      "evidence_ids": [
+        "T02"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/feasibility_001/capacity_screen.json"
+    },
+    {
+      "id": "S293",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/witness_collection.json",
+      "sha256": "6596ab4da49144e501e06844ede8f872a13a6edb08e21891d30f02c8563cde76",
+      "bytes": 5960,
+      "evidence_ids": [
+        "T02"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/feasibility_001/full_shift_001/witness_collection.json"
+    },
+    {
+      "id": "S294",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/witness_index.json",
+      "sha256": "12dc653c122e079f7c48792c2547c7d520ef2a74e27047f2bc332158293a75c5",
+      "bytes": 1313,
+      "evidence_ids": [
+        "T02"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/feasibility_001/full_shift_001/witness_index.json"
+    },
+    {
+      "id": "S295",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/trial_evaluation.json",
+      "sha256": "17bea05535d6e326f0693766cd26a79d8ac4d483a6a07f8ba4cf5249f59efd0b",
+      "bytes": 5171,
+      "evidence_ids": [
+        "T03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/trial_evaluation.json"
+    },
+    {
+      "id": "S296",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/trial_evaluation_B.json",
+      "sha256": "7495354ee81dafcd66bdff753dcfbebcc2ba927d9ac7efaa57af5e046ad6c32f",
+      "bytes": 719,
+      "evidence_ids": [
+        "T03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/trial_evaluation_B.json"
+    },
+    {
+      "id": "S297",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/trial_evaluation_B.json",
+      "sha256": "c5dc087ff44cc5041ebb4a28a0a09f55b89b0aae1a0c668f9a57446369c19b75",
+      "bytes": 5689,
+      "evidence_ids": [
+        "T03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/repair_001/trial_evaluation_B.json"
+    },
+    {
+      "id": "S298",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/capacity_scaled_001/trial_evaluation_B.json",
+      "sha256": "f4f4253102bd677e47a6830760d080fb51ad24895815eaf6b74cf300e02528e1",
+      "bytes": 2582,
+      "evidence_ids": [
+        "T03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/capacity_scaled_001/trial_evaluation_B.json"
+    },
+    {
+      "id": "S299",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/diagnostic_10054045/diagnostic_status.json",
+      "sha256": "781d86781785147e01e0478e7b6d7c699e480979ced3d4ca6ad2544fd2d8aabf",
+      "bytes": 1976,
+      "evidence_ids": [
+        "T03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/repair_001/diagnostic_10054045/diagnostic_status.json"
+    },
+    {
+      "id": "S300",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/README.md",
+      "sha256": "5d6c32bfefa8fd339977bada18eb7b091d711c2b3c552b2f4cebedc8c976a435",
+      "bytes": 7378,
+      "evidence_ids": [
+        "T03"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/方法与实现/variable_topology_training_001/frozen_policy_trial_001/repair_001/README.md"
+    },
+    {
+      "id": "S301",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.json",
+      "sha256": "07aee0136842cb86f4c6a87b3631212f76322bd2d0ba26a8197bb69d0edd9fc2",
+      "bytes": 4864,
+      "evidence_ids": [
+        "T04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.json"
+    },
+    {
+      "id": "S302",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.md",
+      "sha256": "382f3c028811081d7de6c29010e5f26646f88389bad04b6978ade973b5dea119",
+      "bytes": 2463,
+      "evidence_ids": [
+        "T04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.md"
+    },
+    {
+      "id": "S303",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/README.md",
+      "sha256": "c618a61938a10a0652999fcc44912d02af569e315a0460c83303fbc426d167f3",
+      "bytes": 3433,
+      "evidence_ids": [
+        "T04"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/方法与实现/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/README.md"
+    },
+    {
+      "id": "S304",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+      "sha256": "6fa76042d51c17ae9601461fb6cdd5665924117f4ad3c2e2b48bb02e808b5b5d",
+      "bytes": 6717,
+      "evidence_ids": [
+        "T05"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json"
+    },
+    {
+      "id": "S305",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/paired_test.json",
+      "sha256": "66fe1ee702b29781f098628a74371ab942709403f91604092c87d34b38521ecc",
+      "bytes": 11204,
+      "evidence_ids": [
+        "T05"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/paired_test.json"
+    },
+    {
+      "id": "S306",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/finetune_report.md",
+      "sha256": "72facd75e8b4be38ba69149cf0661f0778c492a3f11b02005d9adc1032d9a4db",
+      "bytes": 3211,
+      "evidence_ids": [
+        "T05"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/finetune_report.md"
+    },
+    {
+      "id": "S307",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/budget_audit.json",
+      "sha256": "c7d4e6150bc5c22cfbd8edee31e98ac099e38a7c883b338d508874316d55bc75",
+      "bytes": 361,
+      "evidence_ids": [
+        "T05"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/budget_audit.json"
+    },
+    {
+      "id": "S308",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/summary.json",
+      "sha256": "eba230f5dfd93cfb96a6ba48805febcf2898bea95f22895c62a3630863b17a6d",
+      "bytes": 4422,
+      "evidence_ids": [
+        "T06"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/summary.json"
+    },
+    {
+      "id": "S309",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.json",
+      "sha256": "196c554b2090917913df272322015de0632d8feb721ffdb5c6962b1ee1ae3be1",
+      "bytes": 6248,
+      "evidence_ids": [
+        "T06"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.json"
+    },
+    {
+      "id": "S310",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.md",
+      "sha256": "6667f04c52882f0e7ab41307833c300c95882c1940eec6b14471d6dd1b4c9c9b",
+      "bytes": 2086,
+      "evidence_ids": [
+        "T06"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.md"
+    },
+    {
+      "id": "S311",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+      "sha256": "4c5891a70e1218eac55dc161e6155a7fe55b52117132abdbb3546c5d956a6423",
+      "bytes": 19284,
+      "evidence_ids": [
+        "T07"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json"
+    },
+    {
+      "id": "S312",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.md",
+      "sha256": "93f67fc7fb7860489f94ba10fb9b2a75ed416e0d96ade9bdcc5e5045612f4c2c",
+      "bytes": 8807,
+      "evidence_ids": [
+        "T07"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.md"
+    },
+    {
+      "id": "S313",
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/budget_audit.json",
+      "sha256": "b0039a150ff9de818833f3e28675cb65fb211695fc02af1daab66864d6f9c6fa",
+      "bytes": 379,
+      "evidence_ids": [
+        "T07"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/封存摘要/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/budget_audit.json"
+    },
+    {
+      "id": "S314",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/protocol.json",
+      "sha256": "943a40bc281ea57e01cad966f0863b4cfdcc7944389b83976e3482692f92eb3e",
+      "bytes": 3770,
+      "evidence_ids": [
+        "T07"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "04_泛化与鲁棒性/方法与实现/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/protocol.json"
+    },
+    {
+      "id": "S315",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/README.md",
+      "sha256": "a42b2c79a36f3e09348b8e48a305fa38ad72692eddb8e5a7560779aa030a7409",
+      "bytes": 15513,
+      "evidence_ids": [
+        "T08"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/方法与实现/site_data_integration_001/README.md"
+    },
+    {
+      "id": "S316",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/README.md",
+      "sha256": "641670bb5c2a1b6a20484e39e211aaf756384cb3fb9a7d0aa33081dab08da432",
+      "bytes": 5159,
+      "evidence_ids": [
+        "T08"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/方法与实现/site_data_integration_001/west_pit_demo_001/README.md"
+    },
+    {
+      "id": "S317",
+      "source": "experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/launch_identity.json",
+      "sha256": "49d0909feb3a5b5a65762b2972408a93963893d15454281a98b36cba09de4131",
+      "bytes": 4193,
+      "evidence_ids": [
+        "T08"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/方法与实现/site_data_integration_001/west_pit_demo_001/launch_identity.json"
+    },
+    {
+      "id": "S318",
+      "source": "experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054863/verification.json",
+      "sha256": "41a4d732e3d3c9e0a958f49790b09df8bab3cfdb8d2313b7c211434b16da5f8f",
+      "bytes": 736,
+      "evidence_ids": [
+        "T08"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/活动记录/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054863/verification.json"
+    },
+    {
+      "id": "S319",
+      "source": "experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054864/verification.json",
+      "sha256": "ab3408cdbe35e883cd3f89bee5edad9629e07945a16ed688e8950f05821137e3",
+      "bytes": 733,
+      "evidence_ids": [
+        "T08"
+      ],
+      "proof": "2026-11-28 原件 SHA256 已记录",
+      "copy": "05_机制与仿真核验/活动记录/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054864/verification.json"
     }
   ],
   "audit": {
@@ -6299,6 +9459,398 @@
     "physical_identity_rows": 21046,
     "unique_run_indices": 21046,
     "external_reference_counts": {},
-    "scope": "BG128 / business-graph run directories, including separate stopped campaigns. Validates SHA-bearing path references in receipts, phase completion, dataset and HDF5 manifests, model seals and update preparation. Historical software-source fingerprints, package staging, unreferenced work files and outputs with no prior digest are outside this byte comparison. Run index coverage reflects existing identity-bearing receipts, not total project budget. Blank seeds mean unreported."
-  }
+    "scope": "BG128 / business-graph run directories, including separate stopped campaigns. Validates SHA-bearing path references in receipts, phase completion, dataset and HDF5 manifests, model seals and update preparation. Historical software-source fingerprints, package staging, unreferenced work files and outputs with no prior digest are outside this byte comparison. Run index coverage reflects existing identity-bearing receipts, not total project budget. Blank seeds mean unreported.",
+    "incremental_campaigns": [
+      {
+        "campaign": "M21 Full s04/u32",
+        "status": "完成并封存",
+        "observed_physical_ids": 1724,
+        "note": "1,024 训练班及固定 u32 的 700 评测班。逐槽检查评测身份与配对；本轮按摘要核验。",
+        "entry": "runs/bg128-gat-depth-20261125-full-s04/suite_complete.json",
+        "entry_sha256": "d91c29d6d7dfb385373384e3f87da73f31f02b59d3682ea9612715ed499d843a"
+      },
+      {
+        "campaign": "M22 GAT1＋逐节点 MLP s04/u32",
+        "status": "完成并封存",
+        "observed_physical_ids": 1724,
+        "note": "1,024 训练班及固定 u32 的 700 评测班。逐槽检查评测身份与配对；本轮按摘要核验。",
+        "entry": "runs/bg128-gat-depth-20261125-gat1-s04/suite_complete.json",
+        "entry_sha256": "3e005094f9ab1717d27bef528aec4967e2eead0e17e1cea1d28a9fc087b42bb5"
+      },
+      {
+        "campaign": "M23 Full s05/u32",
+        "status": "完成并封存",
+        "observed_physical_ids": 1724,
+        "note": "1,024 训练班及固定 u32 的 700 评测班。逐槽检查评测身份与配对；本轮按摘要核验。",
+        "entry": "runs/bg128-gat-depth-20261125-full-s05/suite_complete.json",
+        "entry_sha256": "6dc9d9528ddd83b559286af0c72479f4cfda4a772a32da6e738b05755b55fee8"
+      },
+      {
+        "campaign": "M24 GAT1＋逐节点 MLP s05/u32",
+        "status": "完成并封存",
+        "observed_physical_ids": 1724,
+        "note": "1,024 训练班及固定 u32 的 700 评测班。逐槽检查评测身份与配对；本轮按摘要核验。",
+        "entry": "runs/bg128-gat-depth-20261125-gat1-s05/suite_complete.json",
+        "entry_sha256": "d9ae86932e560bbfaa196fb5232fd4dc2d9f19aef352b937c5d84f82b24160d5"
+      },
+      {
+        "campaign": "B19",
+        "status": "旧版部分独评",
+        "observed_physical_ids": null,
+        "note": "训练封存 1,024；旧独评 130 COMPLETE、1 UNKNOWN、569 PLANNED。整班回执详情按旧清理清单处理。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/legacy_cleanup.json",
+        "entry_sha256": "a45c4e2fb7e61bc2563376fda52bccc8aae39540496e454022aa13974e96fe26"
+      },
+      {
+        "campaign": "B21",
+        "status": "训练封存",
+        "observed_physical_ids": 1024,
+        "note": "32 批独立采样、逐批 Actor 步数对齐。",
+        "entry": "runs/bg128-reinforce-ppo-steps-20261128-s02/suite_complete.json",
+        "entry_sha256": "f35fa611f55edae32a876a8475e407e39b4db7b554556d9310ba78d2758a8b9b"
+      },
+      {
+        "campaign": "B22–B23",
+        "status": "合并评测封存",
+        "observed_physical_ids": 700,
+        "note": "仅计整班版 42+658 个完整班。PPO 的 700 个历史对照见 M09。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/paired_summary.json",
+        "entry_sha256": "8a22f6b612538be5817bec7eb65465ca1b4bd498c2a081df9280f2621d844a4a"
+      },
+      {
+        "campaign": "A01–A03",
+        "status": "离线核验",
+        "observed_physical_ids": null,
+        "note": "引用既有 2,500 班；近截止配对与输入干预属于其中的子样本。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+        "entry_sha256": "cba642c38c8fd10c2045308856bcd37994abdc16398c69ff4717a91b28802c9d"
+      },
+      {
+        "campaign": "A04",
+        "status": "中止",
+        "observed_physical_ids": null,
+        "note": "一个已登记 UNKNOWN；没有完整终局。",
+        "entry": "runs/bg128-fleet-outage-visual-demo-20261124-001/run_status.json",
+        "entry_sha256": "9c3ea314ca4ffe83f49c1a91447822804c13d6fc6c79d1700ee3e55cf4070f25"
+      },
+      {
+        "campaign": "T01",
+        "status": "接口核验",
+        "observed_physical_ids": null,
+        "note": "SDK 与原生移动回执单列；物理完整班数不适用。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/synthetic_topology_simulation_001/A_coordinate_checks.json",
+        "entry_sha256": "5e0b1f66239432f8ef187b07458cdf863c04cd0ec93af171ead83a7ebf94da7d"
+      },
+      {
+        "campaign": "T02",
+        "status": "见证班封存",
+        "observed_physical_ids": 2,
+        "note": "两班均取得联合可行性证书，两次单趟验收另列。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/witness_collection.json",
+        "entry_sha256": "6596ab4da49144e501e06844ede8f872a13a6edb08e21891d30f02c8563cde76"
+      },
+      {
+        "campaign": "T03",
+        "status": "三次完整先导评测",
+        "observed_physical_ids": 3,
+        "note": "A 一班、B 两班。初次 B 与两次诊断均无完整终局。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/capacity_scaled_001/trial_evaluation_B.json",
+        "entry_sha256": "f4f4253102bd677e47a6830760d080fb51ad24895815eaf6b74cf300e02528e1"
+      },
+      {
+        "campaign": "T04",
+        "status": "正式跨图评测",
+        "observed_physical_ids": 100,
+        "note": "两个独立 50 槽组。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/summary.json",
+        "entry_sha256": "07aee0136842cb86f4c6a87b3631212f76322bd2d0ba26a8197bb69d0edd9fc2"
+      },
+      {
+        "campaign": "T05",
+        "status": "训练、验证、复测",
+        "observed_physical_ids": 258,
+        "note": "128+80+50。历史 B50 在 T04 计。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/summary.json",
+        "entry_sha256": "6fa76042d51c17ae9601461fb6cdd5665924117f4ad3c2e2b48bb02e808b5b5d"
+      },
+      {
+        "campaign": "T06",
+        "status": "同槽停工先导",
+        "observed_physical_ids": 2,
+        "note": "一个有停工运行，加一个同种子无停工对照。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/summary.json",
+        "entry_sha256": "196c554b2090917913df272322015de0632d8feb721ffdb5c6962b1ee1ae3be1"
+      },
+      {
+        "campaign": "T07",
+        "status": "正式停工评测",
+        "observed_physical_ids": 270,
+        "note": "3 种策略 × 3 个停工时长 × 30 种子，独立 run。",
+        "entry": "reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/summary.json",
+        "entry_sha256": "4c5891a70e1218eac55dc161e6155a7fe55b52117132abdbb3546c5d956a6423"
+      },
+      {
+        "campaign": "T08",
+        "status": "现场资料仿真验收",
+        "observed_physical_ids": 2,
+        "note": "仅计 2 个完整工程演示回执。",
+        "entry": "runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054864/verification.json",
+        "entry_sha256": "ab3408cdbe35e883cd3f89bee5edad9629e07945a16ed688e8950f05821137e3"
+      }
+    ],
+    "as_of_original": "2026-11-24",
+    "as_of_increment": "2026-11-28",
+    "prior_source_revisions": [
+      {
+        "id": "S007",
+        "old_sha256": "f7d06b8b885c3e7e20a429eab6712724fa92c9db72951865e011dcd9586cc79c",
+        "new_sha256": "78095ecd5426af26721443894feb85fac453ce2e54b2c6c9356a949bdfb3c65e",
+        "prior_snapshot": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261124/stage1_evidence_001/paper_snapshot_20261124.zip"
+      }
+    ],
+    "previous_snapshot": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/paper_review_20261124/stage1_evidence_001/paper_snapshot_20261124.zip",
+    "incremental_method": "2026-11-28 对新增结果、登记状态、工况配对和轻量训练摘要复核，仅登记表内来源的指纹；旧版逐文件字节核验的统计保持 2026-11-24 口径。",
+    "supplementary_analysis": {
+      "M25": {
+        "training_schedules": 5,
+        "observed_checkpoint_runs": 7000,
+        "matched_seed_pairs": 100,
+        "mean_difference_gat1_minus_full_pp": -1.84,
+        "schedule_ci95_pp": [
+          -5.66,
+          1.98
+        ],
+        "fixed_checkpoint_slot_ci95_pp": [
+          -2.88,
+          -0.88
+        ]
+      },
+      "B23": {
+        "paired_source": "S270",
+        "conditions": 7,
+        "shared_seed_pairs": 100,
+        "ppo_only": 555,
+        "reinforce_only": 1
+      },
+      "T05": {
+        "source": "S304",
+        "historic_B50_reuse": "T04",
+        "improved": 25,
+        "regressed": 0
+      }
+    }
+  },
+  "mechanism_metrics": [
+    {
+      "record_id": "A01",
+      "evidence_id": "A01",
+      "model": "混合 Full u32",
+      "seed": "s01",
+      "scenario": "五个共同留出工况合计",
+      "n": 500,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+      "result": "每个训练种子500班，按实际破碎量和物理关窗复算。",
+      "metrics": {
+        "four_window_compliant_shifts": 500,
+        "physical_windows": 2000,
+        "empty_windows": 0,
+        "noncompliant_windows": 0,
+        "actual_grade_rmse_pp": 0.3167174475833387,
+        "cross_window_tons_per_shift": 804.7406270937461,
+        "cross_window_fraction_of_processed": 0.04295042688062448,
+        "unprocessed_at_shift_end_tons_per_shift": 302.04327461273084
+      },
+      "source_id": "S274"
+    },
+    {
+      "record_id": "A01",
+      "evidence_id": "A01",
+      "model": "混合 Full u32",
+      "seed": "s02",
+      "scenario": "五个共同留出工况合计",
+      "n": 500,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+      "result": "每个训练种子500班，按实际破碎量和物理关窗复算。",
+      "metrics": {
+        "four_window_compliant_shifts": 497,
+        "physical_windows": 2000,
+        "empty_windows": 0,
+        "noncompliant_windows": 3,
+        "actual_grade_rmse_pp": 0.29954100941715334,
+        "cross_window_tons_per_shift": 776.9438752905985,
+        "cross_window_fraction_of_processed": 0.0417721336315793,
+        "unprocessed_at_shift_end_tons_per_shift": 320.0913669396015
+      },
+      "source_id": "S274"
+    },
+    {
+      "record_id": "A01",
+      "evidence_id": "A01",
+      "model": "混合 Full u32",
+      "seed": "s03",
+      "scenario": "五个共同留出工况合计",
+      "n": 500,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+      "result": "每个训练种子500班，按实际破碎量和物理关窗复算。",
+      "metrics": {
+        "four_window_compliant_shifts": 490,
+        "physical_windows": 2000,
+        "empty_windows": 0,
+        "noncompliant_windows": 10,
+        "actual_grade_rmse_pp": 0.3270325340407782,
+        "cross_window_tons_per_shift": 730.9074531326679,
+        "cross_window_fraction_of_processed": 0.039958524593322754,
+        "unprocessed_at_shift_end_tons_per_shift": 317.69212834942493
+      },
+      "source_id": "S274"
+    },
+    {
+      "record_id": "A01",
+      "evidence_id": "A01",
+      "model": "混合 Full u32",
+      "seed": "s04",
+      "scenario": "五个共同留出工况合计",
+      "n": 500,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+      "result": "每个训练种子500班，按实际破碎量和物理关窗复算。",
+      "metrics": {
+        "four_window_compliant_shifts": 498,
+        "physical_windows": 2000,
+        "empty_windows": 0,
+        "noncompliant_windows": 2,
+        "actual_grade_rmse_pp": 0.3088389791387622,
+        "cross_window_tons_per_shift": 808.7568058372865,
+        "cross_window_fraction_of_processed": 0.04292767761646746,
+        "unprocessed_at_shift_end_tons_per_shift": 305.17511944117933
+      },
+      "source_id": "S274"
+    },
+    {
+      "record_id": "A01",
+      "evidence_id": "A01",
+      "model": "混合 Full u32",
+      "seed": "s05",
+      "scenario": "五个共同留出工况合计",
+      "n": 500,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/material_replay.json",
+      "result": "每个训练种子500班，按实际破碎量和物理关窗复算。",
+      "metrics": {
+        "four_window_compliant_shifts": 493,
+        "physical_windows": 2000,
+        "empty_windows": 0,
+        "noncompliant_windows": 7,
+        "actual_grade_rmse_pp": 0.3248877266120237,
+        "cross_window_tons_per_shift": 700.0507581749181,
+        "cross_window_fraction_of_processed": 0.038750794889214596,
+        "unprocessed_at_shift_end_tons_per_shift": 331.20956414878543
+      },
+      "source_id": "S274"
+    },
+    {
+      "record_id": "A02",
+      "evidence_id": "A02",
+      "model": "混合 Full u32",
+      "seed": "s04/s05",
+      "scenario": "held_order_1；配对内窗边界",
+      "n": 300,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/matched_batches.json",
+      "result": "边界数为分母，匹配标准见规程。",
+      "metrics": {
+        "matched_boundaries": 16,
+        "one_all_one_none": 2,
+        "partial_80_20_only": 1
+      },
+      "source_id": "S276"
+    },
+    {
+      "record_id": "A03",
+      "evidence_id": "A03",
+      "model": "冻结 Full u32，FIFO 输入干预",
+      "seed": "s01",
+      "scenario": "同一批显式投影改变的状态",
+      "n": 133,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json",
+      "result": "13 个无投影变化的状态单列为阴性对照。",
+      "metrics": {
+        "states_with_changed_projection": 133,
+        "nonzero_tv": 133,
+        "argmax_changes": 5,
+        "mean_tv": 0.014805714627797891,
+        "max_tv": 0.09149260073900223
+      },
+      "source_id": "S277"
+    },
+    {
+      "record_id": "A03",
+      "evidence_id": "A03",
+      "model": "冻结 Full u32，FIFO 输入干预",
+      "seed": "s02",
+      "scenario": "同一批显式投影改变的状态",
+      "n": 133,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json",
+      "result": "13 个无投影变化的状态单列为阴性对照。",
+      "metrics": {
+        "states_with_changed_projection": 133,
+        "nonzero_tv": 133,
+        "argmax_changes": 7,
+        "mean_tv": 0.02402817777925192,
+        "max_tv": 0.19322778284549713
+      },
+      "source_id": "S277"
+    },
+    {
+      "record_id": "A03",
+      "evidence_id": "A03",
+      "model": "冻结 Full u32，FIFO 输入干预",
+      "seed": "s03",
+      "scenario": "同一批显式投影改变的状态",
+      "n": 133,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json",
+      "result": "13 个无投影变化的状态单列为阴性对照。",
+      "metrics": {
+        "states_with_changed_projection": 133,
+        "nonzero_tv": 133,
+        "argmax_changes": 5,
+        "mean_tv": 0.017413724812545946,
+        "max_tv": 0.11028711497783661
+      },
+      "source_id": "S277"
+    },
+    {
+      "record_id": "A03",
+      "evidence_id": "A03",
+      "model": "冻结 Full u32，FIFO 输入干预",
+      "seed": "s04",
+      "scenario": "同一批显式投影改变的状态",
+      "n": 133,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json",
+      "result": "13 个无投影变化的状态单列为阴性对照。",
+      "metrics": {
+        "states_with_changed_projection": 133,
+        "nonzero_tv": 133,
+        "argmax_changes": 4,
+        "mean_tv": 0.02047656750292482,
+        "max_tv": 0.1764625459909439
+      },
+      "source_id": "S277"
+    },
+    {
+      "record_id": "A03",
+      "evidence_id": "A03",
+      "model": "冻结 Full u32，FIFO 输入干预",
+      "seed": "s05",
+      "scenario": "同一批显式投影改变的状态",
+      "n": 133,
+      "source": "experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json",
+      "result": "13 个无投影变化的状态单列为阴性对照。",
+      "metrics": {
+        "states_with_changed_projection": 133,
+        "nonzero_tv": 133,
+        "argmax_changes": 6,
+        "mean_tv": 0.02454684021063429,
+        "max_tv": 0.14481434226036072
+      },
+      "source_id": "S277"
+    }
+  ]
 }

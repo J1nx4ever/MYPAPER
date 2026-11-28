@@ -1,0 +1,46 @@
+{
+  "actor_digest": "2e3685082d4bbf607153062c7da0e820aef94ae168ec5cbf88cadd0165b4ed32",
+  "budget": {
+    "additional_if_started": 1024,
+    "checked_registered_and_prepared_rows": 126031,
+    "new_actor_sampling_seeds": 1024,
+    "new_environment_seeds": 1024,
+    "new_java_rng_states": 5120,
+    "registered_before": 52305,
+    "total_if_started": 53329
+  },
+  "critic_optimizer_steps": 0,
+  "full_s02_slots_matched": 1024,
+  "full_s02_training_summaries_verified": 32,
+  "historical_gradient_updates_from_adam_moments": 23612,
+  "isolated_ledger_probe": "temporary SQLite registration, 32 COMPLETE, committed u1, out-of-order and unresolved-claim rejection",
+  "java_validation": {
+    "altered_sidecar_rejected": true,
+    "compiled": true,
+    "paste_fragment_stub_checked": true,
+    "rows_checked": 1024,
+    "simulation_started": false,
+    "source_roles_and_grades_checked": true,
+    "unknown_run_rejected": true
+  },
+  "live_materials_exist": false,
+  "live_output_exists": false,
+  "matched_initial_checkpoint": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-continuous-mixed-20261120-s02/arms/s01_BG128/initial.pt",
+    "sha256": "418cd7a5edd9a6b8f25b1892b6a7e9456a164a98f9cde0e3100fdc99fbf08a26"
+  },
+  "phases": 32,
+  "planned_actor_optimizer_steps": 23612,
+  "prior_snapshot": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/prepared_001/suite.json",
+    "sha256": "c1ae79f4d188c446c70d1c649580b3d976a5a359bdaccd9aa3e9f42232a6e408"
+  },
+  "protected_ppo_sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96",
+  "registered_shifts": 0,
+  "source_pins": 138,
+  "suite": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/prepared_001/suite.json",
+    "sha256": "106e93bc13f7df99541a957b7d00ec6aa15c6b11ef0d0392bb57fd42ee3dd8f4"
+  },
+  "training_shifts": 1024
+}

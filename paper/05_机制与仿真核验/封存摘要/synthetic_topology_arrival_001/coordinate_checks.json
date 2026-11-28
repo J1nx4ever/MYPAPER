@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "config_sha256": "7b4cc6d4e1f3fb957ef6df2cd53398b59fe9451684aaf5445134d0b6ecb7e318",
+  "method": "AnyLogic SDK route position sampling at a fixed nominal speed",
+  "anylogic_sdk": "8.9.0.202404161236",
+  "physical_shifts_started": 0,
+  "native_simulation_clock_started": false,
+  "protected_ppo_sha256": "8e4cfa31c622f5e33756e304eea3f7526547db72ae93f7d9f00808845d61ef96",
+  "arrival_tolerance": 1e-06,
+  "layouts": [
+    {
+      "layout": "A",
+      "run_index": 10054001,
+      "recording_id": "site-layout-sdk-synthetic-20261126-001-10054001",
+      "nodes": 4,
+      "bidirectional_roads": 3,
+      "legs": [
+        {
+          "stage": "load",
+          "route": [
+            "start",
+            "junction",
+            "load"
+          ],
+          "path_length": 140.0,
+          "arrival_time_s": 17.5,
+          "target_xy": [
+            80,
+            60
+          ],
+          "arrival_xy": [
+            80.0,
+            60.0
+          ],
+          "arrival_error": 0.0,
+          "max_path_sample_error": 0.0,
+          "coordinate_samples": 71
+        },
+        {
+          "stage": "dump",
+          "route": [
+            "load",
+            "junction",
+            "dump"
+          ],
+          "path_length": 150.0,
+          "arrival_time_s": 36.25,
+          "target_xy": [
+            170,
+            0
+          ],
+          "arrival_xy": [
+            170.0,
+            0.0
+          ],
+          "arrival_error": 0.0,
+          "max_path_sample_error": 0.0,
+          "coordinate_samples": 76
+        }
+      ]
+    },
+    {
+      "layout": "B",
+      "run_index": 10054002,
+      "recording_id": "site-layout-sdk-synthetic-20261126-001-10054002",
+      "nodes": 6,
+      "bidirectional_roads": 6,
+      "legs": [
+        {
+          "stage": "load",
+          "route": [
+            "start",
+            "west",
+            "load"
+          ],
+          "path_length": 180.0,
+          "arrival_time_s": 22.5,
+          "target_xy": [
+            100,
+            105
+          ],
+          "arrival_xy": [
+            100.0,
+            105.0
+          ],
+          "arrival_error": 0.0,
+          "max_path_sample_error": 7.105427357601002e-15,
+          "coordinate_samples": 91
+        },
+        {
+          "stage": "dump",
+          "route": [
+            "load",
+            "east",
+            "south",
+            "dump"
+          ],
+          "path_length": 225.0,
+          "arrival_time_s": 50.625,
+          "target_xy": [
+            245,
+            25
+          ],
+          "arrival_xy": [
+            245.0,
+            25.0
+          ],
+          "arrival_error": 0.0,
+          "max_path_sample_error": 0.0,
+          "coordinate_samples": 114
+        }
+      ]
+    }
+  ]
+}

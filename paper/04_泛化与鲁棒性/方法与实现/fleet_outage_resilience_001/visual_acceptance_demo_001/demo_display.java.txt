@@ -1,0 +1,40 @@
+// Main > 高级 Java > 其他类代码。追加到已有方法之后。
+String fleetDemoClock(double seconds) {
+    if (seconds < 0.0) return "待发生";
+    long ms = Math.round(1000.0 * seconds);
+    return String.format(java.util.Locale.ROOT, "%02d:%02d:%02d.%03d",
+        ms / 3600000L, ms / 60000L % 60L, ms / 1000L % 60L, ms % 1000L);
+}
+
+String fleetDemoStage(FleetResilienceState fleet) {
+    if (fleet.contains(fleet.dispatchableMask, fleet.faultId)) return "正常接单";
+    if (fleet.contains(fleet.inSystemMask, fleet.faultId)) return "停派，仍在网";
+    return "已退场";
+}
+
+String fleetDemoStatus() {
+    FleetResilienceState fleet = fleetResilience;
+    if (fleet == null || fleet.faultId < 0 || fleet.faultId >= trucks.size()) {
+        return "车队退场演示 | 初始化中";
+    }
+    Truck target = trucks.get(fleet.faultId);
+    String load = target.isLoaded
+        ? String.format(java.util.Locale.ROOT, "%.1f t %s",
+            target.payloadTons, target.payloadIsOre ? "矿石" : "废石")
+        : "空载";
+    return "退场验收 · Run " + experimentRunIndex
+        + " · 班次 " + fleetDemoClock(time(SECOND))
+        + "\n车辆 #" + target.truckId + " · " + fleetDemoStage(fleet)
+        + " · 工序 " + target.executionPhase + " · " + load
+        + " · 可派 " + Integer.bitCount(fleet.dispatchableMask)
+        + " / 在网 " + Integer.bitCount(fleet.inSystemMask)
+        + "\n计划停派 " + fleetDemoClock(fleet.scheduledSeconds)
+        + " · 实际停派 " + fleetDemoClock(fleet.triggerSeconds)
+        + " · 实际退场 " + fleetDemoClock(fleet.exitSeconds);
+}
+
+String fleetDemoTruckLabel(Truck truck) {
+    FleetResilienceState fleet = fleetResilience;
+    if (fleet == null || fleet.faultId != truck.truckId) return Integer.toString(truck.truckId);
+    return "#" + truck.truckId + " " + fleetDemoStage(fleet);
+}

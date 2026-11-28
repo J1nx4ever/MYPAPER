@@ -31,8 +31,11 @@ category	source	reason
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/replay_repair_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/replay_repair_001/prepared_001/run_seed.csv	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/replay_repair_001/prepared_001/suite.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/fleet_outage_resilience_001/visual_acceptance_demo_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 01_训练与选模	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/formal_training_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 02_消融实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+02_消融实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+02_消融实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/recovery_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 02_消融实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_replication_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/grade_assignment_generalization_001/continuous_training_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/grade_assignment_generalization_001/continuous_training_001/recovery_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
@@ -47,8 +50,30 @@ category	source	reason
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/generalization_001/speed_congestion_001/prepared_001/suite.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 01_训练与选模	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/optimization_stability_001/paired_evaluation_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 01_训练与选模	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/optimization_stability_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+03_对比实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/paired_inference_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+03_对比实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+03_对比实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/paired_inference_001/recovery_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+03_对比实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/ppo_steps_matched_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+03_对比实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/reinforce_comparison_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 02_消融实验	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/structural_ablation_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
 01_训练与选模	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/training_extension_001/prepared_001	冻结启动包；配置、清单与 Java 身份按原位置保存。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/feasibility_001/full_shift_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/launch_identity.json	A 图停工强度与策略比较共 270 班的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/paired_severity_001/run_index_seed_manifest.csv	A 图停工强度与策略比较共 270 班的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/run_index_seed_manifest.csv	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/run_index_seed_manifest.csv	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/launch_identity.json	B 图训练、验证及测试共 258 班的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/run_index_seed_manifest.csv	B 图训练、验证及测试共 258 班的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/capacity_scaled_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/launch_identity.json	A/B 两路网共 100 班的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/paired_50_001/run_index_seed_manifest.csv	A/B 两路网共 100 班的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/diagnostic_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/diagnostic_001/replay_002/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/repair_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/variable_topology_training_001/physical_trip_001/launch_identity.json	本活动的逐班目录与 run/seed 身份入口，可按清单定位各班。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/reports/fleet_outage_resilience_001/anylogic_offline.json	车队活动的离线 AnyLogic 核验。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/interpretability_eval/figure11221215/b_supplement_sources.json	解释性统计、轨迹重放或图源数据。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/interpretability_eval/figure11221215/c_supplement_sources.json	解释性统计、轨迹重放或图源数据。
@@ -65,6 +90,10 @@ category	source	reason
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/interpretability_eval/figures_20261122/linear_probing.json	解释性统计、轨迹重放或图源数据。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/interpretability_eval/figures_20261122/rule_replay_coverage.json	解释性统计、轨迹重放或图源数据。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/interpretability_eval/figures_20261122/stats.json	解释性统计、轨迹重放或图源数据。
+06_共享代码	experiments/lagrangian_ppo_v1/reports/runs_archive_20261126_001/README.md	历史归档与来源核验入口。
+06_共享代码	experiments/lagrangian_ppo_v1/reports/runs_archive_20261126_001/SHA256SUMS	历史归档与来源核验入口。
+06_共享代码	experiments/lagrangian_ppo_v1/reports/runs_archive_20261126_001/completed.txt	历史归档与来源核验入口。
+06_共享代码	experiments/lagrangian_ppo_v1/reports/runs_archive_20261126_001/directories.txt	历史归档与来源核验入口。
 03_对比实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/all_recheck_001/result_review.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 03_对比实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/dispatch_fifo_v3_002/dispatch_fifo_v3_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 03_对比实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/baseline_comparison_001/dispatch_flow_matching_001/grade_control_001/grade_control10_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
@@ -74,6 +103,7 @@ category	source	reason
 01_训练与选模	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/checkpoint_evaluation_001/java_preparation_verification.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 01_训练与选模	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/checkpoint_evaluation_001/launch_audit.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 01_训练与选模	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/checkpoint_evaluation_001/preparation_verification.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/delayed_realization_001/frozen_fifo_probe.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/encoder_snapshot_001/summary.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/encoder_snapshot_001/validation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/engineering_001/validation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
@@ -94,6 +124,10 @@ category	source	reason
 01_训练与选模	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/formal_training_001/recovery_001/preparation_verification.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/gat1-s01/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/nodump-s01/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/full-s04/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/full-s05/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/gat1-s04/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_extension_001/gat1-s05/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_replication_001/gat1-s02/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 02_消融实验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/gat_weak_ablation_001/seed_replication_001/gat1-s03/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/generalization_001/continuous_training_001/paired_evaluation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
@@ -121,6 +155,9 @@ category	source	reason
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/trained_intervention_001/training_support_audit.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/trained_intervention_001/validation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 01_训练与选模	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/training_extension_001/preparation_validation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/budget_audit.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/a_full_u32_high_grade_outage_001/same_seed_control_001/budget_audit.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/reports/token_attention_001/business_graph_summary_009/variable_topology_training_001/frozen_policy_trial_001/b_finetune_001/validation.json	原封存结果、核验或准备记录；保留原位置，可从总表或源报告定位。
 02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-ablation-20261121-flat-s01	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-ablation-20261121-flat-s01/evaluation/grade_swap/new/evaluation_complete.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-ablation-20261121-flat-s01/evaluation/held_order_1/new/evaluation_complete.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
@@ -189,6 +226,8 @@ category	source	reason
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/bg128-first-window-action-20261119-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/bg128-first-window-action-20261119-001/independent_evaluation_ledger.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/bg128-first-window-action-20261119-001_materials	原始物料目录（未递归读取）。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-fleet-outage-visual-demo-20261124-001/fleet_resilience_budget.sqlite	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-001/models/warmup/u0001/intent.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-001/run_status.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
@@ -196,6 +235,42 @@ category	source	reason
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-repair01/models/dynamic/u0009/update.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-fleet-resilience-20261124-repair01/models/static/u0009/update.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 04_泛化与鲁棒性	experiments/lagrangian_ppo_v1/runs/bg128-full-s02-u32-fleet6-zero-shot10-20261124-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/grade_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_1/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_2/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/joint_shift/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/new_numeric/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/nominal/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/waste_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04_materials	原始物料目录（未递归读取）。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/grade_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_1/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_2/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/joint_shift/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/new_numeric/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/nominal/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/waste_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05_materials	原始物料目录（未递归读取）。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/grade_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_1/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/held_order_2/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/joint_shift/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/new_numeric/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/nominal/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04/evaluation/waste_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s04_materials	原始物料目录（未递归读取）。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/grade_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_1/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/held_order_2/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/joint_shift/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/new_numeric/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/nominal/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05/evaluation/waste_swap/new/evaluation_complete.json	总表对应原件（含逐班明细、逐状态输出或活动账本）；按路径查阅。
+02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-gat1-s05_materials	原始物料目录（未递归读取）。
 02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-weak-20261122-gat1-s01	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-weak-20261122-gat1-s01/evaluation/grade_swap/new/evaluation_complete.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 02_消融实验	experiments/lagrangian_ppo_v1/runs/bg128-gat-weak-20261122-gat1-s01/evaluation/held_order_1/new/evaluation_complete.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
@@ -235,6 +310,15 @@ category	source	reason
 03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-gat1-s01-u32-grade-paired10-20261123-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-or-milp-paired10-20261124-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-or-strong-paired100-20261124-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-20261128-s02	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-20261128-s02_materials	原始物料目录（未递归读取）。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-20261128-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-20261128-001_materials	原始物料目录（未递归读取）。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-ppo-steps-s02-u32-paired700-recovery-20261128-001_materials	原始物料目录（未递归读取）。
+03_对比实验	experiments/lagrangian_ppo_v1/runs/bg128-reinforce-s02-u32-paired700-20261127-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/bg128-synthetic-topology-arrival-20261126-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/bg128-u13-discovery100-20261119-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/bg128-u13-discovery100-20261119-001/evaluation_complete.json	阶段一总表直接引用的原件；记录定位，内容保留在源目录。
 05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/bg128-u13-discovery100-20261119-001_materials	原始物料目录（未递归读取）。
@@ -261,6 +345,8 @@ category	source	reason
 01_训练与选模	experiments/lagrangian_ppo_v1/runs/business-graph-summary-best-checkpoint-eval100-20261118-001_materials	原始物料目录（未递归读取）。
 01_训练与选模	experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 01_训练与选模	experiments/lagrangian_ppo_v1/runs/business-graph-summary-formal-seed1-20261118-001_materials	原始物料目录（未递归读取）。
+05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/topology-simulation-20261126-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
+05_机制与仿真核验	experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001	原始运行目录（未递归读取）；完成、开发、恢复或中断状态以证据总表为准。
 05_机制与仿真核验	summary/interpretability_eval/figure11221215/Fig1.pdf	已有解释性图的原件。
 05_机制与仿真核验	summary/interpretability_eval/figure11221215/Fig1.png	已有解释性图的原件。
 05_机制与仿真核验	summary/interpretability_eval/figure11221215/Fig2.pdf	已有解释性图的原件。

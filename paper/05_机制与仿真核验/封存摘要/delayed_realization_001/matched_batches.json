@@ -1,0 +1,897 @@
+{
+  "scenario": "held_order_1",
+  "shifts_per_checkpoint": 100,
+  "boundaries_screened": 300,
+  "matched": 16,
+  "selection": "Grade above 28%, unloaded in 900s before first three closes. Same source, physical mass within 0.01t, grade within 0.1 percentage point and unload time within 60s. Closest unload time first, then closest grade and stable batch IDs, one pair per boundary and dual-seed slot.",
+  "outcome": "Fraction of batch actually processed in its unloading window. Factual trajectories of two trained Full policies. Matched deliveries need not be the same trip and other traffic and supply can differ.",
+  "input_evaluation_reports": [
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s04/evaluation/held_order_1/new/evaluation_complete.json",
+      "sha256": "de08d707c84bff39a33b5bb459d82fbf72216c75d24e6573c2674e4a4edb918c"
+    },
+    {
+      "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-gat-depth-20261125-full-s05/evaluation/held_order_1/new/evaluation_complete.json",
+      "sha256": "fc2ec5755760fb7475fa5ee6dc31bcf7ba452870c84240839c543649b3dfb4c6"
+    }
+  ],
+  "counts": {
+    "other": 13,
+    "one_at_least_80pct_one_at_most_20pct": 1,
+    "one_all_one_none": 2
+  },
+  "direction_in_contrasts": {
+    "s04_earlier": 1,
+    "s05_earlier": 2
+  },
+  "illustrative_pair": {
+    "ordinal": 97,
+    "environment_actor_seeds": [
+      149907110521328,
+      177366200234737
+    ],
+    "window": 3,
+    "unload_gap_s": 6.66517555748942,
+    "grade_gap": 0.0008659218387285228,
+    "result": "one_all_one_none",
+    "full_s04": {
+      "run": 10047322,
+      "batch": "batch-101",
+      "source": 0,
+      "truck": 2,
+      "window": 3,
+      "boundary_s": 21600,
+      "unload_s": 21239.61705671166,
+      "tons": 91.7,
+      "grade": 0.3811829357960802,
+      "fifo_ahead_t": 337.01311430251127,
+      "first_process_s": 21724.915941307183,
+      "actual_tons_by_window": [
+        0.0,
+        0.0,
+        0.0,
+        91.70000000000002
+      ],
+      "by_close_fraction": 0.0
+    },
+    "full_s05": {
+      "run": 10050770,
+      "batch": "batch-91",
+      "source": 0,
+      "truck": 0,
+      "window": 3,
+      "boundary_s": 21600,
+      "unload_s": 21246.28223226915,
+      "tons": 91.7,
+      "grade": 0.3820488576348087,
+      "fifo_ahead_t": 5.086064902570797e-11,
+      "first_process_s": 21246.28223226915,
+      "actual_tons_by_window": [
+        0.0,
+        0.0,
+        91.69999999999976,
+        0.0
+      ],
+      "by_close_fraction": 0.9999999999999973
+    }
+  },
+  "all_pairs": [
+    {
+      "ordinal": 4,
+      "environment_actor_seeds": [
+        70318506912920,
+        91104860330171
+      ],
+      "window": 2,
+      "unload_gap_s": 41.85929726071481,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047229,
+        "batch": "batch-66",
+        "source": 0,
+        "truck": 4,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 13952.755673494401,
+        "tons": 147.0,
+        "grade": 0.3809687362532786,
+        "fifo_ahead_t": 269.6915135118825,
+        "first_process_s": 14341.111452951465,
+        "actual_tons_by_window": [
+          0.0,
+          40.89482433925981,
+          106.10517566073915,
+          0.0
+        ],
+        "by_close_fraction": 0.27819608394054296
+      },
+      "full_s05": {
+        "run": 10050677,
+        "batch": "batch-61",
+        "source": 0,
+        "truck": 3,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 13910.896376233686,
+        "tons": 147.0,
+        "grade": 0.3809687362532786,
+        "fifo_ahead_t": 268.585969259843,
+        "first_process_s": 14297.660171967807,
+        "actual_tons_by_window": [
+          0.0,
+          71.06932502235605,
+          75.93067497764184,
+          0.0
+        ],
+        "by_close_fraction": 0.48346479607044934
+      }
+    },
+    {
+      "ordinal": 15,
+      "environment_actor_seeds": [
+        264807229720053,
+        197540859463578
+      ],
+      "window": 2,
+      "unload_gap_s": 9.790682853938051,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047240,
+        "batch": "batch-62",
+        "source": 0,
+        "truck": 1,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 13529.635272698026,
+        "tons": 91.7,
+        "grade": 0.3783705796821337,
+        "fifo_ahead_t": 233.75210204123746,
+        "first_process_s": 13866.238299637356,
+        "actual_tons_by_window": [
+          0.0,
+          91.7,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 1.0
+      },
+      "full_s05": {
+        "run": 10050688,
+        "batch": "batch-57",
+        "source": 0,
+        "truck": 1,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 13539.425955551964,
+        "tons": 91.7,
+        "grade": 0.3783705796821337,
+        "fifo_ahead_t": 191.170704656306,
+        "first_process_s": 13814.711770257014,
+        "actual_tons_by_window": [
+          0.0,
+          91.70000000000002,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 1.0000000000000002
+      }
+    },
+    {
+      "ordinal": 30,
+      "environment_actor_seeds": [
+        87073176740144,
+        144986047840040
+      ],
+      "window": 1,
+      "unload_gap_s": 6.964337329058253,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047255,
+        "batch": "batch-29",
+        "source": 0,
+        "truck": 3,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 6356.279747587483,
+        "tons": 147.0,
+        "grade": 0.38107765886854905,
+        "fifo_ahead_t": 267.4464110294211,
+        "first_process_s": 6741.402579469833,
+        "actual_tons_by_window": [
+          146.99999999999963,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999974
+      },
+      "full_s05": {
+        "run": 10050703,
+        "batch": "batch-29",
+        "source": 0,
+        "truck": 4,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 6363.244084916541,
+        "tons": 147.0,
+        "grade": 0.38107765886854905,
+        "fifo_ahead_t": 251.45495508643268,
+        "first_process_s": 6725.33922024099,
+        "actual_tons_by_window": [
+          146.99999999999972,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999981
+      }
+    },
+    {
+      "ordinal": 31,
+      "environment_actor_seeds": [
+        251205614199892,
+        80433423199302
+      ],
+      "window": 3,
+      "unload_gap_s": 23.736440825337922,
+      "grade_gap": 0.00018467258520771246,
+      "result": "one_at_least_80pct_one_at_most_20pct",
+      "full_s04": {
+        "run": 10047256,
+        "batch": "batch-102",
+        "source": 0,
+        "truck": 0,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 21145.358161935168,
+        "tons": 91.7,
+        "grade": 0.38229546772813,
+        "fifo_ahead_t": 313.83796018048525,
+        "first_process_s": 21597.284824594986,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          1.8855384757048559,
+          89.81446152429504
+        ],
+        "by_close_fraction": 0.020562033540947173
+      },
+      "full_s05": {
+        "run": 10050704,
+        "batch": "batch-94",
+        "source": 0,
+        "truck": 2,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 21169.094602760506,
+        "tons": 91.7,
+        "grade": 0.3824801403133377,
+        "fifo_ahead_t": 32.5443142980495,
+        "first_process_s": 21215.95841534963,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.7,
+          0.0
+        ],
+        "by_close_fraction": 1.0
+      }
+    },
+    {
+      "ordinal": 35,
+      "environment_actor_seeds": [
+        194765785079916,
+        12931868885345
+      ],
+      "window": 2,
+      "unload_gap_s": 49.6651827258338,
+      "grade_gap": 0.00015227544357931944,
+      "result": "other",
+      "full_s04": {
+        "run": 10047260,
+        "batch": "batch-66",
+        "source": 0,
+        "truck": 8,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14256.225292877478,
+        "tons": 193.0,
+        "grade": 0.3824858686017,
+        "fifo_ahead_t": 4.27383053623609,
+        "first_process_s": 14262.379608849596,
+        "actual_tons_by_window": [
+          0.0,
+          95.56971607666956,
+          97.43028392332857,
+          0.0
+        ],
+        "by_close_fraction": 0.49517987604492003
+      },
+      "full_s05": {
+        "run": 10050708,
+        "batch": "batch-66",
+        "source": 0,
+        "truck": 7,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14206.560110151644,
+        "tons": 193.0,
+        "grade": 0.38233359315812065,
+        "fifo_ahead_t": 210.81934183686053,
+        "first_process_s": 14510.139962396672,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          192.9999999999984,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      }
+    },
+    {
+      "ordinal": 39,
+      "environment_actor_seeds": [
+        106909149318730,
+        123970661278507
+      ],
+      "window": 2,
+      "unload_gap_s": 18.597731249805292,
+      "grade_gap": 0.0005920515597510612,
+      "result": "other",
+      "full_s04": {
+        "run": 10047264,
+        "batch": "batch-69",
+        "source": 0,
+        "truck": 0,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14395.386544092093,
+        "tons": 91.7,
+        "grade": 0.37966243349085455,
+        "fifo_ahead_t": 334.41234887474184,
+        "first_process_s": 14876.940326471646,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.69999999999919,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      },
+      "full_s05": {
+        "run": 10050712,
+        "batch": "batch-66",
+        "source": 0,
+        "truck": 2,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14376.788812842287,
+        "tons": 91.7,
+        "grade": 0.3802544850506056,
+        "fifo_ahead_t": 88.03620284220506,
+        "first_process_s": 14503.560944935007,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.69999999999969,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      }
+    },
+    {
+      "ordinal": 46,
+      "environment_actor_seeds": [
+        255156891153350,
+        11334123527391
+      ],
+      "window": 2,
+      "unload_gap_s": 8.745046198844648,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047271,
+        "batch": "batch-67",
+        "source": 0,
+        "truck": 2,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14369.39742717485,
+        "tons": 91.7,
+        "grade": 0.3846427720177074,
+        "fifo_ahead_t": 334.96192004335455,
+        "first_process_s": 14851.742592037219,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.6999999999993,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      },
+      "full_s05": {
+        "run": 10050719,
+        "batch": "batch-64",
+        "source": 0,
+        "truck": 2,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14378.142473373695,
+        "tons": 91.7,
+        "grade": 0.3846427720177074,
+        "fifo_ahead_t": 338.58308559854675,
+        "first_process_s": 14865.70211663556,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.69999999999932,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      }
+    },
+    {
+      "ordinal": 52,
+      "environment_actor_seeds": [
+        91150951775050,
+        4126923082510
+      ],
+      "window": 1,
+      "unload_gap_s": 28.483326966507775,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047277,
+        "batch": "batch-31",
+        "source": 2,
+        "truck": 1,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 6977.638150594483,
+        "tons": 91.7,
+        "grade": 0.3034764441439978,
+        "fifo_ahead_t": 334.4788302935106,
+        "first_process_s": 7459.28766621712,
+        "actual_tons_by_window": [
+          0.0,
+          91.70000000000076,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      },
+      "full_s05": {
+        "run": 10050725,
+        "batch": "batch-29",
+        "source": 2,
+        "truck": 1,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 6949.154823627975,
+        "tons": 91.7,
+        "grade": 0.3034764441439978,
+        "fifo_ahead_t": 118.41762281268971,
+        "first_process_s": 7119.676200478236,
+        "actual_tons_by_window": [
+          55.78041633455906,
+          35.91958366544169,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.6082924354913747
+      }
+    },
+    {
+      "ordinal": 54,
+      "environment_actor_seeds": [
+        14478835258932,
+        208515474973916
+      ],
+      "window": 3,
+      "unload_gap_s": 29.547094320969336,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047279,
+        "batch": "batch-101",
+        "source": 2,
+        "truck": 6,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 20923.014363039496,
+        "tons": 193.0,
+        "grade": 0.29951144515422784,
+        "fifo_ahead_t": 148.7136887147345,
+        "first_process_s": 21137.162074788634,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          192.9999999999984,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999918
+      },
+      "full_s05": {
+        "run": 10050727,
+        "batch": "batch-92",
+        "source": 2,
+        "truck": 7,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 20893.467268718527,
+        "tons": 193.0,
+        "grade": 0.29951144515422784,
+        "fifo_ahead_t": 210.22605521741755,
+        "first_process_s": 21196.19278823152,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          192.99999999999918,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999958
+      }
+    },
+    {
+      "ordinal": 60,
+      "environment_actor_seeds": [
+        133542815974568,
+        237134548154830
+      ],
+      "window": 2,
+      "unload_gap_s": 53.125774165982875,
+      "grade_gap": 0.0009762297481789028,
+      "result": "one_all_one_none",
+      "full_s04": {
+        "run": 10047285,
+        "batch": "batch-65",
+        "source": 0,
+        "truck": 2,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 13894.84179807906,
+        "tons": 91.7,
+        "grade": 0.38378625972561026,
+        "fifo_ahead_t": 166.52611020417106,
+        "first_process_s": 14134.63939677301,
+        "actual_tons_by_window": [
+          0.0,
+          91.7,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 1.0
+      },
+      "full_s05": {
+        "run": 10050733,
+        "batch": "batch-59",
+        "source": 0,
+        "truck": 2,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 13947.967572245043,
+        "tons": 91.7,
+        "grade": 0.38476248947378916,
+        "fifo_ahead_t": 318.4946318062391,
+        "first_process_s": 14406.599842045982,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.6999999999992,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      }
+    },
+    {
+      "ordinal": 72,
+      "environment_actor_seeds": [
+        187746952760440,
+        125643060971557
+      ],
+      "window": 2,
+      "unload_gap_s": 26.04398430634683,
+      "grade_gap": 0.00015928651456564857,
+      "result": "other",
+      "full_s04": {
+        "run": 10047297,
+        "batch": "batch-66",
+        "source": 2,
+        "truck": 4,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14153.860626249563,
+        "tons": 147.0,
+        "grade": 0.2951645814465955,
+        "fifo_ahead_t": 128.7107939441968,
+        "first_process_s": 14339.204169529168,
+        "actual_tons_by_window": [
+          0.0,
+          42.21932671585552,
+          104.78067328414264,
+          0.0
+        ],
+        "by_close_fraction": 0.28720630418949333
+      },
+      "full_s05": {
+        "run": 10050745,
+        "batch": "batch-59",
+        "source": 2,
+        "truck": 5,
+        "window": 2,
+        "boundary_s": 14400,
+        "unload_s": 14179.90461055591,
+        "tons": 147.0,
+        "grade": 0.29532386796116117,
+        "fifo_ahead_t": 12.072912931477635,
+        "first_process_s": 14197.289605177191,
+        "actual_tons_by_window": [
+          0.0,
+          140.77110751584087,
+          6.2288924841578925,
+          0.0
+        ],
+        "by_close_fraction": 0.957626581740414
+      }
+    },
+    {
+      "ordinal": 85,
+      "environment_actor_seeds": [
+        71478857724330,
+        67381582224991
+      ],
+      "window": 3,
+      "unload_gap_s": 33.808270917241316,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047310,
+        "batch": "batch-101",
+        "source": 2,
+        "truck": 0,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 21457.101117283735,
+        "tons": 91.7,
+        "grade": 0.29531314867861674,
+        "fifo_ahead_t": 329.11367874763675,
+        "first_process_s": 21931.02481468025,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          0.0,
+          91.69999999999932
+        ],
+        "by_close_fraction": 0.0
+      },
+      "full_s05": {
+        "run": 10050758,
+        "batch": "batch-94",
+        "source": 2,
+        "truck": 1,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 21490.909388200977,
+        "tons": 91.7,
+        "grade": 0.29531314867861674,
+        "fifo_ahead_t": 337.81586674974443,
+        "first_process_s": 21977.36423632053,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          0.0,
+          91.7
+        ],
+        "by_close_fraction": 0.0
+      }
+    },
+    {
+      "ordinal": 89,
+      "environment_actor_seeds": [
+        65764657291193,
+        237007481199918
+      ],
+      "window": 1,
+      "unload_gap_s": 19.59276758305441,
+      "grade_gap": 0.00048118300497357325,
+      "result": "other",
+      "full_s04": {
+        "run": 10047314,
+        "batch": "batch-28",
+        "source": 0,
+        "truck": 5,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 6385.677099236277,
+        "tons": 147.0,
+        "grade": 0.3821701005832266,
+        "fifo_ahead_t": 268.5698921504003,
+        "first_process_s": 6772.417743932831,
+        "actual_tons_by_window": [
+          146.9999999999999,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999992
+      },
+      "full_s05": {
+        "run": 10050762,
+        "batch": "batch-27",
+        "source": 0,
+        "truck": 3,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 6405.269866819332,
+        "tons": 147.0,
+        "grade": 0.38265128358820016,
+        "fifo_ahead_t": 218.8832944264015,
+        "first_process_s": 6720.461810793334,
+        "actual_tons_by_window": [
+          146.99999999999923,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999948
+      }
+    },
+    {
+      "ordinal": 94,
+      "environment_actor_seeds": [
+        144328417840217,
+        79044785017241
+      ],
+      "window": 3,
+      "unload_gap_s": 27.737267015756515,
+      "grade_gap": 0.0008032324597683771,
+      "result": "other",
+      "full_s04": {
+        "run": 10047319,
+        "batch": "batch-100",
+        "source": 2,
+        "truck": 2,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 20906.090955397172,
+        "tons": 91.7,
+        "grade": 0.3008820955412952,
+        "fifo_ahead_t": 59.75061679592304,
+        "first_process_s": 20992.131843583215,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.7,
+          0.0
+        ],
+        "by_close_fraction": 1.0
+      },
+      "full_s05": {
+        "run": 10050767,
+        "batch": "batch-95",
+        "source": 2,
+        "truck": 2,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 20933.82822241293,
+        "tons": 91.7,
+        "grade": 0.30168532800106357,
+        "fifo_ahead_t": 301.08965783999207,
+        "first_process_s": 21367.397329702428,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.6999999999998,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999978
+      }
+    },
+    {
+      "ordinal": 97,
+      "environment_actor_seeds": [
+        149907110521328,
+        177366200234737
+      ],
+      "window": 3,
+      "unload_gap_s": 6.66517555748942,
+      "grade_gap": 0.0008659218387285228,
+      "result": "one_all_one_none",
+      "full_s04": {
+        "run": 10047322,
+        "batch": "batch-101",
+        "source": 0,
+        "truck": 2,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 21239.61705671166,
+        "tons": 91.7,
+        "grade": 0.3811829357960802,
+        "fifo_ahead_t": 337.01311430251127,
+        "first_process_s": 21724.915941307183,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          0.0,
+          91.70000000000002
+        ],
+        "by_close_fraction": 0.0
+      },
+      "full_s05": {
+        "run": 10050770,
+        "batch": "batch-91",
+        "source": 0,
+        "truck": 0,
+        "window": 3,
+        "boundary_s": 21600,
+        "unload_s": 21246.28223226915,
+        "tons": 91.7,
+        "grade": 0.3820488576348087,
+        "fifo_ahead_t": 5.086064902570797e-11,
+        "first_process_s": 21246.28223226915,
+        "actual_tons_by_window": [
+          0.0,
+          0.0,
+          91.69999999999976,
+          0.0
+        ],
+        "by_close_fraction": 0.9999999999999973
+      }
+    },
+    {
+      "ordinal": 99,
+      "environment_actor_seeds": [
+        97430691934425,
+        1151984482544
+      ],
+      "window": 1,
+      "unload_gap_s": 5.214643393562255,
+      "grade_gap": 0.0,
+      "result": "other",
+      "full_s04": {
+        "run": 10047324,
+        "batch": "batch-32",
+        "source": 0,
+        "truck": 7,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 7072.809419386407,
+        "tons": 193.0,
+        "grade": 0.3761424490976957,
+        "fifo_ahead_t": 208.44663702983732,
+        "first_process_s": 7372.972576709369,
+        "actual_tons_by_window": [
+          0.0,
+          192.99999999999716,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      },
+      "full_s05": {
+        "run": 10050772,
+        "batch": "batch-31",
+        "source": 0,
+        "truck": 6,
+        "window": 1,
+        "boundary_s": 7200,
+        "unload_s": 7078.024062779969,
+        "tons": 193.0,
+        "grade": 0.3761424490976957,
+        "fifo_ahead_t": 180.71062505880246,
+        "first_process_s": 7338.247362864617,
+        "actual_tons_by_window": [
+          0.0,
+          192.99999999999648,
+          0.0,
+          0.0
+        ],
+        "by_close_fraction": 0.0
+      }
+    }
+  ],
+  "new_physical_shifts": 0
+}

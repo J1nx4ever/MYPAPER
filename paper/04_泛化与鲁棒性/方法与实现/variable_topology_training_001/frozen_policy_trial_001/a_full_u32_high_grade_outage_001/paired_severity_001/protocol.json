@@ -1,0 +1,37 @@
+{
+  "version": "A-high-grade-outage-paired-v1",
+  "design": {
+    "new_independent_environment_seeds": 30,
+    "physical_shifts_per_seed": 9,
+    "exclude_pilot_runs": [10056051, 10056052],
+    "strategies": ["full", "flow", "flat"],
+    "durations_minutes": [0, 30, 60],
+    "start_sim_seconds": 14400,
+    "shift_seconds": 28800,
+    "map": "tree_A",
+    "active_trucks": 9,
+    "site_id": 0,
+    "models": "Frozen Full s02/u32 and Flat-MLP+C128 s01/u32, greedy legal actions; archived grade-revised path-flow-matching with its published settings and legal fallback. No learning or advance information about outage duration.",
+    "common_random_numbers": "Each seed is shared by the nine native shifts. Distinct run, recording and configuration bytes per shift. Compare pre-outage dispatch observations and physical business events within strategy; require identical pre-outage trajectories for the deterministic neural actors. For the original wall-clock-limited flow solver, report any prefix mismatches and diagnostics, and retain all assigned pairs in the primary analysis. Pair inference by the preassigned environment seed.",
+    "stopping_rule": "30 prespecified slots irrespective of observed results; report any incomplete slot. No post hoc seed selection."
+  },
+  "endpoints": {
+    "joint": "Boolean: crushed ore and discharged waste within their pre-existing targets/tolerance and all four fixed crushed-grade windows compliant (26-28%).",
+    "wait": "Cumulative waiting for load/unload service over all nine trucks over the eight-hour shift, in vehicle-hours. Suspended active service is reported separately.",
+    "grade": "Sample standard deviation in percentage points of the four fixed two-hour mass-weighted crushed-ore grades, with divisor 3. When a window has zero crushed ore, treat its grade as undefined and report effective n for continuous grade analysis; it cannot satisfy joint compliance.",
+    "supporting": "Four-window pass, per-window grade compliance and means, ore and waste tonnes, high-site loading, in-service suspension; by-policy internal fallback and zero native invalid/backup dispatches."
+  },
+  "inference": {
+    "alpha": 0.05,
+    "two_sided": true,
+    "primary": "At 60 minutes: Full vs flow and Full vs Flat on joint compliance, exact paired McNemar and Holm across two tests.",
+    "within_policy": "For each of joint, wait and grade, compare 30-0 and 60-0 within each strategy; Holm across six tests per endpoint.",
+    "severity_interaction": "For each baseline and each of joint, wait and grade, compare Full-baseline gap at 60 versus its gap at 30, using paired within-slot differences of differences; Holm across six tests.",
+    "continuous_policy_impacts": "Contrast Full vs each baseline on increments from 0 to 30 and 0 to 60 for wait and grade; Holm across eight tests.",
+    "continuous_test": "Two-sided paired sign-flip test of the mean difference under exchangeability. Enumerate <=16 nonzero differences, otherwise 100000 fixed-seed Monte Carlo permutations with plus-one correction; discrete integer interaction contrasts use exact sign-flip convolution.",
+    "uncertainty": "Wilson 95% intervals for cell rates. Binary difference interval by conservative simultaneous Clopper-Pearson bounds on probabilities of paired gains and losses, clipped to [-1,1]. Other mean contrasts: 20000 paired percentile bootstrap resamples of environmental slots, nominal 95% intervals. These are pointwise intervals; use Holm-adjusted p-values for the declared hypothesis families.",
+    "seed": 20261127,
+    "unit": "one environment seed (not windows or individual dispatches)",
+    "scope": "fixed trained weights, the A map, and the stated shock times. No guarantee of significance or ordered degradation."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "purpose": "native west-pit demonstration acceptance, independent of PPO, no actor seed",
+  "prepared_count": 5,
+  "historical_registered_shifts_checked": 43047,
+  "jobs": [
+    {
+      "run_index": 10054861,
+      "environment_seed": 983950538,
+      "recording_id": "west-pit-haulage-acceptance-20261127-001-10054861",
+      "config_path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/10054861.properties",
+      "config_sha256": "22c23ace3c392ceeb0be48fafcc018b91fb04bc81ac6409514045cb6e2dfaef2",
+      "event_directory": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/anylogic_events/west-pit-haulage-acceptance-20261127-001-10054861",
+      "python_output": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054861"
+    },
+    {
+      "run_index": 10054862,
+      "environment_seed": 984490545,
+      "recording_id": "west-pit-haulage-acceptance-20261127-001-10054862",
+      "config_path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/10054862.properties",
+      "config_sha256": "db6c0cf385246a0768dabb48258751b5e1d971dec8b0259e131ced95e344dcdc",
+      "event_directory": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/anylogic_events/west-pit-haulage-acceptance-20261127-001-10054862",
+      "python_output": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054862"
+    },
+    {
+      "run_index": 10054863,
+      "environment_seed": 985030552,
+      "recording_id": "west-pit-haulage-acceptance-20261127-001-10054863",
+      "config_path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/10054863.properties",
+      "config_sha256": "e417459aa573b091fd9b446f6354939bad02b4bed1efcd0b4ea2ee8b24a5774f",
+      "event_directory": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/anylogic_events/west-pit-haulage-acceptance-20261127-001-10054863",
+      "python_output": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054863"
+    },
+    {
+      "run_index": 10054864,
+      "environment_seed": 985570559,
+      "recording_id": "west-pit-haulage-acceptance-20261127-001-10054864",
+      "config_path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/10054864.properties",
+      "config_sha256": "b3068113b8535bb64f7192b502749f7c110857e3173fa0d2bc46af03b5592035",
+      "event_directory": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/anylogic_events/west-pit-haulage-acceptance-20261127-001-10054864",
+      "python_output": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054864"
+    },
+    {
+      "run_index": 10054865,
+      "environment_seed": 986110566,
+      "recording_id": "west-pit-haulage-acceptance-20261127-001-10054865",
+      "config_path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/change_plans/token_attention_001/business_graph_summary_009/site_data_integration_001/west_pit_demo_001/10054865.properties",
+      "config_sha256": "aef149ed239df4c52fee50eeff09ff2e200e1224b96f6fc3b7d0f9fea9e7bfc4",
+      "event_directory": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/anylogic_events/west-pit-haulage-acceptance-20261127-001-10054865",
+      "python_output": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/west-pit-haulage-acceptance-20261127-001/python/west-pit-haulage-acceptance-20261127-001-10054865"
+    }
+  ]
+}

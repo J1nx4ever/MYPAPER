@@ -1,0 +1,75 @@
+{
+  "schema": "bg128-reinforce-archived-gradient-direction-v1",
+  "source": {
+    "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/suite_complete.json",
+    "sha256": "6fabcaa84bfb9e9efdda903fd4967db9cbeac3c1a3617d6227d5eaddee3b8b8e"
+  },
+  "batches": [
+    {
+      "update": 1,
+      "shift_count": 32,
+      "decisions": 5855,
+      "training_summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/updates/0001/training_summary.json",
+        "sha256": "5767c3abb45bb1288304069695dd9a78119c93f025c47aa95370c7d8ef6083ee"
+      },
+      "parent": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/initial.pt",
+        "sha256": "70c2f03d72a555abd184255e082f2cd3d9996979ffdfaf2bf2ceb58228dcd3d6"
+      },
+      "checkpoint": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/updates/0001/checkpoint.pt",
+        "sha256": "18f5736bfbff5dc27098969b618827aeff45c757a0fcafb0a2efc21b853045bb"
+      },
+      "baseline_before": 0.0,
+      "mean_reward": -4.762100437297166,
+      "actor_sha": "7c2ac5ad5431b490dd183131ba3d74f6ad04cb9657fb8f394b33a2f6d0eba89a",
+      "max_abs_replayed_chosen_logp_minus_online": 2.4154092370665126e-07,
+      "independent_reward_score": 1182.324024966238,
+      "saved_optimizer_gradient_norm": 4.790284204941123,
+      "independent_reward_gradient_norm": 4.7902836887510025,
+      "loss_gradient_vs_reward_ascent_cosine": -0.9999999999990757,
+      "relative_norm_of_gradient_sum": 1.36144968445531e-06,
+      "reward_gradient_dot_actual_adam_step": 0.26641295409736326,
+      "central_difference_along_actual_step": 0.24001240979669092,
+      "relative_error_vs_directional_autograd": 0.09909632356324537,
+      "central_difference_fraction_of_step": 0.0625,
+      "same_batch_reward_score_gain_after_actual_step": 0.16267139910678452,
+      "interleaved_half_batch_reward_gradient_cosine": -0.5017752915603628
+    },
+    {
+      "update": 32,
+      "shift_count": 32,
+      "decisions": 5971,
+      "training_summary": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/updates/0032/training_summary.json",
+        "sha256": "2c240f64d4cc05e72b8343f2a25ce148949f766301b22d1a64539fd3380adf92"
+      },
+      "parent": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/updates/0031/checkpoint.pt",
+        "sha256": "990236a526715de4028a727583deaf79426ca2b652dc4a9c4e5c4646d5aa63f9"
+      },
+      "checkpoint": {
+        "path": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/bg128-reinforce-full-shift-20261127-s02/arms/s01_BG128/updates/0032/checkpoint.pt",
+        "sha256": "286f2eb627731cd146557a0363d5c9c3f521aa0d923e0878164cd272beaec5de"
+      },
+      "baseline_before": -3.117150838935146,
+      "mean_reward": -3.2717249382555798,
+      "actor_sha": "5b4048e1391d67da9b87530f59736c6ae21bfe7171e784d9544a5f7ab878c716",
+      "max_abs_replayed_chosen_logp_minus_online": 6.668175349666683e-07,
+      "independent_reward_score": 32.02983106510125,
+      "saved_optimizer_gradient_norm": 13.984551835910144,
+      "independent_reward_gradient_norm": 13.984552843181763,
+      "loss_gradient_vs_reward_ascent_cosine": -0.9999999999996745,
+      "relative_norm_of_gradient_sum": 8.081995745757369e-07,
+      "reward_gradient_dot_actual_adam_step": 0.33369313331716954,
+      "central_difference_along_actual_step": 0.33440333940308165,
+      "relative_error_vs_directional_autograd": 0.0021283209482080147,
+      "central_difference_fraction_of_step": 0.0625,
+      "same_batch_reward_score_gain_after_actual_step": 0.38641278842095517,
+      "interleaved_half_batch_reward_gradient_cosine": -0.6180677104308083
+    }
+  ],
+  "new_physical_shifts": 0,
+  "optimizer_steps_executed": 0
+}

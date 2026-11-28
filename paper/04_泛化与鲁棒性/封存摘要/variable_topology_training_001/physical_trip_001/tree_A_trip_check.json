@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "recording_id": "site-layout-single-trip-preacceptance-20261127-001-10054021",
+  "run_index": 10054021,
+  "environment_seed": 210969692187739,
+  "config_sha256": "cd2c7a5df118c1d62a9aec9e1af4f0ea6d02e485febb88dc5ca2eea035fe00ec",
+  "layout_id": "tree_A",
+  "layout_sha256": "03828278ea2d57d4664e0f9dd19531f93c5482140ec44d1a878c163ba4ffdba0",
+  "segments": 4,
+  "terminal": {
+    "event": "PASS",
+    "time_s": 855.8663167364197,
+    "run_index": 10054021,
+    "environment_seed": 210969692187739,
+    "recording_id": "site-layout-single-trip-preacceptance-20261127-001-10054021",
+    "config_sha256": "cd2c7a5df118c1d62a9aec9e1af4f0ea6d02e485febb88dc5ca2eea035fe00ec",
+    "layout_sha256": "03828278ea2d57d4664e0f9dd19531f93c5482140ec44d1a878c163ba4ffdba0",
+    "layout_id": "tree_A",
+    "fifo_tons": 147.0,
+    "crushed_tons": 0.0,
+    "received_metal_tons": 41.894999999999996,
+    "loaded_tons": 147.0,
+    "fifo_metal_tons": 41.894999999999996,
+    "completed_trips": 1,
+    "crushed_metal_tons": 0.0,
+    "received_tons": 147.0
+  },
+  "source_receipt": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/site-layout-single-trip-preacceptance-20261127-001/anylogic_events/site-layout-single-trip-preacceptance-20261127-001-10054021/events.jsonl"
+}

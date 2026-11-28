@@ -1,6 +1,10 @@
 # 19 节点业务图与 C128 融合
 
+以混合训练 Full S02 为对照的 [BG128 整班 REINFORCE 训练包](reinforce_comparison_001/README.md) 使用共同 u0、相同的 1,024 班工况顺序和 Tang 式（19）的移动平均基线。
+
 论文立项入口见 [动态配矿图强化学习研究定义书 V1.0](research_definition_v1_001/README.md) 和 [BG128 数学架构定义](research_definition_v1_001/architecture_math.md)。
+
+现场应用见 [巴润西采场数据接入与卸载去向决策](site_data_integration_001/README.md)。
 
 当前实验（2026-11-19）为 [首窗单动作反事实](first_window_action_001/README.md)。固定 3e-4/u13，先复现两条首窗失败轨迹，再在各自证书前执行一次合法替代。
 

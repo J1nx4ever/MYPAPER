@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "source": "native AnyLogic Simulation movement callbacks and tick samples",
+  "recording_id": "site-layout-anylogic-simulation-20261126-001-10054011",
+  "run_index": 10054011,
+  "environment_seed": 129316048293313,
+  "config_sha256": "8c05489c8e6011b2a24ff9ea2b662b1e5bafb8105441650d3be1269078d56383",
+  "layout": "A",
+  "nodes": 4,
+  "roads": 3,
+  "event_file": "/home/jinx/Faith/experiments/lagrangian_ppo_v1/runs/topology-simulation-20261126-001/anylogic_events/site-layout-anylogic-simulation-20261126-001-10054011/events.csv",
+  "legs": [
+    {
+      "leg": "load",
+      "route": [
+        "start",
+        "junction",
+        "load"
+      ],
+      "target_xy": [
+        80.0,
+        60.0
+      ],
+      "arrival_xy": [
+        80.0,
+        60.0
+      ],
+      "arrival_time_s": 17.5,
+      "travel_seconds": 17.5,
+      "arrival_error": 0.0,
+      "max_route_deviation": 0.0,
+      "coordinate_samples": 72
+    },
+    {
+      "leg": "dump",
+      "route": [
+        "load",
+        "junction",
+        "dump"
+      ],
+      "target_xy": [
+        170.0,
+        0.0
+      ],
+      "arrival_xy": [
+        170.0,
+        0.0
+      ],
+      "arrival_time_s": 37.25,
+      "travel_seconds": 18.75,
+      "arrival_error": 0.0,
+      "max_route_deviation": 0.0,
+      "coordinate_samples": 77
+    }
+  ]
+}
